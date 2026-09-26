@@ -26,7 +26,6 @@ export interface MiCometStory {
   type: string;
   link?: string;
   source?: string;
-  image?: string;
 }
 
 type Side = MiCometStory['side'];
@@ -350,7 +349,6 @@ function mergeStory(base: MiCometStory, extra: MiCometStory): MiCometStory {
     type: base.type === extra.type ? base.type : 'News',
     link: links,
     source: sources || undefined,
-    image: base.image || extra.image,
     titleEn: base.titleEn || extra.titleEn,
     ctx: mergedCtxEn || mergedCtx,
     ctxZh: mergedCtx,
