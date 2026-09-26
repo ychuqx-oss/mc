@@ -472,7 +472,9 @@
     "titleZh": "miComet《牧場模擬器》雙人連動",
     "ctx": "Miko與星街進行《牧場模擬器》雙人連動，原本要開始務農，最後變成拆家與商業相聲。來源待補。",
     "ctxZh": "Miko與星街進行《牧場模擬器》雙人連動，原本要開始務農，最後變成拆家與商業相聲。來源待補。",
-    "type": "Stream"
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=uaFk4AYbfDo",
+    "source": "Miko official YouTube"
   },
   {
     "id": "s230035",
@@ -485,7 +487,9 @@
     "titleZh": "miComet準備《SugarRush》與WeißSchwarz15週年紀念Live",
     "ctx": "miComet進入《Sugar Rush》與Weiß Schwarz 15週年紀念Live前的準備期，此筆作為幕後背景紀錄。來源待補。",
     "ctxZh": "miComet進入《Sugar Rush》與Weiß Schwarz 15週年紀念Live前的準備期，此筆作為幕後背景紀錄。來源待補。",
-    "type": "News"
+    "type": "News",
+    "link": "https://bushiroad-music.com/1226/ https://hololive.hololivepro.com/music/347/",
+    "source": "Bushiroad Music / hololive official"
   },
   {
     "id": "s230036",
