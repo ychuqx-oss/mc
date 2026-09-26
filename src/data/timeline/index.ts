@@ -41,12 +41,12 @@ function supplementSourceLinks(story: MiCometStory): MiCometStory {
   const links = rawLinks ? rawLinks.split(/\s+/).filter(Boolean) : [];
   const isSharedStream = story.side === 'shared' && story.type === 'Stream';
 
+  if (!rawLinks) links.push(DEFAULT_REFERENCE_URL);
+
   if (isSharedStream) {
     if (!links.includes(HOLOSTATS_MICOMET_URL)) links.push(HOLOSTATS_MICOMET_URL);
     if (!links.includes(HOINDEX_MICOMET_URL)) links.push(HOINDEX_MICOMET_URL);
   }
-
-  if (!links.length) links.push(DEFAULT_REFERENCE_URL);
 
   return {
     ...story,
