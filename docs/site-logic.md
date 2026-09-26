@@ -67,8 +67,9 @@ Timeline stories do not use image fields. Do not add `image`, `imageUrl`, `thumb
 
 ### Language behavior
 
-- English UI uses `titleEn` / `ctxEn` when available.
+- English UI uses `titleEn` / `ctxEn` or the English restoration overlay. Active timeline records must not fall back to Traditional Chinese in English mode.
 - Traditional Chinese UI uses `titleZh` / `ctxZh` when available.
+- Before committing timeline data, verify every active story has both an English title and English context through its record or the active overlay/English row mapping.
 - Do not add English-only records when the same story is expected to support bilingual display.
 - Do not invent missing facts in story context.
 - If source material only supports a short description, keep the context conservative.
