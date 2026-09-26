@@ -302,12 +302,7 @@ function emojiForSide(side: Side) {
   return '⭐';
 }
 
-function classifySharedCategory(story: MiCometStory, side: Side): SharedCategory | undefined {
-  if (side !== 'shared') return undefined;
-  if (story.sharedCategory) return story.sharedCategory;
-
-  // Classify from the story headline first. Context often mentions unrelated members,
-  // past events, or reference material and must not turn a genuine miComet 1v1 into Group.
+function sharedTitleCategory(story: MiCometStory): SharedCategory {
   const titleText = [story.title, story.titleZh, story.titleEn].filter(Boolean).join(' ');
 
   if (/(?:0期|零期|0th\s*gen|gen\s*0|generation\s*zero)/i.test(titleText)) return 'gen0';
@@ -321,9 +316,50 @@ function classifySharedCategory(story: MiCometStory, side: Side): SharedCategory
   return 'oneOnOne';
 }
 
+function hasReciprocalMiCometInteraction(story: MiCometStory) {
+  const text = [
+    story.title,
+    story.titleZh,
+    story.titleEn,
+    story.ctx,
+    story.ctxZh,
+    story.ctxEn,
+  ].filter(Boolean).join(' ');
+
+  return /(?:互相|互動|一起|兩人|雙視點|連動|聯動|合作|共演|合唱|對決|對戰|約會|通話|聊天|對談|相談|同步觀看|同時視聽|同居|牽手|拜訪|來訪|見面|吃飯|出遊|旅行|練習|下播後.*聊|玩(?:《|「)|共同|both|each other|together|collab|collaborat|duo|versus|vs\.?|watchalong|talked.*after|went out|ate together|visited|called)/i.test(text);
+}
+
+function resolveSharedSide(story: MiCometStory): Side {
+  if (story.side !== 'shared') return story.side;
+  if (story.sharedCategory && story.sharedCategory !== 'oneOnOne') return 'shared';
+
+  const category = story.sharedCategory || sharedTitleCategory(story);
+  if (category !== 'oneOnOne') return 'shared';
+  if (hasReciprocalMiCometInteraction(story)) return 'shared';
+
+  const titleText = [story.titleZh, story.title, story.titleEn].filter(Boolean).join(' ');
+
+  if (/^(?:Miko|櫻巫女)/i.test(titleText)) return 'miko';
+  if (/^(?:星街|Suisei|Hoshimachi\s+Suisei)/i.test(titleText)) return 'suisei';
+
+  // A one-sided post, mention, watch, praise, reply, announcement, or other
+  // non-reciprocal item is not a 1v1. If the actor cannot be identified
+  // safely from the title, keep it out of 1v1 by treating it as support.
+  return 'others';
+}
+
+function classifySharedCategory(story: MiCometStory, side: Side): SharedCategory | undefined {
+  if (side !== 'shared') return undefined;
+  if (story.sharedCategory) return story.sharedCategory;
+
+  const category = sharedTitleCategory(story);
+  if (category === 'oneOnOne' && !hasReciprocalMiCometInteraction(story)) return undefined;
+  return category;
+}
+
 function normalizeStory(story: MiCometStory): MiCometStory {
   const correctedDate = verifiedDateForStory(story);
-  const side = story.side;
+  const side = resolveSharedSide(story);
   const storyWithSide = { ...story, date: correctedDate, side };
   const sharedCategory = classifySharedCategory(storyWithSide, side);
   const enStory = enStoryMap.get(story.id);
