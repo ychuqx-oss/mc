@@ -327,7 +327,12 @@ function hasReciprocalMiCometInteraction(story: MiCometStory) {
 
   const contextHasMutualEvidence = /(?:互相(?:回覆|對話|交流|玩鬧)|一起(?:玩|吃|去|看|聊|旅行|出遊|練習)|雙視點|連動|聯動|合作|共演|合唱|對決|對戰|約會|通話|對談|相談|同步觀看|同時視聽|同居|牽手|下播後.*(?:聊|談)|both.*(?:talk|play|watch|join)|each other|played together|talked together|talked.*after|went out together|ate together|watchalong|dual POV)/i.test(contextText);
 
-  return titleHasMutualEvidence || contextHasMutualEvidence;
+  const action = '(?:回覆|回應|恭喜|祝賀|稱讚|留言|支持|感謝|邀請|問|詢問|告訴|送給|送上|reply|respond|congratulat|prais|thank|invite|ask|message)';
+  const mikoToSuisei = new RegExp('(?:Miko|櫻巫女)[^。；.!?]{0,120}' + action + '[^。；.!?]{0,120}(?:星街|Suisei)', 'i').test(contextText);
+  const suiseiToMiko = new RegExp('(?:星街|Suisei)[^。；.!?]{0,120}' + action + '[^。；.!?]{0,120}(?:Miko|櫻巫女)', 'i').test(contextText);
+  const explicitBackAndForth = mikoToSuisei && suiseiToMiko;
+
+  return titleHasMutualEvidence || contextHasMutualEvidence || explicitBackAndForth;
 }
 
 function resolveSharedSide(story: MiCometStory): Side {
