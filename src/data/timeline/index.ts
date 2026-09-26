@@ -8,12 +8,15 @@ import timeline2025CleanData from './timeline-2025-compendium';
 import timeline2026CleanData from './timeline-2026-compendium';
 import enStoriesData from './en-stories.json';
 
+export type SharedCategory = 'gen0' | 'shiraken' | 'oneOnOne' | 'group';
+
 export interface MiCometStory {
   id: string;
   displayId?: string;
   date: string;
   phase: number;
   side: 'miko' | 'suisei' | 'shared' | 'others';
+  sharedCategory?: SharedCategory;
   emoji: string;
   title: string;
   titleZh?: string;
@@ -315,10 +318,32 @@ function emojiForSide(side: Side) {
   return '⭐';
 }
 
+function classifySharedCategory(story: MiCometStory, side: Side): SharedCategory | undefined {
+  if (side !== 'shared') return undefined;
+
+  const text = [
+    story.title,
+    story.titleZh,
+    story.titleEn,
+    story.ctx,
+    story.ctxZh,
+    story.ctxEn,
+  ].filter(Boolean).join(' ');
+
+  if (/(?:0期|零期|0th\s*gen|gen\s*0|generation\s*zero)/i.test(text)) return 'gen0';
+  if (/(?:火建|不知火建設|shiraken|shiranui\s*kensetsu)/i.test(text)) return 'shiraken';
+
+  const groupMarkers = /(?:白上吹雪|大空昴|寶鐘瑪琳|阿火|不知火芙蕾雅|尾丸波爾卡|白銀諾艾爾|AZKi|時乃空|蘿蔔子|天音彼方|角卷綿芽|博衣小夜璃|鷹嶺琉依|貓又小粥|百鬼綾目|拉普拉斯|響咲莉歐娜|水宮樞|音乃瀨奏|風真伊呂波|夏色祭|兔田佩克拉|湊阿庫婭|Fubuki|Subaru|Marine|Flare|Polka|Noel|Kanata|Watame|Koyori|Lui|Okayu|Ayame|Laplus|Riona|Su|Kanade|Iroha|Matsuri|Pekora|Aqua|Hololive\s*(?:Sports|Summer|New Year)|運動會|新春遊戲祭|Summer\s*Park|Among\s*Us|人狼|MIMESIS|Cursed\s*Companions|PlateUp|VILLS|VARK|EXPO|holofes|fes\b|Festival|大型連動|多人連動|group\s*collab|官方.*(?:企劃|活動|節目))/i;
+  if (groupMarkers.test(text)) return 'group';
+
+  return 'oneOnOne';
+}
+
 function normalizeStory(story: MiCometStory): MiCometStory {
   const correctedDate = verifiedDateForStory(story);
   const side = splitNonCollabShared(story);
   const storyWithSide = { ...story, date: correctedDate, side };
+  const sharedCategory = classifySharedCategory(storyWithSide, side);
   const enStory = enStoryMap.get(story.id);
   let titleZh = cleanText(story.titleZh || story.title);
   if (!titleHasSubject(titleZh)) titleZh = `${subjectForSide(side)}${titleZh}`;
@@ -332,6 +357,7 @@ function normalizeStory(story: MiCometStory): MiCometStory {
     date: correctedDate,
     source: story.source || (isChronologyStory(storyWithSide) ? '編年史' : undefined),
     side,
+    sharedCategory,
     emoji: emojiForSide(side),
     title: titleEn || titleZh,
     titleZh,
