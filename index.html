@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MiComet Compendium wiki</title>
-    <meta name="description" content="MiComet Compendium wiki — MiComet Story Timeline">
+    <title>miComet wiki</title>
+    <meta name="description" content="miComet wiki — miComet Story Timeline">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="MiComet Compendium wiki">
-    <meta property="og:description" content="MiComet Compendium wiki — MiComet Story Timeline">
+    <meta property="og:title" content="miComet wiki">
+    <meta property="og:description" content="miComet wiki — miComet Story Timeline">
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="MiComet Compendium wiki">
-    <meta name="twitter:description" content="MiComet Compendium wiki — MiComet Story Timeline">
+    <meta name="twitter:title" content="miComet wiki">
+    <meta name="twitter:description" content="miComet wiki — miComet Story Timeline">
   </head>
 
   <body style="margin:0;background:#000;">
@@ -22,19 +22,5 @@
       <a href="https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub" target="_blank" rel="noreferrer" style="color:#b8c0d0;text-decoration:none;">miComet reference document</a>
     </footer>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      const renameSiteHeading = () => {
-        const heading = document.querySelector('#root h1');
-        if (!heading) return false;
-        heading.textContent = 'MiComet Compendium wiki';
-        return true;
-      };
-      if (!renameSiteHeading()) {
-        const observer = new MutationObserver(() => {
-          if (renameSiteHeading()) observer.disconnect();
-        });
-        observer.observe(document.getElementById('root'), { childList: true, subtree: true });
-      }
-    </script>
   </body>
 </html>
