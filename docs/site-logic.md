@@ -126,9 +126,11 @@ Never assume that committing a file makes it visible on the site. Confirm it is 
 Before adding a story:
 
 1. Search existing timeline IDs and dates.
-2. Check whether the same event already exists under another ID.
-3. If it exists, update the existing entry instead of creating a duplicate.
-4. Only append a new entry when the event is genuinely absent.
+2. Check whether the same event already exists under another ID, including legacy clip/source-supplement records.
+3. Treat the same occurrence as one story even when it was previously split into a stream record, clip record, POV record, or source-supplement record. Preserve useful details and the best source on the canonical story instead of keeping duplicate cards.
+4. Separate records are allowed when the same stream contains genuinely distinct miComet moments with different substance; sharing a source URL alone does not make them duplicates.
+5. If a duplicate exists, update/merge the canonical entry instead of creating or retaining a second copy.
+6. Only append a new entry when the event is genuinely absent.
 
 ## Source handling
 
