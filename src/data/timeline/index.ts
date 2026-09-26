@@ -330,7 +330,8 @@ function hasReciprocalMiCometInteraction(story: MiCometStory) {
   const action = '(?:回覆|回應|恭喜|祝賀|稱讚|留言|支持|感謝|邀請|問|詢問|告訴|送給|送上|reply|respond|congratulat|prais|thank|invite|ask|message)';
   const mikoToSuisei = new RegExp('(?:Miko|櫻巫女)[^。；.!?]{0,120}' + action + '[^。；.!?]{0,120}(?:星街|Suisei)', 'i').test(contextText);
   const suiseiToMiko = new RegExp('(?:星街|Suisei)[^。；.!?]{0,120}' + action + '[^。；.!?]{0,120}(?:Miko|櫻巫女)', 'i').test(contextText);
-  const explicitBackAndForth = mikoToSuisei && suiseiToMiko;
+  const reciprocalClauses = /(?:星街|Suisei)[^。]{0,120}(?:祝福|祝賀|恭喜|回覆|回應|稱讚|支持)[^。]{0,160}(?:Miko|櫻巫女).{0,80}(?:也)?(?:恭喜|祝賀|回覆|回應|稱讚|支持)|(?:Miko|櫻巫女)[^。]{0,120}(?:祝福|祝賀|恭喜|回覆|回應|稱讚|支持)[^。]{0,160}(?:星街|Suisei).{0,80}(?:也)?(?:恭喜|祝賀|回覆|回應|稱讚|支持)/i.test(contextText);
+  const explicitBackAndForth = (mikoToSuisei && suiseiToMiko) || reciprocalClauses;
 
   return titleHasMutualEvidence || contextHasMutualEvidence || explicitBackAndForth;
 }
