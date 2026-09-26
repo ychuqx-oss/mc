@@ -77,6 +77,10 @@ The old single **Shared / 共同** presentation is split into four subcategories
 
 Classification priority is `gen0` → `shiraken` → `group` → `oneOnOne`. The UI must show these four labels instead of a single Shared label, and the story filter must allow selecting each one independently. The Miko and Suisei aggregate totals still count every `side: 'shared'` story for both members.
 
+For automatic 1v1 vs Group classification, use the story headline/title as the primary evidence. Do not classify a story as Group merely because its context mentions another member, a past event, or a reference source. A title that explicitly names a third participant, a known multi-member unit, a call-in/tournament/group event, or says miComet joined/participated in a multi-person collaboration is Group; otherwise a Miko + Suisei story defaults to 1v1. Short Latin member names such as `Su`, `Ao`, and `Bae` must use word-boundary matching so they do not accidentally match words like `Suisei` or `Surgeon`.
+
+If a story has an explicit `sharedCategory`, that manual value takes priority over automatic classification.
+
 Do not automatically move an original `side: 'shared'` story to Miko/Suisei/Support merely because it is not a two-person stream; preserve `shared` and classify it with `sharedCategory`.
 
 ### Language behavior
