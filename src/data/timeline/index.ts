@@ -304,22 +304,20 @@ function emojiForSide(side: Side) {
 
 function classifySharedCategory(story: MiCometStory, side: Side): SharedCategory | undefined {
   if (side !== 'shared') return undefined;
+  if (story.sharedCategory) return story.sharedCategory;
 
-  const text = [
-    story.title,
-    story.titleZh,
-    story.titleEn,
-    story.ctx,
-    story.ctxZh,
-    story.ctxEn,
-  ].filter(Boolean).join(' ');
+  // Classify from the story headline first. Context often mentions unrelated members,
+  // past events, or reference material and must not turn a genuine miComet 1v1 into Group.
+  const titleText = [story.title, story.titleZh, story.titleEn].filter(Boolean).join(' ');
 
-  if (/(?:0期|零期|0th\s*gen|gen\s*0|generation\s*zero)/i.test(text)) return 'gen0';
-  if (/(?:火建|不知火建設|shiraken|shiranui\s*kensetsu)/i.test(text)) return 'shiraken';
+  if (/(?:0期|零期|0th\s*gen|gen\s*0|generation\s*zero)/i.test(titleText)) return 'gen0';
+  if (/(?:火建|不知火建設|shiraken|shiranui\s*kensetsu)/i.test(titleText)) return 'shiraken';
 
-  const groupMarkers = /(?:白上吹雪|大空昴|寶鐘瑪琳|阿火|不知火芙蕾雅|尾丸波爾卡|白銀諾艾爾|AZKi|時乃空|蘿蔔子|天音彼方|角卷綿芽|博衣小夜璃|鷹嶺琉依|貓又小粥|百鬼綾目|拉普拉斯|響咲莉歐娜|水宮樞|音乃瀨奏|風真伊呂波|夏色祭|兔田佩克拉|湊阿庫婭|Fubuki|Subaru|Marine|Flare|Polka|Noel|Kanata|Watame|Koyori|Lui|Okayu|Ayame|Laplus|Riona|Su|Kanade|Iroha|Matsuri|Pekora|Aqua|Hololive\s*(?:Sports|Summer|New Year)|Hololive.*(?:Collab|企劃|聯動|連動|Festival)|運動會|新春遊戲祭|Summer\s*Park|Among\s*Us|人狼|MIMESIS|Cursed\s*Companions|PlateUp|VILLS|VARK|EXPO|holofes|fes\b|Festival|凸待|call-?in|totsumachi|大賽|Tournament|Cup|大型連動|多人連動|group\s*collab|官方.*(?:企劃|活動|節目))/i;
-  if (groupMarkers.test(text)) return 'group';
+  const namedThirdParty = /(?:白上吹雪|大空昴|寶鐘瑪琳|阿火|不知火芙蕾雅|尾丸波爾卡|白銀諾艾爾|AZKi|時乃空|蘿蔔子|天音彼方|角卷綿芽|博衣小夜璃|鷹嶺琉依|貓又小粥|百鬼綾目|拉普拉斯|響咲莉歐娜|水宮樞|音乃瀨奏|風真伊呂波|夏色祭|兔田佩克拉|湊阿庫婭|雪花菈米|姬森璐娜|火威青|輪堂千速|一條莉莉華|戌神沁音|紫咲詩音|赤井心|夜空梅露|獅白牡丹|常闇永遠|森美聲|狗狗親|姊街|Fubuki|Subaru|Marine|Flare|Polka|Noel|Kanata|Watame|Koyori|Lui|Okayu|Ayame|Laplus|Riona|Kanade|Iroha|Matsuri|Pekora|Aqua|Lamy|Luna|Chihaya|Ririka|Korone|Shion|Botan|Towa|Calliope|Anya|Ollie|Reine|\bSu\b|\bAo\b|\bBae\b)/i;
 
+  const groupFormat = /(?:FubuMiComet|SubaMiComet|PekoMikoComet|MariMikoMet|FubuMio.*miComet|mikorone24|等人|多人連動|三人連動|四人連動|Among\s*Us|AmongUs|MIMESIS|Cursed\s*Companions|PlateUp|凸待|call-?in|totsumachi|運動會|新春遊戲祭|大賽|Tournament|Cup|盃|Hololive.*(?:英語傳話|小學學力測驗|大運動會|新春遊戲祭|Summer\s*Park|年末.*節目|聖誕人狼)|(?:參加|加入|同場).*(?:連動|企劃|活動|派對|測驗|大賽|盃|VILLS|EXPO|holofes|Festival))/i;
+
+  if (namedThirdParty.test(titleText) || groupFormat.test(titleText)) return 'group';
   return 'oneOnOne';
 }
 
