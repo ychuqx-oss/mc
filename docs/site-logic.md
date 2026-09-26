@@ -53,6 +53,7 @@ Timeline stories may contain:
 - `phase`
 - `side`
 - `sharedCategory` — only for `side: 'shared'`; one of `gen0`, `shiraken`, `oneOnOne`, `group`
+- `supportCategory` — optional support subcategory; currently `fubuki`
 - `emoji`
 - `type`
 - `title`
@@ -84,6 +85,15 @@ For automatic 1v1 vs Group classification, use the story headline/title as the p
 If a story has an explicit `sharedCategory`, that manual value takes priority over automatic classification, but manually assigning `oneOnOne` still requires evidence that both Miko and Suisei actually interacted.
 
 Original `side: 'shared'` records may be reassigned to Miko/Suisei/Support when they are one-sided; only genuinely mutual or multi-person shared events remain `shared`.
+
+### Support-category behavior
+
+The Support / 助攻 bucket has a dedicated **Fubuki / 白上吹雪** subcategory.
+
+- Records whose original source data already has `side: 'others'` and whose title/context mentions 白上吹雪 / Fubuki receive `supportCategory: 'fubuki'`.
+- These records are shown, counted, filtered, and charted under **白上吹雪 / Fubuki**, not under the remaining generic Support / 助攻 total.
+- One-sided Miko/Suisei records that are reassigned to Support by the reciprocal-interaction rule do not automatically become Fubuki support records.
+- The current source-data set contains 28 Fubuki support records.
 
 ### Language behavior
 
