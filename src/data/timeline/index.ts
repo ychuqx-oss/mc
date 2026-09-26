@@ -295,22 +295,6 @@ function isChronologyStory(story: MiCometStory) {
   return story.date >= '2019-01-01' && story.date <= '2020-08-31';
 }
 
-function isTwoPersonLiveCollab(story: MiCometStory) {
-  const text = rawText(story);
-  if (story.side !== 'shared') return false;
-  if (/轉推|推文|宣布|截圖|花籃|圖|剪輯補充|談到|提到|抱怨|回覆|觀看|看Miko|看星街|看.*直播|去.*家|到.*家|Source/.test(text)) return false;
-  return /(Miko與星街|星街與Miko|miComet).*(連動|同時|合唱|周年|活動|商業連動|VARK|VILLS|MIMESIS|Raft|GTA|醫療模擬|瓦利歐|USJ|五子棋|麥塊連動)|(?:連動|同時|合唱|周年|活動|商業連動).*(Miko與星街|星街與Miko|miComet)/i.test(text);
-}
-
-function splitNonCollabShared(story: MiCometStory): Side {
-  if (story.side !== 'shared') return story.side;
-  if (isTwoPersonLiveCollab(story)) return 'shared';
-  const text = rawText(story);
-  if (/^星街|星街/.test(text) && !/^Miko/.test(text)) return 'suisei';
-  if (/^Miko|Miko/.test(text)) return 'miko';
-  return 'others';
-}
-
 function emojiForSide(side: Side) {
   if (side === 'miko') return '🌸';
   if (side === 'suisei') return '☄️';
@@ -333,7 +317,7 @@ function classifySharedCategory(story: MiCometStory, side: Side): SharedCategory
   if (/(?:0期|零期|0th\s*gen|gen\s*0|generation\s*zero)/i.test(text)) return 'gen0';
   if (/(?:火建|不知火建設|shiraken|shiranui\s*kensetsu)/i.test(text)) return 'shiraken';
 
-  const groupMarkers = /(?:白上吹雪|大空昴|寶鐘瑪琳|阿火|不知火芙蕾雅|尾丸波爾卡|白銀諾艾爾|AZKi|時乃空|蘿蔔子|天音彼方|角卷綿芽|博衣小夜璃|鷹嶺琉依|貓又小粥|百鬼綾目|拉普拉斯|響咲莉歐娜|水宮樞|音乃瀨奏|風真伊呂波|夏色祭|兔田佩克拉|湊阿庫婭|Fubuki|Subaru|Marine|Flare|Polka|Noel|Kanata|Watame|Koyori|Lui|Okayu|Ayame|Laplus|Riona|Su|Kanade|Iroha|Matsuri|Pekora|Aqua|Hololive\s*(?:Sports|Summer|New Year)|運動會|新春遊戲祭|Summer\s*Park|Among\s*Us|人狼|MIMESIS|Cursed\s*Companions|PlateUp|VILLS|VARK|EXPO|holofes|fes\b|Festival|大型連動|多人連動|group\s*collab|官方.*(?:企劃|活動|節目))/i;
+  const groupMarkers = /(?:白上吹雪|大空昴|寶鐘瑪琳|阿火|不知火芙蕾雅|尾丸波爾卡|白銀諾艾爾|AZKi|時乃空|蘿蔔子|天音彼方|角卷綿芽|博衣小夜璃|鷹嶺琉依|貓又小粥|百鬼綾目|拉普拉斯|響咲莉歐娜|水宮樞|音乃瀨奏|風真伊呂波|夏色祭|兔田佩克拉|湊阿庫婭|Fubuki|Subaru|Marine|Flare|Polka|Noel|Kanata|Watame|Koyori|Lui|Okayu|Ayame|Laplus|Riona|Su|Kanade|Iroha|Matsuri|Pekora|Aqua|Hololive\s*(?:Sports|Summer|New Year)|Hololive.*(?:Collab|企劃|聯動|連動|Festival)|運動會|新春遊戲祭|Summer\s*Park|Among\s*Us|人狼|MIMESIS|Cursed\s*Companions|PlateUp|VILLS|VARK|EXPO|holofes|fes\b|Festival|凸待|call-?in|totsumachi|大賽|Tournament|Cup|大型連動|多人連動|group\s*collab|官方.*(?:企劃|活動|節目))/i;
   if (groupMarkers.test(text)) return 'group';
 
   return 'oneOnOne';
@@ -341,7 +325,7 @@ function classifySharedCategory(story: MiCometStory, side: Side): SharedCategory
 
 function normalizeStory(story: MiCometStory): MiCometStory {
   const correctedDate = verifiedDateForStory(story);
-  const side = splitNonCollabShared(story);
+  const side = story.side;
   const storyWithSide = { ...story, date: correctedDate, side };
   const sharedCategory = classifySharedCategory(storyWithSide, side);
   const enStory = enStoryMap.get(story.id);
