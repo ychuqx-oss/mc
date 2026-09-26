@@ -62,7 +62,8 @@ Timeline stories may contain:
 - `ctxEn`
 - `link`
 - `source`
-- `image`
+
+Timeline stories do not use image fields. Do not add `image`, `imageUrl`, `thumbnail`, or `thumbnailUrl` to story records or rendering logic.
 
 ### Language behavior
 
