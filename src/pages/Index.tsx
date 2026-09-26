@@ -3,13 +3,23 @@ import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, X
 import { MICOMET_TIMELINE, type MiCometStory } from '@/data/timeline';
 
 type Side = 'miko' | 'suisei' | 'shared' | 'others';
+type SharedCategory = NonNullable<MiCometStory['sharedCategory']>;
+type StoryCategory = 'all' | 'miko' | 'suisei' | 'gen0' | 'shiraken' | 'oneOnOne' | 'group' | 'others';
 type ChartMode = 'year' | 'month';
 type UiLang = 'en' | 'zh';
 type LocalStory = MiCometStory;
 
-type CountPoint = { label: string; miko: number; suisei: number; shared: number; others: number };
+type CountPoint = { label: string; miko: number; suisei: number; gen0: number; shiraken: number; oneOnOne: number; group: number; others: number };
 
-const COLORS = { miko: '#ff7dbb', suisei: '#66a9ff', shared: '#ffd166', total: '#7ee2a8' };
+const COLORS = {
+  miko: '#ff7dbb',
+  suisei: '#66a9ff',
+  gen0: '#ffd166',
+  shiraken: '#ff9f43',
+  oneOnOne: '#d9a7ff',
+  group: '#7ee2a8',
+  total: '#7ee2a8',
+};
 const MONTHS = Array.from({ length: 12 }, (_, index) => index + 1);
 
 const TYPE_LABELS: Record<UiLang, Record<string, string>> = {
@@ -22,15 +32,15 @@ const UI_LABELS = {
     totalCard: 'stories collected', start: 'start', latest: 'latest', overview: 'Overview', totalStories: 'Total Stories', timelineRange: 'Timeline Range',
     yearMonth: 'Year / Month', firstEntry: 'First Entry', latestEntry: 'Latest Entry', cumulativeChart: 'Cumulative Story Growth', countChart: 'Story Count Trend',
     year: 'Year', month: 'Month', all: 'All', search: 'Search stories, keywords, dates...', found: 'stories found', empty: 'No matching stories',
-    mikoTotal: 'Miko Total', suiseiTotal: 'Suisei Total', sharedTotal: 'Shared Total', supportTotal: 'Support Total',
-    miko: 'Miko', suisei: 'Suisei', shared: 'Shared', support: 'Support', source: 'Source',
+    mikoTotal: 'Miko Total', suiseiTotal: 'Suisei Total', supportTotal: 'Support Total',
+    miko: 'Miko', suisei: 'Suisei', gen0: 'Gen 0', shiraken: 'Shiraken', oneOnOne: '1v1', group: 'Group', support: 'Support', category: 'Category', source: 'Source',
   },
   zh: {
     totalCard: '個故事已收錄', start: '起', latest: '迄', overview: '統計總覽', totalStories: '總故事數', timelineRange: '故事區間',
     yearMonth: '年 / 月', firstEntry: '最早紀錄', latestEntry: '最新紀錄', cumulativeChart: 'miComet累計故事成長圖', countChart: '故事數量折線圖',
     year: '年份', month: '月份', all: '全部', search: '搜尋故事、關鍵字、日期...', found: '個故事', empty: '沒有符合條件的故事',
-    mikoTotal: 'Miko累計', suiseiTotal: '星街累計', sharedTotal: '共同累計', supportTotal: '助攻累計',
-    miko: 'Miko', suisei: '星街', shared: '共同', support: '助攻', source: '來源',
+    mikoTotal: 'Miko累計', suiseiTotal: '星街累計', supportTotal: '助攻累計',
+    miko: 'Miko', suisei: '星街', gen0: '0期', shiraken: '火建', oneOnOne: '1v1', group: '團體', support: '助攻', category: '分類', source: '來源',
   },
 } as const;
 
@@ -132,10 +142,15 @@ function summarizeTimeline(stories: MiCometStory[]) {
     acc[story.side] += 1;
     return acc;
   }, { miko: 0, suisei: 0, shared: 0, others: 0 });
+  const sharedCounts = timeline.reduce<Record<SharedCategory, number>>((acc, story) => {
+    if (story.side === 'shared') acc[story.sharedCategory ?? 'group'] += 1;
+    return acc;
+  }, { gen0: 0, shiraken: 0, oneOnOne: 0, group: 0 });
   const years = yearRange(timelineYearStart(timeline), timelineYearEnd(timeline));
   return {
     timeline,
     counts,
+    sharedCounts,
     totals: { miko: counts.miko + counts.shared, suisei: counts.suisei + counts.shared, shared: counts.shared, total: timeline.length },
     first: timeline[0] as LocalStory | undefined,
     last: timeline[timeline.length - 1] as LocalStory | undefined,
@@ -143,30 +158,41 @@ function summarizeTimeline(stories: MiCometStory[]) {
   };
 }
 
+function emptyCountPoint() {
+  return { miko: 0, suisei: 0, gen0: 0, shiraken: 0, oneOnOne: 0, group: 0, others: 0 };
+}
+
 function buildMonthlyCounts(stories: MiCometStory[]) {
-  const monthly = new Map<string, Record<Side, number>>();
+  const monthly = new Map<string, Omit<CountPoint, 'label'>>();
   stories.forEach((story) => {
     const key = monthKey(story.date);
-    const current = monthly.get(key) ?? { miko: 0, suisei: 0, shared: 0, others: 0 };
+    const current = monthly.get(key) ?? emptyCountPoint();
     if (story.side === 'miko') current.miko += 1;
     if (story.side === 'suisei') current.suisei += 1;
-    if (story.side === 'shared') { current.shared += 1; current.miko += 1; current.suisei += 1; }
+    if (story.side === 'shared') {
+      current[story.sharedCategory ?? 'group'] += 1;
+      current.miko += 1;
+      current.suisei += 1;
+    }
     if (story.side === 'others') current.others += 1;
     monthly.set(key, current);
   });
   return monthly;
 }
 
-function sumYear(map: Map<string, Record<Side, number>>, year: number) {
+function sumYear(map: Map<string, Omit<CountPoint, 'label'>>, year: number) {
   const yearKey = String(year);
   return [...map.entries()]
     .filter(([key]) => key.startsWith(yearKey))
-    .reduce<Record<Side, number>>((acc, [, value]) => ({
+    .reduce<Omit<CountPoint, 'label'>>((acc, [, value]) => ({
       miko: acc.miko + value.miko,
       suisei: acc.suisei + value.suisei,
-      shared: acc.shared + value.shared,
+      gen0: acc.gen0 + value.gen0,
+      shiraken: acc.shiraken + value.shiraken,
+      oneOnOne: acc.oneOnOne + value.oneOnOne,
+      group: acc.group + value.group,
       others: acc.others + value.others,
-    }), { miko: 0, suisei: 0, shared: 0, others: 0 });
+    }), emptyCountPoint());
 }
 
 function buildCountPoints(mode: ChartMode, stories: MiCometStory[]) {
@@ -182,7 +208,7 @@ function buildCountPoints(mode: ChartMode, stories: MiCometStory[]) {
   for (let year = yearStart; year <= yearEnd; year += 1) {
     for (let month = 1; month <= 12; month += 1) {
       const key = `${year}-${String(month).padStart(2, '0')}`;
-      const value = monthly.get(key) ?? { miko: 0, suisei: 0, shared: 0, others: 0 };
+      const value = monthly.get(key) ?? emptyCountPoint();
       points.push({ label: `${year}/${String(month).padStart(2, '0')}`, ...value });
     }
   }
@@ -190,10 +216,16 @@ function buildCountPoints(mode: ChartMode, stories: MiCometStory[]) {
 }
 
 function buildCumulativePoints(mode: ChartMode, stories: MiCometStory[]) {
-  let miko = 0; let suisei = 0; let shared = 0; let others = 0;
+  let miko = 0; let suisei = 0; let gen0 = 0; let shiraken = 0; let oneOnOne = 0; let group = 0; let others = 0;
   return buildCountPoints(mode, stories).map((point) => {
-    miko += point.miko; suisei += point.suisei; shared += point.shared; others += point.others;
-    return { label: point.label, miko, suisei, shared, others };
+    miko += point.miko;
+    suisei += point.suisei;
+    gen0 += point.gen0;
+    shiraken += point.shiraken;
+    oneOnOne += point.oneOnOne;
+    group += point.group;
+    others += point.others;
+    return { label: point.label, miko, suisei, gen0, shiraken, oneOnOne, group, others };
   });
 }
 
@@ -205,19 +237,25 @@ function extractLinks(item: LocalStory) {
   return { ytUrls, twUrls, otherUrls };
 }
 
-function sideLabel(side: Side, lang: UiLang) {
+function storyCategoryLabel(story: LocalStory, lang: UiLang) {
   const ui = UI_LABELS[lang];
-  if (side === 'miko') return ui.miko;
-  if (side === 'suisei') return ui.suisei;
-  if (side === 'shared') return ui.shared;
+  if (story.side === 'miko') return ui.miko;
+  if (story.side === 'suisei') return ui.suisei;
+  if (story.side === 'shared') return ui[story.sharedCategory ?? 'group'];
   return ui.support;
 }
 
-function sideColor(side: Side) {
-  if (side === 'miko') return COLORS.miko;
-  if (side === 'suisei') return COLORS.suisei;
-  if (side === 'shared') return COLORS.shared;
+function storyCategoryColor(story: LocalStory) {
+  if (story.side === 'miko') return COLORS.miko;
+  if (story.side === 'suisei') return COLORS.suisei;
+  if (story.side === 'shared') return COLORS[story.sharedCategory ?? 'group'];
   return '#ffffff';
+}
+
+function matchesCategory(story: LocalStory, category: StoryCategory) {
+  if (category === 'all') return true;
+  if (category === 'miko' || category === 'suisei' || category === 'others') return story.side === category;
+  return story.side === 'shared' && (story.sharedCategory ?? 'group') === category;
 }
 
 function ChartShell({ title, stories, labels, cumulative = false, defaultMode = 'month' }: { title: string; stories: MiCometStory[]; labels: typeof UI_LABELS[UiLang]; cumulative?: boolean; defaultMode?: ChartMode }) {
@@ -242,7 +280,10 @@ function ChartShell({ title, stories, labels, cumulative = false, defaultMode = 
             <Legend wrapperStyle={{ paddingTop: 8, color: '#cfd4de', fontSize: 13 }} formatter={(value) => <span style={{ color: '#cfd4de' }}>{value}</span>} />
             <Line type="monotone" dataKey="miko" name={cumulative ? labels.mikoTotal : labels.miko} stroke={COLORS.miko} strokeWidth={3} dot={false} />
             <Line type="monotone" dataKey="suisei" name={cumulative ? labels.suiseiTotal : labels.suisei} stroke={COLORS.suisei} strokeWidth={3} dot={false} />
-            <Line type="monotone" dataKey="shared" name={cumulative ? labels.sharedTotal : labels.shared} stroke={COLORS.shared} strokeWidth={2.5} strokeDasharray="6 6" dot={false} />
+            <Line type="monotone" dataKey="gen0" name={labels.gen0} stroke={COLORS.gen0} strokeWidth={2.2} strokeDasharray="6 6" dot={false} />
+            <Line type="monotone" dataKey="shiraken" name={labels.shiraken} stroke={COLORS.shiraken} strokeWidth={2.2} strokeDasharray="6 6" dot={false} />
+            <Line type="monotone" dataKey="oneOnOne" name={labels.oneOnOne} stroke={COLORS.oneOnOne} strokeWidth={2.2} strokeDasharray="6 6" dot={false} />
+            <Line type="monotone" dataKey="group" name={labels.group} stroke={COLORS.group} strokeWidth={2.2} strokeDasharray="6 6" dot={false} />
             <Line type="monotone" dataKey="others" name={cumulative ? labels.supportTotal : labels.support} stroke="#ffffff" strokeWidth={2} strokeDasharray="3 3" dot={false} />
           </LineChart>
         </ResponsiveContainer>
@@ -262,7 +303,7 @@ function StoryCard({ item, lang, onOpen }: { item: LocalStory; lang: UiLang; lab
   const { ytUrls, twUrls, otherUrls } = extractLinks(item);
   return (
     <article onClick={() => onOpen(item)} style={{ borderRadius: 16, padding: 16, background: 'linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02))', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 10px 28px rgba(0,0,0,0.28)', cursor: 'pointer' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'center' }}><div style={{ color: '#c4c9d6', fontSize: 12 }}>{formatDate(item.date)}</div><div style={{ color: sideColor(item.side), fontSize: 12, fontWeight: 700 }}>{sideLabel(item.side, lang)}</div></div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'center' }}><div style={{ color: '#c4c9d6', fontSize: 12 }}>{formatDate(item.date)}</div><div style={{ color: storyCategoryColor(item), fontSize: 12, fontWeight: 700 }}>{storyCategoryLabel(item, lang)}</div></div>
       <div style={{ marginTop: 10, fontSize: 15, fontWeight: 800, lineHeight: 1.45, color: '#f6f7fb' }}>{storyTitle(item, lang)}</div>
       <div style={{ marginTop: 8, color: '#a7adbb', fontSize: 13, lineHeight: 1.55 }}>{storyContext(item, lang)}</div>
       <div style={{ marginTop: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
@@ -293,6 +334,7 @@ export default function Index() {
   const [search, setSearch] = useState('');
   const [yearFilter, setYearFilter] = useState(0);
   const [monthFilter, setMonthFilter] = useState(0);
+  const [categoryFilter, setCategoryFilter] = useState<StoryCategory>('all');
   const [uiLang, setUiLang] = useState<UiLang>('en');
   const [openItem, setOpenItem] = useState<LocalStory | null>(null);
   const ui = UI_LABELS[uiLang];
@@ -304,15 +346,19 @@ export default function Index() {
       const item = story as LocalStory;
       if (yearFilter !== 0 && Number(item.date.slice(0, 4)) !== yearFilter) return false;
       if (monthFilter !== 0 && Number(item.date.slice(5, 7)) !== monthFilter) return false;
+      if (!matchesCategory(item, categoryFilter)) return false;
       if (!q) return true;
       return [item.date, item.title, item.titleZh ?? '', item.titleEn ?? '', item.ctx, item.ctxZh ?? '', item.ctxEn ?? '', storyTitle(item, uiLang), storyContext(item, uiLang)].join(' ').toLowerCase().includes(q);
     }).sort(storySort) as LocalStory[];
-  }, [search, summary.timeline, yearFilter, monthFilter, uiLang]);
+  }, [search, summary.timeline, yearFilter, monthFilter, categoryFilter, uiLang]);
   const groups = useMemo(() => filtered.reduce<Array<{ date: string; items: LocalStory[] }>>((acc, story) => { const last = acc[acc.length - 1]; if (last && last.date === story.date) last.items.push(story); else acc.push({ date: story.date, items: [story] }); return acc; }, []), [filtered]);
   const sideStats = [
     { label: ui.miko, value: summary.counts.miko, color: COLORS.miko },
     { label: ui.suisei, value: summary.counts.suisei, color: COLORS.suisei },
-    { label: ui.shared, value: summary.counts.shared, color: COLORS.shared },
+    { label: ui.gen0, value: summary.sharedCounts.gen0, color: COLORS.gen0 },
+    { label: ui.shiraken, value: summary.sharedCounts.shiraken, color: COLORS.shiraken },
+    { label: ui.oneOnOne, value: summary.sharedCounts.oneOnOne, color: COLORS.oneOnOne },
+    { label: ui.group, value: summary.sharedCounts.group, color: COLORS.group },
     { label: ui.support, value: summary.counts.others, color: '#ffffff' },
   ];
   const filterButtonStyle = (active: boolean): React.CSSProperties => ({ padding: '10px 14px', borderRadius: 12, border: '1px solid rgba(255,255,255,0.08)', background: active ? '#232838' : '#0d0f15', color: '#fff', cursor: 'pointer' });
@@ -322,7 +368,7 @@ export default function Index() {
     <section style={{ marginTop: 18, borderRadius: 24, background: '#11141c', border: '1px solid rgba(255,255,255,0.06)', padding: 18, boxShadow: '0 18px 42px rgba(0,0,0,0.24)' }}><div style={{ color: '#8f96a8', fontSize: 12, letterSpacing: '0.16em', textTransform: 'uppercase', fontWeight: 800, marginBottom: 12 }}>{ui.overview}</div><div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 14 }}><StatCard label={ui.totalStories} value={summary.totals.total} note={`${summary.years[0] ?? 2019} - ${summary.years[summary.years.length - 1] ?? 2026}`} accent="#f7f8fb" /><StatCard label={ui.timelineRange} value={`${summary.years[0] ?? 2019} - ${summary.years[summary.years.length - 1] ?? 2026}`} note={ui.yearMonth} accent="#ffb7de" /><StatCard label={ui.firstEntry} value={summary.first ? formatDate(summary.first.date) : '—'} note={summary.first ? storyTitle(summary.first, uiLang) : '—'} accent="#9ed6ff" /><StatCard label={ui.latestEntry} value={summary.last ? formatDate(summary.last.date) : '—'} note={summary.last ? storyTitle(summary.last, uiLang) : '—'} accent="#c58cff" /></div><CompactStatRow items={sideStats} /></section>
     <ChartShell title={ui.cumulativeChart} stories={MICOMET_TIMELINE} labels={ui} cumulative defaultMode="year" />
     <ChartShell title={ui.countChart} stories={MICOMET_TIMELINE} labels={ui} defaultMode="month" />
-    <section style={{ marginTop: 18, borderRadius: 20, background: '#151823', border: '1px solid rgba(255,255,255,0.06)', padding: 16, boxShadow: '0 18px 42px rgba(0,0,0,0.24)' }}><div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center' }}><div style={{ flex: '1 1 320px', display: 'flex', alignItems: 'center', gap: 10, background: '#0d0f15', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, padding: '12px 14px' }}><span style={{ color: '#8f96a8' }}>⌕</span><input value={search} onChange={(e) => setSearch(e.target.value)} placeholder={ui.search} style={{ flex: 1, background: 'transparent', border: 'none', outline: 'none', color: '#fff', fontSize: 14 }} /></div><div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: '#9aa2b2', fontSize: 13 }}>{ui.year}:</span><button onClick={() => { setYearFilter(0); setMonthFilter(0); }} style={filterButtonStyle(yearFilter === 0)}>{ui.all}</button>{years.map((year) => <button key={year} onClick={() => { setYearFilter(yearFilter === year ? 0 : year); setMonthFilter(0); }} style={filterButtonStyle(yearFilter === year)}>{year}</button>)}</div><div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: '#9aa2b2', fontSize: 13 }}>{ui.month}:</span><button onClick={() => setMonthFilter(0)} style={filterButtonStyle(monthFilter === 0)}>{ui.all}</button>{MONTHS.map((month) => <button key={month} onClick={() => setMonthFilter(monthFilter === month ? 0 : month)} style={filterButtonStyle(monthFilter === month)}>{uiLang === 'zh' ? `${month}月` : month}</button>)}</div></div></section>
+    <section style={{ marginTop: 18, borderRadius: 20, background: '#151823', border: '1px solid rgba(255,255,255,0.06)', padding: 16, boxShadow: '0 18px 42px rgba(0,0,0,0.24)' }}><div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center' }}><div style={{ flex: '1 1 320px', display: 'flex', alignItems: 'center', gap: 10, background: '#0d0f15', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, padding: '12px 14px' }}><span style={{ color: '#8f96a8' }}>⌕</span><input value={search} onChange={(e) => setSearch(e.target.value)} placeholder={ui.search} style={{ flex: 1, background: 'transparent', border: 'none', outline: 'none', color: '#fff', fontSize: 14 }} /></div><div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: '#9aa2b2', fontSize: 13 }}>{ui.year}:</span><button onClick={() => { setYearFilter(0); setMonthFilter(0); }} style={filterButtonStyle(yearFilter === 0)}>{ui.all}</button>{years.map((year) => <button key={year} onClick={() => { setYearFilter(yearFilter === year ? 0 : year); setMonthFilter(0); }} style={filterButtonStyle(yearFilter === year)}>{year}</button>)}</div><div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: '#9aa2b2', fontSize: 13 }}>{ui.month}:</span><button onClick={() => setMonthFilter(0)} style={filterButtonStyle(monthFilter === 0)}>{ui.all}</button>{MONTHS.map((month) => <button key={month} onClick={() => setMonthFilter(monthFilter === month ? 0 : month)} style={filterButtonStyle(monthFilter === month)}>{uiLang === 'zh' ? `${month}月` : month}</button>)}</div><div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center', width: '100%' }}><span style={{ color: '#9aa2b2', fontSize: 13 }}>{ui.category}:</span>{([['all', ui.all], ['miko', ui.miko], ['suisei', ui.suisei], ['gen0', ui.gen0], ['shiraken', ui.shiraken], ['oneOnOne', ui.oneOnOne], ['group', ui.group], ['others', ui.support]] as Array<[StoryCategory, string]>).map(([key, label]) => <button key={key} onClick={() => setCategoryFilter(categoryFilter === key ? 'all' : key)} style={filterButtonStyle(categoryFilter === key)}>{label}</button>)}</div></div></section>
     <section style={{ marginTop: 18, color: '#b5bbca', fontSize: 13 }}>{uiLang === 'zh' ? `找到 ${filtered.length} ${ui.found}` : `${filtered.length} ${ui.found}`}</section>
     <main style={{ marginTop: 16, display: 'grid', gap: 18 }}>{groups.length === 0 ? <div style={{ padding: 36, borderRadius: 18, background: '#151823', color: '#9aa2b2', textAlign: 'center' }}>{ui.empty}</div> : groups.map((group) => <section key={group.date} style={{ borderRadius: 20, background: '#151823', border: '1px solid rgba(255,255,255,0.06)', padding: 16 }}><div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, flexWrap: 'wrap', marginBottom: 12 }}><div><div style={{ color: '#8f96a8', fontSize: 12 }}>{group.date.slice(0, 7)}</div><h2 style={{ margin: '4px 0 0', fontSize: 20 }}>{formatDate(group.date)}</h2></div><div style={{ color: '#9aa2b2', fontSize: 13 }}>Phase {group.items[0]?.phase ?? '-'}</div></div><div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>{group.items.map((item) => <StoryCard key={item.id} item={item} lang={uiLang} labels={ui} onOpen={setOpenItem} />)}</div></section>)}</main>
   </div>{openItem ? <Modal item={openItem} lang={uiLang} labels={ui} onClose={() => setOpenItem(null)} /> : null}</div>;
