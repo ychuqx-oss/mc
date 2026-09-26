@@ -322,20 +322,19 @@ function hasReciprocalMiCometInteraction(story: MiCometStory) {
   const titleText = [story.title, story.titleZh, story.titleEn].filter(Boolean).join(' ');
   const contextText = [story.ctx, story.ctxZh, story.ctxEn].filter(Boolean).join(' ');
 
-  // Headline-level evidence can use broad mutual wording because it describes the
-  // event itself. Context is stricter: phrases such as "early interaction record"
-  // or "the two" are often editorial summaries and do not prove the other person replied.
-  const titleHasMutualEvidence = /(?:互相|互動|一起|兩人|雙視點|連動|聯動|合作|共演|合唱|對決|對戰|約會|通話|聊天|對談|相談|同步觀看|同時視聽|同居|牽手|見面|吃飯|出遊|旅行|共同|both|each other|together|collab|collaborat|duo|versus|vs\.?|watchalong)/i.test(titleText);
+  // 1v1 must show an actual two-way exchange. A single reply / mention / praise /
+  // watch / retweet / announcement is not enough when the other person does not answer.
+  const explicitMutualTitle = /(?:互相(?:回覆|回應|對話|交流|玩鬧)|彼此(?:回覆|回應|對話|交流)|雙方(?:回覆|回應|對話|交流)|一起(?:玩|吃|去|看|聊|旅行|出遊|練習)|兩人(?:一起|對談|聊天|通話|遊玩|旅行|吃飯)|雙視點|連動|聯動|合作|合唱|對決|對戰|約會|通話|聊天|對談|相談|同步觀看|同時視聽|同居|牽手|見面|吃飯|出遊|旅行|both.*(?:talk|play|watch|join)|each other|played together|talked together|dual POV|watchalong|collab)/i.test(titleText);
 
-  const contextHasMutualEvidence = /(?:互相(?:回覆|對話|交流|玩鬧)|一起(?:玩|吃|去|看|聊|旅行|出遊|練習)|雙視點|連動|聯動|合作|共演|合唱|對決|對戰|約會|通話|對談|相談|同步觀看|同時視聽|同居|牽手|下播後.*(?:聊|談)|both.*(?:talk|play|watch|join)|each other|played together|talked together|talked.*after|went out together|ate together|watchalong|dual POV)/i.test(contextText);
+  const explicitMutualContext = /(?:互相(?:回覆|回應|對話|交流|玩鬧)|彼此(?:回覆|回應|對話|交流)|雙方(?:回覆|回應|對話|交流)|一起(?:玩|吃|去|看|聊|旅行|出遊|練習)|雙視點|連動|聯動|合作|合唱|對決|對戰|約會|通話|對談|相談|同步觀看|同時視聽|同居|牽手|下播後.*(?:聊|談)|both.*(?:talk|play|watch|join)|each other|played together|talked together|talked.*after|went out together|ate together|watchalong|dual POV)/i.test(contextText);
 
-  const action = '(?:回覆|回應|恭喜|祝賀|稱讚|留言|支持|感謝|邀請|問|詢問|告訴|送給|送上|reply|respond|congratulat|prais|thank|invite|ask|message)';
-  const mikoToSuisei = new RegExp('(?:Miko|櫻巫女)[^。；.!?]{0,120}' + action + '[^。；.!?]{0,120}(?:星街|Suisei)', 'i').test(contextText);
-  const suiseiToMiko = new RegExp('(?:星街|Suisei)[^。；.!?]{0,120}' + action + '[^。；.!?]{0,120}(?:Miko|櫻巫女)', 'i').test(contextText);
-  const reciprocalClauses = /(?:星街|Suisei)[^。]{0,120}(?:祝福|祝賀|恭喜|回覆|回應|稱讚|支持)[^。]{0,160}(?:Miko|櫻巫女).{0,80}(?:也)?(?:恭喜|祝賀|回覆|回應|稱讚|支持)|(?:Miko|櫻巫女)[^。]{0,120}(?:祝福|祝賀|恭喜|回覆|回應|稱讚|支持)[^。]{0,160}(?:星街|Suisei).{0,80}(?:也)?(?:恭喜|祝賀|回覆|回應|稱讚|支持)/i.test(contextText);
-  const explicitBackAndForth = (mikoToSuisei && suiseiToMiko) || reciprocalClauses;
+  const oneWayAction = /(?:回覆|回應|祝賀|祝福|稱讚|觀看|看.*直播|提到|談到|轉推|應援|支持|宣布|告知|留言|提醒|要求|發推|發文|reply|respond|congratulat|prais|watch|mention|retweet|support|announce)/i.test(titleText);
 
-  return titleHasMutualEvidence || contextHasMutualEvidence || explicitBackAndForth;
+  // A headline framed as a one-way action stays non-1v1 unless the same record
+  // explicitly proves a reciprocal exchange such as "互相回覆" or direct conversation.
+  if (oneWayAction && !explicitMutualTitle && !explicitMutualContext) return false;
+
+  return explicitMutualTitle || explicitMutualContext;
 }
 
 function resolveSharedSide(story: MiCometStory): Side {
