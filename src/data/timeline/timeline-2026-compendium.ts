@@ -493,4 +493,27 @@ const additions = [
   },
 ];
 
-export default [...patched, ...additions];
+const verifiedSourceLinks2026: Record<string, string> = {
+  'c2-2026-013': 'https://www.youtube.com/watch?v=QSlgbRMSMjQ https://www.holostats.com/stream/QSlgbRMSMjQ?lang=ja',
+  'c2-2026-025': 'https://www.youtube.com/watch?v=VDkOXbhSyso https://www.holostats.com/stream/VDkOXbhSyso?lang=ja',
+  'c2-2026-040': 'https://www.youtube.com/watch?v=3etiI2ce098 https://www.holostats.com/stream/3etiI2ce098?lang=ja',
+  'c2-2026-048': 'https://www.youtube.com/watch?v=F6kWMYER6LE https://www.youtube.com/watch?v=rUwgQP6jOHE https://www.holostats.com/stream/F6kWMYER6LE?lang=ja',
+  'c2-2026-054': 'https://www.youtube.com/watch?v=jDcMwfEf2A0 https://www.holostats.com/stream/jDcMwfEf2A0?lang=ja',
+  'c2-2026-068': 'https://www.youtube.com/watch?v=DSM0IHszq4E https://www.holostats.com/stream/DSM0IHszq4E?lang=ja',
+  'c2-2026-093': 'https://www.youtube.com/watch?v=zUH_op63j54 https://www.holostats.com/stream/zUH_op63j54?lang=ja',
+  'c2-2026-133': 'https://www.youtube.com/watch?v=s7bKx7jhHCc https://www.holostats.com/stream/s7bKx7jhHCc?lang=ja',
+  'c2-2026-134': 'https://www.youtube.com/watch?v=YBetvNAkHuo https://www.holostats.com/stream/YBetvNAkHuo?lang=ja',
+};
+
+const withVerifiedSources = [...patched, ...additions].map((story) => {
+  const verified = verifiedSourceLinks2026[story.id];
+  if (!verified) return story;
+  const links = Array.from(new Set([...(story.link || '').split(/\s+/).filter(Boolean), ...verified.split(/\s+/)]));
+  return {
+    ...story,
+    link: links.join(' '),
+    source: [story.source, 'HoloStats cross-check / official YouTube'].filter(Boolean).join('; '),
+  };
+});
+
+export default withVerifiedSources;
