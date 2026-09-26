@@ -132,6 +132,8 @@ Before adding a story:
   7. If no usable story-specific URL exists, use the fallback reference document below.
 - If a story has no usable source URL, use this reference document as its fallback `link`: https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub
 - A real story-specific source always takes priority over the fallback reference document.
+- For active `shared + Stream` stories from 2019–2026, append the HoloStats miComet pair page and HoloIndex Miko×Suisei collab page as secondary cross-check references. These secondary index pages supplement, never replace, a known story-specific official/source URL.
+- When HoloStats exposes a definite stream/video ID for an exact story, store the official YouTube URL first and the matching HoloStats stream page as a secondary reference.
 - Do not add archive images or thumbnails to timeline records.
 - Global reference documents may be placed in the site footer when explicitly requested.
 
