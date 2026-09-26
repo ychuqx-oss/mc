@@ -1,4 +1,4 @@
-# MiComet Compendium wiki — Site Logic
+# miComet wiki — Site Logic
 
 This file is the single source of truth for website update logic in this repository.
 
@@ -14,7 +14,7 @@ Before making **any** website, data, timeline, translation, UI, metadata, footer
 
 ## Project identity
 
-- Site name: **MiComet Compendium wiki**
+- Site name: **miComet wiki**
 - Main repository: `ychuqx-oss/mc`
 - Default production branch: `main`
 - Primary UI page: `src/pages/Index.tsx`
