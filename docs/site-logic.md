@@ -125,9 +125,11 @@ Before adding a story:
 - When recovering missing sources, prefer this order:
   1. Official YouTube / official X / official event or music pages already tied to the exact story.
   2. Detailed timeline source datasets in this repository when the stable story `id` matches.
-  3. The public miComet Archive at https://micomet.neocities.org/ for 2020–2023 collab/event source recovery; store the original stream/event URL listed by the archive rather than an image.
-  4. Other verified story-specific sources.
-  5. If no usable story-specific URL exists, use the fallback reference document below.
+  3. HoloStats miComet pair history: https://www.holostats.com/collabs/pair/14/21?lang=ja — use it to cross-check collab dates/titles and recover the original stream page when available.
+  4. HoloIndex Sakura Miko collab filter with Hoshimachi Suisei: https://holoindex.com/members/sakura-miko?tab=collab&cpartner=hoshimachi-suisei — use it to cross-check collab members, stream metadata, timestamps, and the original YouTube video when available.
+  5. The public miComet Archive at https://micomet.neocities.org/ for 2020–2023 collab/event source recovery; store the original stream/event URL listed by the archive rather than an image.
+  6. Other verified story-specific sources.
+  7. If no usable story-specific URL exists, use the fallback reference document below.
 - If a story has no usable source URL, use this reference document as its fallback `link`: https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub
 - A real story-specific source always takes priority over the fallback reference document.
 - Do not add archive images or thumbnails to timeline records.
