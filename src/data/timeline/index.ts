@@ -317,16 +317,17 @@ function sharedTitleCategory(story: MiCometStory): SharedCategory {
 }
 
 function hasReciprocalMiCometInteraction(story: MiCometStory) {
-  const text = [
-    story.title,
-    story.titleZh,
-    story.titleEn,
-    story.ctx,
-    story.ctxZh,
-    story.ctxEn,
-  ].filter(Boolean).join(' ');
+  const titleText = [story.title, story.titleZh, story.titleEn].filter(Boolean).join(' ');
+  const contextText = [story.ctx, story.ctxZh, story.ctxEn].filter(Boolean).join(' ');
 
-  return /(?:互相|互動|一起|兩人|雙視點|連動|聯動|合作|共演|合唱|對決|對戰|約會|通話|聊天|對談|相談|同步觀看|同時視聽|同居|牽手|拜訪|來訪|見面|吃飯|出遊|旅行|練習|下播後.*聊|玩(?:《|「)|共同|both|each other|together|collab|collaborat|duo|versus|vs\.?|watchalong|talked.*after|went out|ate together|visited|called)/i.test(text);
+  // Headline-level evidence can use broad mutual wording because it describes the
+  // event itself. Context is stricter: phrases such as "early interaction record"
+  // or "the two" are often editorial summaries and do not prove the other person replied.
+  const titleHasMutualEvidence = /(?:互相|互動|一起|兩人|雙視點|連動|聯動|合作|共演|合唱|對決|對戰|約會|通話|聊天|對談|相談|同步觀看|同時視聽|同居|牽手|見面|吃飯|出遊|旅行|共同|both|each other|together|collab|collaborat|duo|versus|vs\.?|watchalong)/i.test(titleText);
+
+  const contextHasMutualEvidence = /(?:互相(?:回覆|對話|交流|玩鬧)|一起(?:玩|吃|去|看|聊|旅行|出遊|練習)|雙視點|連動|聯動|合作|共演|合唱|對決|對戰|約會|通話|對談|相談|同步觀看|同時視聽|同居|牽手|下播後.*(?:聊|談)|both.*(?:talk|play|watch|join)|each other|played together|talked together|talked.*after|went out together|ate together|watchalong|dual POV)/i.test(contextText);
+
+  return titleHasMutualEvidence || contextHasMutualEvidence;
 }
 
 function resolveSharedSide(story: MiCometStory): Side {
