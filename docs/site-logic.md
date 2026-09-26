@@ -52,6 +52,7 @@ Timeline stories may contain:
 - `date`
 - `phase`
 - `side`
+- `sharedCategory` — only for `side: 'shared'`; one of `gen0`, `shiraken`, `oneOnOne`, `group`
 - `emoji`
 - `type`
 - `title`
@@ -64,6 +65,19 @@ Timeline stories may contain:
 - `source`
 
 Timeline stories do not use image fields. Do not add `image`, `imageUrl`, `thumbnail`, or `thumbnailUrl` to story records or rendering logic.
+
+### Shared-category behavior
+
+The old single **Shared / 共同** presentation is split into four subcategories while keeping `side: 'shared'` for aggregate Miko/Suisei counting:
+
+- `gen0` → **0期 / Gen 0**: 0期生・Gen 0 collabs or events involving Miko and Suisei.
+- `shiraken` → **火建 / Shiraken**: 不知火建設 / Shiraken collabs or events involving Miko and Suisei.
+- `oneOnOne` → **1v1**: Miko + Suisei two-person miComet collabs/interactions without another group context.
+- `group` → **團體 / Group**: Miko + Suisei appearing together with other members, official group events, festivals, tournaments, call-ins, or other multi-person contexts.
+
+Classification priority is `gen0` → `shiraken` → `group` → `oneOnOne`. The UI must show these four labels instead of a single Shared label, and the story filter must allow selecting each one independently. The Miko and Suisei aggregate totals still count every `side: 'shared'` story for both members.
+
+Do not automatically move an original `side: 'shared'` story to Miko/Suisei/Support merely because it is not a two-person stream; preserve `shared` and classify it with `sharedCategory`.
 
 ### Language behavior
 
