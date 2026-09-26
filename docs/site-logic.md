@@ -77,11 +77,13 @@ The old single **Shared / 共同** presentation is split into four subcategories
 
 Classification priority is `gen0` → `shiraken` → `group` → `oneOnOne`. The UI must show these four labels instead of a single Shared label, and the story filter must allow selecting each one independently. The Miko and Suisei aggregate totals still count every `side: 'shared'` story for both members.
 
-For automatic 1v1 vs Group classification, use the story headline/title as the primary evidence. Do not classify a story as Group merely because its context mentions another member, a past event, or a reference source. A title that explicitly names a third participant, a known multi-member unit, a call-in/tournament/group event, or says miComet joined/participated in a multi-person collaboration is Group; otherwise a Miko + Suisei story defaults to 1v1. Short Latin member names such as `Su`, `Ao`, and `Bae` must use word-boundary matching so they do not accidentally match words like `Suisei` or `Surgeon`.
+For automatic 1v1 vs Group classification, use the story headline/title as the primary evidence. Do not classify a story as Group merely because its context mentions another member, a past event, or a reference source. A title that explicitly names a third participant, a known multi-member unit, a call-in/tournament/group event, or says miComet joined/participated in a multi-person collaboration is Group. Short Latin member names such as `Su`, `Ao`, and `Bae` must use word-boundary matching so they do not accidentally match words like `Suisei` or `Surgeon`.
 
-If a story has an explicit `sharedCategory`, that manual value takes priority over automatic classification.
+**1v1 requires reciprocal interaction.** A one-sided mention, praise, reply, watch, retweet, announcement, support message, or other action where the other party does not respond/interact must not be classified as 1v1. The record should instead be attributed to the acting side (Miko or Suisei); if the actor cannot be identified safely, classify it as Support/Others. Reciprocal evidence includes direct conversation, mutual replies, playing together, a two-person collab, dual POV, a call, a date, a watchalong, joint travel/meal, direct back-and-forth, or another clearly two-way interaction.
 
-Do not automatically move an original `side: 'shared'` story to Miko/Suisei/Support merely because it is not a two-person stream; preserve `shared` and classify it with `sharedCategory`.
+If a story has an explicit `sharedCategory`, that manual value takes priority over automatic classification, but manually assigning `oneOnOne` still requires evidence that both Miko and Suisei actually interacted.
+
+Original `side: 'shared'` records may be reassigned to Miko/Suisei/Support when they are one-sided; only genuinely mutual or multi-person shared events remain `shared`.
 
 ### Language behavior
 
