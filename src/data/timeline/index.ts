@@ -33,6 +33,26 @@ type EnglishStory = { id: string; title?: string; context?: string };
 
 const enStoryMap = new Map((enStoriesData as EnglishStory[]).map((story) => [story.id, story]));
 const DEFAULT_REFERENCE_URL = 'https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub';
+const HOLOSTATS_MICOMET_URL = 'https://www.holostats.com/collabs/pair/14/21?lang=ja';
+const HOINDEX_MICOMET_URL = 'https://holoindex.com/members/sakura-miko?tab=collab&cpartner=hoshimachi-suisei';
+
+function supplementSourceLinks(story: MiCometStory): MiCometStory {
+  const rawLinks = (story.link || '').trim();
+  const links = rawLinks ? rawLinks.split(/\s+/).filter(Boolean) : [];
+  const isSharedStream = story.side === 'shared' && story.type === 'Stream';
+
+  if (isSharedStream) {
+    if (!links.includes(HOLOSTATS_MICOMET_URL)) links.push(HOLOSTATS_MICOMET_URL);
+    if (!links.includes(HOINDEX_MICOMET_URL)) links.push(HOINDEX_MICOMET_URL);
+  }
+
+  if (!links.length) links.push(DEFAULT_REFERENCE_URL);
+
+  return {
+    ...story,
+    link: Array.from(new Set(links)).join(' '),
+  };
+}
 
 const verified2024DateByYoutubeId: Record<string, string> = {
   pfDd_whXL48: '2024-01-01',
@@ -380,10 +400,7 @@ export const MICOMET_TIMELINE: MiCometStory[] = normalizeStories([
   ...(timeline2024CleanData as MiCometStory[]),
   ...(timeline2025CleanData as MiCometStory[]),
   ...(timeline2026CleanData as MiCometStory[]),
-]).map((story) => ({
-  ...story,
-  link: story.link?.trim() ? story.link : DEFAULT_REFERENCE_URL,
-})).sort((a, b) => {
+]).map(supplementSourceLinks).sort((a, b) => {
   const dateCompare = a.date.localeCompare(b.date);
   if (dateCompare !== 0) return dateCompare;
   return a.id.localeCompare(b.id, undefined, { numeric: true });
