@@ -9,6 +9,7 @@ import timeline2026CleanData from './timeline-2026-compendium';
 import enStoriesData from './en-stories.json';
 
 export type SharedCategory = 'gen0' | 'shiraken' | 'oneOnOne' | 'group';
+export type SupportCategory = 'fubuki';
 
 export interface MiCometStory {
   id: string;
@@ -17,6 +18,7 @@ export interface MiCometStory {
   phase: number;
   side: 'miko' | 'suisei' | 'shared' | 'others';
   sharedCategory?: SharedCategory;
+  supportCategory?: SupportCategory;
   emoji: string;
   title: string;
   titleZh?: string;
@@ -364,10 +366,21 @@ function classifySharedCategory(story: MiCometStory, side: Side): SharedCategory
   return category;
 }
 
+function classifySupportCategory(story: MiCometStory): SupportCategory | undefined {
+  // Keep the dedicated Fubuki bucket scoped to records that were already Support/Others
+  // in the source data. One-sided shared records reassigned to Others remain general Support.
+  if (story.side !== 'others') return undefined;
+  const text = [story.title, story.titleZh, story.titleEn, story.ctx, story.ctxZh, story.ctxEn]
+    .filter(Boolean)
+    .join(' ');
+  return /(?:白上吹雪|白上フブキ|Shirakami\s+Fubuki|\bFubuki\b)/i.test(text) ? 'fubuki' : undefined;
+}
+
 function normalizeStory(story: MiCometStory): MiCometStory {
   const correctedDate = verifiedDateForStory(story);
   const side = resolveSharedSide(story);
-  const storyWithSide = { ...story, date: correctedDate, side };
+  const supportCategory = classifySupportCategory(story);
+  const storyWithSide = { ...story, date: correctedDate, side, supportCategory };
   const sharedCategory = classifySharedCategory(storyWithSide, side);
   const enStory = enStoryMap.get(story.id);
   let titleZh = cleanText(story.titleZh || story.title);
@@ -383,6 +396,7 @@ function normalizeStory(story: MiCometStory): MiCometStory {
     source: story.source || (isChronologyStory(storyWithSide) ? '編年史' : undefined),
     side,
     sharedCategory,
+    supportCategory,
     emoji: emojiForSide(side),
     title: titleEn || titleZh,
     titleZh,
