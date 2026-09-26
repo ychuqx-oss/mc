@@ -5,7 +5,7 @@ import { MICOMET_TIMELINE, type MiCometStory } from '@/data/timeline';
 type Side = 'miko' | 'suisei' | 'shared' | 'others';
 type ChartMode = 'year' | 'month';
 type UiLang = 'en' | 'zh';
-type LocalStory = MiCometStory & { titleEn?: string; ctxEn?: string; imageUrl?: string; thumbnail?: string; thumbnailUrl?: string };
+type LocalStory = MiCometStory;
 
 type CountPoint = { label: string; miko: number; suisei: number; shared: number; others: number };
 
@@ -220,16 +220,6 @@ function sideColor(side: Side) {
   return '#ffffff';
 }
 
-function StoryImageSlot({ item, lang, large = false }: { item: LocalStory; lang: UiLang; large?: boolean }) {
-  const image = item.image || item.imageUrl || item.thumbnail || item.thumbnailUrl;
-  const height = large ? 230 : 120;
-  return (
-    <div style={{ marginTop: large ? 16 : 12, height, borderRadius: large ? 18 : 14, overflow: 'hidden', background: 'linear-gradient(135deg, rgba(255,125,183,0.12), rgba(102,169,255,0.12))', border: '1px dashed rgba(255,255,255,0.16)', display: 'grid', placeItems: 'center' }}>
-      {image ? <img src={image} alt={storyTitle(item, lang)} style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> : <div style={{ color: '#7f8594', fontSize: large ? 13 : 11, letterSpacing: '0.12em', fontWeight: 800 }}>IMAGE SLOT</div>}
-    </div>
-  );
-}
-
 function ChartShell({ title, stories, labels, cumulative = false, defaultMode = 'month' }: { title: string; stories: MiCometStory[]; labels: typeof UI_LABELS[UiLang]; cumulative?: boolean; defaultMode?: ChartMode }) {
   const [mode, setMode] = useState<ChartMode>(defaultMode);
   const summary = useMemo(() => summarizeTimeline(stories), [stories]);
@@ -273,7 +263,6 @@ function StoryCard({ item, lang, onOpen }: { item: LocalStory; lang: UiLang; lab
   return (
     <article onClick={() => onOpen(item)} style={{ borderRadius: 16, padding: 16, background: 'linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02))', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 10px 28px rgba(0,0,0,0.28)', cursor: 'pointer' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'center' }}><div style={{ color: '#c4c9d6', fontSize: 12 }}>{formatDate(item.date)}</div><div style={{ color: sideColor(item.side), fontSize: 12, fontWeight: 700 }}>{sideLabel(item.side, lang)}</div></div>
-      <StoryImageSlot item={item} lang={lang} />
       <div style={{ marginTop: 10, fontSize: 15, fontWeight: 800, lineHeight: 1.45, color: '#f6f7fb' }}>{storyTitle(item, lang)}</div>
       <div style={{ marginTop: 8, color: '#a7adbb', fontSize: 13, lineHeight: 1.55 }}>{storyContext(item, lang)}</div>
       <div style={{ marginTop: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
@@ -285,7 +274,7 @@ function StoryCard({ item, lang, onOpen }: { item: LocalStory; lang: UiLang; lab
 }
 
 function Modal({ item, lang, labels, onClose }: { item: LocalStory; lang: UiLang; labels: typeof UI_LABELS[UiLang]; onClose: () => void }) {
-  return <div onClick={onClose} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.72)', display: 'grid', placeItems: 'center', padding: 16, zIndex: 40 }}><div onClick={(e) => e.stopPropagation()} style={{ width: 'min(720px, 100%)', borderRadius: 20, background: '#111420', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 24px 60px rgba(0,0,0,0.5)', padding: 20 }}><div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'start' }}><div><div style={{ color: '#8f96a8', fontSize: 12 }}>{formatDate(item.date)} <span style={{ color: '#4a5060', marginLeft: 6, fontFamily: 'monospace' }}>#{item.displayId ?? item.id}</span></div><h3 style={{ margin: '8px 0 0', fontSize: 22, lineHeight: 1.3 }}>{storyTitle(item, lang)}</h3></div><button onClick={onClose} style={{ background: '#0d0f15', color: '#fff', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 999, width: 36, height: 36, fontSize: 18, cursor: 'pointer' }}>×</button></div><StoryImageSlot item={item} lang={lang} large /><div style={{ marginTop: 14, color: '#cfd4de', lineHeight: 1.7 }}>{storyContext(item, lang)}</div><LinkButtons item={item} labels={labels} /></div></div>;
+  return <div onClick={onClose} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.72)', display: 'grid', placeItems: 'center', padding: 16, zIndex: 40 }}><div onClick={(e) => e.stopPropagation()} style={{ width: 'min(720px, 100%)', borderRadius: 20, background: '#111420', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 24px 60px rgba(0,0,0,0.5)', padding: 20 }}><div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'start' }}><div><div style={{ color: '#8f96a8', fontSize: 12 }}>{formatDate(item.date)} <span style={{ color: '#4a5060', marginLeft: 6, fontFamily: 'monospace' }}>#{item.displayId ?? item.id}</span></div><h3 style={{ margin: '8px 0 0', fontSize: 22, lineHeight: 1.3 }}>{storyTitle(item, lang)}</h3></div><button onClick={onClose} style={{ background: '#0d0f15', color: '#fff', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 999, width: 36, height: 36, fontSize: 18, cursor: 'pointer' }}>×</button></div><div style={{ marginTop: 14, color: '#cfd4de', lineHeight: 1.7 }}>{storyContext(item, lang)}</div><LinkButtons item={item} labels={labels} /></div></div>;
 }
 
 function StatCard({ label, value, note, accent }: { label: string; value: string | number; note: string; accent: string }) {
