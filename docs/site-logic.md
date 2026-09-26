@@ -121,6 +121,8 @@ Before adding a story:
 - Do not fabricate URLs.
 - Do not expand truncated sources by guessing.
 - Source links should be stored in the story's `link` / `source` fields when they belong to a specific story.
+- If a story has no usable source URL, use this reference document as its fallback `link`: https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub
+- A real story-specific source always takes priority over the fallback reference document.
 - Global reference documents may be placed in the site footer when explicitly requested.
 
 ## GitHub workflow
