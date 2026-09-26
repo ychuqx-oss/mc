@@ -32,6 +32,7 @@ type Side = MiCometStory['side'];
 type EnglishStory = { id: string; title?: string; context?: string };
 
 const enStoryMap = new Map((enStoriesData as EnglishStory[]).map((story) => [story.id, story]));
+const DEFAULT_REFERENCE_URL = 'https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub';
 
 const verified2024DateByYoutubeId: Record<string, string> = {
   pfDd_whXL48: '2024-01-01',
@@ -379,7 +380,10 @@ export const MICOMET_TIMELINE: MiCometStory[] = normalizeStories([
   ...(timeline2024CleanData as MiCometStory[]),
   ...(timeline2025CleanData as MiCometStory[]),
   ...(timeline2026CleanData as MiCometStory[]),
-]).sort((a, b) => {
+]).map((story) => ({
+  ...story,
+  link: story.link?.trim() ? story.link : DEFAULT_REFERENCE_URL,
+})).sort((a, b) => {
   const dateCompare = a.date.localeCompare(b.date);
   if (dateCompare !== 0) return dateCompare;
   return a.id.localeCompare(b.id, undefined, { numeric: true });
