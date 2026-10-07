@@ -168,6 +168,34 @@
     "link": "https://www.youtube.com/watch?v=j6TJbFETAHQ"
   },
   {
+    "id": "mcarchive-2023-0221-minecraft",
+    "date": "2023-02-21",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet突發Minecraft雙人連動",
+    "titleZh": "miComet突發Minecraft雙人連動",
+    "ctx": "Miko與星街進行突發Minecraft雙人連動。",
+    "ctxZh": "Miko與星街進行突發Minecraft雙人連動。",
+    "type": "Stream",
+    "link": "https://youtu.be/hwBOxFMjqMM",
+    "source": "miComet Archive cross-check / original Miko YouTube"
+  },
+  {
+    "id": "mcarchive-2023-0224-kindergarten",
+    "date": "2023-02-24",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko與星街參加Hololive幼稚園企劃",
+    "titleZh": "Miko與星街參加Hololive幼稚園企劃",
+    "ctx": "Hololive幼稚園多人企劃中，Miko與星街同場參加。",
+    "ctxZh": "Hololive幼稚園多人企劃中，Miko與星街同場參加。",
+    "type": "Stream",
+    "link": "https://youtu.be/7EXXkxwUup4",
+    "source": "miComet Archive cross-check / original Mio YouTube"
+  },
+  {
     "id": "s230013",
     "displayId": "23-02-CLEAN-5",
     "date": "2023-02-27",
@@ -210,6 +238,20 @@
     "link": "https://www.youtube.com/watch?v=GZgz3ub0eAs"
   },
   {
+    "id": "mcarchive-2023-0311-shiraken",
+    "date": "2023-03-11",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "不知火建設Minecraft連動，miComet同場",
+    "titleZh": "不知火建設Minecraft連動，miComet同場",
+    "ctx": "不知火建設Minecraft連動中，Miko與星街同場。",
+    "ctxZh": "不知火建設Minecraft連動中，Miko與星街同場。",
+    "type": "Stream",
+    "link": "https://youtu.be/vzWJ4qsQkK0",
+    "source": "miComet Archive cross-check / original Miko YouTube"
+  },
+  {
     "id": "s230016",
     "displayId": "23-03-CLEAN-3",
     "date": "2023-03-16",
@@ -222,6 +264,34 @@
     "ctxZh": "星街在mocopi運動遊戲直播中的動作與反應被整理成爆笑片段。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=JDXWd32DHHU"
+  },
+  {
+    "id": "official-2023-0318-4thfes",
+    "date": "2023-03-18",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "hololive 4th fes. DAY1中Miko與星街同台演出《群青讃歌》",
+    "titleZh": "hololive 4th fes. DAY1中Miko與星街同台演出《群青讃歌》",
+    "ctx": "hololive 4th fes. Our Bright Parade DAY1中，Miko與星街和不知火建設成員共同演出《群青讃歌》。",
+    "ctxZh": "hololive 4th fes. Our Bright Parade DAY1中，Miko與星街和不知火建設成員共同演出《群青讃歌》。",
+    "type": "Event",
+    "link": "https://hololive.hololivepro.com/news/20221202-03-8/",
+    "source": "hololive official event announcement / lineup cross-check"
+  },
+  {
+    "id": "mcarchive-2023-0330-oekaki",
+    "date": "2023-03-30",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "不知火建設《お絵かきの森》連動",
+    "titleZh": "不知火建設《お絵かきの森》連動，miComet同場",
+    "ctx": "不知火建設進行《お絵かきの森》連動，Miko與星街同場。",
+    "ctxZh": "不知火建設進行《お絵かきの森》連動，Miko與星街同場。",
+    "type": "Stream",
+    "link": "https://youtu.be/t-JVOPjZRQA",
+    "source": "miComet Archive cross-check / original Suisei YouTube"
   },
   {
     "id": "s230017",
@@ -238,6 +308,48 @@
     "link": "https://www.youtube.com/watch?v=wRQCRg9eP2Q"
   },
   {
+    "id": "mcarchive-2023-0409-puyoteto",
+    "date": "2023-04-09",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet線下《ぷよぷよテトリス》連動",
+    "titleZh": "miComet線下《ぷよぷよテトリス》連動",
+    "ctx": "Miko與星街進行線下《ぷよぷよテトリス》雙人連動。",
+    "ctxZh": "Miko與星街進行線下《ぷよぷよテトリス》雙人連動。",
+    "type": "Stream",
+    "link": "https://youtu.be/Kbc93McrEa4",
+    "source": "miComet Archive cross-check / original Miko YouTube"
+  },
+  {
+    "id": "mcarchive-2023-0429-minecraft-a",
+    "date": "2023-04-29",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko與星街參加Minecraft多人連動",
+    "titleZh": "Miko與星街參加Minecraft多人連動",
+    "ctx": "Minecraft多人連動中，Miko與星街同場並各有原始直播視角。",
+    "ctxZh": "Minecraft多人連動中，Miko與星街同場並各有原始直播視角。",
+    "type": "Stream",
+    "link": "https://youtu.be/Jv8CKtDfvAM https://youtu.be/sC2Ybfav5lQ",
+    "source": "miComet Archive cross-check / original Miko & Suisei YouTube"
+  },
+  {
+    "id": "mcarchive-2023-0429-minecraft-b",
+    "date": "2023-04-29",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "白上吹雪、風真伊呂波等人的Minecraft連動中miComet同場",
+    "titleZh": "白上吹雪、風真伊呂波等人的Minecraft連動中miComet同場",
+    "ctx": "另一場Minecraft多人連動中，Miko與星街與白上吹雪、風真伊呂波等人同場。",
+    "ctxZh": "另一場Minecraft多人連動中，Miko與星街與白上吹雪、風真伊呂波等人同場。",
+    "type": "Stream",
+    "link": "https://youtu.be/bmYMFh-0xG0",
+    "source": "miComet Archive cross-check / original Fubuki YouTube"
+  },
+  {
     "id": "s230018",
     "displayId": "23-04-CLEAN-2",
     "date": "2023-04-30",
@@ -250,6 +362,34 @@
     "ctxZh": "手繪片段整理星街每次唱到《灼熱》時就看向Miko的互動。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=6gHSAR0epVY"
+  },
+  {
+    "id": "mcarchive-2023-0502-unanimous",
+    "date": "2023-05-02",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko與星街參加「全員一致するまで終われまテン」",
+    "titleZh": "Miko與星街參加「全員一致するまで終われまテン」",
+    "ctx": "「全員一致するまで終われまテン」多人企劃中，Miko與星街同場參加。",
+    "ctxZh": "「全員一致するまで終われまテン」多人企劃中，Miko與星街同場參加。",
+    "type": "Stream",
+    "link": "https://youtu.be/GQhn3Op9o_w",
+    "source": "miComet Archive cross-check / original Miko YouTube"
+  },
+  {
+    "id": "mcarchive-2023-0526-oneblock",
+    "date": "2023-05-26",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet《Minecraft 1 Block》雙人連動",
+    "titleZh": "miComet《Minecraft 1 Block》雙人連動",
+    "ctx": "Miko與星街進行《Minecraft 1 Block》雙人連動。",
+    "ctxZh": "Miko與星街進行《Minecraft 1 Block》雙人連動。",
+    "type": "Stream",
+    "link": "https://youtu.be/CklNxvworF8",
+    "source": "miComet Archive cross-check / original Miko YouTube"
   },
   {
     "id": "s230019",
@@ -308,6 +448,20 @@
     "link": "https://www.youtube.com/watch?v=C1WUErvLmT0"
   },
   {
+    "id": "mcarchive-2023-0622-oneblock",
+    "date": "2023-06-22",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet《Minecraft 1 Block》連動",
+    "titleZh": "miComet《Minecraft 1 Block》連動",
+    "ctx": "Miko與星街繼續《Minecraft 1 Block》雙人系列。",
+    "ctxZh": "Miko與星街繼續《Minecraft 1 Block》雙人系列。",
+    "type": "Stream",
+    "link": "https://youtu.be/7OCcgg0sYjY",
+    "source": "miComet Archive cross-check / original Miko YouTube"
+  },
+  {
     "id": "s230023",
     "displayId": "23-06-CLEAN-4",
     "date": "2023-06-27",
@@ -320,6 +474,20 @@
     "ctxZh": "星街聊到有些時候真的聽不懂Miko在說什麼，形成兩人語感差異的miComet片段。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=jIjg0AcXrLQ"
+  },
+  {
+    "id": "mcarchive-2023-0629-rubberbandits",
+    "date": "2023-06-29",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "不知火建設《Rubber Bandits》連動",
+    "titleZh": "不知火建設《Rubber Bandits》連動，miComet同場",
+    "ctx": "不知火建設進行《Rubber Bandits》連動，Miko與星街同場。",
+    "ctxZh": "不知火建設進行《Rubber Bandits》連動，Miko與星街同場。",
+    "type": "Stream",
+    "link": "https://youtu.be/yypTkAktcIg",
+    "source": "miComet Archive cross-check / original Flare YouTube"
   },
   {
     "id": "s230024",
@@ -350,6 +518,20 @@
     "link": "https://www.youtube.com/watch?v=iZKFvsNQ5_s"
   },
   {
+    "id": "mcarchive-2023-0710-oneblock",
+    "date": "2023-07-10",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet《Minecraft 1 Block》連動",
+    "titleZh": "miComet《Minecraft 1 Block》連動",
+    "ctx": "Miko與星街繼續《Minecraft 1 Block》雙人系列。",
+    "ctxZh": "Miko與星街繼續《Minecraft 1 Block》雙人系列。",
+    "type": "Stream",
+    "link": "https://youtu.be/XVC1n9p9V0A",
+    "source": "miComet Archive cross-check / original Suisei YouTube"
+  },
+  {
     "id": "s230026",
     "displayId": "23-07-CLEAN-3",
     "date": "2023-07-11",
@@ -362,6 +544,34 @@
     "ctxZh": "星街談到自己覺得Miko值得尊敬的地方，讓miComet不只是商業拌嘴，也呈現彼此認同的一面。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=2F8CoD-fDz8"
+  },
+  {
+    "id": "mcarchive-2023-0714-wordwolf",
+    "date": "2023-07-14",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "不知火建設《Word Wolf》連動",
+    "titleZh": "不知火建設《Word Wolf》連動，miComet同場",
+    "ctx": "不知火建設進行《Word Wolf》連動，Miko與星街同場。",
+    "ctxZh": "不知火建設進行《Word Wolf》連動，Miko與星街同場。",
+    "type": "Stream",
+    "link": "https://youtu.be/l_RRtLMcp3U",
+    "source": "miComet Archive cross-check / original Polka YouTube"
+  },
+  {
+    "id": "mcarchive-2023-0722-nimmt",
+    "date": "2023-07-22",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "不知火建設《6 nimmt!》連動",
+    "titleZh": "不知火建設《6 nimmt!》連動，miComet同場",
+    "ctx": "不知火建設進行《6 nimmt!》連動，Miko與星街同場。",
+    "ctxZh": "不知火建設進行《6 nimmt!》連動，Miko與星街同場。",
+    "type": "Stream",
+    "link": "https://youtu.be/84HGpHplBTs",
+    "source": "miComet Archive cross-check / original Polka YouTube"
   },
   {
     "id": "s230027",
