@@ -143,6 +143,21 @@
     "link": "https://www.youtube.com/watch?v=yh3_utbGFZ0"
   },
   {
+    "id": "news-2022-0124-vills3-micomet-interview",
+    "displayId": "22-01-NEWS-1",
+    "date": "2022-01-24",
+    "phase": 3,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "VILLS vol.3 miComet專訪談〈気まぐれメルシィ〉與「商業關係」",
+    "titleZh": "VILLS vol.3 miComet專訪談〈気まぐれメルシィ〉與「商業關係」",
+    "ctx": "VILLS vol.3後續miComet專訪中，Miko表示〈気まぐれメルシィ〉是她選的歌，因為一直很想和星街一起唱；兩人也再次談到「商業miComet」與2021年後共同活動增加的關係。原Up-Station訪談頁現已停止公開，年表保留訪談網址並以VILLS官方活動資料交叉確認。",
+    "ctxZh": "VILLS vol.3後續miComet專訪中，Miko表示〈気まぐれメルシィ〉是她選的歌，因為一直很想和星街一起唱；兩人也再次談到「商業miComet」與2021年後共同活動增加的關係。原Up-Station訪談頁現已停止公開，年表保留訪談網址並以VILLS官方活動資料交叉確認。",
+    "type": "News",
+    "link": "https://upstation-ntv.com/article/202201vills_micomet https://prtimes.jp/main/html/rd/p/000000113.000039863.html",
+    "source": "Up-Station VILLS vol.3 miComet interview / Chukyo TV official VILLS release"
+  },
+  {
     "id": "mcarchive-2022-0126-suisei-songs",
     "displayId": "22-01-ADD-4",
     "date": "2022-01-26",
@@ -615,6 +630,21 @@
     "type": "Stream",
     "link": "https://youtu.be/3fbtZ9J89_g",
     "source": "miComet Archive cross-check / original Miko YouTube"
+  },
+  {
+    "id": "news-2022-0420-realsound-suisei-micomet",
+    "displayId": "22-04-NEWS-1",
+    "date": "2022-04-20",
+    "phase": 3,
+    "side": "others",
+    "emoji": "⭐",
+    "title": "Real Sound星街彗星專題介紹miComet「商業朋友」與外來語禁止瑪利歐賽車",
+    "titleZh": "Real Sound星街彗星專題介紹miComet「商業朋友」與外來語禁止瑪利歐賽車",
+    "ctx": "Real Sound的星街彗星人物專題在介紹她的合作活動時，特別以miComet為例，說明星街與Miko以「ビジネスフレンド」身分活動，並點名兩人的《瑪利歐賽車8DX》外來語禁止企劃。",
+    "ctxZh": "Real Sound的星街彗星人物專題在介紹她的合作活動時，特別以miComet為例，說明星街與Miko以「ビジネスフレンド」身分活動，並點名兩人的《瑪利歐賽車8DX》外來語禁止企劃。",
+    "type": "News",
+    "link": "https://realsound.jp/tech/2022/04/post-1011988_2.html",
+    "source": "Real Sound feature"
   },
   {
     "id": "s2022c027",
