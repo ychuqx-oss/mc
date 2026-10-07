@@ -862,6 +862,7 @@ const additions = [
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
+  'c2-2026-026': 'https://www.youtube.com/watch?v=GSMyPNRANvc',
   'c2-2026-021': 'https://www.youtube.com/watch?v=de55PoGcBZY https://www.youtube.com/watch?v=lKd07PQLCLM',
   'c2-2026-036': 'https://www.youtube.com/watch?v=Wtn9Lwhxoxc',
   'c2-2026-047': 'https://www.youtube.com/watch?v=6AbvcBrD-2A',
