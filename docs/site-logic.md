@@ -136,9 +136,11 @@ Original `side: 'shared'` records may be reassigned to Miko/Suisei/Support when 
 The Support / 助攻 bucket has a dedicated **Fubuki / 白上吹雪** subcategory.
 
 - Records whose original source data already has `side: 'others'` and whose title/context mentions 白上吹雪 / Fubuki receive `supportCategory: 'fubuki'`.
-- These records are shown, counted, filtered, and charted under **白上吹雪 / Fubuki**, not under the remaining generic Support / 助攻 total.
-- One-sided Miko/Suisei records that are reassigned to Support by the reciprocal-interaction rule do not automatically become Fubuki support records.
-- The current source-data set contains 28 Fubuki support records.
+- **FubuMiComet / フブみこめっと is a cross-category rule.** Any story explicitly identified as FubuMiComet receives `supportCategory: 'fubuki'` even when its primary `side` remains `shared` and its `sharedCategory` remains `group`.
+- Therefore a FubuMiComet story is counted/filterable both as its primary miComet group event and under **白上吹雪 / Fubuki**. It must not be moved into generic Support/Others merely to satisfy the Fubuki bucket.
+- Fubuki statistics, filters, and chart series count every record with `supportCategory: 'fubuki'`, including shared/group FubuMiComet records.
+- Generic Support / 助攻 excludes every record with `supportCategory: 'fubuki'`.
+- One-sided Miko/Suisei records that are reassigned to Support by the reciprocal-interaction rule do not automatically become Fubuki support records unless they independently meet the Fubuki rule.
 
 ### Language behavior
 
