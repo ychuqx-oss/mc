@@ -395,6 +395,14 @@ function nextEnglishTitle(date: string, fallback: string) {
 }
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-226': {
+    link: 'https://www.youtube.com/watch?v=G9VLv6slxvo',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-217': {
+    link: 'https://www.youtube.com/watch?v=cavEH1e-rDQ',
+    source: 'Suisei official YouTube original stream',
+  },
   'c2-2025-251': {
     link: 'https://www.youtube.com/watch?v=Vzaqp2_drL4',
     source: 'Suisei official YouTube original stream',
