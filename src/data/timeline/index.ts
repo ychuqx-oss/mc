@@ -442,12 +442,19 @@ function classifySharedCategory(story: MiCometStory, side: Side): SharedCategory
 }
 
 function classifySupportCategory(story: MiCometStory): SupportCategory | undefined {
-  // Keep the dedicated Fubuki bucket scoped to records that were already Support/Others
-  // in the source data. One-sided shared records reassigned to Others remain general Support.
-  if (story.side !== 'others') return undefined;
+  if (story.supportCategory === 'fubuki') return 'fubuki';
+
   const text = [story.title, story.titleZh, story.titleEn, story.ctx, story.ctxZh, story.ctxEn]
     .filter(Boolean)
     .join(' ');
+
+  // FubuMiComet is a cross-category rule: keep the story's shared/group identity,
+  // but also count/filter it under the dedicated Fubuki bucket.
+  const isFubuMiComet = /(?:FubuMiComet|Fubu\s*MiComet|フブみこめっと|フブミコメット|フブみこメット)/i.test(text);
+  if (isFubuMiComet) return 'fubuki';
+
+  // Ordinary Fubuki support remains scoped to source records that are Support/Others.
+  if (story.side !== 'others') return undefined;
   return /(?:白上吹雪|白上フブキ|Shirakami\s+Fubuki|\bFubuki\b)/i.test(text) ? 'fubuki' : undefined;
 }
 
