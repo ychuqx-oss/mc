@@ -958,6 +958,14 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://radiko.jp/mobile/events/12420209',
     source: 'radiko official NHK 第89回 program listing',
   },
+  'c2-2025-197': {
+    link: 'https://www.youtube.com/watch?v=FVEkQs6o0uU',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-206': {
+    link: 'https://www.youtube.com/watch?v=mevhoJKqAOw',
+    source: 'Watame official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
