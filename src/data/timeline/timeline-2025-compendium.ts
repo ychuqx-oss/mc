@@ -390,6 +390,17 @@ function nextEnglishTitle(date: string, fallback: string) {
   return cleanEnglish(title || fallback);
 }
 
+const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-231': {
+    link: 'https://hololive.hololivepro.com/news/20250313-02-72/',
+    source: 'hololive 6th fes. official DAY2 report',
+  },
+  'c2-2025-268': {
+    link: 'https://hololive.hololivepro.com/events/fbkingdom_live/',
+    source: 'hololive official FBKINGDOM ANTHEM report',
+  },
+};
+
 const data = rows.split('\n').map((row) => {
   const [id, displayId, date, phase, side, emoji, type, rawTitle] = row.split('|');
   const titleZh = cleanTitle(rawTitle).trim();
@@ -410,8 +421,8 @@ const data = rows.split('\n').map((row) => {
     ctxZh,
     ctxEn,
     type,
-    link: '',
-    source: 'MiComet Compendium II',
+    link: verifiedSourceLinks2025[id]?.link ?? '',
+    source: verifiedSourceLinks2025[id]?.source ?? 'MiComet Compendium II',
   };
 });
 
