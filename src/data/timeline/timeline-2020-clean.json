@@ -44,6 +44,21 @@
     "sharedCategory": "group"
   },
   {
+    "id": "media-2020-0320-teetee-tv",
+    "displayId": "20-03-MEDIA-1",
+    "date": "2020-03-20",
+    "phase": 1,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "BS日テレ《てぇてぇTV》VTuber File同時介紹Miko與星街",
+    "titleZh": "BS日テレ《てぇてぇTV》VTuber File同時介紹Miko與星街",
+    "ctx": "BS日テレ《てぇてぇTV》的「特選！VTuber File」單元同時介紹Hololive的櫻巫女與星街彗星，發生在miComet正式命名前。",
+    "ctxZh": "BS日テレ《てぇてぇTV》的「特選！VTuber File」單元同時介紹Hololive的櫻巫女與星街彗星，發生在miComet正式命名前。",
+    "type": "News",
+    "link": "https://x.com/ToriiPro/status/1240488062380994560",
+    "source": "Program producer official X announcement / BS Nippon TV broadcast"
+  },
+  {
     "id": "s1488",
     "displayId": "20-03-CLEAN-3",
     "date": "2020-03-28",
