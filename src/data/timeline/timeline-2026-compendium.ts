@@ -680,6 +680,41 @@ const additions = [
     link: 'https://www.youtube.com/watch?v=CMlnK7XN8go https://hololive-tsuushin.com/holonews/miko-97/',
     source: 'Roboco official YouTube original stream; Japanese Hololive news recap',
   },
+
+  {
+    id: 'c2-2026-146',
+    displayId: '26-C2-146',
+    date: '2026-09-03',
+    phase: 6,
+    side: 'shared' as const,
+    emoji: '💛',
+    type: 'Stream',
+    title: 'Shiraken Plays Meccha Chameleon with MiComet',
+    titleZh: '不知火建設一起玩《めっちゃカメレオン》，miComet同場互動',
+    titleEn: 'Shiraken Plays Meccha Chameleon with MiComet',
+    ctx: 'Shiranui Kensetsu members Miko, Suisei, Flare, Noel, and Polka played Meccha Chameleon together, with Miko and Suisei appearing in the same group collaboration.',
+    ctxZh: '不知火建設成員Miko、星街、阿火、白銀諾艾爾與尾丸波爾卡一起玩《めっちゃカメレオン》，miComet在同一場多人連動中互動。',
+    ctxEn: 'Shiranui Kensetsu members Miko, Suisei, Flare, Noel, and Polka played Meccha Chameleon together, with Miko and Suisei appearing in the same group collaboration.',
+    link: '',
+    source: 'Miko official YouTube original stream',
+  },
+  {
+    id: 'c2-2026-147',
+    displayId: '26-C2-147',
+    date: '2026-09-10',
+    phase: 6,
+    side: 'shared' as const,
+    emoji: '💛',
+    type: 'Stream',
+    title: 'Miko and Suisei Join the First Pokajan Championship',
+    titleZh: 'Miko與星街參加第一屆ポカジャン王決定戦',
+    titleEn: 'Miko and Suisei Join the First Pokajan Championship',
+    ctx: 'Miko and Suisei both took part in the first Pokajan Championship together with Fubuki, Matsuri, Flare, Iroha, Calliope, Ina, and Ollie.',
+    ctxZh: 'Miko與星街一同參加第一屆「ポカジャン王決定戦」，並與白上吹雪、夏色祭、阿火、風真伊呂波、森美聲、Ina、Ollie等成員同場。',
+    ctxEn: 'Miko and Suisei both took part in the first Pokajan Championship together with Fubuki, Matsuri, Flare, Iroha, Calliope, Ina, and Ollie.',
+    link: '',
+    source: 'Fubuki official YouTube original stream',
+  },
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
@@ -700,7 +735,9 @@ const verifiedSourceLinks2026: Record<string, string> = {
   'c2-2026-141': 'https://www.youtube.com/watch?v=AaYnGEgePmg https://www.youtube.com/watch?v=wcxxSWyd-nQ',
   'c2-2026-142': 'https://www.youtube.com/watch?v=gS1mS4aUMa0',
   'c2-2026-143': 'https://www.youtube.com/watch?v=gS1mS4aUMa0',
-  'c2-2026-144': 'https://www.youtube.com/watch?v=9bDHBikrQI8',
+  'c2-2026-144': 'https://www.youtube.com/watch?v=9bDHBikrQI8',  'c2-2026-146': 'https://www.youtube.com/watch?v=pLe4ALliPj0',
+  'c2-2026-147': 'https://www.youtube.com/watch?v=zGpnj2PRp1E',
+
 };
 
 const withVerifiedSources = [...patched, ...additions].map((story) => {
