@@ -184,11 +184,13 @@
     "ctxZh": "Miko與星街的《アニマル》翻唱影片公開。",
     "type": "Music",
     "link": "https://youtu.be/9yBLZKFKXyg",
-    "source": "miComet Archive cross-check / original cover YouTube"
+    "source": "miComet Archive cross-check / original cover YouTube",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "news-2022-0128-kaiyou-animal",
-    "displayId": "22-01-NEWS-1",
+    "displayId": "22-01-NEWS-2",
     "date": "2022-01-28",
     "phase": 4,
     "side": "shared",
@@ -520,7 +522,7 @@
   },
   {
     "id": "official-2022-0320-holo-court",
-    "displayId": "22-03-OFFICIAL-1",
+    "displayId": "22-03-OFFICIAL-2",
     "date": "2022-03-20",
     "phase": 4,
     "side": "shared",
@@ -832,7 +834,7 @@
   },
   {
     "id": "s2022c038",
-    "displayId": "22-07-CLEAN-2",
+    "displayId": "22-07-CLEAN-1",
     "date": "2022-07-10",
     "phase": 4,
     "side": "shared",
@@ -846,7 +848,7 @@
   },
   {
     "id": "s2022c039",
-    "displayId": "22-07-CLEAN-3",
+    "displayId": "22-07-CLEAN-2",
     "date": "2022-07-15",
     "phase": 4,
     "side": "shared",
@@ -874,7 +876,7 @@
   },
   {
     "id": "s2022c040",
-    "displayId": "22-07-CLEAN-4",
+    "displayId": "22-07-CLEAN-3",
     "date": "2022-07-20",
     "phase": 4,
     "side": "suisei",
