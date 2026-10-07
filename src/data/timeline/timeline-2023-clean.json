@@ -310,6 +310,21 @@
     "source": "miComet Archive cross-check / original Suisei YouTube"
   },
   {
+    "id": "news-2023-0402-shueisha-suisei",
+    "displayId": "23-04-NEWS-1",
+    "date": "2023-04-02",
+    "phase": 4,
+    "side": "suisei",
+    "emoji": "☄️",
+    "title": "集英社星街彗星長篇專訪直接談miComet與Miko",
+    "titleZh": "集英社星街彗星長篇專訪直接談miComet與Miko",
+    "ctx": "集英社Online的星街彗星長篇專訪中，專訪者直接詢問miComet與Miko。星街談到與Miko相處時的關係與互動，並表示和Miko互相吐槽、掛け合い時比較容易露出真實自然的一面。",
+    "ctxZh": "集英社Online的星街彗星長篇專訪中，專訪者直接詢問miComet與Miko。星街談到與Miko相處時的關係與互動，並表示和Miko互相吐槽、掛け合い時比較容易露出真實自然的一面。",
+    "type": "News",
+    "link": "https://shueisha.online/articles/-/118721?disp=paging&page=4",
+    "source": "Shueisha Online interview"
+  },
+  {
     "id": "news-2023-0402-shueisha-suisei-interview",
     "displayId": "23-04-NEWS-1",
     "date": "2023-04-02",
@@ -834,11 +849,11 @@
     "emoji": "💛",
     "title": "miComet《牧場模擬器》雙人連動",
     "titleZh": "miComet《牧場模擬器》雙人連動",
-    "ctx": "Miko與星街進行《牧場模擬器》雙人連動，原本要開始務農，最後變成拆家與商業相聲。來源待補。",
-    "ctxZh": "Miko與星街進行《牧場模擬器》雙人連動，原本要開始務農，最後變成拆家與商業相聲。來源待補。",
+    "ctx": "Miko與星街進行《Ranch Simulator》雙人連動，原本要開始務農，最後變成拆家與商業相聲。",
+    "ctxZh": "Miko與星街進行《Ranch Simulator》雙人連動，原本要開始務農，最後變成拆家與商業相聲。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=uaFk4AYbfDo",
-    "source": "Miko official YouTube"
+    "source": "Miko official YouTube original stream"
   },
   {
     "id": "s230035",
