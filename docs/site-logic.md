@@ -184,6 +184,32 @@ Before adding data, determine where the website actually imports it.
 
 Never assume that committing a file makes it visible on the site. Confirm it is part of the import/render chain.
 
+### Structured source model
+
+The timeline supports both legacy `link` / `source` fields and structured source metadata.
+
+Preferred fields for new or repaired records:
+
+- `sources[]` — structured source list.
+  - `url`
+  - `kind`: `youtube`, `x`, `official`, `news`, `index`, `archive`, `reference`, or `other`
+  - `label`
+  - `official`
+- `sourceStatus`: `verified`, `indexed`, `fallback`, or `missing`
+- `eventId` — optional stable identifier for multiple distinct stories from the same stream/event.
+- `reciprocal` — optional explicit override for whether a Miko/Suisei interaction is genuinely two-way.
+- `classificationSource` — `explicit` or `legacy-auto`.
+
+Legacy `link` values are converted at runtime for backward compatibility. New work should prefer explicit structured metadata when practical.
+
+The UI must distinguish official/original sources from index/media corroboration and fallback references. A fallback reference document must not be presented as if it were a verified story-specific source.
+
+### FubuMiComet cross-category rule
+
+Any story explicitly identified as **FubuMiComet / フブみこめっと** belongs to the dedicated **Fubuki / 白上吹雪** filter and statistics even when the story remains `side: 'shared'` with `sharedCategory: 'group'`.
+
+This is a cross-category rule: preserve the story's group/shared identity for miComet counting, while also setting or deriving `supportCategory: 'fubuki'`. The UI may show both the normal shared category and the additional Fubuki badge.
+
 ## Duplicate handling
 
 Before adding a story:
