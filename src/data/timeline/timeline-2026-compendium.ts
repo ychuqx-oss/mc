@@ -862,6 +862,10 @@ const additions = [
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
+  'c2-2026-017': 'https://www.youtube.com/watch?v=GQMY5Vl9Dfk',
+  'c2-2026-055': 'https://t.co/MVGrEdX7Pf',
+  'c2-2026-088': 'https://t.co/mIU6hvRpbP',
+  'c2-2026-128': 'https://x.com/suisei_submati/status/2096269951556559215',
   'c2-2026-003': 'https://x.com/sakuramiko35/status/2079565152886935884',
   'c2-2026-035': 'https://www.youtube.com/watch?v=KQFoKI3A1h8',
   'c2-2026-026': 'https://www.youtube.com/watch?v=GSMyPNRANvc',
@@ -992,7 +996,7 @@ const withVerifiedSources = [...patched, ...additions].map((story) => {
   return {
     ...classifiedStory,
     link: links.join(' '),
-    source: [story.source, verified.includes('holostats.com') ? 'HoloStats cross-check / official YouTube' : /(?:twitter\.com|x\.com)/i.test(verified) ? 'official X' : /(?:youtube\.com|youtu\.be)/i.test(verified) ? 'official YouTube' : 'verified official/web source'].filter(Boolean).join('; '),
+    source: [story.source, verified.includes('holostats.com') ? 'HoloStats cross-check / official YouTube' : /(?:twitter\.com|x\.com|t\.co)/i.test(verified) ? 'official X' : /(?:youtube\.com|youtu\.be)/i.test(verified) ? 'official YouTube' : 'verified official/web source'].filter(Boolean).join('; '),
   };
 });
 
