@@ -109,7 +109,9 @@
     "ctx": "Miko與星街在片段中同步喊出miComet合體相關台詞，形成節奏完全一致的趣味場面。",
     "ctxZh": "Miko與星街在片段中同步喊出miComet合體相關台詞，形成節奏完全一致的趣味場面。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=RiQNmNhFJAI"
+    "link": "https://www.youtube.com/watch?v=RiQNmNhFJAI",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "s230009",
@@ -140,22 +142,8 @@
     "link": "https://www.youtube.com/watch?v=575VTWDzsgA"
   },
   {
-    "id": "s230011",
-    "displayId": "23-02-CLEAN-3",
-    "date": "2023-02-09",
-    "phase": 4,
-    "side": "shared",
-    "emoji": "💛",
-    "title": "miComet出現「裡面有墊子」的手繪梗",
-    "titleZh": "miComet出現「裡面有墊子」的手繪梗",
-    "ctx": "手繪短片整理miComet關於墊子的玩笑，延伸兩人同款衣裝與身材差異的話題。",
-    "ctxZh": "手繪短片整理miComet關於墊子的玩笑，延伸兩人同款衣裝與身材差異的話題。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=wnlXLkcCTzk"
-  },
-  {
     "id": "s230012",
-    "displayId": "23-02-CLEAN-4",
+    "displayId": "23-02-CLEAN-3",
     "date": "2023-02-10",
     "phase": 4,
     "side": "shared",
@@ -197,7 +185,7 @@
   },
   {
     "id": "s230013",
-    "displayId": "23-02-CLEAN-5",
+    "displayId": "23-02-CLEAN-4",
     "date": "2023-02-27",
     "phase": 4,
     "side": "shared",
@@ -329,7 +317,7 @@
   },
   {
     "id": "news-2023-0402-shueisha-suisei-interview",
-    "displayId": "23-04-NEWS-1",
+    "displayId": "23-04-NEWS-2",
     "date": "2023-04-02",
     "phase": 4,
     "side": "suisei",
@@ -716,7 +704,7 @@
   },
   {
     "id": "official-2023-0826-splash",
-    "displayId": "23-08-OFFICIAL-1",
+    "displayId": "23-08-OFFICIAL-4",
     "date": "2023-08-26",
     "phase": 5,
     "side": "shared",
@@ -760,7 +748,7 @@
   },
   {
     "id": "official-2023-0831-idol-cover",
-    "displayId": "23-08-OFFICIAL-4",
+    "displayId": "23-08-OFFICIAL-5",
     "date": "2023-08-31",
     "phase": 4,
     "side": "miko",
@@ -775,7 +763,7 @@
   },
   {
     "id": "official-2023-0907-hololive6th-gen0",
-    "displayId": "23-09-OFFICIAL-2",
+    "displayId": "23-09-OFFICIAL-1",
     "date": "2023-09-07",
     "phase": 4,
     "side": "shared",
@@ -833,7 +821,7 @@
   },
   {
     "id": "official-2023-0924-singapore-behind",
-    "displayId": "23-09-OFFICIAL-1",
+    "displayId": "23-09-OFFICIAL-2",
     "date": "2023-09-24",
     "phase": 4,
     "side": "shared",
