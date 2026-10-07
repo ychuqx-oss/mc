@@ -937,6 +937,14 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=2TZzVMq-uyk',
     source: 'AZKi official YouTube original stream',
   },
+  'c2-2025-129': {
+    link: 'https://www.youtube.com/watch?v=HWhNWraF2_Y',
+    source: 'Fubuki official YouTube original video',
+  },
+  'c2-2025-132': {
+    link: 'https://www.youtube.com/watch?v=nuiqLHQA7k8',
+    source: 'Noel official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
