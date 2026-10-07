@@ -96,7 +96,7 @@ const patched = baseData.map((story) => {
 const additions = [
   {
     id: 'c2-2026-109',
-    displayId: '26-C2-38',
+    displayId: '26-C2-37',
     date: '2026-07-28',
     phase: 6,
     side: 'miko' as const,
@@ -113,7 +113,7 @@ const additions = [
   },
   {
     id: 'c2-2026-110',
-    displayId: '26-C2-37',
+    displayId: '26-C2-36',
     date: '2026-07-31',
     phase: 6,
     side: 'shared' as const,
@@ -130,7 +130,7 @@ const additions = [
   },
   {
     id: 'c2-2026-111',
-    displayId: '26-C2-35',
+    displayId: '26-C2-34',
     date: '2026-08-01',
     phase: 6,
     side: 'shared' as const,
@@ -198,7 +198,7 @@ const additions = [
   },
   {
     id: 'c2-2026-115',
-    displayId: '26-C2-34',
+    displayId: '26-C2-33',
     date: '2026-08-02',
     phase: 6,
     side: 'miko' as const,
@@ -215,7 +215,7 @@ const additions = [
   },
   {
     id: 'c2-2026-116',
-    displayId: '26-C2-33',
+    displayId: '26-C2-32',
     date: '2026-08-03',
     phase: 6,
     side: 'others' as const,
@@ -232,7 +232,7 @@ const additions = [
   },
   {
     id: 'c2-2026-117',
-    displayId: '26-C2-32',
+    displayId: '26-C2-31',
     date: '2026-08-04',
     phase: 6,
     side: 'miko' as const,
@@ -248,25 +248,8 @@ const additions = [
     source: 'MiComet Compendium II (user-provided list)',
   },
   {
-    id: 'c2-2026-118',
-    displayId: '26-C2-30',
-    date: '2026-08-06',
-    phase: 6,
-    side: 'miko' as const,
-    emoji: '🌸',
-    type: 'Stream',
-    title: 'Miko Talks About the MiComet Event in Hololive Dreams',
-    titleZh: 'Miko談Hololive Dreams中的miComet活動',
-    titleEn: 'Miko Talks About the MiComet Event in Hololive Dreams',
-    ctx: 'Miko talked about the miComet event in Hololive Dreams.',
-    ctxZh: 'Miko談到《Hololive Dreams》中的miComet活動。',
-    ctxEn: 'Miko talked about the miComet event in Hololive Dreams.',
-    link: '',
-    source: 'MiComet Compendium II (user-provided list)',
-  },
-  {
     id: 'c2-2026-119',
-    displayId: '26-C2-31',
+    displayId: '26-C2-30',
     date: '2026-08-06',
     phase: 6,
     side: 'others' as const,
@@ -695,7 +678,7 @@ const additions = [
 
   {
     id: 'c2-2026-148',
-    displayId: '26-C2-86',
+    displayId: '26-C2-84',
     date: '2026-05-05',
     phase: 6,
     side: 'shared' as const,
@@ -713,7 +696,7 @@ const additions = [
 
   {
     id: 'c2-2026-149',
-    displayId: '26-C2-55',
+    displayId: '26-C2-54',
     date: '2026-06-29',
     phase: 6,
     side: 'miko' as const,
@@ -730,7 +713,7 @@ const additions = [
   },
   {
     id: 'c2-2026-150',
-    displayId: '26-C2-54',
+    displayId: '26-C2-53',
     date: '2026-07-01',
     phase: 6,
     side: 'miko' as const,
@@ -747,7 +730,7 @@ const additions = [
   },
   {
     id: 'c2-2026-151',
-    displayId: '26-C2-50',
+    displayId: '26-C2-49',
     date: '2026-07-05',
     phase: 6,
     side: 'miko' as const,
@@ -799,7 +782,7 @@ const additions = [
 
   {
     id: 'c2-2026-154',
-    displayId: '26-C2-87',
+    displayId: '26-C2-85',
     date: '2026-04-26',
     phase: 6,
     side: 'miko' as const,
@@ -816,7 +799,7 @@ const additions = [
   },
   {
     id: 'c2-2026-155',
-    displayId: '26-C2-48',
+    displayId: '26-C2-47',
     date: '2026-07-07',
     phase: 6,
     side: 'others' as const,
@@ -833,7 +816,7 @@ const additions = [
   },
   {
     id: 'c2-2026-156',
-    displayId: '26-C2-39',
+    displayId: '26-C2-38',
     date: '2026-07-28',
     phase: 6,
     side: 'miko' as const,
@@ -850,7 +833,7 @@ const additions = [
   },
   {
     id: 'c2-2026-157',
-    displayId: '26-C2-36',
+    displayId: '26-C2-35',
     date: '2026-08-01',
     phase: 6,
     side: 'suisei' as const,
@@ -868,7 +851,7 @@ const additions = [
 
   {
     id: 'c2-2026-158',
-    displayId: '26-C2-42',
+    displayId: '26-C2-41',
     date: '2026-07-23',
     phase: 6,
     side: 'miko' as const,
@@ -886,6 +869,7 @@ const additions = [
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
+  'c2-2026-106': 'https://www.youtube.com/watch?v=ldr3Do5Ucy0',
   'c2-2026-091': 'https://www.youtube.com/watch?v=McRfuxd3JUQ',
   'c2-2026-097': 'https://www.youtube.com/watch?v=HE322pp9O74',
   'c2-2026-126': 'https://www.youtube.com/watch?v=03T6NhJ9u-I',
@@ -937,7 +921,6 @@ const verifiedSourceLinks2026: Record<string, string> = {
   'c2-2026-115': 'https://www.youtube.com/watch?v=bdlT5P0G5uU',
   'c2-2026-116': 'https://www.youtube.com/watch?v=WfM_Hdxh2E4 https://www.holostats.com/stream/WfM_Hdxh2E4?lang=ja',
   'c2-2026-117': 'https://www.youtube.com/watch?v=TL7ze9Ckvks',
-  'c2-2026-118': 'https://www.youtube.com/watch?v=EnqViu_hRKA',
   'c2-2026-119': 'https://www.youtube.com/watch?v=CnYYXV46B8A',
   'c2-2026-120': 'https://www.youtube.com/watch?v=TMXFBpkOeDc',
   'c2-2026-121': 'https://www.youtube.com/watch?v=MShIcv1cizk',
