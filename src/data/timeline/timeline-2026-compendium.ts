@@ -962,6 +962,13 @@ const additions = [
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
+  'c2-2026-005': 'https://x.com/sakuramiko35/status/2079462500618428769',
+  'c2-2026-007': 'https://www.youtube.com/watch?v=MKjXgiJSB_o',
+  'c2-2026-009': 'https://www.youtube.com/watch?v=9caAYEEkRac',
+  'c2-2026-010': 'https://www.youtube.com/watch?v=XltXbZfQIvs',
+  'c2-2026-011': 'https://www.youtube.com/watch?v=aUlbTsnMGNE',
+  'c2-2026-019': 'https://www.youtube.com/watch?v=Phr0zbQ-6dI',
+  'c2-2026-020': 'https://www.youtube.com/watch?v=lKd07PQLCLM',
   'c2-2026-096': 'https://www.youtube.com/watch?v=t61DV-IhDwY',
   'c2-2026-041': 'https://www.youtube.com/watch?v=BO6A-bmRn48',
   'c2-2026-046': 'https://www.youtube.com/watch?v=W1W5WaLU0II',
@@ -1039,7 +1046,7 @@ const withVerifiedSources = [...patched, ...additions].map((story) => {
   return {
     ...story,
     link: links.join(' '),
-    source: [story.source, verified.includes('holostats.com') ? 'HoloStats cross-check / official YouTube' : 'official YouTube'].filter(Boolean).join('; '),
+    source: [story.source, verified.includes('holostats.com') ? 'HoloStats cross-check / official YouTube' : /(?:twitter\.com|x\.com)/i.test(verified) ? 'official X' : 'official YouTube'].filter(Boolean).join('; '),
   };
 });
 
