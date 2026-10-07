@@ -888,6 +888,42 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
+
+  {
+    id: 'c2-2026-158',
+    displayId: '26-C2-158',
+    date: '2026-07-23',
+    phase: 6,
+    side: 'miko' as const,
+    emoji: '🌸',
+    type: 'Stream',
+    title: 'Miko Pulls Suisei While Roboco Is Watching Her Hololive Dreams Gacha',
+    titleZh: 'Hololive Dreams抽卡時蘿蔔子在看，Miko卻歪出星街',
+    titleEn: 'Miko Pulls Suisei While Roboco Is Watching Her Hololive Dreams Gacha',
+    ctx: 'During Miko’s Hololive Dreams five-star collection stream, Roboco appeared in chat, but the rainbow pull produced an off-banner Suisei instead, immediately turning the moment into a miComet joke.',
+    ctxZh: 'Miko在《Hololive Dreams》收集五星卡的直播中，蘿蔔子正在聊天室觀看；結果虹光演出後沒有抽到蘿蔔子，反而歪出星街，聊天室立刻刷起miComet話題。',
+    ctxEn: 'During Miko’s Hololive Dreams five-star collection stream, Roboco appeared in chat, but the rainbow pull produced an off-banner Suisei instead, immediately turning the moment into a miComet joke.',
+    link: '',
+    source: 'Miko official YouTube original stream',
+  },
+  {
+    id: 'c2-2026-159',
+    displayId: '26-C2-159',
+    date: '2026-07-23',
+    phase: 6,
+    side: 'shared' as const,
+    sharedCategory: 'group' as const,
+    emoji: '💛',
+    type: 'Clip',
+    title: 'Miko and Suisei Sing in the Hololive Dreams Theme Song “Yumeiro Wonder”',
+    titleZh: 'Miko與星街參與Hololive Dreams主題曲〈夢色ワンダー〉官方MV',
+    titleEn: 'Miko and Suisei Sing in the Hololive Dreams Theme Song “Yumeiro Wonder”',
+    ctx: 'The official Hololive Dreams theme song “Yumeiro Wonder” was released with Miko and Suisei among the large hololive ensemble.',
+    ctxZh: '《Hololive Dreams》主題曲〈夢色ワンダー〉官方MV公開，Miko與星街同為大型Hololive合唱陣容成員。',
+    ctxEn: 'The official Hololive Dreams theme song “Yumeiro Wonder” was released with Miko and Suisei among the large hololive ensemble.',
+    link: '',
+    source: 'Hololive Dreams official YouTube',
+  },
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
@@ -925,6 +961,8 @@ const verifiedSourceLinks2026: Record<string, string> = {
   'c2-2026-155': 'https://www.youtube.com/watch?v=MKjXgiJSB_o',
   'c2-2026-156': 'https://www.youtube.com/watch?v=xahMIgXeLzg',
   'c2-2026-157': 'https://www.youtube.com/watch?v=L5K85bMDymA',
+  'c2-2026-158': 'https://www.youtube.com/watch?v=mUI2752qfK8',
+  'c2-2026-159': 'https://www.youtube.com/watch?v=y0yJ6HjBrOA https://www.youtube.com/watch?v=0vETTf9bi34',
 
 };
 
