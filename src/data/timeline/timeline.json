@@ -53,11 +53,20 @@
     "emoji": "💛",
     "title": "星街遊玩Miko製作的瑪利歐創作關卡",
     "titleZh": "星街遊玩Miko製作的瑪利歐創作關卡",
-    "ctx": "Miko第一次製作瑪利歐創作關卡後，星街在同一天遊玩白上吹雪、Miko與紫咲詩音的關卡。來源待補。",
-    "ctxZh": "Miko第一次製作瑪利歐創作關卡後，星街在同一天遊玩白上吹雪、Miko與紫咲詩音的關卡。來源待補。",
+    "ctx": "Miko第一次製作瑪利歐創作關卡後，星街在同一天遊玩白上吹雪、Miko與紫咲詩音的關卡。",
+    "ctxZh": "Miko第一次製作瑪利歐創作關卡後，星街在同一天遊玩白上吹雪、Miko與紫咲詩音的關卡。",
     "type": "Stream",
-    "link": "https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub",
-    "source": "miComet reference document"
+    "link": "https://www.youtube.com/watch?v=EjhA2FF7Xfs",
+    "source": "星街すいせい原始直播",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=EjhA2FF7Xfs",
+        "kind": "youtube",
+        "label": "星街すいせい原始直播",
+        "official": true
+      }
+    ],
+    "sourceStatus": "verified"
   },
   {
     "id": "s1117",
@@ -83,11 +92,20 @@
     "emoji": "💛",
     "title": "星街談到與Miko練習雪山人狼",
     "titleZh": "星街談到與Miko練習雪山人狼",
-    "ctx": "星街在麥塊釣魚雜談中提到與Miko等人練習雪山人狼。練習前Miko忘記約好，仍在直播，於是大家一起到聊天室留言說Miko好可愛。原直播已私人。來源待補。",
-    "ctxZh": "星街在麥塊釣魚雜談中提到與Miko等人練習雪山人狼。練習前Miko忘記約好，仍在直播，於是大家一起到聊天室留言說Miko好可愛。原直播已私人。來源待補。",
+    "ctx": "星街在麥塊釣魚雜談中提到與Miko等人練習雪山人狼。練習前Miko忘記約好，仍在直播，於是大家一起到聊天室留言說Miko好可愛。原直播已私人。",
+    "ctxZh": "星街在麥塊釣魚雜談中提到與Miko等人練習雪山人狼。練習前Miko忘記約好，仍在直播，於是大家一起到聊天室留言說Miko好可愛。原直播已私人。",
     "type": "Stream",
-    "link": "https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub",
-    "source": "miComet reference document"
+    "link": "https://www.youtube.com/watch?v=kYsY8ZTcotc",
+    "source": "星街すいせい原始直播",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=kYsY8ZTcotc",
+        "kind": "youtube",
+        "label": "星街すいせい原始直播",
+        "official": true
+      }
+    ],
+    "sourceStatus": "verified"
   },
   {
     "id": "s1119",
@@ -159,26 +177,20 @@
     "emoji": "☄️",
     "title": "星街將Miko分類為Cute系",
     "titleZh": "星街將Miko分類為Cute系",
-    "ctx": "星街模仿《偶像大師》的分類方式，把成員分成Cute、Cool與Passion等類型，並將Miko放在Cute系。舊資料中的機翻與殘缺連結已整理。",
-    "ctxZh": "星街模仿《偶像大師》的分類方式，把成員分成Cute、Cool與Passion等類型，並將Miko放在Cute系。舊資料中的機翻與殘缺連結已整理。",
-    "type": "Clip",
-    "link": "https://moptt.tw/p/C_Chat.M.1708071698.A.130",
-    "source": "Japanese-language searchable chronology archive preserving the 2019-08-04 classification record"
-  },
-  {
-    "id": "s1123",
-    "displayId": "19-8-4",
-    "date": "2019-08-04",
-    "phase": 1,
-    "side": "miko",
-    "emoji": "🌸",
-    "title": "Miko將Hololive成員分類並把自己放在Cute系",
-    "titleZh": "Miko將Hololive成員分類並把自己放在Cute系",
-    "ctx": "Miko模仿《偶像大師》的類型分類整理Hololive成員，並把自己歸在Cute系。來源待補。",
-    "ctxZh": "Miko模仿《偶像大師》的類型分類整理Hololive成員，並把自己歸在Cute系。來源待補。",
+    "ctx": "星街模仿《偶像大師》的分類方式，把成員分成Cute、Cool與Passion等類型，並將Miko放在Cute系。",
+    "ctxZh": "星街模仿《偶像大師》的分類方式，把成員分成Cute、Cool與Passion等類型，並將Miko放在Cute系。",
     "type": "Stream",
-    "link": "https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub",
-    "source": "miComet reference document"
+    "link": "https://www.youtube.com/watch?v=TIO3rSvOa9I",
+    "source": "星街すいせい原始直播",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=TIO3rSvOa9I",
+        "kind": "youtube",
+        "label": "星街すいせい原始直播",
+        "official": true
+      }
+    ],
+    "sourceStatus": "verified"
   },
   {
     "id": "s1124",
@@ -189,11 +201,20 @@
     "emoji": "💛",
     "title": "星街第一次進入Hololive麥塊伺服器並拜訪Miko家",
     "titleZh": "星街第一次進入Hololive麥塊伺服器並拜訪Miko家",
-    "ctx": "星街第一次進入Hololive麥塊伺服器時，曾到Miko家中，說想睡在Miko的床上，並用奇怪笑聲開玩笑。原片已私人，早期有備份紀錄。來源待補。",
-    "ctxZh": "星街第一次進入Hololive麥塊伺服器時，曾到Miko家中，說想睡在Miko的床上，並用奇怪笑聲開玩笑。原片已私人，早期有備份紀錄。來源待補。",
+    "ctx": "星街第一次進入Hololive麥塊伺服器時，曾到Miko家中，說想睡在Miko的床上，並用奇怪笑聲開玩笑。原片已私人，早期有備份紀錄。",
+    "ctxZh": "星街第一次進入Hololive麥塊伺服器時，曾到Miko家中，說想睡在Miko的床上，並用奇怪笑聲開玩笑。原片已私人，早期有備份紀錄。",
     "type": "Stream",
-    "link": "https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub",
-    "source": "miComet reference document"
+    "link": "https://www.youtube.com/watch?v=RUTA2wePbjE",
+    "source": "星街すいせい原始直播",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=RUTA2wePbjE",
+        "kind": "youtube",
+        "label": "星街すいせい原始直播",
+        "official": true
+      }
+    ],
+    "sourceStatus": "verified"
   },
   {
     "id": "s1125",
@@ -249,11 +270,20 @@
     "emoji": "💛",
     "title": "星街在麥塊釣魚雜談中提到Miko的粉紅色美甲",
     "titleZh": "星街在麥塊釣魚雜談中提到Miko的粉紅色美甲",
-    "ctx": "星街麥塊釣魚雜談的原檔已私人；她在聊美甲話題時提到Miko做了粉紅色的美甲。來源待補。",
-    "ctxZh": "星街麥塊釣魚雜談的原檔已私人；她在聊美甲話題時提到Miko做了粉紅色的美甲。來源待補。",
+    "ctx": "星街麥塊釣魚雜談的原檔已私人；她在聊美甲話題時提到Miko做了粉紅色的美甲。",
+    "ctxZh": "星街麥塊釣魚雜談的原檔已私人；她在聊美甲話題時提到Miko做了粉紅色的美甲。",
     "type": "Stream",
-    "link": "https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub",
-    "source": "miComet reference document"
+    "link": "https://www.youtube.com/watch?v=SVCXlfVXMfQ",
+    "source": "星街すいせい原始直播",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=SVCXlfVXMfQ",
+        "kind": "youtube",
+        "label": "星街すいせい原始直播",
+        "official": true
+      }
+    ],
+    "sourceStatus": "verified"
   },
   {
     "id": "s1129",
@@ -264,11 +294,20 @@
     "emoji": "💛",
     "title": "星街在麥塊中偷走Miko存的垃圾又歸還",
     "titleZh": "星街在麥塊中偷走Miko存的垃圾又歸還",
-    "ctx": "星街玩麥塊時偷走Miko存放的垃圾，之後又歸還。來源待補。",
-    "ctxZh": "星街玩麥塊時偷走Miko存放的垃圾，之後又歸還。來源待補。",
+    "ctx": "星街玩麥塊時偷走Miko存放的垃圾，之後又歸還。",
+    "ctxZh": "星街玩麥塊時偷走Miko存放的垃圾，之後又歸還。",
     "type": "Stream",
-    "link": "https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub",
-    "source": "miComet reference document"
+    "link": "https://www.youtube.com/watch?v=8kr5iIs1OCc",
+    "source": "星街すいせい原始直播",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=8kr5iIs1OCc",
+        "kind": "youtube",
+        "label": "星街すいせい原始直播",
+        "official": true
+      }
+    ],
+    "sourceStatus": "verified"
   },
   {
     "id": "s1130",
@@ -339,11 +378,20 @@
     "emoji": "💛",
     "title": "星街在最後的棉花糖雜談提到Miko新衣",
     "titleZh": "星街在最後的棉花糖雜談提到Miko新衣",
-    "ctx": "星街最後的棉花糖雜談原檔已私人；她在約2220秒處提到當天看了Miko的新衣，很受感動。這場雜談也談到許多心路歷程與活動方針。來源待補。",
-    "ctxZh": "星街最後的棉花糖雜談原檔已私人；她在約2220秒處提到當天看了Miko的新衣，很受感動。這場雜談也談到許多心路歷程與活動方針。來源待補。",
+    "ctx": "星街最後的棉花糖雜談原檔已私人；她在約2220秒處提到當天看了Miko的新衣，很受感動。這場雜談也談到許多心路歷程與活動方針。",
+    "ctxZh": "星街最後的棉花糖雜談原檔已私人；她在約2220秒處提到當天看了Miko的新衣，很受感動。這場雜談也談到許多心路歷程與活動方針。",
     "type": "Stream",
-    "link": "https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub",
-    "source": "miComet reference document"
+    "link": "https://www.youtube.com/watch?v=yVp3OnAyngE",
+    "source": "星街すいせい原始直播",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=yVp3OnAyngE",
+        "kind": "youtube",
+        "label": "星街すいせい原始直播",
+        "official": true
+      }
+    ],
+    "sourceStatus": "verified"
   },
   {
     "id": "mcarchive-2019-1217-vanguard-start",
@@ -414,11 +462,20 @@
     "emoji": "💛",
     "title": "星街久違登入麥塊並參觀Miko的建築",
     "titleZh": "星街久違登入麥塊並參觀Miko的建築",
-    "ctx": "星街久違登入Hololive麥塊伺服器，參觀Miko的蜜蜂房間、雪人與神社抽籤。她因為怕蟲很快離開蜜蜂房間，也覺得自己的南瓜作品顯得笨拙。來源待補。",
-    "ctxZh": "星街久違登入Hololive麥塊伺服器，參觀Miko的蜜蜂房間、雪人與神社抽籤。她因為怕蟲很快離開蜜蜂房間，也覺得自己的南瓜作品顯得笨拙。來源待補。",
+    "ctx": "星街久違登入Hololive麥塊伺服器，參觀Miko的蜜蜂房間、雪人與神社抽籤。她因為怕蟲很快離開蜜蜂房間，也覺得自己的南瓜作品顯得笨拙。",
+    "ctxZh": "星街久違登入Hololive麥塊伺服器，參觀Miko的蜜蜂房間、雪人與神社抽籤。她因為怕蟲很快離開蜜蜂房間，也覺得自己的南瓜作品顯得笨拙。",
     "type": "Stream",
-    "link": "https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub",
-    "source": "miComet reference document"
+    "link": "https://www.youtube.com/watch?v=x67wmix7IX0",
+    "source": "星街すいせい原始直播",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=x67wmix7IX0",
+        "kind": "youtube",
+        "label": "星街すいせい原始直播",
+        "official": true
+      }
+    ],
+    "sourceStatus": "verified"
   },
   {
     "id": "s1137",
@@ -444,11 +501,20 @@
     "emoji": "💛",
     "title": "星街ARK直播中Miko來訪",
     "titleZh": "星街ARK直播中Miko來訪",
-    "ctx": "星街在ARK中建了一間沒有屋頂的小房子，Miko前來探訪並吐槽很窮酸，成為兩人早期ARK互動紀錄。來源待補。",
-    "ctxZh": "星街在ARK中建了一間沒有屋頂的小房子，Miko前來探訪並吐槽很窮酸，成為兩人早期ARK互動紀錄。來源待補。",
+    "ctx": "星街在ARK中建了一間沒有屋頂的小房子，Miko前來探訪並吐槽很窮酸，成為兩人早期ARK互動紀錄。",
+    "ctxZh": "星街在ARK中建了一間沒有屋頂的小房子，Miko前來探訪並吐槽很窮酸，成為兩人早期ARK互動紀錄。",
     "type": "Stream",
-    "link": "https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub",
-    "source": "miComet reference document"
+    "link": "https://www.youtube.com/watch?v=2BH8Msl_BYw",
+    "source": "星街すいせい原始直播",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=2BH8Msl_BYw",
+        "kind": "youtube",
+        "label": "星街すいせい原始直播",
+        "official": true
+      }
+    ],
+    "sourceStatus": "verified"
   },
   {
     "id": "s1139",
@@ -569,20 +635,5 @@
     "type": "Text",
     "link": "https://www.youtube.com/watch?v=0WsDVU_W6QU&t=388s https://www.ptt.cc/bbs/SakuraMiko/M.1709694215.A.D46.html",
     "source": "Suisei official YouTube original stream / chronology timestamp cross-check"
-  },
-  {
-    "id": "s1155",
-    "displayId": "20-7-5",
-    "date": "2020-07-27",
-    "phase": 1,
-    "side": "shared",
-    "emoji": "💛",
-    "title": "星街雜談提到與Miko練習VILLS的歡樂回憶",
-    "titleZh": "星街雜談提到與Miko練習VILLS的歡樂回憶",
-    "ctx": "星街在雜談中提到與Miko練習VILLS時的事，說最近常和Miko見面，練習時笑個不停，排演非常開心。來源待補。",
-    "ctxZh": "星街在雜談中提到與Miko練習VILLS時的事，說最近常和Miko見面，練習時笑個不停，排演非常開心。來源待補。",
-    "type": "Stream",
-    "link": "https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub",
-    "source": "miComet reference document"
   }
 ]
