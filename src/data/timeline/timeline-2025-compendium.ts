@@ -395,6 +395,18 @@ function nextEnglishTitle(date: string, fallback: string) {
 }
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-148': {
+    link: 'https://www.youtube.com/watch?v=-zro9f2kqiM https://www.youtube.com/watch?v=85B3oh9EGaY https://www.youtube.com/watch?v=vGLst2Sj0gc',
+    source: 'Fubuki, Miko and Suisei official YouTube original streams',
+  },
+  'c2-2025-149': {
+    link: 'https://www.youtube.com/watch?v=-zro9f2kqiM',
+    source: 'Fubuki official YouTube original stream',
+  },
+  'c2-2025-192': {
+    link: 'https://www.youtube.com/watch?v=PgLppZ_-cI4 https://www.youtube.com/watch?v=QXPOyHRst-Y',
+    source: 'Miko and Fubuki official YouTube original streams',
+  },
   'c2-2025-146': {
     link: 'https://shop.hololivepro.com/products/hololive_situationhololive_cafeteriaseries_vol1',
     source: 'hololive production official shop',
