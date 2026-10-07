@@ -670,6 +670,166 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=QZBOzpr7ABg',
     source: 'Miko official YouTube original stream',
   },
+  'c2-2025-208': {
+    link: 'https://www.youtube.com/watch?v=iISIcvYS67c',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-209': {
+    link: 'https://www.youtube.com/watch?v=2LDhfEcrq5o',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-218': {
+    link: 'https://www.youtube.com/watch?v=lWESBbpBclU',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-225': {
+    link: 'https://www.youtube.com/watch?v=VzGNuQHy5rk',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-240': {
+    link: 'https://www.youtube.com/watch?v=wRnwjqmgwEA',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-245': {
+    link: 'https://www.youtube.com/watch?v=CsdIz2Ql5zA',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-263': {
+    link: 'https://www.youtube.com/watch?v=gkC1hcVgdPE',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-288': {
+    link: 'https://www.youtube.com/watch?v=wATqcMpd9bQ',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-290': {
+    link: 'https://www.youtube.com/watch?v=K9IccjZT6uE',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-296': {
+    link: 'https://www.youtube.com/watch?v=W7hCj5B7ACQ',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-160': {
+    link: 'https://www.youtube.com/watch?v=7xyrj2D6Xfk',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-168': {
+    link: 'https://www.youtube.com/watch?v=K-O4Xi6ipnk',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-189': {
+    link: 'https://www.youtube.com/watch?v=pCwgytSgT4Q',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-190': {
+    link: 'https://www.youtube.com/watch?v=0N0mSXkvNSY',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-204': {
+    link: 'https://www.youtube.com/watch?v=wM0A1aiIPpY',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-060': {
+    link: 'https://www.youtube.com/watch?v=DShOfmHKIq4',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-064': {
+    link: 'https://www.youtube.com/watch?v=Uf5IPItH1vQ',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-067': {
+    link: 'https://www.youtube.com/watch?v=tPwEyBuFp6Q',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-074': {
+    link: 'https://www.youtube.com/watch?v=6y_pKqg6IxI',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-075': {
+    link: 'https://www.youtube.com/watch?v=6y_pKqg6IxI',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-076': {
+    link: 'https://www.youtube.com/watch?v=HPKW-iU3Eds',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-094': {
+    link: 'https://www.youtube.com/watch?v=TBu1JUErkMY',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-105': {
+    link: 'https://www.youtube.com/watch?v=gUO6xWeKu2Y',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-107': {
+    link: 'https://www.youtube.com/watch?v=OHXmXlPFhZI',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-109': {
+    link: 'https://www.youtube.com/watch?v=DwGvCtIOtQY',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-110': {
+    link: 'https://www.youtube.com/watch?v=cLHhLVFd0Oc',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-124': {
+    link: 'https://www.youtube.com/watch?v=txDPAtNPixE',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-005': {
+    link: 'https://www.youtube.com/watch?v=Jk5Wh-MkM60',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-007': {
+    link: 'https://www.youtube.com/watch?v=LeIfZ2wGP7s',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-011': {
+    link: 'https://www.youtube.com/watch?v=sB5A9mFEO9Y',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-012': {
+    link: 'https://www.youtube.com/watch?v=tBATZsxSb1g',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-018': {
+    link: 'https://www.youtube.com/watch?v=DhPf_ob5dPY',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-022': {
+    link: 'https://www.youtube.com/watch?v=_PmTRVOHW3U',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-026': {
+    link: 'https://www.youtube.com/watch?v=MsJmGwqU--A',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-027': {
+    link: 'https://www.youtube.com/watch?v=Ddcoq6USQjw',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-032': {
+    link: 'https://www.youtube.com/watch?v=GxXpkps21Kc',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-035': {
+    link: 'https://www.youtube.com/watch?v=PMOLxiIbX0g',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-039': {
+    link: 'https://www.youtube.com/watch?v=SYeAXSpBtrY',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-042': {
+    link: 'https://www.youtube.com/watch?v=0Lyo6TqXfA4',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-043': {
+    link: 'https://www.youtube.com/watch?v=WNUJdRsBi1o',
+    source: 'Suisei official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
