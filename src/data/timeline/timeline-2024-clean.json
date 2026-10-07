@@ -1082,6 +1082,21 @@
     "source": "hololive official event report"
   },
   {
+    "id": "miko-2024-1027-solo-live-micomet-backstage",
+    "displayId": "24-10-ADD-2",
+    "date": "2024-10-27",
+    "phase": 5,
+    "side": "miko",
+    "emoji": "🌸",
+    "title": "Miko回顧Solo Live後台，感謝星街陪伴並分享miComet幕後",
+    "titleZh": "Miko回顧Solo Live後台，感謝星街陪伴並分享miComet幕後",
+    "ctx": "Miko在首場Solo Live隔日回顧直播中談到星街作為特別來賓的幕後互動。她分享演出前後在休息室與星街的對話，表示有經驗豐富的星街在身邊讓她感到很安心，也談到兩人一起登台的幕後故事。",
+    "ctxZh": "Miko在首場Solo Live隔日回顧直播中談到星街作為特別來賓的幕後互動。她分享演出前後在休息室與星街的對話，表示有經驗豐富的星街在身邊讓她感到很安心，也談到兩人一起登台的幕後故事。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=96MMOXYNWJ4 https://hololive-tsuushin.com/holonews/miko-13/",
+    "source": "Miko official YouTube original stream / Japanese report"
+  },
+  {
     "id": "c2024-055",
     "displayId": "24-10-CLEAN-7",
     "date": "2024-10-29",
