@@ -111,7 +111,7 @@ const additions = [
     link: '',
     source: '2026 compendium update',
   },
-  {
+    {
     id: 'c2-2026-110',
     displayId: '26-C2-36',
     date: '2026-07-31',
@@ -128,7 +128,7 @@ const additions = [
     link: '',
     source: '2026 compendium update',
   },
-  {
+    {
     id: 'c2-2026-111',
     displayId: '26-C2-34',
     date: '2026-08-01',
@@ -145,7 +145,7 @@ const additions = [
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
-  {
+    {
     id: 'c2-2026-112',
     displayId: '26-C2-29',
     date: '2026-08-06',
@@ -162,7 +162,7 @@ const additions = [
     link: 'https://www.youtube.com/watch?v=1hqjjY5L9ZE https://game.watch.impress.co.jp/docs/news/2131268.html',
     source: 'MiComet Compendium II (user-provided list); web corroboration: Fubuki Holodori clip and official miComet event coverage',
   },
-  {
+    {
     id: 'c2-2026-113',
     displayId: '26-C2-26',
     date: '2026-08-07',
@@ -179,7 +179,7 @@ const additions = [
     link: 'https://www.gamer.ne.jp/news/202608070017/ https://game.watch.impress.co.jp/docs/news/2131268.html',
     source: 'MiComet Compendium II (user-provided list); web corroboration: Hololive Dreams miComet swimsuit event coverage',
   },
-  {
+    {
     id: 'c2-2026-114',
     displayId: '26-C2-23',
     date: '2026-08-17',
@@ -196,7 +196,7 @@ const additions = [
     link: 'https://www.youtube.com/watch?v=xz2aErgeW1c https://www.youtube.com/watch?v=FExv-dxnjEM',
     source: 'MiComet Compendium II (user-provided list); web-verified: Suisei official JSP3 stream and miComet clip',
   },
-  {
+    {
     id: 'c2-2026-115',
     displayId: '26-C2-33',
     date: '2026-08-02',
@@ -213,7 +213,7 @@ const additions = [
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
-  {
+    {
     id: 'c2-2026-116',
     displayId: '26-C2-32',
     date: '2026-08-03',
@@ -230,7 +230,7 @@ const additions = [
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
-  {
+    {
     id: 'c2-2026-117',
     displayId: '26-C2-31',
     date: '2026-08-04',
@@ -247,7 +247,7 @@ const additions = [
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
-  {
+    {
     id: 'c2-2026-119',
     displayId: '26-C2-30',
     date: '2026-08-06',
@@ -264,7 +264,7 @@ const additions = [
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
-  {
+    {
     id: 'c2-2026-120',
     displayId: '26-C2-27',
     date: '2026-08-07',
@@ -281,7 +281,7 @@ const additions = [
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
-  {
+    {
     id: 'c2-2026-121',
     displayId: '26-C2-28',
     date: '2026-08-07',
@@ -298,7 +298,7 @@ const additions = [
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
-  {
+    {
     id: 'c2-2026-122',
     displayId: '26-C2-25',
     date: '2026-08-09',
@@ -315,7 +315,7 @@ const additions = [
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
-  {
+    {
     id: 'c2-2026-123',
     displayId: '26-C2-22',
     date: '2026-08-18',
@@ -332,7 +332,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-125',
     displayId: '26-C2-21',
     date: '2026-08-24',
@@ -349,7 +349,7 @@ const additions = [
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
-  {
+    {
     id: 'c2-2026-126',
     displayId: '26-C2-19',
     date: '2026-08-27',
@@ -366,7 +366,7 @@ const additions = [
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
-  {
+    {
     id: 'c2-2026-127',
     displayId: '26-C2-20',
     date: '2026-08-27',
@@ -383,7 +383,7 @@ const additions = [
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
-  {
+    {
     id: 'c2-2026-128',
     displayId: '26-C2-17',
     date: '2026-09-05',
@@ -400,7 +400,7 @@ const additions = [
     link: '',
     source: 'Suisei sub-account X post; public X index cross-check',
   },
-  {
+    {
     id: 'c2-2026-129',
     displayId: '26-C2-16',
     date: '2026-09-06',
@@ -417,7 +417,7 @@ const additions = [
     link: 'https://x.com/mikochisub/status/2096810353623790022',
     source: 'Miko sub-account X post; public X index cross-check',
   },
-  {
+    {
     id: 'c2-2026-130',
     displayId: '26-C2-14',
     date: '2026-09-09',
@@ -434,7 +434,7 @@ const additions = [
     link: '',
     source: 'Miko sub-account X post; public X index cross-check',
   },
-  {
+    {
     id: 'c2-2026-134',
     displayId: '26-C2-9',
     date: '2026-09-24',
@@ -451,8 +451,7 @@ const additions = [
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
-
-  {
+    {
     id: 'c2-2026-135',
     displayId: '26-C2-11',
     date: '2026-09-15',
@@ -469,7 +468,7 @@ const additions = [
     link: 'https://www.youtube.com/watch?v=AaYnGEgePmg https://vnews.jp/event/12648',
     source: 'Miko official YouTube; Japanese Vnews scene index',
   },
-  {
+    {
     id: 'c2-2026-137',
     displayId: '26-C2-7',
     date: '2026-09-25',
@@ -486,7 +485,7 @@ const additions = [
     link: '',
     source: 'official YouTube / HoloStats cross-check',
   },
-  {
+    {
     id: 'c2-2026-161',
     displayId: '26-C2-8',
     date: '2026-09-25',
@@ -503,7 +502,7 @@ const additions = [
     link: '',
     source: 'Suisei and Miko official YouTube original watchalong streams',
   },
-  {
+    {
     id: 'c2-2026-138',
     displayId: '26-C2-4',
     date: '2026-09-29',
@@ -520,7 +519,7 @@ const additions = [
     link: 'https://www.youtube.com/watch?v=CxKEQr4rvbA',
     source: 'Inui Toko official YouTube original stream; Japanese public index cross-check',
   },
-  {
+    {
     id: 'c2-2026-139',
     displayId: '26-C2-3',
     date: '2026-10-01',
@@ -537,8 +536,7 @@ const additions = [
     link: '',
     source: 'official Japanese YouTube POVs / HoloStats cross-check',
   },
-
-  {
+    {
     id: 'c2-2026-140',
     displayId: '26-C2-15',
     date: '2026-09-08',
@@ -555,7 +553,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-141',
     displayId: '26-C2-12',
     date: '2026-09-15',
@@ -572,7 +570,7 @@ const additions = [
     link: '',
     source: 'Miko and Suisei official YouTube original streams; Japanese clip index used only for scene cross-check',
   },
-  {
+    {
     id: 'c2-2026-142',
     displayId: '26-C2-5',
     date: '2026-09-26',
@@ -589,7 +587,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-143',
     displayId: '26-C2-6',
     date: '2026-09-26',
@@ -606,7 +604,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-144',
     displayId: '26-C2-2',
     date: '2026-10-02',
@@ -623,7 +621,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-145',
     displayId: '26-C2-1',
     date: '2026-10-03',
@@ -640,8 +638,7 @@ const additions = [
     link: 'https://www.youtube.com/watch?v=CMlnK7XN8go https://hololive-tsuushin.com/holonews/miko-97/',
     source: 'Roboco official YouTube original stream; Japanese Hololive news recap',
   },
-
-  {
+    {
     id: 'c2-2026-146',
     displayId: '26-C2-18',
     date: '2026-09-03',
@@ -658,7 +655,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-147',
     displayId: '26-C2-13',
     date: '2026-09-10',
@@ -675,8 +672,7 @@ const additions = [
     link: '',
     source: 'Fubuki official YouTube original stream',
   },
-
-  {
+    {
     id: 'c2-2026-148',
     displayId: '26-C2-84',
     date: '2026-05-05',
@@ -693,8 +689,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-
-  {
+    {
     id: 'c2-2026-149',
     displayId: '26-C2-54',
     date: '2026-06-29',
@@ -711,7 +706,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-150',
     displayId: '26-C2-53',
     date: '2026-07-01',
@@ -728,7 +723,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-151',
     displayId: '26-C2-49',
     date: '2026-07-05',
@@ -745,7 +740,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-152',
     displayId: '26-C2-24',
     date: '2026-08-17',
@@ -762,7 +757,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-153',
     displayId: '26-C2-10',
     date: '2026-09-23',
@@ -779,8 +774,7 @@ const additions = [
     link: '',
     source: 'Miko / Suisei / Lui official YouTube original POVs',
   },
-
-  {
+    {
     id: 'c2-2026-154',
     displayId: '26-C2-85',
     date: '2026-04-26',
@@ -797,7 +791,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-155',
     displayId: '26-C2-47',
     date: '2026-07-07',
@@ -814,7 +808,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-156',
     displayId: '26-C2-38',
     date: '2026-07-28',
@@ -831,7 +825,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-  {
+    {
     id: 'c2-2026-157',
     displayId: '26-C2-35',
     date: '2026-08-01',
@@ -848,8 +842,7 @@ const additions = [
     link: '',
     source: 'Miko official YouTube original stream',
   },
-
-  {
+    {
     id: 'c2-2026-158',
     displayId: '26-C2-41',
     date: '2026-07-23',
