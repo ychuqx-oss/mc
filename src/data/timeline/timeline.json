@@ -91,7 +91,7 @@
   },
   {
     "id": "s1119",
-    "displayId": "19-7-6",
+    "displayId": "19-7-4",
     "date": "2019-07-23",
     "phase": 1,
     "side": "shared",
@@ -107,7 +107,7 @@
   },
   {
     "id": "s1120",
-    "displayId": "19-7-7",
+    "displayId": "19-7-5",
     "date": "2019-07-27",
     "phase": 1,
     "side": "shared",
@@ -152,7 +152,7 @@
   },
   {
     "id": "s3",
-    "displayId": "19-8-4",
+    "displayId": "19-8-3",
     "date": "2019-08-04",
     "phase": 1,
     "side": "suisei",
@@ -167,7 +167,7 @@
   },
   {
     "id": "s1123",
-    "displayId": "19-8-5",
+    "displayId": "19-8-4",
     "date": "2019-08-04",
     "phase": 1,
     "side": "miko",
@@ -182,7 +182,7 @@
   },
   {
     "id": "s1124",
-    "displayId": "19-8-6",
+    "displayId": "19-8-5",
     "date": "2019-08-28",
     "phase": 1,
     "side": "shared",
@@ -197,7 +197,7 @@
   },
   {
     "id": "s1125",
-    "displayId": "19-8-7",
+    "displayId": "19-8-6",
     "date": "2019-08-30",
     "phase": 1,
     "side": "shared",
@@ -437,7 +437,7 @@
   },
   {
     "id": "s1138",
-    "displayId": "20-2-2",
+    "displayId": "20-2-1",
     "date": "2020-02-02",
     "phase": 1,
     "side": "shared",
@@ -452,7 +452,7 @@
   },
   {
     "id": "s1139",
-    "displayId": "20-2-3",
+    "displayId": "20-2-2",
     "date": "2020-02-07",
     "phase": 1,
     "side": "shared",
@@ -467,7 +467,7 @@
   },
   {
     "id": "s1140",
-    "displayId": "20-2-4",
+    "displayId": "20-2-3",
     "date": "2020-02-14",
     "phase": 1,
     "side": "suisei",
@@ -542,7 +542,7 @@
   },
   {
     "id": "s1153",
-    "displayId": "20-7-4",
+    "displayId": "20-7-3",
     "date": "2020-07-19",
     "phase": 1,
     "side": "shared",
@@ -557,7 +557,7 @@
   },
   {
     "id": "s1154",
-    "displayId": "20-7-5",
+    "displayId": "20-7-4",
     "date": "2020-07-20",
     "phase": 1,
     "side": "miko",
@@ -572,7 +572,7 @@
   },
   {
     "id": "s1155",
-    "displayId": "20-7-9",
+    "displayId": "20-7-5",
     "date": "2020-07-27",
     "phase": 1,
     "side": "shared",
