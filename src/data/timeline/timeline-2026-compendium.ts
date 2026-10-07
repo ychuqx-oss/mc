@@ -889,7 +889,25 @@ const additions = [
     ctxEn: 'The official Hololive Dreams theme song “Yumeiro Wonder” was released with Miko and Suisei among the large hololive ensemble.',
     link: '',
     source: 'Hololive Dreams official YouTube',
-  },
+  },,
+  {
+    id: 'c2-2026-160',
+    displayId: '26-C2-160',
+    date: '2026-03-07',
+    phase: 6,
+    side: 'shared' as const,
+    sharedCategory: 'group' as const,
+    emoji: '💛',
+    type: 'Event',
+    title: 'Miko and Suisei Perform on Separate Stages at hololive 7th fes.',
+    titleZh: 'hololive 7th fes.中Miko與星街分別出演STAGE2／STAGE4',
+    titleEn: 'Miko and Suisei Perform on Separate Stages at hololive 7th fes.',
+    ctx: 'At hololive 7th fes. Ridin’ on Dreams, Miko performed on STAGE2 on March 7, while Suisei performed on STAGE4 on March 8. This was the same overall event, not a miComet joint stage.',
+    ctxZh: '《hololive 7th fes. Ridin’ on Dreams》中，Miko於3月7日STAGE2出演，星街於3月8日STAGE4出演；兩人屬於同一大型活動，但並非miComet共同舞台。',
+    ctxEn: 'At hololive 7th fes. Ridin’ on Dreams, Miko performed on STAGE2 on March 7, while Suisei performed on STAGE4 on March 8. This was the same overall event, not a miComet joint stage.',
+    link: 'https://hololivesuperexpo.hololivepro.com/2026/en/fes/cast/',
+    source: 'hololive 7th fes. official cast lineup',
+  }
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
