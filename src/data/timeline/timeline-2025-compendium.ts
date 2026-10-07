@@ -946,6 +946,10 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=D2Ki2BjqedU',
     source: 'Miko official YouTube original stream',
   },
+  'c2-2025-196': {
+    link: 'https://www.youtube.com/watch?v=jS3BvDn2gV0',
+    source: 'Fubuki official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
