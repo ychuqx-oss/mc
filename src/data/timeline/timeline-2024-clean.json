@@ -14,6 +14,38 @@
     "link": "https://www.youtube.com/watch?v=pfDd_whXL48"
   },
   {
+    "id": "official-2024-0116-fubumicomet-palworld",
+    "displayId": "24-01-OFFICIAL-2",
+    "date": "2024-01-16",
+    "phase": 5,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "FubuMiComet三人一起遊玩《Palworld》",
+    "titleZh": "FubuMiComet三人一起遊玩《Palworld》",
+    "ctx": "白上吹雪、Miko與星街以FubuMiComet組合進入《Palworld》，之後形成「エリートスターキング団」並延伸出多次各視點遊玩。",
+    "ctxZh": "白上吹雪、Miko與星街以FubuMiComet組合進入《Palworld》，之後形成「エリートスターキング団」並延伸出多次各視點遊玩。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=j20R83J_U2c",
+    "source": "Miko official YouTube"
+  },
+  {
+    "id": "official-2024-0116-school-test",
+    "displayId": "24-01-OFFICIAL-1",
+    "date": "2024-01-16",
+    "phase": 5,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "Miko與星街在《ホロ小学力テスト対決》正面對決",
+    "titleZh": "Miko與星街在《ホロ小学力テスト対決》正面對決",
+    "ctx": "Miko與星街在白上吹雪主持的Hololive小學學力測驗企劃中正面對決，成為2024年初代表性的miComet大型企劃。",
+    "ctxZh": "Miko與星街在白上吹雪主持的Hololive小學學力測驗企劃中正面對決，成為2024年初代表性的miComet大型企劃。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=j82vVRh3nMU",
+    "source": "Miko official YouTube"
+  },
+  {
     "id": "c2024-002",
     "displayId": "24-01-CLEAN-2",
     "date": "2024-01-17",
@@ -26,6 +58,21 @@
     "ctxZh": "Miko主持Hololive小學學力測驗，星街也在相關整理中登場。當天多支剪輯把miComet與其他成員的爆笑答案、前後篇測驗內容合併整理成一組事件。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=PvTzU3LZFyE"
+  },
+  {
+    "id": "official-2024-0117-curry-stew",
+    "displayId": "24-01-OFFICIAL-3",
+    "date": "2024-01-17",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet正式公布「星街家のカレー／さくら家のシチュー」合作商品",
+    "titleZh": "miComet正式公布「星街家のカレー／さくら家のシチュー」合作商品",
+    "ctx": "Miko與星街共同公開「星街家の辛口トマトカレー」與「さくら家の濃厚シチュー」詳細資訊，商品之後透過Ito-Yokado與7-Eleven等通路販售。",
+    "ctxZh": "Miko與星街共同公開「星街家の辛口トマトカレー」與「さくら家の濃厚シチュー」詳細資訊，商品之後透過Ito-Yokado與7-Eleven等通路販售。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=yeL4_BDSkb4",
+    "source": "Suisei official YouTube"
   },
   {
     "id": "c2024-003",
@@ -112,6 +159,21 @@
     "link": "https://www.youtube.com/watch?v=QkINY-M34JU"
   },
   {
+    "id": "official-2024-0302-singapore-vtr",
+    "displayId": "24-03-OFFICIAL-1",
+    "date": "2024-03-02",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet公開Singapore海外出差實拍VTR",
+    "titleZh": "miComet公開Singapore海外出差實拍VTR",
+    "ctx": "Miko與星街公開miComet Singapore海外出差的實拍外景VTR，補完2023海外活動期間的現地行程與互動。",
+    "ctxZh": "Miko與星街公開miComet Singapore海外出差的實拍外景VTR，補完2023海外活動期間的現地行程與互動。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=PTQBbKU4kmU",
+    "source": "Miko official YouTube"
+  },
+  {
     "id": "official-2024-0317-5thfes",
     "displayId": "24-03-OFFICIAL-1",
     "date": "2024-03-17",
@@ -139,6 +201,21 @@
     "ctxZh": "Miko與星街進行《世界遊戲大全51》告知連動。五子棋與其他遊戲對決中，星街多次壓制Miko，Miko也嘗試用盤外戰術擾亂星街。當天多支剪輯都合併為同一場遊戲對決事件。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=iRr3PxLR_B8"
+  },
+  {
+    "id": "official-2024-0329-sugar-rush-mv",
+    "displayId": "24-03-OFFICIAL-2",
+    "date": "2024-03-29",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet《シュガーラッシュ》官方MV公開",
+    "titleZh": "miComet《シュガーラッシュ》官方MV公開",
+    "ctx": "miComet首支原創曲《シュガーラッシュ》的官方MV於星街官方頻道公開，歌曲由DECO*27與TAKU INOUE製作。",
+    "ctxZh": "miComet首支原創曲《シュガーラッシュ》的官方MV於星街官方頻道公開，歌曲由DECO*27與TAKU INOUE製作。",
+    "type": "Music",
+    "link": "https://www.youtube.com/watch?v=gtgME6MJpk4 https://hololive.hololivepro.com/music/347/",
+    "source": "Suisei official YouTube / hololive official music page"
   },
   {
     "id": "c2024-010",
@@ -273,26 +350,10 @@
     "phase": 5,
     "side": "shared",
     "emoji": "💛",
-    "title": "FubuMiComet首次挑戰《Fallout76》",
-    "titleZh": "FubuMiComet首次挑戰《Fallout76》",
-    "ctx": "Miko、星街與白上吹雪一起初見挑戰《Fallout76》，在廢土世界展開三人連動。",
-    "ctxZh": "Miko、星街與白上吹雪一起初見挑戰《Fallout76》，在廢土世界展開三人連動。",
-    "type": "Stream",
-    "link": "https://www.youtube.com/watch?v=1vzdRC2zHuw",
-    "source": "Miko official YouTube original stream"
-  },
-  {
-    "id": "official-2024-0511-fubumicomet-fallout76",
-    "displayId": "24-05-OFFICIAL-1",
-    "date": "2024-05-11",
-    "phase": 5,
-    "side": "shared",
-    "sharedCategory": "group",
-    "emoji": "💛",
-    "title": "FubuMiComet三人首次一起遊玩《Fallout 76》",
-    "titleZh": "FubuMiComet三人首次一起遊玩《Fallout 76》",
-    "ctx": "白上吹雪、Miko與星街以FubuMiComet三人組一起遊玩《Fallout 76》；Miko與白上吹雪皆留下官方原始直播，後續大量剪輯都源自這場連動。",
-    "ctxZh": "白上吹雪、Miko與星街以FubuMiComet三人組一起遊玩《Fallout 76》；Miko與白上吹雪皆留下官方原始直播，後續大量剪輯都源自這場連動。",
+    "title": "FubuMiComet首次挑戰《Fallout 76》",
+    "titleZh": "FubuMiComet首次挑戰《Fallout 76》",
+    "ctx": "白上吹雪、Miko與星街以FubuMiComet三人組一起遊玩《Fallout 76》，Miko與白上吹雪皆留下官方原始直播。",
+    "ctxZh": "白上吹雪、Miko與星街以FubuMiComet三人組一起遊玩《Fallout 76》，Miko與白上吹雪皆留下官方原始直播。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=1vzdRC2zHuw https://www.youtube.com/watch?v=MttMn-WsAy0",
     "source": "Miko and Fubuki official YouTube"
@@ -396,6 +457,22 @@
     "link": "https://www.youtube.com/watch?v=LHxfeXqjIVk"
   },
   {
+    "id": "official-2024-0605-school-diagnosis",
+    "displayId": "24-06-OFFICIAL-1",
+    "date": "2024-06-05",
+    "phase": 5,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "Miko與星街參加第二回Hololive五科突擊學力診斷",
+    "titleZh": "Miko與星街參加第二回Hololive五科突擊學力診斷",
+    "ctx": "Miko與星街和多名Hololive成員一起參加第二回《ホロライブ学力診断》，延續年初學力測驗系列。",
+    "ctxZh": "Miko與星街和多名Hololive成員一起參加第二回《ホロライブ学力診断》，延續年初學力測驗系列。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=4fSfOW4PqQY",
+    "source": "hololive talent official YouTube"
+  },
+  {
     "id": "c2024-028",
     "displayId": "24-06-CLEAN-3",
     "date": "2024-06-16",
@@ -480,6 +557,21 @@
     "link": "https://www.youtube.com/watch?v=vpyp7JpBLT8"
   },
   {
+    "id": "official-2024-0719-micomet4th",
+    "displayId": "24-07-OFFICIAL-1",
+    "date": "2024-07-19",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet四周年線下連動：對決並回看兩人初期互動",
+    "titleZh": "miComet四周年線下連動：對決並回看兩人初期互動",
+    "ctx": "miComet結成四周年，Miko與星街進行線下連動，先進行遊戲對決，再一起觀看早期兩人的高濃度互動片段，形成著名的「地獄鑑賞會」。",
+    "ctxZh": "miComet結成四周年，Miko與星街進行線下連動，先進行遊戲對決，再一起觀看早期兩人的高濃度互動片段，形成著名的「地獄鑑賞會」。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=1tUL-AI4U-s",
+    "source": "Miko official YouTube"
+  },
+  {
     "id": "c2024-034",
     "displayId": "24-07-CLEAN-4",
     "date": "2024-07-20",
@@ -522,6 +614,22 @@
     "link": "https://www.youtube.com/watch?v=5pkjpx08Qb4"
   },
   {
+    "id": "official-2024-0721-miko3d-announcement",
+    "displayId": "24-07-OFFICIAL-2",
+    "date": "2024-07-21",
+    "phase": 5,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "Miko重大發表3D Live中星街與白上吹雪共同出演",
+    "titleZh": "Miko重大發表3D Live中星街與白上吹雪共同出演",
+    "ctx": "Miko的重大發表3D Live中，星街與白上吹雪共同出演，miComet再次於Miko大型3D企劃中同場。",
+    "ctxZh": "Miko的重大發表3D Live中，星街與白上吹雪共同出演，miComet再次於Miko大型3D企劃中同場。",
+    "type": "Event",
+    "link": "https://www.youtube.com/watch?v=lJLs49hA84g",
+    "source": "Miko official YouTube"
+  },
+  {
     "id": "c2024-037",
     "displayId": "24-07-CLEAN-7",
     "date": "2024-07-22",
@@ -534,6 +642,22 @@
     "ctxZh": "四周年回顧後續剪輯中，Miko與星街再次觀看早期互動，因過度青澀的貼貼場景而受到精神傷害。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=_cL4KU017b0"
+  },
+  {
+    "id": "official-2024-0723-outlast",
+    "displayId": "24-07-OFFICIAL-3",
+    "date": "2024-07-23",
+    "phase": 5,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "FubuMiComet三人挑戰《The Outlast Trials》",
+    "titleZh": "FubuMiComet三人挑戰《The Outlast Trials》",
+    "ctx": "白上吹雪、Miko與星街以FubuMiComet三人組挑戰《The Outlast Trials》，星街與白上吹雪皆留下官方視角。",
+    "ctxZh": "白上吹雪、Miko與星街以FubuMiComet三人組挑戰《The Outlast Trials》，星街與白上吹雪皆留下官方視角。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=RDM8pVvFmJM https://www.youtube.com/watch?v=mxUuC0xR8cI",
+    "source": "Suisei and Fubuki official YouTube"
   },
   {
     "id": "c2024-038",
@@ -593,6 +717,22 @@
     "link": "https://www.youtube.com/watch?v=1YGYdvLknzE"
   },
   {
+    "id": "official-2024-0907-gen0-live",
+    "displayId": "24-09-OFFICIAL-1",
+    "date": "2024-09-07",
+    "phase": 5,
+    "side": "shared",
+    "sharedCategory": "gen0",
+    "emoji": "💛",
+    "title": "0期生3D Live《Ray of Jewelry》中miComet合唱《シュガーラッシュ》",
+    "titleZh": "0期生3D Live《Ray of Jewelry》中miComet合唱《シュガーラッシュ》",
+    "ctx": "Hololive 0期生3D Live《Ray of Jewelry》中Miko與星街共同出演，miComet在節目內演唱《シュガーラッシュ》。",
+    "ctxZh": "Hololive 0期生3D Live《Ray of Jewelry》中Miko與星街共同出演，miComet在節目內演唱《シュガーラッシュ》。",
+    "type": "Event",
+    "link": "https://www.youtube.com/watch?v=AUu9pSkkgaY",
+    "source": "hololive official YouTube"
+  },
+  {
     "id": "c2024-041",
     "displayId": "24-09-CLEAN-3",
     "date": "2024-09-08",
@@ -619,6 +759,22 @@
     "ctxZh": "MariMikoMet相關手繪片段中，星街看到Miko的吃法後忍不住傻眼，形成三人連動中的miComet互動。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=q7yldQF_QAU"
+  },
+  {
+    "id": "official-2024-0914-marimikomet",
+    "displayId": "24-09-OFFICIAL-2",
+    "date": "2024-09-14",
+    "phase": 5,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "Marine、Miko、星街進行「勝手にホロメンランキング」企劃",
+    "titleZh": "Marine、Miko、星街進行「勝手にホロメンランキング」企劃",
+    "ctx": "寶鐘瑪琳、Miko與星街以MariMikoMet三人組進行「勝手に○○なホロメンランキング」企劃。",
+    "ctxZh": "寶鐘瑪琳、Miko與星街以MariMikoMet三人組進行「勝手に○○なホロメンランキング」企劃。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=bikftGrxiBU",
+    "source": "Miko official YouTube"
   },
   {
     "id": "c2024-043",
@@ -649,6 +805,21 @@
     "link": "https://www.youtube.com/watch?v=PqIO5NzaNn8"
   },
   {
+    "id": "official-2024-0915-hologta-announce",
+    "displayId": "24-09-OFFICIAL-3",
+    "date": "2024-09-15",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet共同主持holoGTA伺服器說明會並宣布企劃",
+    "titleZh": "miComet共同主持holoGTA伺服器說明會並宣布企劃",
+    "ctx": "Miko與星街以miComet主辦者身分主持holoGTA伺服器說明會，正式說明大型企劃規則與玩法。",
+    "ctxZh": "Miko與星街以miComet主辦者身分主持holoGTA伺服器說明會，正式說明大型企劃規則與玩法。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=UJXn_kfNfWk",
+    "source": "Miko official YouTube"
+  },
+  {
     "id": "c2024-045",
     "displayId": "24-09-CLEAN-7",
     "date": "2024-09-18",
@@ -677,6 +848,36 @@
     "link": "https://www.youtube.com/watch?v=RjNJbjIPmxo"
   },
   {
+    "id": "official-2024-0919-hologta-news",
+    "displayId": "24-09-OFFICIAL-4",
+    "date": "2024-09-19",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet主持9/19《holoGTA NEWS》",
+    "titleZh": "miComet主持9/19《holoGTA NEWS》",
+    "ctx": "holoGTA活動期間，Miko與星街以主辦者／新聞主持身分整理9月19日伺服器事件與最新消息。",
+    "ctxZh": "holoGTA活動期間，Miko與星街以主辦者／新聞主持身分整理9月19日伺服器事件與最新消息。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=ReQTTzjxWBo",
+    "source": "Suisei official YouTube"
+  },
+  {
+    "id": "official-2024-0920-hologta-news",
+    "displayId": "24-09-OFFICIAL-5",
+    "date": "2024-09-20",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet主持9/20《holoGTA NEWS》",
+    "titleZh": "miComet主持9/20《holoGTA NEWS》",
+    "ctx": "holoGTA活動期間，Miko與星街繼續以新聞主持身分整理9月20日的伺服器事件。",
+    "ctxZh": "holoGTA活動期間，Miko與星街繼續以新聞主持身分整理9月20日的伺服器事件。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=k-ByFI3gZus",
+    "source": "Miko official YouTube"
+  },
+  {
     "id": "c2024-047",
     "displayId": "24-09-CLEAN-9",
     "date": "2024-09-21",
@@ -703,6 +904,67 @@
     "ctxZh": "週刊Miko九月號回顧StellaMiko、holoGTA與miComet相關片段，作為Miko側補充紀錄。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=MnZb2EQkGTY"
+  },
+  {
+    "id": "official-2024-0921-hologta-news",
+    "displayId": "24-09-OFFICIAL-6",
+    "date": "2024-09-21",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet主持9/21《holoGTA NEWS》",
+    "titleZh": "miComet主持9/21《holoGTA NEWS》",
+    "ctx": "holoGTA活動期間，Miko與星街繼續整理9月21日的重大事件與伺服器新聞。",
+    "ctxZh": "holoGTA活動期間，Miko與星街繼續整理9月21日的重大事件與伺服器新聞。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=F6TzjH6Qtac",
+    "source": "Suisei official YouTube"
+  },
+  {
+    "id": "official-2024-0922-hologta-news",
+    "displayId": "24-09-OFFICIAL-7",
+    "date": "2024-09-22",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet主持9/22《holoGTA NEWS》",
+    "titleZh": "miComet主持9/22《holoGTA NEWS》",
+    "ctx": "holoGTA活動期間，Miko與星街以主辦者身分整理9月22日的伺服器新聞與事件。",
+    "ctxZh": "holoGTA活動期間，Miko與星街以主辦者身分整理9月22日的伺服器新聞與事件。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=BiPM81HhTCk",
+    "source": "Suisei official YouTube"
+  },
+  {
+    "id": "official-2024-0923-hologta-news",
+    "displayId": "24-09-OFFICIAL-8",
+    "date": "2024-09-23",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet主持holoGTA最終日NEWS",
+    "titleZh": "miComet主持holoGTA最終日NEWS",
+    "ctx": "holoGTA最終日，Miko與星街共同主持最後一回NEWS，回顧活動結尾與伺服器事件。",
+    "ctxZh": "holoGTA最終日，Miko與星街共同主持最後一回NEWS，回顧活動結尾與伺服器事件。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=wJoLLc1Rd94",
+    "source": "Miko official YouTube"
+  },
+  {
+    "id": "official-2024-1006-minecraft-kimodameshi",
+    "displayId": "24-10-OFFICIAL-1",
+    "date": "2024-10-06",
+    "phase": 5,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "FubuMiComet參加《マイクラ肝試し2024》",
+    "titleZh": "FubuMiComet參加《マイクラ肝試し2024》",
+    "ctx": "白上吹雪、Miko與星街以FubuMiComet三人組參加《マイクラ肝試し2024》，三人分別留下官方直播視角。",
+    "ctxZh": "白上吹雪、Miko與星街以FubuMiComet三人組參加《マイクラ肝試し2024》，三人分別留下官方直播視角。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=m_BFonQNd3k https://www.youtube.com/watch?v=QaeU25Y83vo https://www.youtube.com/watch?v=X3Z9lR8lTTo",
+    "source": "Miko, Suisei and Fubuki official YouTube"
   },
   {
     "id": "c2024-049",
@@ -959,6 +1221,21 @@
     "ctxZh": "白上吹雪Live相關剪輯中，Miko與星街在舞台或演出脈絡中可愛地商業貼貼，成為FBKINGDOM後續片段。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=Q9HmGepNklM"
+  },
+  {
+    "id": "official-2024-1109-flowglow-watchalong",
+    "displayId": "24-11-OFFICIAL-1",
+    "date": "2024-11-09",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet同步觀看FLOW GLOW五人初配信",
+    "titleZh": "miComet同步觀看FLOW GLOW五人初配信",
+    "ctx": "Miko與星街以miComet名義同步觀看FLOW GLOW五名成員的初配信，連續約三小時一起觀察並吐槽新人。",
+    "ctxZh": "Miko與星街以miComet名義同步觀看FLOW GLOW五名成員的初配信，連續約三小時一起觀察並吐槽新人。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=J-SlMtRxfKU",
+    "source": "Miko official YouTube"
   },
   {
     "id": "c2024-064",
