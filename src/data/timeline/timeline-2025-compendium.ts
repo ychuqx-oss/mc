@@ -973,6 +973,10 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://daoko.jp/media/4053/',
     source: 'Daoko official NHK radio appearance announcement',
   },
+  'c2-2025-154': {
+    link: 'https://x.com/sakuramiko35/status/1929886633685594131 https://x.com/suisei_hosimati/status/1929891181875298761',
+    source: 'Miko original X event announcement; Suisei original X reply',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
