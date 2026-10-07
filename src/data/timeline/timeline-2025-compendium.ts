@@ -957,6 +957,14 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://x.com/suisei_hosimati/status/1875512976775770503',
     source: 'Suisei official X Space announcement',
   },
+  'c2-2025-266': {
+    link: 'https://www.youtube.com/watch?v=iV2DbcuYI4Q',
+    source: 'Fubuki official YouTube original stream',
+  },
+  'c2-2025-242': {
+    link: 'https://www.youtube.com/watch?v=ChgL1AJ7YRk',
+    source: 'Niko official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
