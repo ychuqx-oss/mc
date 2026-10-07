@@ -20,7 +20,6 @@ const englishRows = `
 2025-12-21|Miko finds Anemachi’s cabbage rolls at her entrance when she wakes up
 2025-12-20|Miko says that the name of the person she likes can’t be Suisei
 2025-12-18|Miko refers to fairy-san again
-2025-12-18|Miko tweet
 2025-12-15|Miko complains about Suisei abruptly shutting the door in the middle of her goodbyes
 2025-12-13|Miko forgets her bag at Lui’s place, Lui later returns it when Miko is at Suisei’s place; Suisei wants to take Miko to a party
 2025-12-13|Suisei has larger hands than Miko?
@@ -215,7 +214,6 @@ const englishRows = `
 2025-03-10|Miko says that Suisei’s sleeping face is not that rare
 2025-03-10|Suisei talks about holofes and playing cards for Miko
 2025-03-10|Miko retweets miComet cosplay
-2025-03-10|Fubuki tweets about miComet
 2025-03-10|Ao, Lui, Marine, Noel, and Subaru talk about the miComet waiting room card game incident
 2025-03-10|Iroha doesn’t want to get between miComet
 2025-03-09|Gen 0 perform BIBBIDIBA at holofes in the Creators’ Stage
@@ -259,7 +257,6 @@ const englishRows = `
 2025-02-11|Hajime pulls Miko’s fortune in Minecraft telling her to ask the next person she encounters (Suisei) for her leg hair; Miko declares that Suisei is indeed growing leg hair
 2025-02-10|Minecraft
 2025-02-09|Minecraft
-2025-02-09|Kanade tweets about miComet
 2025-02-08|Daoko, a hardcore 35P, appears on NHK Radio
 2025-02-07|Minecraft
 2025-02-06|Miko retweets miComet art
