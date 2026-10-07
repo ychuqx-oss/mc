@@ -112,6 +112,21 @@
     "link": "https://www.youtube.com/watch?v=QkINY-M34JU"
   },
   {
+    "id": "official-2024-0317-5thfes",
+    "displayId": "24-03-OFFICIAL-1",
+    "date": "2024-03-17",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "hololive 5th fes. DAY2中Miko與星街同場出演",
+    "titleZh": "hololive 5th fes. DAY2中Miko與星街同場出演",
+    "ctx": "《hololive 5th fes. Capture the Moment》DAY2中，櫻巫女與星街彗星同時列入HoneyWorks stage與hololive stage3官方出演名單。",
+    "ctxZh": "《hololive 5th fes. Capture the Moment》DAY2中，櫻巫女與星街彗星同時列入HoneyWorks stage與hololive stage3官方出演名單。",
+    "type": "Event",
+    "link": "https://hololivesuperexpo2024.hololivepro.com/fes/cast",
+    "source": "hololive 5th fes. official cast lineup"
+  },
+  {
     "id": "c2024-009",
     "displayId": "24-03-CLEAN-1",
     "date": "2024-03-29",
