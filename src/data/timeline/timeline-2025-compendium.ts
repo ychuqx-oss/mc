@@ -914,6 +914,26 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=11hUlAq5KrI',
     source: 'Miko official YouTube original stream',
   },
+  'c2-2025-230': {
+    link: 'https://www.youtube.com/watch?v=pIzg1mlrU1w',
+    source: 'Iroha official YouTube original stream',
+  },
+  'c2-2025-246': {
+    link: 'https://www.youtube.com/watch?v=Qb2oP5-TDTA',
+    source: 'Subaru official YouTube original stream',
+  },
+  'c2-2025-272': {
+    link: 'https://www.youtube.com/watch?v=aOhEhm_MOzI',
+    source: 'Fubuki official YouTube original stream',
+  },
+  'c2-2025-289': {
+    link: 'https://www.youtube.com/watch?v=f0ppejzKils',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-293': {
+    link: 'https://www.youtube.com/watch?v=Lsivt1Wll8U',
+    source: 'Kanade official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
