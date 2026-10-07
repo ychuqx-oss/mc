@@ -906,6 +906,14 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=044_F3TIwbE',
     source: 'Okayu official YouTube original stream',
   },
+  'c2-2025-212': {
+    link: 'https://www.youtube.com/watch?v=WSKrhkgRNOI',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-244': {
+    link: 'https://www.youtube.com/watch?v=11hUlAq5KrI',
+    source: 'Miko official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
