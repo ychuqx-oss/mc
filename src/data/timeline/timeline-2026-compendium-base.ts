@@ -1,5 +1,5 @@
 const rows = `
-c2-2026-002|26-C2-40|2026-07-23|6|others|⭐|Text|白上吹雪在Hololive Dreams偷看miComet|Fubuki spies on miComet in Hololive Dreams
+c2-2026-002|26-C2-40|2026-07-23|6|others|⭐|Stream|Miko遊玩《Hololive Dreams》序章時，白上吹雪NPC在一旁偷看miComet|While Miko plays the Hololive Dreams prologue, Fubuki's NPC watches MiComet from nearby
 c2-2026-003|26-C2-42|2026-07-21|6|miko|🌸|Text|Miko發布miComet六周年「會議紀錄」紀念結成六周年|Miko posts MiComet 6th anniversary meeting notes
 c2-2026-004|26-C2-43|2026-07-21|6|shared|💛|Stream|miComet六周年逆凸請白上吹雪、尾丸波爾卡與しぐれうい提出新衣裝方案|MiComet asks Fubuki, Polka, and Ui for new matching outfit ideas on their 6th anniversary
 c2-2026-005|26-C2-44|2026-07-19|6|miko|🌸|Text|Miko宣布miComet六周年直播將於7月21日舉行|Miko announces miComet’s 6th anniversary stream will be on July 21
