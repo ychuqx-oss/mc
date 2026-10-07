@@ -387,7 +387,7 @@ const additions = [
     ctxZh: '姊街看Miko的剪輯時笑得非常開心。',
     ctxEn: 'Anemachi was cracking up while watching clips of Miko.',
     link: '',
-    source: 'MiComet Compendium II (user-provided list)',
+    source: 'Suisei sub-account X post; public X index cross-check',
   },
   {
     id: 'c2-2026-129',
@@ -403,8 +403,8 @@ const additions = [
     ctx: 'Miko posted that it had been a week since she last ate at the Hoshimachi house and that she was at her limit.',
     ctxZh: 'Miko發文表示，距離上次在星街家吃飯已經過了一週，她快到極限了。',
     ctxEn: 'Miko posted that it had been a week since she last ate at the Hoshimachi house and that she was at her limit.',
-    link: '',
-    source: 'MiComet Compendium II (user-provided list)',
+    link: 'https://x.com/mikochisub/status/2096810353623790022',
+    source: 'Miko sub-account X post; public X index cross-check',
   },
   {
     id: 'c2-2026-130',
@@ -421,7 +421,7 @@ const additions = [
     ctxZh: 'Miko發文炫耀星街的「工作用髮型」。',
     ctxEn: 'Miko posted proudly about Suisei’s “business hair.”',
     link: '',
-    source: 'MiComet Compendium II (user-provided list)',
+    source: 'Miko sub-account X post; public X index cross-check',
   },
   {
     id: 'c2-2026-131',
@@ -927,6 +927,16 @@ const additions = [
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
+  'c2-2026-115': 'https://www.youtube.com/watch?v=bdlT5P0G5uU',
+  'c2-2026-116': 'https://www.youtube.com/watch?v=WfM_Hdxh2E4 https://www.holostats.com/stream/WfM_Hdxh2E4?lang=ja',
+  'c2-2026-117': 'https://www.youtube.com/watch?v=TL7ze9Ckvks',
+  'c2-2026-118': 'https://www.youtube.com/watch?v=EnqViu_hRKA',
+  'c2-2026-119': 'https://www.youtube.com/watch?v=CnYYXV46B8A',
+  'c2-2026-120': 'https://www.youtube.com/watch?v=TMXFBpkOeDc',
+  'c2-2026-121': 'https://www.youtube.com/watch?v=MShIcv1cizk',
+  'c2-2026-122': 'https://www.youtube.com/watch?v=TGxz8EYaFfY https://www.holostats.com/stream/TGxz8EYaFfY?lang=ja',
+  'c2-2026-125': 'https://www.youtube.com/watch?v=ROGeS8khPw8',
+  'c2-2026-127': 'https://www.youtube.com/watch?v=03T6NhJ9u-I https://www.holostats.com/stream/03T6NhJ9u-I?lang=ja',
   'c2-2026-013': 'https://www.youtube.com/watch?v=QSlgbRMSMjQ https://www.holostats.com/stream/QSlgbRMSMjQ?lang=ja',
   'c2-2026-025': 'https://www.youtube.com/watch?v=VDkOXbhSyso https://www.holostats.com/stream/VDkOXbhSyso?lang=ja',
   'c2-2026-040': 'https://www.youtube.com/watch?v=3etiI2ce098 https://www.holostats.com/stream/3etiI2ce098?lang=ja',
@@ -944,7 +954,8 @@ const verifiedSourceLinks2026: Record<string, string> = {
   'c2-2026-141': 'https://www.youtube.com/watch?v=AaYnGEgePmg https://www.youtube.com/watch?v=wcxxSWyd-nQ',
   'c2-2026-142': 'https://www.youtube.com/watch?v=gS1mS4aUMa0',
   'c2-2026-143': 'https://www.youtube.com/watch?v=gS1mS4aUMa0',
-  'c2-2026-144': 'https://www.youtube.com/watch?v=9bDHBikrQI8',  'c2-2026-146': 'https://www.youtube.com/watch?v=pLe4ALliPj0',
+  'c2-2026-144': 'https://www.youtube.com/watch?v=9bDHBikrQI8',
+  'c2-2026-146': 'https://www.youtube.com/watch?v=pLe4ALliPj0',
   'c2-2026-147': 'https://www.youtube.com/watch?v=zGpnj2PRp1E',
   'c2-2026-058': 'https://www.youtube.com/watch?v=HxIckoft79U',
   'c2-2026-061': 'https://www.youtube.com/watch?v=An5QdLGnXHk',
