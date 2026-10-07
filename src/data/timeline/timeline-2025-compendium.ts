@@ -965,6 +965,14 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=ChgL1AJ7YRk',
     source: 'Niko official YouTube original stream',
   },
+  'c2-2025-286': {
+    link: 'https://x.com/sakuramiko35/status/1885647203362046399',
+    source: 'Miko official X post',
+  },
+  'c2-2025-279': {
+    link: 'https://daoko.jp/media/4053/',
+    source: 'Daoko official NHK radio appearance announcement',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
