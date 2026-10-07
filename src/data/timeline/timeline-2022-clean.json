@@ -1,5 +1,20 @@
 [
   {
+    "id": "mcarchive-2022-0102-mikorone24",
+    "displayId": "22-01-ADD-1",
+    "date": "2022-01-02",
+    "phase": 4,
+    "side": "suisei",
+    "emoji": "☄️",
+    "title": "星街觀看mikorone24並發推表示喜歡節目BGM",
+    "titleZh": "星街觀看mikorone24並發推表示喜歡節目BGM",
+    "ctx": "星街觀看Miko與戌神沁音的mikorone24企劃，並在X上表示很喜歡節目使用的BGM。",
+    "ctxZh": "星街觀看Miko與戌神沁音的mikorone24企劃，並在X上表示很喜歡節目使用的BGM。",
+    "type": "Text",
+    "link": "https://x.com/suisei_hosimati/status/1477950584561242112",
+    "source": "Suisei official X / miComet chronology cross-check"
+  },
+  {
     "id": "s2022c001",
     "displayId": "22-01-CLEAN-1",
     "date": "2022-01-03",
@@ -42,6 +57,21 @@
     "link": "https://twitter.com/sakuramiko35/status/1479368500401819651"
   },
   {
+    "id": "mcarchive-2022-0108-mariokart",
+    "displayId": "22-01-ADD-2",
+    "date": "2022-01-08",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "瑪利歐賽車盃前後Miko與星街互相鼓勵並回顧比賽",
+    "titleZh": "瑪利歐賽車盃前後Miko與星街互相鼓勵並回顧比賽",
+    "ctx": "2022年Hololive瑪利歐賽車盃前後，Miko與星街互相加油，並在直播中回顧同場比賽與彼此表現。",
+    "ctxZh": "2022年Hololive瑪利歐賽車盃前後，Miko與星街互相加油，並在直播中回顧同場比賽與彼此表現。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=v5HFfJZpBkc",
+    "source": "Original Hololive talent YouTube / miComet chronology cross-check"
+  },
+  {
     "id": "s2022c004",
     "displayId": "22-01-CLEAN-4",
     "date": "2022-01-09",
@@ -54,6 +84,21 @@
     "ctxZh": "Miko在早安新聞中回顧瑪利歐賽車杯，也談到HoloX初遊麥塊時，不知火建設在語音中準備迎接新人的狀況。來源：編年史。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=0Ugr4JeqED8"
+  },
+  {
+    "id": "mcarchive-2022-0110-ark",
+    "displayId": "22-01-ADD-3",
+    "date": "2022-01-10",
+    "phase": 4,
+    "side": "miko",
+    "emoji": "🌸",
+    "title": "Miko在ARK直播談到與星街互相寵對方的相處方式",
+    "titleZh": "Miko在ARK直播談到與星街互相寵對方的相處方式",
+    "ctx": "Miko在ARK直播中談到自己與星街之間互相照顧、互相寵對方的相處方式，成為當時miComet關係談話的一部分。",
+    "ctxZh": "Miko在ARK直播中談到自己與星街之間互相照顧、互相寵對方的相處方式，成為當時miComet關係談話的一部分。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=k_IcMoolnj4",
+    "source": "Miko official YouTube / miComet chronology cross-check"
   },
   {
     "id": "s2022c005",
@@ -98,6 +143,21 @@
     "link": "https://www.youtube.com/watch?v=yh3_utbGFZ0"
   },
   {
+    "id": "mcarchive-2022-0126-suisei-songs",
+    "displayId": "22-01-ADD-4",
+    "date": "2022-01-26",
+    "phase": 4,
+    "side": "miko",
+    "emoji": "🌸",
+    "title": "Miko談喜歡星街的歌並唱《Stellar Stellar》等歌曲",
+    "titleZh": "Miko談喜歡星街的歌並唱《Stellar Stellar》等歌曲",
+    "ctx": "Miko在ARK長時間直播中談到自己喜歡星街的歌曲，並唱起《Stellar Stellar》等星街歌曲。",
+    "ctxZh": "Miko在ARK長時間直播中談到自己喜歡星街的歌曲，並唱起《Stellar Stellar》等星街歌曲。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=mTRv4YApXh8",
+    "source": "Miko official YouTube / miComet chronology cross-check"
+  },
+  {
     "id": "mcarchive-2022-0127-animal",
     "date": "2022-01-27",
     "phase": 4,
@@ -112,6 +172,21 @@
     "source": "miComet Archive cross-check / original cover YouTube"
   },
   {
+    "id": "news-2022-0128-kaiyou-animal",
+    "displayId": "22-01-NEWS-1",
+    "date": "2022-01-28",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "KAI-YOU報導miComet首支雙人Cover《アニマル》",
+    "titleZh": "KAI-YOU報導miComet首支雙人Cover《アニマル》",
+    "ctx": "KAI-YOU以「ビジネスフレンド超えてにぇ？」為題報導Miko與星街的《アニマル》Cover，並介紹這是miComet首支歌ってみた作品。",
+    "ctxZh": "KAI-YOU以「ビジネスフレンド超えてにぇ？」為題報導Miko與星街的《アニマル》Cover，並介紹這是miComet首支歌ってみた作品。",
+    "type": "News",
+    "link": "https://kai-you.net/article/82683 https://www.youtube.com/watch?v=9yBLZKFKXyg",
+    "source": "KAI-YOU / official miComet YouTube"
+  },
+  {
     "id": "s2022c008",
     "displayId": "22-01-CLEAN-8",
     "date": "2022-01-31",
@@ -124,6 +199,21 @@
     "ctxZh": "《動物》破百萬後，Miko回顧星街邀她合作Cover的速度，也接續星街慶祝推文與Miko引用互動。來源：編年史。",
     "type": "Stream",
     "link": "https://youtu.be/PS-QrL_BUJ4"
+  },
+  {
+    "id": "mcarchive-2022-0204-animal-origin",
+    "displayId": "22-02-ADD-1",
+    "date": "2022-02-04",
+    "phase": 4,
+    "side": "suisei",
+    "emoji": "☄️",
+    "title": "星街透露《アニマル》是2021年底臨時起意邀Miko一起唱",
+    "titleZh": "星街透露《アニマル》是2021年底臨時起意邀Miko一起唱",
+    "ctx": "星街直播中說明miComet《アニマル》的企劃起源：2021年底突然想做Cover，於是邀Miko一起演唱。",
+    "ctxZh": "星街直播中說明miComet《アニマル》的企劃起源：2021年底突然想做Cover，於是邀Miko一起演唱。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=u1pEUH5UevU",
+    "source": "Suisei official YouTube / miComet chronology cross-check"
   },
   {
     "id": "s2022c009",
@@ -152,6 +242,21 @@
     "ctxZh": "阿火新3D收錄後，Miko在直播中展示miComet私下拍的合照，並吐槽兩人的M與S姿勢太土。來源：編年史。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=7ApV6Ve3U6o"
+  },
+  {
+    "id": "mcarchive-2022-0222-space-collab",
+    "displayId": "22-02-ADD-2",
+    "date": "2022-02-22",
+    "phase": 4,
+    "side": "suisei",
+    "emoji": "☄️",
+    "title": "星街在Twitter Space提到隔天原本約好與Miko連動",
+    "titleZh": "星街在Twitter Space提到隔天原本約好與Miko連動",
+    "ctx": "星街在Twitter Space提到原本預定隔天和Miko連動，但自己的電腦螢幕發生無法正常顯示的問題。",
+    "ctxZh": "星街在Twitter Space提到原本預定隔天和Miko連動，但自己的電腦螢幕發生無法正常顯示的問題。",
+    "type": "Audio",
+    "link": "https://x.com/suisei_hosimati/status/1496086674811809792",
+    "source": "Suisei official X Space / miComet chronology cross-check"
   },
   {
     "id": "mcarchive-2022-0223-raft",
@@ -252,6 +357,52 @@
     "link": "https://youtu.be/RxiqcDXN-48"
   },
   {
+    "id": "news-2022-0301-holomart",
+    "displayId": "22-03-NEWS-1",
+    "date": "2022-03-01",
+    "phase": 4,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "Holomart Vol.7同時推出Miko與星街白色情人節合作商品",
+    "titleZh": "Holomart Vol.7同時推出Miko與星街白色情人節合作商品",
+    "ctx": "FamilyMart「ホロマート Vol.7」白色情人節合作活動登場，Miko與星街同為七名合作成員，推出限定描き下ろし周邊。",
+    "ctxZh": "FamilyMart「ホロマート Vol.7」白色情人節合作活動登場，Miko與星街同為七名合作成員，推出限定描き下ろし周邊。",
+    "type": "News",
+    "link": "https://www.famitsu.com/news/202203/01252895.html",
+    "source": "Famitsu report / FamilyMart collaboration"
+  },
+  {
+    "id": "mcarchive-2022-0302-ne",
+    "displayId": "22-03-ADD-1",
+    "date": "2022-03-02",
+    "phase": 4,
+    "side": "suisei",
+    "emoji": "☄️",
+    "title": "星街直播中模仿Miko的「捏／にぇ」語尾",
+    "titleZh": "星街直播中模仿Miko的「捏／にぇ」語尾",
+    "ctx": "星街在《Vampire Survivors》直播中模仿Miko特有的「にぇ」語尾，成為miComet相關口頭禪互動之一。",
+    "ctxZh": "星街在《Vampire Survivors》直播中模仿Miko特有的「にぇ」語尾，成為miComet相關口頭禪互動之一。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=E2D6DQVPkSY",
+    "source": "Suisei official YouTube / miComet chronology cross-check"
+  },
+  {
+    "id": "mcarchive-2022-0304-poll",
+    "displayId": "22-03-ADD-2",
+    "date": "2022-03-04",
+    "phase": 4,
+    "side": "miko",
+    "emoji": "🌸",
+    "title": "Miko生日倒數問卷中miComet成為觀眾最喜歡的連動組合",
+    "titleZh": "Miko生日倒數問卷中miComet成為觀眾最喜歡的連動組合",
+    "ctx": "Miko生日倒數直播公開觀眾問卷結果，其中miComet被選為觀眾最喜歡的連動組合。",
+    "ctxZh": "Miko生日倒數直播公開觀眾問卷結果，其中miComet被選為觀眾最喜歡的連動組合。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=YNwLq-sX4l0",
+    "source": "Miko official YouTube / viewer survey"
+  },
+  {
     "id": "mcarchive-2022-0305-birthday",
     "date": "2022-03-05",
     "phase": 4,
@@ -264,6 +415,21 @@
     "type": "Music",
     "link": "https://youtu.be/Cv_2tjVo-p4",
     "source": "miComet Archive cross-check / original Miko YouTube"
+  },
+  {
+    "id": "mcarchive-2022-0306-birthday-reflection",
+    "displayId": "22-03-ADD-3",
+    "date": "2022-03-06",
+    "phase": 4,
+    "side": "miko",
+    "emoji": "🌸",
+    "title": "Miko回顧與星街合唱《約束の絆》並談miComet為何強調「商業」",
+    "titleZh": "Miko回顧與星街合唱《約束の絆》並談miComet為何強調「商業」",
+    "ctx": "Miko在生日Live後雜談回顧與星街合唱《約束の絆》，並談到miComet常把兩人的關係稱作「商業夥伴」的脈絡。",
+    "ctxZh": "Miko在生日Live後雜談回顧與星街合唱《約束の絆》，並談到miComet常把兩人的關係稱作「商業夥伴」的脈絡。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=UrOvtpGoW5s",
+    "source": "Miko official YouTube / miComet chronology cross-check"
   },
   {
     "id": "s2022c017",
@@ -335,6 +501,22 @@
     "ctxZh": "Miko回顧3rd fes. Day1時，提到星街的〈Stellar Stellar〉與〈GHOST〉很強，也告知EXPO會場限定的miComet法庭節目。來源：編年史。",
     "type": "Stream",
     "link": "https://youtu.be/1WNKLqBAZdo&t=1h8m44s"
+  },
+  {
+    "id": "official-2022-0320-holo-court",
+    "displayId": "22-03-OFFICIAL-1",
+    "date": "2022-03-20",
+    "phase": 4,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "hololive SUPER EXPO《ホロライブ裁判所》出現miComet商業貼貼相關梗",
+    "titleZh": "hololive SUPER EXPO《ホロライブ裁判所》出現miComet商業貼貼相關梗",
+    "ctx": "hololive SUPER EXPO 2022官方《ホロライブ裁判所》企劃中出現與Miko、星街及《アニマル》頭像、商業貼貼失敗梗相關的內容。",
+    "ctxZh": "hololive SUPER EXPO 2022官方《ホロライブ裁判所》企劃中出現與Miko、星街及《アニマル》頭像、商業貼貼失敗梗相關的內容。",
+    "type": "Event",
+    "link": "https://www.youtube.com/watch?v=ElDVor7UmSE",
+    "source": "hololive official YouTube"
   },
   {
     "id": "s2022c021",
@@ -461,6 +643,21 @@
     "ctxZh": "Miko在《WWE2K22》中讓Hololive成員角色登場，Miko與星街展開miComet摔角對決，包含椅子攻擊與商業搭檔被惹火等段落。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=j6jDLIRKEEE"
+  },
+  {
+    "id": "news-2022-0511-realsound-creators",
+    "displayId": "22-05-NEWS-1",
+    "date": "2022-05-11",
+    "phase": 4,
+    "side": "others",
+    "emoji": "⭐",
+    "title": "DECO*27與TAKU INOUE訪談提到下一個想共作的組合是miComet",
+    "titleZh": "DECO*27與TAKU INOUE訪談提到下一個想共作的組合是miComet",
+    "ctx": "Real Sound訪談DECO*27與TAKU INOUE時，兩人談到各自觀看Miko與星街的印象，最後TAKU INOUE笑稱下次合作可以是「ミコメット」。",
+    "ctxZh": "Real Sound訪談DECO*27與TAKU INOUE時，兩人談到各自觀看Miko與星街的印象，最後TAKU INOUE笑稱下次合作可以是「ミコメット」。",
+    "type": "News",
+    "link": "https://realsound.jp/2022/05/post-1024016_3.html",
+    "source": "Real Sound interview"
   },
   {
     "id": "s2022c029",
@@ -981,6 +1178,21 @@
     "link": "https://youtu.be/J5VZitkaieU"
   },
   {
+    "id": "mcarchive-2022-1001-vanguard-x",
+    "displayId": "22-10-ADD-1",
+    "date": "2022-10-01",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet先導者ZERO合作卡池上線後Miko與星街在X互動",
+    "titleZh": "miComet先導者ZERO合作卡池上線後Miko與星街在X互動",
+    "ctx": "miComet在《ヴァンガード ZERO》的合作卡池正式上線，星街發布相關貼文後與Miko產生公開X互動。",
+    "ctxZh": "miComet在《ヴァンガード ZERO》的合作卡池正式上線，星街發布相關貼文後與Miko產生公開X互動。",
+    "type": "Text",
+    "link": "https://x.com/suisei_hosimati/status/1576066223233851392",
+    "source": "Suisei official X / Vanguard ZERO collaboration"
+  },
+  {
     "id": "s2022c056",
     "displayId": "22-10-CLEAN-1",
     "date": "2022-10-01",
@@ -1037,6 +1249,21 @@
     "link": "https://www.pttweb.cc/bbs/Marginalman/M.1664813491.A.608"
   },
   {
+    "id": "mcarchive-2022-1031-halloween-x",
+    "displayId": "22-10-ADD-2",
+    "date": "2022-10-31",
+    "phase": 4,
+    "side": "suisei",
+    "emoji": "☄️",
+    "title": "萬聖節隔空互動：星街回覆Miko的討糖貼文",
+    "titleZh": "萬聖節隔空互動：星街回覆Miko的討糖貼文",
+    "ctx": "萬聖節當天，星街在X上回覆Miko的「不給糖就搗蛋」相關貼文，留下miComet的公開文字互動。",
+    "ctxZh": "萬聖節當天，星街在X上回覆Miko的「不給糖就搗蛋」相關貼文，留下miComet的公開文字互動。",
+    "type": "Text",
+    "link": "https://x.com/suisei_hosimati/status/1586981442004455424",
+    "source": "Suisei official X"
+  },
+  {
     "id": "s2022c060",
     "displayId": "22-10-CLEAN-5",
     "date": "2022-10-31",
@@ -1091,6 +1318,36 @@
     "type": "Music",
     "link": "https://youtu.be/TSVhLnEhGLI",
     "source": "miComet Archive cross-check / original Suisei YouTube"
+  },
+  {
+    "id": "news-2022-1201-molly",
+    "displayId": "22-12-NEWS-1",
+    "date": "2022-12-01",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "hololive官方公布miComet首次MOLLY.ONLINE限定合作",
+    "titleZh": "hololive官方公布miComet首次MOLLY.ONLINE限定合作",
+    "ctx": "hololive官方宣布Miko與星街以miComet組合首次登上MOLLY.ONLINE，推出描き下ろし限定景品與兩人錄製的限定語音。",
+    "ctxZh": "hololive官方宣布Miko與星街以miComet組合首次登上MOLLY.ONLINE，推出描き下ろし限定景品與兩人錄製的限定語音。",
+    "type": "News",
+    "link": "https://hololive.hololivepro.com/news/20221201-01-109/",
+    "source": "hololive official news"
+  },
+  {
+    "id": "official-2022-1202-molly-stream",
+    "displayId": "22-12-OFFICIAL-1",
+    "date": "2022-12-02",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet進行MOLLY.ONLINE官方合作直播",
+    "titleZh": "miComet進行MOLLY.ONLINE官方合作直播",
+    "ctx": "Miko與星街以miComet名義進行MOLLY.ONLINE合作直播，親自挑戰夾取兩人的合作景品。",
+    "ctxZh": "Miko與星街以miComet名義進行MOLLY.ONLINE合作直播，親自挑戰夾取兩人的合作景品。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=4fopQGWsjFM",
+    "source": "Miko official YouTube / sponsored miComet stream"
   },
   {
     "id": "s2022c063",
@@ -1174,6 +1431,7 @@
     "ctx": "年末Hololive節目中，Miko與星街和其他成員同場。相關內容整理出miComet羈絆與奇妙姿勢，也有miComet對上獅白牡丹與角卷綿芽的年末爆料戰。",
     "ctxZh": "年末Hololive節目中，Miko與星街和其他成員同場。相關內容整理出miComet羈絆與奇妙姿勢，也有miComet對上獅白牡丹與角卷綿芽的年末爆料戰。",
     "type": "Stream",
-    "link": "https://vod.ccw.idv.tw/view/20221218041"
+    "link": "https://www.youtube.com/watch?v=8ysl5INNWjE",
+    "source": "hololive official YouTube"
   }
 ]
