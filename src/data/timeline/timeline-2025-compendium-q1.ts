@@ -52,7 +52,7 @@ c2-2025-262|25-C2-262|2025-02-18|6|shared|💛|Stream|miComet麥塊連動，星�
 c2-2025-263|25-C2-263|2025-02-17|6|miko|🌸|Stream|Miko抱怨商業違規
 c2-2025-264|25-C2-264|2025-02-17|6|shared|💛|Stream|星街在麥塊中預告miComet周年周邊，並提醒Miko她還在直播
 c2-2025-265|25-C2-265|2025-02-16|6|shared|💛|Stream|白上吹雪與Miko在麥塊中提醒星街Miko仍在直播
-c2-2025-266|25-C2-266|2025-02-15|6|others|⭐|Stream|FubuMiComet語音聊天
+c2-2025-266|25-C2-266|2025-02-15|6|others|⭐|Stream|Miko與星街突入白上吹雪新衣裝暨Solo Live回顧直播通話
 c2-2025-267|25-C2-267|2025-02-14|6|suisei|☄️|Stream|星街情人節直播縮圖使用miComet圖
 c2-2025-268|25-C2-268|2025-02-13|6|others|⭐|News|miComet作為嘉賓出現在白上吹雪個人Live
 c2-2025-269|25-C2-269|2025-02-13|6|others|⭐|Clip|miComet出現在白上吹雪MV
