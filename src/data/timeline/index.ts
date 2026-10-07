@@ -10,6 +10,16 @@ import enStoriesData from './en-stories.json';
 
 export type SharedCategory = 'gen0' | 'shiraken' | 'oneOnOne' | 'group';
 export type SupportCategory = 'fubuki';
+export type StorySourceKind = 'youtube' | 'x' | 'official' | 'news' | 'index' | 'archive' | 'reference' | 'other';
+export type StorySourceStatus = 'verified' | 'indexed' | 'fallback' | 'missing';
+export type ClassificationSource = 'explicit' | 'legacy-auto';
+
+export interface StorySource {
+  url: string;
+  kind: StorySourceKind;
+  label?: string;
+  official?: boolean;
+}
 
 export interface MiCometStory {
   id: string;
@@ -31,6 +41,11 @@ export interface MiCometStory {
   type: string;
   link?: string;
   source?: string;
+  sources?: StorySource[];
+  sourceStatus?: StorySourceStatus;
+  eventId?: string;
+  reciprocal?: boolean;
+  classificationSource?: ClassificationSource;
 }
 
 type Side = MiCometStory['side'];
@@ -41,21 +56,77 @@ const DEFAULT_REFERENCE_URL = 'https://docs.google.com/document/d/e/2PACX-1vRcUa
 const HOLOSTATS_MICOMET_URL = 'https://www.holostats.com/collabs/pair/14/21?lang=ja';
 const HOINDEX_MICOMET_URL = 'https://holoindex.com/members/sakura-miko?tab=collab&cpartner=hoshimachi-suisei';
 
-function supplementSourceLinks(story: MiCometStory): MiCometStory {
-  const rawLinks = (story.link || '').trim();
-  const links = rawLinks ? rawLinks.split(/\s+/).filter(Boolean) : [];
-  const isSharedStream = story.side === 'shared' && story.type === 'Stream';
+function sourceKindForUrl(url: string): StorySourceKind {
+  if (/youtube\.com|youtu\.be/i.test(url)) return 'youtube';
+  if (/twitter\.com|x\.com/i.test(url)) return 'x';
+  if (/holostats\.com|holoindex\.com/i.test(url)) return 'index';
+  if (/micomet\.neocities\.org/i.test(url)) return 'archive';
+  if (url === DEFAULT_REFERENCE_URL) return 'reference';
+  if (/hololivepro\.com|cover-corp\.com|bushiroad-music\.com|tamashiiweb\.com|nhk\.jp|nhk\.or\.jp/i.test(url)) return 'official';
+  if (/watch\.impress\.co\.jp|kai-you\.net|gamer\.ne\.jp|prtimes\.jp/i.test(url)) return 'news';
+  return 'other';
+}
 
-  if (!rawLinks) links.push(DEFAULT_REFERENCE_URL);
+function sourceLabelForUrl(url: string, kind: StorySourceKind) {
+  if (/holostats\.com/i.test(url)) return 'HoloStats';
+  if (/holoindex\.com/i.test(url)) return 'HoloIndex';
+  if (/micomet\.neocities\.org/i.test(url)) return 'miComet Archive';
+  if (url === DEFAULT_REFERENCE_URL) return 'Reference document';
+  if (kind === 'youtube') return 'YouTube';
+  if (kind === 'x') return 'X';
+  if (kind === 'official') return 'Official';
+  if (kind === 'news') return 'Media';
+  return 'Source';
+}
 
-  if (isSharedStream) {
-    if (!links.includes(HOLOSTATS_MICOMET_URL)) links.push(HOLOSTATS_MICOMET_URL);
-    if (!links.includes(HOINDEX_MICOMET_URL)) links.push(HOINDEX_MICOMET_URL);
+function sourceLooksOfficial(story: MiCometStory, url: string, kind: StorySourceKind) {
+  if (kind === 'official') return true;
+  const sourceText = (story.source || '').toLowerCase();
+  if (kind === 'youtube') return /official|original|本人|原始|公式/.test(sourceText);
+  if (kind === 'x') return /official|本人|公式|sub-account/.test(sourceText);
+  return false;
+}
+
+function structuredSourcesForStory(story: MiCometStory): StorySource[] {
+  const explicit = story.sources || [];
+  const legacyUrls = (story.link || '').trim().split(/\s+/).filter(Boolean);
+  const legacy = legacyUrls.map((url) => {
+    const kind = sourceKindForUrl(url);
+    return {
+      url,
+      kind,
+      label: sourceLabelForUrl(url, kind),
+      official: sourceLooksOfficial(story, url, kind),
+    } satisfies StorySource;
+  });
+
+  const sources = [...explicit, ...legacy];
+  if (story.side === 'shared' && story.type === 'Stream') {
+    sources.push({ url: HOLOSTATS_MICOMET_URL, kind: 'index', label: 'HoloStats' });
+    sources.push({ url: HOINDEX_MICOMET_URL, kind: 'index', label: 'HoloIndex' });
   }
+
+  const byUrl = new Map<string, StorySource>();
+  sources.forEach((source) => {
+    if (!source.url) return;
+    const existing = byUrl.get(source.url);
+    byUrl.set(source.url, existing ? { ...existing, ...source, official: existing.official || source.official } : source);
+  });
+  return Array.from(byUrl.values());
+}
+
+function supplementSources(story: MiCometStory): MiCometStory {
+  const realSources = structuredSourcesForStory(story).filter((source) => source.kind !== 'reference');
+  const hasVerified = realSources.some((source) => source.official);
+  const sourceStatus: StorySourceStatus = story.sourceStatus ?? (hasVerified ? 'verified' : realSources.length ? 'indexed' : 'fallback');
+  const sources = realSources.length
+    ? realSources
+    : [{ url: DEFAULT_REFERENCE_URL, kind: 'reference' as const, label: 'Reference document', official: false }];
 
   return {
     ...story,
-    link: Array.from(new Set(links)).join(' '),
+    sources,
+    sourceStatus,
   };
 }
 
@@ -167,7 +238,8 @@ function youtubeIdsFromText(value?: string) {
 }
 
 function verifiedDateForStory(story: MiCometStory) {
-  const text = `${story.link ?? ''} ${story.ctx ?? ''} ${story.ctxZh ?? ''} ${story.ctxEn ?? ''}`;
+  const sourceUrls = (story.sources || []).map((source) => source.url).join(' ');
+  const text = `${story.link ?? ''} ${sourceUrls} ${story.ctx ?? ''} ${story.ctxZh ?? ''} ${story.ctxEn ?? ''}`;
   for (const id of youtubeIdsFromText(text)) {
     const date = verified2024DateByYoutubeId[id];
     if (date) return date;
@@ -319,6 +391,7 @@ function sharedTitleCategory(story: MiCometStory): SharedCategory {
 }
 
 function hasReciprocalMiCometInteraction(story: MiCometStory) {
+  if (typeof story.reciprocal === 'boolean') return story.reciprocal;
   const titleText = [story.title, story.titleZh, story.titleEn].filter(Boolean).join(' ');
   const contextText = [story.ctx, story.ctxZh, story.ctxEn].filter(Boolean).join(' ');
 
@@ -358,7 +431,10 @@ function resolveSharedSide(story: MiCometStory): Side {
 
 function classifySharedCategory(story: MiCometStory, side: Side): SharedCategory | undefined {
   if (side !== 'shared') return undefined;
-  if (story.sharedCategory) return story.sharedCategory;
+  if (story.sharedCategory) {
+    if (story.sharedCategory === 'oneOnOne' && !hasReciprocalMiCometInteraction(story)) return undefined;
+    return story.sharedCategory;
+  }
 
   const category = sharedTitleCategory(story);
   if (category === 'oneOnOne' && !hasReciprocalMiCometInteraction(story)) return undefined;
@@ -381,6 +457,7 @@ function normalizeStory(story: MiCometStory): MiCometStory {
   const supportCategory = classifySupportCategory(story);
   const storyWithSide = { ...story, date: correctedDate, side, supportCategory };
   const sharedCategory = classifySharedCategory(storyWithSide, side);
+  const classificationSource: ClassificationSource = story.sharedCategory || story.side !== 'shared' ? 'explicit' : 'legacy-auto';
   const enStory = enStoryMap.get(story.id);
   let titleZh = cleanText(story.titleZh || story.title);
   if (!titleHasSubject(titleZh)) titleZh = `${subjectForSide(side)}${titleZh}`;
@@ -396,6 +473,7 @@ function normalizeStory(story: MiCometStory): MiCometStory {
     side,
     sharedCategory,
     supportCategory,
+    classificationSource,
     emoji: emojiForSide(side),
     title: titleEn || titleZh,
     titleZh,
@@ -424,7 +502,10 @@ function mergeStory(base: MiCometStory, extra: MiCometStory): MiCometStory {
   const mergedCtx = ensureSentence(mergeText(base.ctxZh || base.ctx, extra.ctxZh || extra.ctx));
   const mergedCtxEn = ensureEnglishSentence(mergeEnglishText(base.ctxEn || '', extra.ctxEn || ''));
   const links = Array.from(new Set([base.link, extra.link].filter(Boolean))).join(' ');
-  const sources = Array.from(new Set([base.source, extra.source].filter(Boolean))).join('、');
+  const sourceLabels = Array.from(new Set([base.source, extra.source].filter(Boolean))).join('、');
+  const structuredSources = Array.from(
+    new Map([...(base.sources || []), ...(extra.sources || [])].map((source) => [source.url, source])).values(),
+  );
   return {
     ...base,
     id: base.id,
@@ -433,7 +514,10 @@ function mergeStory(base: MiCometStory, extra: MiCometStory): MiCometStory {
     phase: Math.min(base.phase, extra.phase),
     type: base.type === extra.type ? base.type : 'News',
     link: links,
-    source: sources || undefined,
+    source: sourceLabels || undefined,
+    sources: structuredSources.length ? structuredSources : undefined,
+    eventId: base.eventId || extra.eventId,
+    reciprocal: base.reciprocal ?? extra.reciprocal,
     titleEn: base.titleEn || extra.titleEn,
     ctx: mergedCtxEn || mergedCtx,
     ctxZh: mergedCtx,
@@ -464,7 +548,7 @@ export const MICOMET_TIMELINE: MiCometStory[] = normalizeStories([
   ...(timeline2024CleanData as MiCometStory[]),
   ...(timeline2025CleanData as MiCometStory[]),
   ...(timeline2026CleanData as MiCometStory[]),
-]).map(supplementSourceLinks).sort((a, b) => {
+]).map(supplementSources).sort((a, b) => {
   const dateCompare = a.date.localeCompare(b.date);
   if (dateCompare !== 0) return dateCompare;
   return a.id.localeCompare(b.id, undefined, { numeric: true });
