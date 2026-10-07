@@ -830,6 +830,34 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=WNUJdRsBi1o',
     source: 'Suisei official YouTube original stream',
   },
+  'c2-2025-301': {
+    link: 'https://www.youtube.com/watch?v=FOk-T8rwouU',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-084': {
+    link: 'https://www.youtube.com/watch?v=J6QC95ewUFg',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-088': {
+    link: 'https://www.youtube.com/watch?v=NtkoCL2zjJ0',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-019': {
+    link: 'https://www.youtube.com/watch?v=F-S7Ljothe8',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-034': {
+    link: 'https://www.youtube.com/watch?v=kfhwIJKgVBA https://www.youtube.com/watch?v=oslNxV_8Q2c',
+    source: 'Miko official YouTube original streams',
+  },
+  'c2-2025-040': {
+    link: 'https://www.youtube.com/watch?v=VJm12Ztekgo',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-013': {
+    link: 'https://www.youtube.com/watch?v=yu_xI7OeCkM https://www.youtube.com/watch?v=nhpUFMUa9V4',
+    source: 'Miko official YouTube original streams',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
