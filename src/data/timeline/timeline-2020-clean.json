@@ -1,5 +1,20 @@
 [
   {
+    "id": "official-2020-0124-1stfes",
+    "displayId": "20-01-OFFICIAL-1",
+    "date": "2020-01-24",
+    "phase": 1,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "hololive 1st fes.《ノンストップ・ストーリー》中Miko與星街同台",
+    "titleZh": "hololive 1st fes.《ノンストップ・ストーリー》中Miko與星街同台",
+    "ctx": "hololive首次全體Live中，Miko與星街同為出演成員，並與時乃空、蘿蔔子、AZKi共同演出《Dream☆Story》。",
+    "ctxZh": "hololive首次全體Live中，Miko與星街同為出演成員，並與時乃空、蘿蔔子、AZKi共同演出《Dream☆Story》。",
+    "type": "Event",
+    "link": "https://nonstop.hololive.tv/info https://bushiroad-music.com/musics/hoxb-10001/",
+    "source": "hololive 1st fes. official site / Bushiroad Music official discography"
+  },
+  {
     "id": "s1486",
     "displayId": "20-03-CLEAN-1",
     "date": "2020-03-05",
