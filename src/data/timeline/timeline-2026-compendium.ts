@@ -962,6 +962,7 @@ const additions = [
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
+  'c2-2026-024': 'https://www.chugai-contents.jp/blog/event/micomet_joysound/',
   'c2-2026-071': 'https://www.youtube.com/watch?v=M1GYqy0tHV0',
   'c2-2026-076': 'https://www.youtube.com/watch?v=rmZIQK5YOnY',
   'c2-2026-077': 'https://www.youtube.com/watch?v=wP9w-hWScFE',
@@ -1054,7 +1055,7 @@ const withVerifiedSources = [...patched, ...additions].map((story) => {
   return {
     ...story,
     link: links.join(' '),
-    source: [story.source, verified.includes('holostats.com') ? 'HoloStats cross-check / official YouTube' : /(?:twitter\.com|x\.com)/i.test(verified) ? 'official X' : 'official YouTube'].filter(Boolean).join('; '),
+    source: [story.source, verified.includes('holostats.com') ? 'HoloStats cross-check / official YouTube' : /(?:twitter\.com|x\.com)/i.test(verified) ? 'official X' : /(?:youtube\.com|youtu\.be)/i.test(verified) ? 'official YouTube' : 'verified official/web source'].filter(Boolean).join('; '),
   };
 });
 
