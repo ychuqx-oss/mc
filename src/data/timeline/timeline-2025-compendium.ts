@@ -395,6 +395,30 @@ function nextEnglishTitle(date: string, fallback: string) {
 }
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-232': {
+    link: 'https://www.youtube.com/watch?v=VzGNuQHy5rk',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-257': {
+    link: 'https://www.youtube.com/watch?v=FGZkT3wAjAw',
+    source: 'Botan official YouTube original stream',
+  },
+  'c2-2025-269': {
+    link: 'https://www.youtube.com/watch?v=BWEmA6AxIyM',
+    source: 'Fubuki official YouTube original MV',
+  },
+  'c2-2025-275': {
+    link: 'https://www.youtube.com/watch?v=HvehDSYPms0',
+    source: 'Kanata official YouTube original stream',
+  },
+  'c2-2025-298': {
+    link: 'https://www.youtube.com/watch?v=FHgeeY_UPiI https://www.youtube.com/watch?v=Yp6Rk4liU2s',
+    source: 'Suisei and tuki. official YouTube videos',
+  },
+  'c2-2025-317': {
+    link: 'https://www.youtube.com/watch?v=NDfliNBq4UA https://www.youtube.com/watch?v=S-FIuBHFhbU',
+    source: 'Miko official YouTube original streams',
+  },
   'c2-2025-116': {
     link: 'https://www.youtube.com/watch?v=5HzLKcJPV14',
     source: 'Miko official YouTube original stream',
