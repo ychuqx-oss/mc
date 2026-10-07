@@ -945,6 +945,18 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=nuiqLHQA7k8',
     source: 'Noel official YouTube original stream',
   },
+  'c2-2025-294': {
+    link: 'https://www.youtube.com/watch?v=cNbohyNa1Y8',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-309': {
+    link: 'https://www.youtube.com/watch?v=YvR18f335Fg',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-312': {
+    link: 'https://x.com/suisei_hosimati/status/1875512976775770503',
+    source: 'Suisei official X Space announcement',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
