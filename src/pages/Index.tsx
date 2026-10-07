@@ -58,8 +58,8 @@ const UI_LABELS = {
     totalCard: '件のストーリーを収録', start: '開始', latest: '最新', overview: '統計概要', totalStories: '総ストーリー数', timelineRange: '収録期間',
     yearMonth: '年 / 月', firstEntry: '最初の記録', latestEntry: '最新の記録', cumulativeChart: 'miComet 累計ストーリー推移', countChart: 'ストーリー件数推移',
     year: '年', month: '月', all: 'すべて', search: 'ストーリー・キーワード・日付を検索...', found: '件のストーリー', empty: '条件に一致するストーリーはありません',
-    mikoTotal: 'Miko 累計', suiseiTotal: 'すいせい累計', supportTotal: 'サポート累計',
-    miko: 'Miko', suisei: 'すいせい', gen0: '0期生', shiraken: 'しら建', oneOnOne: '1対1', group: 'グループ', fubuki: '白上フブキ', support: 'サポート', category: '分類', source: '出典', filters: '絞り込み', showChart: 'グラフを表示', hideChart: 'グラフを閉じる', clearFilters: '絞り込みを解除', backTop: 'ページ上部へ', type: '種類', sourceTrust: '出典の信頼度', verified: '確認済み', indexed: '照合済み', pending: '要出典', completeness: '年度別出典状況', cards: 'カード', timeline: 'タイムライン', newest: '新しい順', oldest: '古い順', sameEvent: '同じ配信／イベント', statistics: '統計・グラフ', verifiedSource: '公式／一次情報', indexedSource: '索引／メディア照合', needsSource: '代替／要出典',
+    mikoTotal: 'みこ累計', suiseiTotal: 'すいせい累計', supportTotal: 'サポート累計',
+    miko: 'みこ', suisei: 'すいせい', gen0: '0期生', shiraken: 'しら建', oneOnOne: '1対1', group: 'グループ', fubuki: '白上フブキ', support: 'サポート', category: '分類', source: '出典', filters: '絞り込み', showChart: 'グラフを表示', hideChart: 'グラフを閉じる', clearFilters: '絞り込みを解除', backTop: 'ページ上部へ', type: '種類', sourceTrust: '出典の信頼度', verified: '確認済み', indexed: '照合済み', pending: '要出典', completeness: '年度別出典状況', cards: 'カード', timeline: 'タイムライン', newest: '新しい順', oldest: '古い順', sameEvent: '同じ配信／イベント', statistics: '統計・グラフ', verifiedSource: '公式／一次情報', indexedSource: '索引／メディア照合', needsSource: '代替／要出典',
   },
   zh: {
     totalCard: '個故事已收錄', start: '起', latest: '迄', overview: '統計總覽', totalStories: '總故事數', timelineRange: '故事區間',
