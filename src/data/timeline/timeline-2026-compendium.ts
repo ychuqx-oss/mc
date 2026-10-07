@@ -12,17 +12,6 @@ const patched = baseData.map((story) => {
       ctxEn: 'Miko revisited and retweeted older miComet fanart.',
     };
   }
-  if (story.id === 'c2-2026-002') {
-    return {
-      ...story,
-      title: 'Fubuki Spies on MiComet in Hololive Dreams',
-      titleZh: '白上吹雪在Hololive Dreams偷看miComet',
-      titleEn: 'Fubuki Spies on MiComet in Hololive Dreams',
-      ctx: 'Fubuki spotted Miko and Suisei together in Hololive Dreams and watched the pair from nearby.',
-      ctxZh: '白上吹雪在《Hololive Dreams》中發現Miko與星街待在一起，便在附近偷看兩人的互動。',
-      ctxEn: 'Fubuki spotted Miko and Suisei together in Hololive Dreams and watched the pair from nearby.',
-    };
-  }
   if (story.id === 'c2-2026-003') {
     return {
       ...story,
@@ -873,6 +862,7 @@ const additions = [
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
+  'c2-2026-002': 'https://www.youtube.com/watch?v=mUI2752qfK8',
   'c2-2026-130': 'https://www.youtube.com/watch?v=wK0cKEVi9A4',
   'c2-2026-028': 'https://x.com/sakuramiko35/status/2060682756879958061 https://x.com/suisei_submati/status/2060679337343623323',
   'c2-2026-089': 'https://x.com/mikochisub/status/2023724707942445327',
