@@ -773,6 +773,22 @@
     "link": "https://www.youtube.com/watch?v=CRPitFxeQWY"
   },
   {
+    "id": "official-2024-1026-flower-fantasista",
+    "displayId": "24-10-OFFICIAL-1",
+    "date": "2024-10-26",
+    "phase": 5,
+    "side": "shared",
+    "sharedCategory": "oneOnOne",
+    "emoji": "💛",
+    "title": "Miko 1st Live《flower fantasista!》中星街特別嘉賓登場",
+    "titleZh": "Miko 1st Live《flower fantasista!》中星街特別嘉賓登場",
+    "ctx": "Miko首場個人演唱會中，星街作為特別嘉賓登場；miComet合唱《シュガーラッシュ》，並重現雙人版《Stellar Stellar》。",
+    "ctxZh": "Miko首場個人演唱會中，星街作為特別嘉賓登場；miComet合唱《シュガーラッシュ》，並重現雙人版《Stellar Stellar》。",
+    "type": "Event",
+    "link": "https://hololive.hololivepro.com/events/flower-fantasista/",
+    "source": "hololive official event report"
+  },
+  {
     "id": "c2024-055",
     "displayId": "24-10-CLEAN-7",
     "date": "2024-10-29",
@@ -856,6 +872,21 @@
     "ctxZh": "FBKINGDOM後續短片整理新生FubuMiComet，也有Miko與星街不考慮後果就使用魔法的魔女miComet片段。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=BiYdAa4LnZA"
+  },
+  {
+    "id": "news-2024-1105-realsound-flower",
+    "displayId": "24-11-NEWS-1",
+    "date": "2024-11-05",
+    "phase": 5,
+    "side": "others",
+    "emoji": "⭐",
+    "title": "Real Sound報導Miko首場Solo Live與miComet特別共演",
+    "titleZh": "Real Sound報導Miko首場Solo Live與miComet特別共演",
+    "ctx": "Real Sound刊出《flower fantasista!》現場報導，記錄星街以特別嘉賓登場、miComet演唱《シュガーラッシュ》及兩人的舞台互動。",
+    "ctxZh": "Real Sound刊出《flower fantasista!》現場報導，記錄星街以特別嘉賓登場、miComet演唱《シュガーラッシュ》及兩人的舞台互動。",
+    "type": "News",
+    "link": "https://realsound.jp/2024/11/post-1827037.html",
+    "source": "Real Sound live report"
   },
   {
     "id": "c2024-060",
