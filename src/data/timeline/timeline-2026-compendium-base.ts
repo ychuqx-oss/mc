@@ -14,14 +14,12 @@ c2-2026-017|26-C2-59|2026-06-13|6|miko|🌸|Text|Miko冬天會和星街去露營
 c2-2026-018|26-C2-60|2026-06-12|6|shared|💛|Stream|miComet加入輪堂千速直播，夏色祭說Miko想和星街約會|MiComet join Chihaya’s stream; Matsuri says that Miko wants to go on a date with Suisei, and Suisei responds cooly
 c2-2026-020|26-C2-61|2026-06-07|6|suisei|☄️|Stream|星街活動3000日雜談中打電話給Miko|Suisei calls Miko during her 3000-day activity anniversary chat
 c2-2026-021|26-C2-62|2026-06-07|6|miko|🌸|Stream|Miko拿走星街手機並用它發文|Miko takes Suisei’s phone and posts on it
-c2-2026-022|26-C2-63|2026-06-07|6|miko|🌸|Text|Miko的幸運Hololive成員是星街|Miko’s lucky holomem is Suisei
 c2-2026-026|26-C2-64|2026-06-03|6|others|⭐|Stream|白上吹雪在Hololive通話中看到miComet互動後連續大聲反應|Fubuki repeatedly reacts loudly after seeing MiComet interact during a Hololive call
 c2-2026-027|26-C2-65|2026-05-31|6|miko|🌸|Stream|Miko回顧Biji Camp露營，提到姊街被嚇到尖叫|Miko looks back on Biji Camp and recalls Anemachi screaming after being startled
 c2-2026-028|26-C2-66|2026-05-29|6|miko|🌸|Text|miComet去露營|MiComet go camping
 c2-2026-029|26-C2-67|2026-05-26|6|miko|🌸|Stream|Miko談上次露營、星街的行動力，以及即將再和姊街、星街去露營|Miko talks about the previous camping trip, Suisei’s adventurous side, and going camping with Anemachi and Suisei again in a few days
 c2-2026-031|26-C2-68|2026-05-24|6|others|⭐|Stream|白上吹雪談旅行回程時星街因寂寞改坐FubuMio車，Miko和狗狗親坐在後座|Fubuki talks about the trip with Anemachi, Mio, and miComet; on the way back, Suisei rode in FubuMio’s car with Miko and Inuchi in the back instead of with Anemachi because she was lonely
 c2-2026-032|26-C2-69|2026-05-23|6|miko|🌸|Stream|Miko談和姊街、FubuMio、星街旅行，以及姊街幫她吹頭髮|Miko talks about the trip with Anemachi, FubuMio, and Suisei, including getting her hair dried by Anemachi
-c2-2026-033|26-C2-70|2026-05-23|6|others|⭐|Text|大神澪對miComet推文打情罵俏作出反應|Mio reacts to miComet Twitter flirting
 c2-2026-034|26-C2-71|2026-05-18|6|miko|🌸|Stream|Miko覺得星街比一條莉莉華更容易在旅行中出包|Miko thinks Suisei is more likely to mess up on a trip than Ririka
 c2-2026-035|26-C2-72|2026-05-18|6|others|⭐|Stream|Miko寫給佃煮海苔男，說能在星街家看到狗狗親|Miko writes to Ui-mama that she can see Inuchi at Suisei’s
 c2-2026-036|26-C2-73|2026-05-17|6|miko|🌸|Stream|Miko注意到遊戲服裝像星街的衣服|Miko notices that in-game clothes look like Suisei’s outfit
@@ -40,7 +38,6 @@ c2-2026-051|26-C2-88|2026-04-23|6|miko|🌸|Text|miComet也在博衣小夜璃的
 c2-2026-052|26-C2-85|2026-04-27|6|miko|🌸|Stream|Miko的《朋友收藏集》中miComet開始同居，Miko吐槽「商業違規」|MiComet start living together in Miko's Tomodachi Life, and Miko calls it a business violation
 c2-2026-055|26-C2-89|2026-04-19|6|miko|🌸|Text|Miko為星街家做燉菜|Miko makes stew for the Hosimachis
 c2-2026-056|26-C2-90|2026-04-17|6|others|⭐|Stream|白上吹雪想知道Miko是不是想星街了|Fubuki wonders if Miko is missing Suisei
-c2-2026-059|26-C2-91|2026-04-12|6|miko|🌸|Text|Miko發推談露營|Miko tweets about camping
 c2-2026-060|26-C2-92|2026-04-11|6|others|⭐|Stream|大神澪談到與miComet、姊街和狗狗親露營|Mio talks about camping with miComet, Anemachi, and Inuchi
 c2-2026-062|26-C2-93|2026-04-08|6|suisei|☄️|Stream|星街要求星詠注意言行，Miko說聞狗狗親味道會冷靜|Suisei speaks out against misbehaving Hoshiyomis; Miko comments that she’ll calm down after sniffing Inuchi
 c2-2026-064|26-C2-95|2026-04-05|6|suisei|☄️|Text|星街在Twitter Space中因狗狗親叫聲暴露人在Miko家|Suisei is caught at Miko’s place thanks to Inuchi’s bark during her Twitter space
@@ -55,7 +52,6 @@ c2-2026-075|26-C2-103|2026-03-16|6|miko|🌸|Stream|Miko提到星街很常用衛
 c2-2026-076|26-C2-104|2026-03-16|6|suisei|☄️|Stream|Huggy Wuggy和Kissy Missy在星街直播中相遇|Huggy Wuggy and Kissy Missy meet on Suisei’s stream
 c2-2026-077|26-C2-105|2026-03-14|6|miko|🌸|Stream|Miko展示與星街在Pokemon Pokopia中的合照|Miko shows off her photo with Suisei in Pokemon Pokopia
 c2-2026-078|26-C2-106|2026-03-14|6|suisei|☄️|Stream|星街低估Miko在Pokemon Pokopia中的進度|Suisei underestimates Miko’s progress in Pokemon Pokopia
-c2-2026-079|26-C2-107|2026-03-11|6|others|⭐|Text|夏色祭轉推星街2019年稱Miko可愛的推文|Matsuri retweets Suisei’s tweet from 2019 calling Miko cute
 c2-2026-081|26-C2-109|2026-03-09|6|suisei|☄️|Stream|星街祝賀Miko生日|Suisei celebrates Miko’s birthday
 c2-2026-082|26-C2-110|2026-03-08|6|suisei|☄️|Stream|星街談HoloFes沒有miComet|Suisei talks about no miComet at HoloFes
 c2-2026-083|26-C2-111|2026-03-05|6|miko|🌸|Stream|Miko生日前夕打給星街，兩人談第一次認識彼此與想吃的手料理|On the eve of Miko's birthday, Miko calls Suisei and they talk about when Suisei first noticed her and what home-cooked food she wants
