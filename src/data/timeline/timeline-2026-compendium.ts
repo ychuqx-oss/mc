@@ -862,6 +862,8 @@ const additions = [
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
+  'c2-2026-003': 'https://x.com/sakuramiko35/status/2079565152886935884',
+  'c2-2026-035': 'https://www.youtube.com/watch?v=KQFoKI3A1h8',
   'c2-2026-026': 'https://www.youtube.com/watch?v=GSMyPNRANvc',
   'c2-2026-021': 'https://www.youtube.com/watch?v=de55PoGcBZY https://www.youtube.com/watch?v=lKd07PQLCLM',
   'c2-2026-036': 'https://www.youtube.com/watch?v=Wtn9Lwhxoxc',
