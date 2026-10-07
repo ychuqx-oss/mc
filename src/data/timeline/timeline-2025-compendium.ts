@@ -645,6 +645,31 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://hololive.hololivepro.com/events/fbkingdom_live/',
     source: 'hololive official FBKINGDOM ANTHEM report',
   },
+
+  'c2-2025-316': {
+    link: 'https://www.youtube.com/watch?v=wlEZTKubQH8',
+    source: 'MikoKorone official YouTube MV',
+  },
+  'c2-2025-314': {
+    link: 'https://www.youtube.com/watch?v=23_0IR4b48U',
+    source: 'Ao official YouTube original stream',
+  },
+  'c2-2025-313': {
+    link: 'https://www.youtube.com/watch?v=hUbFoEW93QU',
+    source: 'Towa official YouTube original stream',
+  },
+  'c2-2025-299': {
+    link: 'https://www.youtube.com/watch?v=BC41cbquSVg',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-223': {
+    link: 'https://www.youtube.com/watch?v=K_na4Akrttg',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-256': {
+    link: 'https://www.youtube.com/watch?v=QZBOzpr7ABg',
+    source: 'Miko official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
