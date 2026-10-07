@@ -165,9 +165,8 @@ function summarizeTimeline(stories: MiCometStory[]) {
     return acc;
   }, { gen0: 0, shiraken: 0, oneOnOne: 0, group: 0 });
   const supportCounts = timeline.reduce((acc, story) => {
-    if (story.side !== 'others') return acc;
     if (story.supportCategory === 'fubuki') acc.fubuki += 1;
-    else acc.others += 1;
+    else if (story.side === 'others') acc.others += 1;
     return acc;
   }, { fubuki: 0, others: 0 });
   const years = yearRange(timelineYearStart(timeline), timelineYearEnd(timeline));
@@ -199,10 +198,8 @@ function buildMonthlyCounts(stories: MiCometStory[]) {
       current.miko += 1;
       current.suisei += 1;
     }
-    if (story.side === 'others') {
-      if (story.supportCategory === 'fubuki') current.fubuki += 1;
-      else current.others += 1;
-    }
+    if (story.supportCategory === 'fubuki') current.fubuki += 1;
+    else if (story.side === 'others') current.others += 1;
     monthly.set(key, current);
   });
   return monthly;
@@ -354,7 +351,7 @@ function storyCategoryColor(story: LocalStory) {
 function matchesCategory(story: LocalStory, category: StoryCategory) {
   if (category === 'all') return true;
   if (category === 'miko' || category === 'suisei') return story.side === category;
-  if (category === 'fubuki') return story.side === 'others' && story.supportCategory === 'fubuki';
+  if (category === 'fubuki') return story.supportCategory === 'fubuki';
   if (category === 'others') return story.side === 'others' && story.supportCategory !== 'fubuki';
   return story.side === 'shared' && (story.sharedCategory ?? 'group') === category;
 }
