@@ -123,7 +123,9 @@
     "ctx": "Sources: https://www.youtube.com/watch?v=Fuq9__yqZxw https://www.youtube.com/watch?v=_qyauKqzGcI https://www.youtube.com/watch?v=ww_x2vWsQ50 https://holodex.net/watch/pkX96bCUsRo",
     "ctxZh": "Miko與星街突發麥塊miComet。Miko海上迷路後找星街，星街安慰Miko，兩人約好下次一起做鞘翅、蓋鬼屋，後續也有星街列車、岩漿、河豚池與冰船競速等剪輯。",
     "type": "Stream",
-    "link": "https://www.youtube.com/watch?v=Fuq9__yqZxw"
+    "link": "https://www.youtube.com/watch?v=Fuq9__yqZxw",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "s1549",
