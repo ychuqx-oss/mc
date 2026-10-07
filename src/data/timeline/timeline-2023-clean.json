@@ -738,6 +738,37 @@
     "link": "https://www.youtube.com/watch?v=X7gWTeXe0NE"
   },
   {
+    "id": "official-2023-0831-idol-cover",
+    "displayId": "23-08-OFFICIAL-4",
+    "date": "2023-08-31",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet正式公開《アイドル》Cover",
+    "titleZh": "miComet正式公開《アイドル》Cover",
+    "ctx": "Miko官方頻道公開miComet翻唱YOASOBI《アイドル》的完整Cover，延續8月1日Miko 5周年Live中的雙人演出。",
+    "ctxZh": "Miko官方頻道公開miComet翻唱YOASOBI《アイドル》的完整Cover，延續8月1日Miko 5周年Live中的雙人演出。",
+    "type": "Music",
+    "link": "https://www.youtube.com/watch?v=4kCzI6xbQoo",
+    "source": "Miko official YouTube"
+  },
+  {
+    "id": "official-2023-0907-hololive6th-gen0",
+    "displayId": "23-09-OFFICIAL-2",
+    "date": "2023-09-07",
+    "phase": 4,
+    "side": "shared",
+    "sharedCategory": "gen0",
+    "emoji": "💛",
+    "title": "Miko與星街出演hololive production 6周年0期生紀念特番",
+    "titleZh": "Miko與星街出演hololive production 6周年0期生紀念特番",
+    "ctx": "hololive production 6周年官方特番由0期生共同回顧一年歷程並公開ReGLOSS資訊；Miko與星街和時乃空、蘿蔔子、AZKi同場出演。",
+    "ctxZh": "hololive production 6周年官方特番由0期生共同回顧一年歷程並公開ReGLOSS資訊；Miko與星街和時乃空、蘿蔔子、AZKi同場出演。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=sf4WWLd9swI",
+    "source": "hololive official YouTube"
+  },
+  {
     "id": "s230031",
     "displayId": "23-09-CLEAN-1",
     "date": "2023-09-09",
