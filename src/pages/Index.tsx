@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { MICOMET_TIMELINE, type MiCometStory } from '@/data/timeline';
 
@@ -23,6 +23,19 @@ const COLORS = {
 };
 const MONTHS = Array.from({ length: 12 }, (_, index) => index + 1);
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.matchMedia('(max-width: 720px)').matches);
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const media = window.matchMedia('(max-width: 720px)');
+    const sync = () => setIsMobile(media.matches);
+    sync();
+    media.addEventListener('change', sync);
+    return () => media.removeEventListener('change', sync);
+  }, []);
+  return isMobile;
+}
+
 const TYPE_LABELS: Record<UiLang, Record<string, string>> = {
   en: { Clip: 'Clip', Stream: 'Stream', News: 'News', Text: 'Text', Audio: 'Audio', Music: 'Music', Event: 'Event' },
   zh: { Clip: '剪輯', Stream: '直播', News: '綜合', Text: '文字', Audio: '音訊', Music: '音樂', Event: '活動' },
@@ -34,14 +47,14 @@ const UI_LABELS = {
     yearMonth: 'Year / Month', firstEntry: 'First Entry', latestEntry: 'Latest Entry', cumulativeChart: 'Cumulative Story Growth', countChart: 'Story Count Trend',
     year: 'Year', month: 'Month', all: 'All', search: 'Search stories, keywords, dates...', found: 'stories found', empty: 'No matching stories',
     mikoTotal: 'Miko Total', suiseiTotal: 'Suisei Total', supportTotal: 'Support Total',
-    miko: 'Miko', suisei: 'Suisei', gen0: 'Gen 0', shiraken: 'Shiraken', oneOnOne: '1v1', group: 'Group', fubuki: 'Fubuki', support: 'Support', category: 'Category', source: 'Source',
+    miko: 'Miko', suisei: 'Suisei', gen0: 'Gen 0', shiraken: 'Shiraken', oneOnOne: '1v1', group: 'Group', fubuki: 'Fubuki', support: 'Support', category: 'Category', source: 'Source', filters: 'Filters', showChart: 'Show chart', hideChart: 'Hide chart', clearFilters: 'Clear filters', backTop: 'Back to top',
   },
   zh: {
     totalCard: '個故事已收錄', start: '起', latest: '迄', overview: '統計總覽', totalStories: '總故事數', timelineRange: '故事區間',
     yearMonth: '年 / 月', firstEntry: '最早紀錄', latestEntry: '最新紀錄', cumulativeChart: 'miComet累計故事成長圖', countChart: '故事數量折線圖',
     year: '年份', month: '月份', all: '全部', search: '搜尋故事、關鍵字、日期...', found: '個故事', empty: '沒有符合條件的故事',
     mikoTotal: 'Miko累計', suiseiTotal: '星街累計', supportTotal: '助攻累計',
-    miko: 'Miko', suisei: '星街', gen0: '0期', shiraken: '火建', oneOnOne: '1v1', group: '團體', fubuki: '白上吹雪', support: '助攻', category: '分類', source: '來源',
+    miko: 'Miko', suisei: '星街', gen0: '0期', shiraken: '火建', oneOnOne: '1v1', group: '團體', fubuki: '白上吹雪', support: '助攻', category: '分類', source: '來源', filters: '篩選', showChart: '顯示圖表', hideChart: '收合圖表', clearFilters: '清除篩選', backTop: '回到頂端',
   },
 } as const;
 
@@ -277,24 +290,28 @@ function matchesCategory(story: LocalStory, category: StoryCategory) {
 
 function ChartShell({ title, stories, labels, cumulative = false, defaultMode = 'month' }: { title: string; stories: MiCometStory[]; labels: typeof UI_LABELS[UiLang]; cumulative?: boolean; defaultMode?: ChartMode }) {
   const [mode, setMode] = useState<ChartMode>(defaultMode);
+  const [mobileExpanded, setMobileExpanded] = useState(false);
+  const isMobile = useIsMobile();
   const summary = useMemo(() => summarizeTimeline(stories), [stories]);
   const data = useMemo(() => (cumulative ? buildCumulativePoints(mode, summary.timeline) : buildCountPoints(mode, summary.timeline)), [cumulative, mode, summary.timeline]);
+  const expanded = !isMobile || mobileExpanded;
   return (
-    <section style={{ marginTop: 20, borderRadius: 26, background: 'radial-gradient(1200px 480px at 18% 0%, rgba(255,125,183,0.08), transparent 45%), radial-gradient(800px 420px at 88% 12%, rgba(102,169,255,0.08), transparent 42%), #070910', border: '1px solid rgba(255,255,255,0.07)', boxShadow: '0 28px 70px rgba(0,0,0,0.42)', padding: 20 }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', gap: 16, alignItems: 'center', marginBottom: 16, flexWrap: 'wrap' }}>
-        <div style={{ fontSize: 23, fontWeight: 900, color: '#edf0f8' }}>{title}</div>
-        <div style={{ display: 'flex', gap: 8, background: '#0d0f15', borderRadius: 14, padding: 6, border: '1px solid rgba(255,255,255,0.08)' }}>
-          {(['year', 'month'] as ChartMode[]).map((item) => <button key={item} onClick={() => setMode(item)} style={{ background: mode === item ? '#1f2432' : 'transparent', color: '#fff', border: 'none', borderRadius: 10, padding: '10px 14px', fontSize: 15, fontWeight: 700, cursor: 'pointer' }}>{item === 'year' ? labels.year : labels.month}</button>)}
-        </div>
+    <section style={{ marginTop: isMobile ? 12 : 20, borderRadius: isMobile ? 18 : 26, background: 'radial-gradient(1200px 480px at 18% 0%, rgba(255,125,183,0.08), transparent 45%), radial-gradient(800px 420px at 88% 12%, rgba(102,169,255,0.08), transparent 42%), #070910', border: '1px solid rgba(255,255,255,0.07)', boxShadow: '0 28px 70px rgba(0,0,0,0.42)', padding: isMobile ? 14 : 20 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'center', marginBottom: expanded ? 16 : 0, flexWrap: 'wrap' }}>
+        <div style={{ fontSize: isMobile ? 18 : 23, fontWeight: 900, color: '#edf0f8' }}>{title}</div>
+        {isMobile ? <button onClick={() => setMobileExpanded((value) => !value)} style={{ border: '1px solid rgba(255,255,255,0.1)', background: '#111520', color: '#dbe0ea', borderRadius: 12, padding: '9px 12px', fontWeight: 800, cursor: 'pointer' }}>{expanded ? labels.hideChart : labels.showChart}</button> : null}
+        {expanded ? <div style={{ display: 'flex', gap: 8, background: '#0d0f15', borderRadius: 14, padding: 6, border: '1px solid rgba(255,255,255,0.08)' }}>
+          {(['year', 'month'] as ChartMode[]).map((item) => <button key={item} onClick={() => setMode(item)} style={{ background: mode === item ? '#1f2432' : 'transparent', color: '#fff', border: 'none', borderRadius: 10, padding: '9px 12px', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>{item === 'year' ? labels.year : labels.month}</button>)}
+        </div> : null}
       </div>
-      <div style={{ height: cumulative ? 420 : 380 }}>
+      {expanded ? <div style={{ height: isMobile ? 300 : cumulative ? 420 : 380, overflow: 'hidden' }}>
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={data} margin={{ top: 12, right: 22, left: 0, bottom: 38 }}>
+          <LineChart data={data} margin={{ top: 12, right: isMobile ? 8 : 22, left: isMobile ? -18 : 0, bottom: 38 }}>
             <CartesianGrid stroke="rgba(255,255,255,0.11)" strokeDasharray="4 6" />
-            <XAxis dataKey="label" tick={{ fill: '#8f96a8', fontSize: 14 }} axisLine={{ stroke: 'rgba(255,255,255,0.14)' }} tickLine={{ stroke: 'rgba(255,255,255,0.14)' }} interval={mode === 'year' ? 0 : 2} angle={-45} textAnchor="end" height={48} />
-            <YAxis tick={{ fill: '#8f96a8', fontSize: 14 }} axisLine={{ stroke: 'rgba(255,255,255,0.14)' }} tickLine={{ stroke: 'rgba(255,255,255,0.14)' }} allowDecimals={false} />
+            <XAxis dataKey="label" tick={{ fill: '#8f96a8', fontSize: isMobile ? 11 : 14 }} axisLine={{ stroke: 'rgba(255,255,255,0.14)' }} tickLine={{ stroke: 'rgba(255,255,255,0.14)' }} interval={mode === 'year' ? 0 : isMobile ? 5 : 2} angle={-45} textAnchor="end" height={48} />
+            <YAxis tick={{ fill: '#8f96a8', fontSize: isMobile ? 11 : 14 }} axisLine={{ stroke: 'rgba(255,255,255,0.14)' }} tickLine={{ stroke: 'rgba(255,255,255,0.14)' }} allowDecimals={false} />
             <Tooltip contentStyle={{ background: '#0a0c11', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 12 }} labelStyle={{ color: '#fff' }} />
-            <Legend wrapperStyle={{ paddingTop: 8, color: '#cfd4de', fontSize: 15 }} formatter={(value) => <span style={{ color: '#cfd4de' }}>{value}</span>} />
+            <Legend wrapperStyle={{ paddingTop: 8, color: '#cfd4de', fontSize: isMobile ? 11 : 15 }} formatter={(value) => <span style={{ color: '#cfd4de' }}>{value}</span>} />
             <Line type="monotone" dataKey="miko" name={cumulative ? labels.mikoTotal : labels.miko} stroke={COLORS.miko} strokeWidth={3} dot={false} />
             <Line type="monotone" dataKey="suisei" name={cumulative ? labels.suiseiTotal : labels.suisei} stroke={COLORS.suisei} strokeWidth={3} dot={false} />
             <Line type="monotone" dataKey="gen0" name={labels.gen0} stroke={COLORS.gen0} strokeWidth={2.2} strokeDasharray="6 6" dot={false} />
@@ -305,7 +322,7 @@ function ChartShell({ title, stories, labels, cumulative = false, defaultMode = 
             <Line type="monotone" dataKey="others" name={cumulative ? labels.supportTotal : labels.support} stroke="#ffffff" strokeWidth={2} strokeDasharray="3 3" dot={false} />
           </LineChart>
         </ResponsiveContainer>
-      </div>
+      </div> : null}
     </section>
   );
 }
@@ -319,11 +336,12 @@ function LinkButtons({ item, labels }: { item: LocalStory; labels: typeof UI_LAB
 
 function StoryCard({ item, lang, onOpen }: { item: LocalStory; lang: UiLang; labels: typeof UI_LABELS[UiLang]; onOpen: (item: LocalStory) => void }) {
   const { ytUrls, twUrls, otherUrls } = extractLinks(item);
+  const isMobile = useIsMobile();
   return (
     <article onClick={() => onOpen(item)} style={{ borderRadius: 16, padding: 16, background: 'linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02))', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 10px 28px rgba(0,0,0,0.28)', cursor: 'pointer' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'center' }}><div style={{ color: '#c4c9d6', fontSize: 14 }}>{formatDate(item.date)}</div><div style={{ color: storyCategoryColor(item), fontSize: 14, fontWeight: 700 }}>{storyCategoryLabel(item, lang)}</div></div>
       <div style={{ marginTop: 10, fontSize: 18, fontWeight: 800, lineHeight: 1.45, color: '#f6f7fb' }}>{storyTitle(item, lang)}</div>
-      <div style={{ marginTop: 8, color: '#a7adbb', fontSize: 15, lineHeight: 1.65 }}>{storyContext(item, lang)}</div>
+      <div style={{ marginTop: 8, color: '#a7adbb', fontSize: 15, lineHeight: 1.65, ...(isMobile ? { display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' as const, overflow: 'hidden' } : {}) }}>{storyContext(item, lang)}</div>
       <div style={{ marginTop: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
         <div style={{ color: '#7f8594', fontSize: 14 }}>Phase {item.phase}</div><div style={{ color: '#5c6070', fontSize: 13, fontFamily: 'monospace', letterSpacing: '0.04em' }}>#{item.displayId ?? item.id}</div>
         <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>{ytUrls.length > 0 && <span style={{ color: '#ff4444', fontSize: 13 }}>▶</span>}{twUrls.length > 0 && <span style={{ color: '#1d9bf0', fontSize: 13 }}>𝕏</span>}{otherUrls.length > 0 && <span style={{ color: '#cfd4de', fontSize: 13 }}>↗</span>}<div style={{ color: '#cfd4de', fontSize: 14 }}>{TYPE_LABELS[lang][item.type] ?? item.type}</div></div>
@@ -355,6 +373,9 @@ export default function Index() {
   const [categoryFilter, setCategoryFilter] = useState<StoryCategory>('all');
   const [uiLang, setUiLang] = useState<UiLang>('en');
   const [openItem, setOpenItem] = useState<LocalStory | null>(null);
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+  const [showBackTop, setShowBackTop] = useState(false);
+  const isMobile = useIsMobile();
   const ui = UI_LABELS[uiLang];
   const summary = useMemo(() => summarizeTimeline(MICOMET_TIMELINE), []);
   const years = useMemo(() => summary.years, [summary.years]);
@@ -370,6 +391,12 @@ export default function Index() {
     }).sort(storySort) as LocalStory[];
   }, [search, summary.timeline, yearFilter, monthFilter, categoryFilter, uiLang]);
   const groups = useMemo(() => filtered.reduce<Array<{ date: string; items: LocalStory[] }>>((acc, story) => { const last = acc[acc.length - 1]; if (last && last.date === story.date) last.items.push(story); else acc.push({ date: story.date, items: [story] }); return acc; }, []), [filtered]);
+  useEffect(() => {
+    const onScroll = () => setShowBackTop(window.scrollY > 720);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
   const sideStats = [
     { label: ui.miko, value: summary.counts.miko, color: COLORS.miko },
     { label: ui.suisei, value: summary.counts.suisei, color: COLORS.suisei },
@@ -387,8 +414,32 @@ export default function Index() {
     <section style={{ marginTop: 18, borderRadius: 24, background: '#11141c', border: '1px solid rgba(255,255,255,0.06)', padding: 18, boxShadow: '0 18px 42px rgba(0,0,0,0.24)' }}><div style={{ color: '#8f96a8', fontSize: 14, letterSpacing: '0.16em', textTransform: 'uppercase', fontWeight: 800, marginBottom: 12 }}>{ui.overview}</div><div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 14 }}><StatCard label={ui.totalStories} value={summary.totals.total} note={`${summary.years[0] ?? 2019} - ${summary.years[summary.years.length - 1] ?? 2026}`} accent="#f7f8fb" /><StatCard label={ui.timelineRange} value={`${summary.years[0] ?? 2019} - ${summary.years[summary.years.length - 1] ?? 2026}`} note={ui.yearMonth} accent="#ffb7de" /><StatCard label={ui.firstEntry} value={summary.first ? formatDate(summary.first.date) : '—'} note={summary.first ? storyTitle(summary.first, uiLang) : '—'} accent="#9ed6ff" /><StatCard label={ui.latestEntry} value={summary.last ? formatDate(summary.last.date) : '—'} note={summary.last ? storyTitle(summary.last, uiLang) : '—'} accent="#c58cff" /></div><CompactStatRow items={sideStats} /></section>
     <ChartShell title={ui.cumulativeChart} stories={MICOMET_TIMELINE} labels={ui} cumulative defaultMode="year" />
     <ChartShell title={ui.countChart} stories={MICOMET_TIMELINE} labels={ui} defaultMode="month" />
-    <section style={{ marginTop: 18, borderRadius: 20, background: '#151823', border: '1px solid rgba(255,255,255,0.06)', padding: 16, boxShadow: '0 18px 42px rgba(0,0,0,0.24)' }}><div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center' }}><div style={{ flex: '1 1 320px', display: 'flex', alignItems: 'center', gap: 10, background: '#0d0f15', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, padding: '12px 14px' }}><span style={{ color: '#8f96a8' }}>⌕</span><input value={search} onChange={(e) => setSearch(e.target.value)} placeholder={ui.search} style={{ flex: 1, background: 'transparent', border: 'none', outline: 'none', color: '#fff', fontSize: 16 }} /></div><div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: '#9aa2b2', fontSize: 15 }}>{ui.year}:</span><button onClick={() => { setYearFilter(0); setMonthFilter(0); }} style={filterButtonStyle(yearFilter === 0)}>{ui.all}</button>{years.map((year) => <button key={year} onClick={() => { setYearFilter(yearFilter === year ? 0 : year); setMonthFilter(0); }} style={filterButtonStyle(yearFilter === year)}>{year}</button>)}</div><div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: '#9aa2b2', fontSize: 15 }}>{ui.month}:</span><button onClick={() => setMonthFilter(0)} style={filterButtonStyle(monthFilter === 0)}>{ui.all}</button>{MONTHS.map((month) => <button key={month} onClick={() => setMonthFilter(monthFilter === month ? 0 : month)} style={filterButtonStyle(monthFilter === month)}>{uiLang === 'zh' ? `${month}月` : month}</button>)}</div><div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center', width: '100%' }}><span style={{ color: '#9aa2b2', fontSize: 15 }}>{ui.category}:</span>{([['all', ui.all], ['miko', ui.miko], ['suisei', ui.suisei], ['gen0', ui.gen0], ['shiraken', ui.shiraken], ['oneOnOne', ui.oneOnOne], ['group', ui.group], ['fubuki', ui.fubuki], ['others', ui.support]] as Array<[StoryCategory, string]>).map(([key, label]) => <button key={key} onClick={() => setCategoryFilter(categoryFilter === key ? 'all' : key)} style={filterButtonStyle(categoryFilter === key)}>{label}</button>)}</div></div></section>
+    <section style={{ marginTop: 18, borderRadius: 20, background: '#151823', border: '1px solid rgba(255,255,255,0.06)', padding: isMobile ? 10 : 16, boxShadow: '0 18px 42px rgba(0,0,0,0.24)', ...(isMobile ? { position: 'sticky' as const, top: 0, zIndex: 30, backdropFilter: 'blur(16px)' } : {}) }}>
+      <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{ flex: '1 1 260px', minWidth: 0, display: 'flex', alignItems: 'center', gap: 10, background: '#0d0f15', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, padding: '12px 14px' }}><span style={{ color: '#8f96a8' }}>⌕</span><input value={search} onChange={(e) => setSearch(e.target.value)} placeholder={ui.search} style={{ minWidth: 0, flex: 1, background: 'transparent', border: 'none', outline: 'none', color: '#fff', fontSize: 16 }} /></div>
+        {isMobile ? <button onClick={() => setMobileFiltersOpen(true)} style={{ ...filterButtonStyle(yearFilter !== 0 || monthFilter !== 0 || categoryFilter !== 'all'), whiteSpace: 'nowrap' }}>{ui.filters}{yearFilter !== 0 || monthFilter !== 0 || categoryFilter !== 'all' ? ' •' : ''}</button> : null}
+        {!isMobile ? <>
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: '#9aa2b2', fontSize: 15 }}>{ui.year}:</span><button onClick={() => { setYearFilter(0); setMonthFilter(0); }} style={filterButtonStyle(yearFilter === 0)}>{ui.all}</button>{years.map((year) => <button key={year} onClick={() => { setYearFilter(yearFilter === year ? 0 : year); setMonthFilter(0); }} style={filterButtonStyle(yearFilter === year)}>{year}</button>)}</div>
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: '#9aa2b2', fontSize: 15 }}>{ui.month}:</span><button onClick={() => setMonthFilter(0)} style={filterButtonStyle(monthFilter === 0)}>{ui.all}</button>{MONTHS.map((month) => <button key={month} onClick={() => setMonthFilter(monthFilter === month ? 0 : month)} style={filterButtonStyle(monthFilter === month)}>{uiLang === 'zh' ? `${month}月` : month}</button>)}</div>
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center', width: '100%' }}><span style={{ color: '#9aa2b2', fontSize: 15 }}>{ui.category}:</span>{([['all', ui.all], ['miko', ui.miko], ['suisei', ui.suisei], ['gen0', ui.gen0], ['shiraken', ui.shiraken], ['oneOnOne', ui.oneOnOne], ['group', ui.group], ['fubuki', ui.fubuki], ['others', ui.support]] as Array<[StoryCategory, string]>).map(([key, label]) => <button key={key} onClick={() => setCategoryFilter(categoryFilter === key ? 'all' : key)} style={filterButtonStyle(categoryFilter === key)}>{label}</button>)}</div>
+        </> : null}
+      </div>
+      {isMobile ? <div style={{ marginTop: 9, display: 'flex', gap: 7, overflowX: 'auto', paddingBottom: 2, scrollbarWidth: 'none' }}>
+        <button onClick={() => { setYearFilter(0); setMonthFilter(0); }} style={{ ...filterButtonStyle(yearFilter === 0), flex: '0 0 auto', padding: '9px 12px' }}>{ui.all}</button>
+        {[...years].reverse().map((year) => <button key={year} onClick={() => { setYearFilter(yearFilter === year ? 0 : year); setMonthFilter(0); }} style={{ ...filterButtonStyle(yearFilter === year), flex: '0 0 auto', padding: '9px 12px' }}>{year}</button>)}
+      </div> : null}
+    </section>
     <section style={{ marginTop: 18, color: '#b5bbca', fontSize: 15 }}>{uiLang === 'zh' ? `找到 ${filtered.length} ${ui.found}` : `${filtered.length} ${ui.found}`}</section>
-    <main style={{ marginTop: 16, display: 'grid', gap: 18 }}>{groups.length === 0 ? <div style={{ padding: 36, borderRadius: 18, background: '#151823', color: '#9aa2b2', textAlign: 'center' }}>{ui.empty}</div> : groups.map((group) => <section key={group.date} style={{ borderRadius: 20, background: '#151823', border: '1px solid rgba(255,255,255,0.06)', padding: 16 }}><div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, flexWrap: 'wrap', marginBottom: 12 }}><div><div style={{ color: '#8f96a8', fontSize: 14 }}>{group.date.slice(0, 7)}</div><h2 style={{ margin: '4px 0 0', fontSize: 23 }}>{formatDate(group.date)}</h2></div><div style={{ color: '#9aa2b2', fontSize: 15 }}>Phase {group.items[0]?.phase ?? '-'}</div></div><div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>{group.items.map((item) => <StoryCard key={item.id} item={item} lang={uiLang} labels={ui} onOpen={setOpenItem} />)}</div></section>)}</main>
-  </div>{openItem ? <Modal item={openItem} lang={uiLang} labels={ui} onClose={() => setOpenItem(null)} /> : null}</div>;
+    <main style={{ marginTop: 16, display: 'grid', gap: isMobile ? 12 : 18 }}>{groups.length === 0 ? <div style={{ padding: 36, borderRadius: 18, background: '#151823', color: '#9aa2b2', textAlign: 'center' }}>{ui.empty}</div> : groups.map((group, index) => {
+      const year = group.date.slice(0, 4);
+      const previousYear = index > 0 ? groups[index - 1].date.slice(0, 4) : '';
+      return <React.Fragment key={group.date}>
+        {isMobile && year !== previousYear ? <div style={{ position: 'sticky', top: 76, zIndex: 18, width: 'fit-content', borderRadius: 999, padding: '7px 12px', background: 'rgba(20,24,35,0.94)', border: '1px solid rgba(255,255,255,0.08)', color: '#e7ebf4', fontSize: 15, fontWeight: 900, backdropFilter: 'blur(12px)' }}>{year}</div> : null}
+        <section style={{ borderRadius: isMobile ? 16 : 20, background: '#151823', border: '1px solid rgba(255,255,255,0.06)', padding: isMobile ? 12 : 16 }}><div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12, flexWrap: 'wrap', marginBottom: 12 }}><div><div style={{ color: '#8f96a8', fontSize: 13 }}>{group.date.slice(0, 7)}</div><h2 style={{ margin: '3px 0 0', fontSize: isMobile ? 19 : 23 }}>{formatDate(group.date)}</h2></div><div style={{ color: '#9aa2b2', fontSize: 14 }}>Phase {group.items[0]?.phase ?? '-'}</div></div><div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 12 }}>{group.items.map((item) => <StoryCard key={item.id} item={item} lang={uiLang} labels={ui} onOpen={setOpenItem} />)}</div></section>
+      </React.Fragment>;
+    })}</main>
+  </div>
+  {isMobile && mobileFiltersOpen ? <div onClick={() => setMobileFiltersOpen(false)} style={{ position: 'fixed', inset: 0, zIndex: 60, background: 'rgba(0,0,0,0.65)', display: 'flex', alignItems: 'flex-end' }}><div onClick={(e) => e.stopPropagation()} style={{ width: '100%', maxHeight: '78vh', overflowY: 'auto', borderRadius: '24px 24px 0 0', background: '#11141c', border: '1px solid rgba(255,255,255,0.08)', padding: '18px 16px 24px' }}><div style={{ width: 42, height: 4, borderRadius: 99, background: '#4d5362', margin: '0 auto 18px' }} /><div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}><strong style={{ fontSize: 20 }}>{ui.filters}</strong><button onClick={() => { setYearFilter(0); setMonthFilter(0); setCategoryFilter('all'); }} style={filterButtonStyle(false)}>{ui.clearFilters}</button></div><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.month}</div><select value={monthFilter} onChange={(e) => setMonthFilter(Number(e.target.value))} style={{ marginTop: 8, width: '100%', borderRadius: 12, border: '1px solid rgba(255,255,255,0.12)', background: '#0d0f15', color: '#fff', padding: '12px 14px', fontSize: 16 }}><option value={0}>{ui.all}</option>{MONTHS.map((month) => <option key={month} value={month}>{uiLang === 'zh' ? `${month}月` : month}</option>)}</select><div style={{ marginTop: 20, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.category}</div><div style={{ marginTop: 8, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 8 }}>{([['all', ui.all], ['miko', ui.miko], ['suisei', ui.suisei], ['gen0', ui.gen0], ['shiraken', ui.shiraken], ['oneOnOne', ui.oneOnOne], ['group', ui.group], ['fubuki', ui.fubuki], ['others', ui.support]] as Array<[StoryCategory, string]>).map(([key, label]) => <button key={key} onClick={() => setCategoryFilter(key)} style={filterButtonStyle(categoryFilter === key)}>{label}</button>)}</div><button onClick={() => setMobileFiltersOpen(false)} style={{ marginTop: 18, width: '100%', border: 'none', borderRadius: 14, background: '#f0f2f7', color: '#11131a', padding: '13px 16px', fontSize: 16, fontWeight: 900, cursor: 'pointer' }}>{uiLang === 'zh' ? '完成' : 'Done'}</button></div></div> : null}
+  {isMobile && showBackTop ? <button aria-label={ui.backTop} title={ui.backTop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'fixed', right: 16, bottom: 18, zIndex: 45, width: 46, height: 46, borderRadius: 999, border: '1px solid rgba(255,255,255,0.14)', background: 'rgba(22,26,37,0.92)', color: '#fff', fontSize: 20, fontWeight: 900, boxShadow: '0 12px 32px rgba(0,0,0,0.4)', backdropFilter: 'blur(10px)', cursor: 'pointer' }}>↑</button> : null}
+  {openItem ? <Modal item={openItem} lang={uiLang} labels={ui} onClose={() => setOpenItem(null)} /> : null}</div>;
 }
