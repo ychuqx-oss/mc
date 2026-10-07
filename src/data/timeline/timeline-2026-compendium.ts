@@ -90,6 +90,17 @@ const patched = baseData.map((story) => {
     };
   }
 
+  if (story.id === 'c2-2026-052') {
+    return {
+      ...story,
+      title: "MiComet Start Living Together in Miko's Tomodachi Life",
+      titleZh: 'Miko的《朋友收藏集》中miComet開始同居，Miko吐槽「商業違規」',
+      titleEn: "MiComet Start Living Together in Miko's Tomodachi Life",
+      ctx: "In Miko's Tomodachi Life stream, the Miko and Suisei characters started living together, and Miko reacted by calling it a 'business violation.'",
+      ctxZh: 'Miko在《朋友收藏集》直播中看到Miko與星街角色開始同居，並以「商業違規」吐槽。',
+      ctxEn: "In Miko's Tomodachi Life stream, the Miko and Suisei characters started living together, and Miko reacted by calling it a 'business violation.'",
+    };
+  }
   return story;
 });
 
@@ -776,7 +787,7 @@ const additions = [
   },
     {
     id: 'c2-2026-154',
-    displayId: '26-C2-85',
+    displayId: '26-C2-86',
     date: '2026-04-26',
     phase: 6,
     side: 'miko' as const,
@@ -862,6 +873,7 @@ const additions = [
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
+  'c2-2026-052': 'https://www.youtube.com/watch?v=8RlaAqLgpuk',
   'c2-2026-017': 'https://www.youtube.com/watch?v=GQMY5Vl9Dfk',
   'c2-2026-055': 'https://t.co/MVGrEdX7Pf',
   'c2-2026-088': 'https://t.co/mIU6hvRpbP',
