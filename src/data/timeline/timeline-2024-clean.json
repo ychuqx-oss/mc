@@ -254,16 +254,17 @@
   {
     "id": "c2024-019",
     "displayId": "24-05-CLEAN-4",
-    "date": "2024-05-12",
+    "date": "2024-05-11",
     "phase": 5,
     "side": "shared",
     "emoji": "💛",
-    "title": "FubuMiComet在《Fallout76》荒廢世界大混亂",
-    "titleZh": "FubuMiComet在《Fallout76》荒廢世界大混亂",
-    "ctx": "Miko、星街與白上吹雪一起初見挑戰《Fallout76》。多支剪輯整理出三人在荒廢世界生存、撬保險箱、破壞機器人、Miko把斧頭交給星街後喚醒Psycho Suisei等場面。",
-    "ctxZh": "Miko、星街與白上吹雪一起初見挑戰《Fallout76》。多支剪輯整理出三人在荒廢世界生存、撬保險箱、破壞機器人、Miko把斧頭交給星街後喚醒Psycho Suisei等場面。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=TaqB-2-Gle4"
+    "title": "FubuMiComet首次挑戰《Fallout76》",
+    "titleZh": "FubuMiComet首次挑戰《Fallout76》",
+    "ctx": "Miko、星街與白上吹雪一起初見挑戰《Fallout76》，在廢土世界展開三人連動。",
+    "ctxZh": "Miko、星街與白上吹雪一起初見挑戰《Fallout76》，在廢土世界展開三人連動。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=1vzdRC2zHuw",
+    "source": "Miko official YouTube original stream"
   },
   {
     "id": "c2024-020",
@@ -278,20 +279,6 @@
     "ctxZh": "手繪短片中，星街表示想和Miko說話，但又補上是為了配信用的商業理由，延續miComet的商業貼貼梗。",
     "type": "Clip",
     "link": "https://www.youtube.com/shorts/aC7tju4YrjU"
-  },
-  {
-    "id": "c2024-021",
-    "displayId": "24-05-CLEAN-6",
-    "date": "2024-05-14",
-    "phase": 5,
-    "side": "shared",
-    "emoji": "💛",
-    "title": "FubuMiComet在《Fallout76》中連蟑螂都得吃",
-    "titleZh": "FubuMiComet在《Fallout76》中連蟑螂都得吃",
-    "ctx": "《Fallout76》相關中文剪輯整理出Miko、星街與白上吹雪在廢土世界中面對獵奇食物與生存狀況的片段。",
-    "ctxZh": "《Fallout76》相關中文剪輯整理出Miko、星街與白上吹雪在廢土世界中面對獵奇食物與生存狀況的片段。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=0s_JnZAwtdk"
   },
   {
     "id": "c2024-022",
