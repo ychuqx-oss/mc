@@ -558,19 +558,5 @@
     "ctxZh": "星街RADIO相關來源中出現Miko教殭屍飛，以及比星街厲害的比較梗。",
     "type": "Audio",
     "link": "https://www.youtube.com/watch?v=sgmJGFrmRmI&t=4667s"
-  },
-  {
-    "id": "s1596",
-    "displayId": "21-10-BBQ-9",
-    "date": "2021-10-31",
-    "phase": 2,
-    "side": "shared",
-    "emoji": "💛",
-    "title": "Halloween miComet related streams",
-    "titleZh": "萬聖節miComet相關直播紀錄",
-    "ctx": "Sources: https://www.youtube.com/watch?v=IUY1esA47oQ https://www.youtube.com/watch?v=QT4fYk6aR9k",
-    "ctxZh": "Miko與星街在萬聖節前後各有miComet相關來源，目前以原直播作為紀錄。",
-    "type": "Stream",
-    "link": "https://www.youtube.com/watch?v=IUY1esA47oQ"
   }
 ]
