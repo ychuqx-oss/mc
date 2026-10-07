@@ -39,9 +39,9 @@ c2-2026-044|26-C2-80|2026-05-11|6|others|⭐|Stream|Reine遊戲中miComet也墜�
 c2-2026-045|26-C2-81|2026-05-11|6|others|⭐|Stream|一條莉莉華分享星街罵Miko吃完就睡在沙發上的故事|Ririka shares a story of Suisei scolding Miko for falling asleep on her couch right after eating; Miko does the dishes by herself next time
 c2-2026-046|26-C2-82|2026-05-09|6|miko|🌸|Stream|Miko在姊街不在時煮咖哩給鷹嶺琉依與星街|Miko cooks curry for Lui and Suisei while Anemachi is gone
 c2-2026-047|26-C2-83|2026-05-08|6|others|⭐|Stream|大空昴提到Miko在星街沙發上睡著的章魚燒派對故事|Subaru tells a story of Miko falling asleep on Suisei’s couch at a takoyaki party
-c2-2026-050|26-C2-86|2026-04-25|6|others|⭐|Stream|白上吹雪的朋友收藏集中miComet開始交往|MiComet start dating in Fubuki’s Tomodachi Life stream
-c2-2026-051|26-C2-87|2026-04-23|6|miko|🌸|Text|miComet也在博衣小夜璃的島上配對|MiComet are also matched on Koyori’s island
-c2-2026-052|26-C2-88|2026-04-21|6|miko|🌸|Text|Miko在朋友收藏集中教星街什麼是商業違規|Miko teaches Suisei about business violations in Tomodachi Life
+c2-2026-050|26-C2-87|2026-04-25|6|others|⭐|Stream|白上吹雪的朋友收藏集中miComet開始交往|MiComet start dating in Fubuki’s Tomodachi Life stream
+c2-2026-051|26-C2-88|2026-04-23|6|miko|🌸|Text|miComet也在博衣小夜璃的島上配對|MiComet are also matched on Koyori’s island
+c2-2026-052|26-C2-85|2026-04-27|6|miko|🌸|Stream|Miko的《朋友收藏集》中miComet開始同居，Miko吐槽「商業違規」|MiComet start living together in Miko's Tomodachi Life, and Miko calls it a business violation
 c2-2026-055|26-C2-89|2026-04-19|6|miko|🌸|Text|Miko為星街家做燉菜|Miko makes stew for the Hosimachis
 c2-2026-056|26-C2-90|2026-04-17|6|others|⭐|Stream|白上吹雪想知道Miko是不是想星街了|Fubuki wonders if Miko is missing Suisei
 c2-2026-059|26-C2-91|2026-04-12|6|miko|🌸|Text|Miko發推談露營|Miko tweets about camping
