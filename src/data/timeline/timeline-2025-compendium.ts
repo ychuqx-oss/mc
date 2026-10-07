@@ -395,6 +395,18 @@ function nextEnglishTitle(date: string, fallback: string) {
 }
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-292': {
+    link: 'https://www.youtube.com/watch?v=ADDLk04SWiM',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-306': {
+    link: 'https://www.youtube.com/watch?v=h38Fnb6KuC0 https://www.youtube.com/watch?v=SdBz_WuB50w',
+    source: 'Miko and Suisei official YouTube original streams',
+  },
+  'c2-2025-315': {
+    link: 'https://www.youtube.com/watch?v=E_MsO2AzNWE',
+    source: 'Miko official YouTube original stream',
+  },
   'c2-2025-055': {
     link: 'https://www.youtube.com/watch?v=mh9w_R_2TaI https://www.youtube.com/watch?v=Jz2SeJDfml8',
     source: 'Suisei official YouTube original stream / Miko official Lollipop MV',
