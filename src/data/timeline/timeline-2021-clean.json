@@ -926,17 +926,17 @@
   {
     "id": "s1579",
     "displayId": "21-08-BBQ-10",
-    "date": "2021-08-29",
+    "date": "2021-08-28",
     "phase": 2,
     "side": "shared",
     "emoji": "💛",
-    "title": "星街告知VARK將再次與Miko共演",
-    "titleZh": "星街告知VARK將再次與Miko共演",
-    "ctx": "星街告知VARK相關消息，提到將再次與Miko共演，延續兩人在舞台活動上的合作。",
-    "ctxZh": "星街告知VARK相關消息，提到將再次與Miko共演，延續兩人在舞台活動上的合作。",
-    "type": "Event",
-    "link": "https://i.meee.com.tw/M8BcoFB.png",
-    "source": "Detailed timeline source dataset"
+    "title": "VARK公布miComet雙主演《Cinderella switch -new act- ～ふたりでつくるホロライブ～》vol.3",
+    "titleZh": "VARK公布miComet雙主演《Cinderella switch -new act- ～ふたりでつくるホロライブ～》vol.3",
+    "ctx": "VARK正式公布櫻巫女與星街彗星雙主演的《Cinderella switch -new act- ～ふたりでつくるホロライブ～》vol.3，活動預定於9月25日舉行。",
+    "ctxZh": "VARK正式公布櫻巫女與星街彗星雙主演的《Cinderella switch -new act- ～ふたりでつくるホロライブ～》vol.3，活動預定於9月25日舉行。",
+    "type": "News",
+    "link": "https://prtimes.jp/main/html/rd/p/000000071.000032796.html",
+    "source": "VARK official press release / PR TIMES"
   },
   {
     "id": "s1580",
@@ -1020,13 +1020,13 @@
     "phase": 2,
     "side": "shared",
     "emoji": "💛",
-    "title": "VARK錄製與角卷綿芽百萬Live備援紀錄",
-    "titleZh": "VARK錄製與角卷綿芽百萬Live備援紀錄",
-    "ctx": "Miko與星街相關的VARK錄製與角卷綿芽百萬Live備援紀錄，被整理為9月下旬的miComet活動脈絡。",
-    "ctxZh": "Miko與星街相關的VARK錄製與角卷綿芽百萬Live備援紀錄，被整理為9月下旬的miComet活動脈絡。",
+    "title": "miComet雙主演VARK《Cinderella switch -new act- ～ふたりでつくるホロライブ～》vol.3",
+    "titleZh": "miComet雙主演VARK《Cinderella switch -new act- ～ふたりでつくるホロライブ～》vol.3",
+    "ctx": "櫻巫女與星街彗星雙主演VARK vol.3。第一、二部由兩人輪流擔任舞台出演者與「連番者」，最後另有雙人After Talk。",
+    "ctxZh": "櫻巫女與星街彗星雙主演VARK vol.3。第一、二部由兩人輪流擔任舞台出演者與「連番者」，最後另有雙人After Talk。",
     "type": "Event",
-    "link": "https://www.youtube.com/watch?v=24U1RpgLeoM",
-    "source": "Detailed timeline source dataset"
+    "link": "https://prtimes.jp/main/html/rd/p/000000071.000032796.html",
+    "source": "VARK official press release / PR TIMES"
   },
   {
     "id": "s1586",
