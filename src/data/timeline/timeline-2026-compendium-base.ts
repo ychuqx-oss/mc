@@ -15,7 +15,7 @@ c2-2026-020|26-C2-56|2026-06-07|6|suisei|☄️|Stream|星街活動3000日雜談
 c2-2026-021|26-C2-57|2026-06-07|6|miko|🌸|Stream|Miko拿走星街手機並用它發文|Miko takes Suisei’s phone and posts on it
 c2-2026-026|26-C2-58|2026-06-03|6|others|⭐|Stream|白上吹雪在Hololive通話中看到miComet互動後連續大聲反應|Fubuki repeatedly reacts loudly after seeing MiComet interact during a Hololive call
 c2-2026-027|26-C2-59|2026-05-31|6|miko|🌸|Stream|Miko回顧Biji Camp露營，提到姊街被嚇到尖叫|Miko looks back on Biji Camp and recalls Anemachi screaming after being startled
-c2-2026-028|26-C2-60|2026-05-29|6|miko|🌸|Text|miComet去露營|MiComet go camping
+c2-2026-028|26-C2-60|2026-05-30|6|miko|🌸|Text|Miko與星街發布與露營行程有關的推文|Miko and Suisei post about their camping trip
 c2-2026-029|26-C2-61|2026-05-26|6|miko|🌸|Stream|Miko談上次露營、星街的行動力，以及即將再和姊街、星街去露營|Miko talks about the previous camping trip, Suisei’s adventurous side, and going camping with Anemachi and Suisei again in a few days
 c2-2026-031|26-C2-62|2026-05-24|6|others|⭐|Stream|白上吹雪談旅行回程時星街因寂寞改坐FubuMio車，Miko和狗狗親坐在後座|Fubuki talks about the trip with Anemachi, Mio, and miComet; on the way back, Suisei rode in FubuMio’s car with Miko and Inuchi in the back instead of with Anemachi because she was lonely
 c2-2026-032|26-C2-63|2026-05-23|6|miko|🌸|Stream|Miko談和姊街、FubuMio、星街旅行，以及姊街幫她吹頭髮|Miko talks about the trip with Anemachi, FubuMio, and Suisei, including getting her hair dried by Anemachi
