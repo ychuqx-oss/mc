@@ -98,6 +98,20 @@
     "link": "https://www.youtube.com/watch?v=yh3_utbGFZ0"
   },
   {
+    "id": "mcarchive-2022-0127-animal",
+    "date": "2022-01-27",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet翻唱《アニマル》公開",
+    "titleZh": "miComet翻唱《アニマル》公開",
+    "ctx": "Miko與星街的《アニマル》翻唱影片公開。",
+    "ctxZh": "Miko與星街的《アニマル》翻唱影片公開。",
+    "type": "Music",
+    "link": "https://youtu.be/9yBLZKFKXyg",
+    "source": "miComet Archive cross-check / original cover YouTube"
+  },
+  {
     "id": "s2022c008",
     "displayId": "22-01-CLEAN-8",
     "date": "2022-01-31",
@@ -138,6 +152,20 @@
     "ctxZh": "阿火新3D收錄後，Miko在直播中展示miComet私下拍的合照，並吐槽兩人的M與S姿勢太土。來源：編年史。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=7ApV6Ve3U6o"
+  },
+  {
+    "id": "mcarchive-2022-0223-raft",
+    "date": "2022-02-23",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet《Raft》雙人連動",
+    "titleZh": "miComet《Raft》雙人連動",
+    "ctx": "Miko與星街進行《Raft》雙人連動。",
+    "ctxZh": "Miko與星街進行《Raft》雙人連動。",
+    "type": "Stream",
+    "link": "https://youtu.be/IJFb5BqQUTg",
+    "source": "miComet Archive cross-check / original Suisei YouTube"
   },
   {
     "id": "s2022c011",
@@ -222,6 +250,20 @@
     "ctxZh": "Miko在喉嚨保養雜談中提到，火建聊天時聊到很多Hololive成員喉嚨受傷，星街之前也是其中之一。來源：編年史。",
     "type": "Stream",
     "link": "https://youtu.be/RxiqcDXN-48"
+  },
+  {
+    "id": "mcarchive-2022-0305-birthday",
+    "date": "2022-03-05",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko生日3DLive中星街作為來賓登場",
+    "titleZh": "Miko生日3DLive中星街作為來賓登場",
+    "ctx": "Miko生日3DLive中，星街作為來賓登場。",
+    "ctxZh": "Miko生日3DLive中，星街作為來賓登場。",
+    "type": "Music",
+    "link": "https://youtu.be/Cv_2tjVo-p4",
+    "source": "miComet Archive cross-check / original Miko YouTube"
   },
   {
     "id": "s2022c017",
@@ -364,6 +406,20 @@
     "link": "https://www.ptt.cc/bbs/SakuraMiko/M.1732335955.A.864.html"
   },
   {
+    "id": "mcarchive-2022-0420-hff",
+    "date": "2022-04-20",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "不知火建設《Human Fall Flat》連動",
+    "titleZh": "不知火建設《Human Fall Flat》連動，miComet同場",
+    "ctx": "不知火建設成員進行《Human Fall Flat》連動，Miko與星街同場。",
+    "ctxZh": "不知火建設成員進行《Human Fall Flat》連動，Miko與星街同場。",
+    "type": "Stream",
+    "link": "https://youtu.be/3fbtZ9J89_g",
+    "source": "miComet Archive cross-check / original Miko YouTube"
+  },
+  {
     "id": "s2022c027",
     "displayId": "22-04-CLEAN-2",
     "date": "2022-04-25",
@@ -462,6 +518,20 @@
     "link": "https://youtu.be/ypaBh8kkDpQ"
   },
   {
+    "id": "mcarchive-2022-0622-amongus",
+    "date": "2022-06-22",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko與星街參加Among Us多人連動",
+    "titleZh": "Miko與星街參加Among Us多人連動",
+    "ctx": "Among Us多人連動中，Miko與星街同場並各有原始直播視角。",
+    "ctxZh": "Among Us多人連動中，Miko與星街同場並各有原始直播視角。",
+    "type": "Stream",
+    "link": "https://youtu.be/Nc-52URVuoU https://youtu.be/I-AFsmILkZY",
+    "source": "miComet Archive cross-check / original Miko & Suisei YouTube"
+  },
+  {
     "id": "s2022c034",
     "displayId": "22-06-CLEAN-3",
     "date": "2022-06-23",
@@ -488,6 +558,20 @@
     "ctxZh": "miCometぶっちゃけ對談回想中，Miko與星街聊到第一次對話時對彼此的印象。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=QkINY-M34JU"
+  },
+  {
+    "id": "mcarchive-2022-0628-usj",
+    "date": "2022-06-28",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "不知火建設分享USJ旅行故事",
+    "titleZh": "不知火建設分享USJ旅行故事，miComet同場",
+    "ctx": "不知火建設直播分享USJ旅行故事，Miko與星街相關旅行互動被完整談及。",
+    "ctxZh": "不知火建設直播分享USJ旅行故事，Miko與星街相關旅行互動被完整談及。",
+    "type": "Stream",
+    "link": "https://youtu.be/h5EQ4ADmUVM",
+    "source": "miComet Archive cross-check / original Flare YouTube"
   },
   {
     "id": "s2022c036",
@@ -546,6 +630,20 @@
     "link": "https://youtu.be/U8dZF4DsCIQ"
   },
   {
+    "id": "mcarchive-2022-0719-holoerror",
+    "date": "2022-07-19",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet《hololive ERROR》連動",
+    "titleZh": "miComet《hololive ERROR》連動",
+    "ctx": "Miko與星街進行《hololive ERROR》相關雙人連動。",
+    "ctxZh": "Miko與星街進行《hololive ERROR》相關雙人連動。",
+    "type": "Stream",
+    "link": "https://youtu.be/cwy2G-KJkho",
+    "source": "miComet Archive cross-check / original Suisei YouTube"
+  },
+  {
     "id": "s2022c040",
     "displayId": "22-07-CLEAN-4",
     "date": "2022-07-20",
@@ -558,6 +656,20 @@
     "ctxZh": "星街忘記miComet二周年的片段被整理，作為7月miComet紀念日相關補充。",
     "type": "Clip",
     "link": "https://holodex.net/watch/HAQkbOk5uNg"
+  },
+  {
+    "id": "mcarchive-2022-0801-miko4th",
+    "date": "2022-08-01",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko四周年3DLive中星街作為來賓登場",
+    "titleZh": "Miko四周年3DLive中星街作為來賓登場",
+    "ctx": "Miko四周年3DLive中，星街作為來賓登場。",
+    "ctxZh": "Miko四周年3DLive中，星街作為來賓登場。",
+    "type": "Music",
+    "link": "https://youtu.be/aelRhCHNP0s",
+    "source": "miComet Archive cross-check / original Miko YouTube"
   },
   {
     "id": "s2022c041",
@@ -586,6 +698,20 @@
     "ctxZh": "hololiveERROR相關來源整理出恐怖蜘蛛人驚嚇合集，也被列入當日miComet整理脈絡。",
     "type": "Clip",
     "link": "https://youtu.be/mtjk5Dkbzdk"
+  },
+  {
+    "id": "mcarchive-2022-0817-minecraft",
+    "date": "2022-08-17",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet突發Minecraft連動",
+    "titleZh": "miComet突發Minecraft連動",
+    "ctx": "Miko與星街進行突發Minecraft連動。",
+    "ctxZh": "Miko與星街進行突發Minecraft連動。",
+    "type": "Stream",
+    "link": "https://youtu.be/FT--LdaX2Ps",
+    "source": "miComet Archive cross-check / original Miko YouTube"
   },
   {
     "id": "s2022c043",
@@ -630,6 +756,20 @@
     "link": "https://youtu.be/Ws3mF-6va20"
   },
   {
+    "id": "mcarchive-2022-0822-rust",
+    "date": "2022-08-22",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet在RUST突發連動",
+    "titleZh": "miComet在RUST突發連動",
+    "ctx": "星街的RUST直播中形成miComet突發雙人互動。",
+    "ctxZh": "星街的RUST直播中形成miComet突發雙人互動。",
+    "type": "Stream",
+    "link": "https://youtu.be/DCaul0gUk9Y",
+    "source": "miComet Archive cross-check / original Suisei YouTube"
+  },
+  {
     "id": "s2022c046",
     "displayId": "22-08-CLEAN-6",
     "date": "2022-08-22",
@@ -672,6 +812,34 @@
     "link": "https://youtu.be/4bDwk9fWDcE"
   },
   {
+    "id": "mcarchive-2022-0829-minecraft",
+    "date": "2022-08-29",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko與星街參加Minecraft多人連動",
+    "titleZh": "Miko與星街參加Minecraft多人連動",
+    "ctx": "Minecraft多人連動中，Miko與星街同場並各有原始直播視角。",
+    "ctxZh": "Minecraft多人連動中，Miko與星街同場並各有原始直播視角。",
+    "type": "Stream",
+    "link": "https://youtu.be/84MEMp-Gwdg https://youtu.be/KjgVrpwFXF4",
+    "source": "miComet Archive cross-check / original Miko & Suisei YouTube"
+  },
+  {
+    "id": "mcarchive-2022-0901-rust",
+    "date": "2022-09-01",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko與星街參加RUST多人連動",
+    "titleZh": "Miko與星街參加RUST多人連動",
+    "ctx": "RUST多人連動中，Miko與星街同場並各有原始直播視角。",
+    "ctxZh": "RUST多人連動中，Miko與星街同場並各有原始直播視角。",
+    "type": "Stream",
+    "link": "https://youtu.be/sqbApr3SkD4 https://youtu.be/HAU1Dncs6Rw",
+    "source": "miComet Archive cross-check / original Miko & Suisei YouTube"
+  },
+  {
     "id": "s2022c049",
     "displayId": "22-09-CLEAN-1",
     "date": "2022-09-03",
@@ -684,6 +852,48 @@
     "ctxZh": "Miko第二次上廣播時，被觀眾爆料會從後面轟炸博衣小夜璃。此筆列入9月miComet廣播脈絡。",
     "type": "Audio",
     "link": "https://youtu.be/Av30sMVFPhE"
+  },
+  {
+    "id": "mcarchive-2022-0904-amongus",
+    "date": "2022-09-04",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko與星街參加Among Us多人連動",
+    "titleZh": "Miko與星街參加Among Us多人連動",
+    "ctx": "Among Us多人連動中，Miko與星街同場並各有原始直播視角。",
+    "ctxZh": "Among Us多人連動中，Miko與星街同場並各有原始直播視角。",
+    "type": "Stream",
+    "link": "https://youtu.be/u8YOF8CmnCU https://youtu.be/e1Nnjs-1zPQ",
+    "source": "miComet Archive cross-check / original Miko & Suisei YouTube"
+  },
+  {
+    "id": "mcarchive-2022-0907-oink",
+    "date": "2022-09-07",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "不知火建設《Let's Play! Oink Games》連動",
+    "titleZh": "不知火建設《Let's Play! Oink Games》連動，miComet同場",
+    "ctx": "不知火建設進行《Let's Play! Oink Games》連動，Miko與星街同場。",
+    "ctxZh": "不知火建設進行《Let's Play! Oink Games》連動，Miko與星街同場。",
+    "type": "Stream",
+    "link": "https://youtu.be/YhVjWV4pemQ",
+    "source": "miComet Archive cross-check / original Flare YouTube"
+  },
+  {
+    "id": "mcarchive-2022-0908-minecraft",
+    "date": "2022-09-08",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet突發Minecraft連動",
+    "titleZh": "miComet突發Minecraft連動",
+    "ctx": "Miko與星街在Minecraft中形成突發雙人連動。",
+    "ctxZh": "Miko與星街在Minecraft中形成突發雙人連動。",
+    "type": "Stream",
+    "link": "https://youtu.be/4CJgfN2HeBY",
+    "source": "miComet Archive cross-check / original Miko YouTube"
   },
   {
     "id": "s2022c050",
@@ -868,6 +1078,20 @@
     "link": "https://www.youtube.com/watch?v=ZmIY2kP_-qA"
   },
   {
+    "id": "mcarchive-2022-1120-suisei3d",
+    "date": "2022-11-20",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "星街3D專輯與Live告知中Miko作為來賓登場",
+    "titleZh": "星街3D專輯與Live告知中Miko作為來賓登場",
+    "ctx": "星街的3D專輯與Live告知直播中，Miko作為來賓登場。",
+    "ctxZh": "星街的3D專輯與Live告知直播中，Miko作為來賓登場。",
+    "type": "Music",
+    "link": "https://youtu.be/TSVhLnEhGLI",
+    "source": "miComet Archive cross-check / original Suisei YouTube"
+  },
+  {
     "id": "s2022c063",
     "displayId": "22-12-CLEAN-1",
     "date": "2022-12-02",
@@ -880,6 +1104,34 @@
     "ctxZh": "Miko與星街進行MollyOnline工商，挑戰抓物機並介紹合作商品。兩人抓取技巧與運氣都很慘，還有商品設計草案與一直拍桌大笑等段落。",
     "type": "Stream",
     "link": "https://holodex.net/watch/4fopQGWsjFM"
+  },
+  {
+    "id": "mcarchive-2022-1212-partypanic",
+    "date": "2022-12-12",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko與星街參加《Party Panic》多人連動",
+    "titleZh": "Miko與星街參加《Party Panic》多人連動",
+    "ctx": "《Party Panic》多人連動中，Miko與星街同場。",
+    "ctxZh": "《Party Panic》多人連動中，Miko與星街同場。",
+    "type": "Stream",
+    "link": "https://youtu.be/ilRJW3fMpA4",
+    "source": "miComet Archive cross-check / original Miko YouTube"
+  },
+  {
+    "id": "mcarchive-2022-1214-mariokart",
+    "date": "2022-12-14",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko與星街參加瑪利歐賽車多人連動",
+    "titleZh": "Miko與星街參加瑪利歐賽車多人連動",
+    "ctx": "瑪利歐賽車多人連動中，Miko與星街同場並各有原始直播視角。",
+    "ctxZh": "瑪利歐賽車多人連動中，Miko與星街同場並各有原始直播視角。",
+    "type": "Stream",
+    "link": "https://youtu.be/NTtsbEiuZ50 https://youtu.be/QXcjYRFfT2M",
+    "source": "miComet Archive cross-check / original Miko & Suisei YouTube"
   },
   {
     "id": "s2022c064",
