@@ -66,6 +66,7 @@ const englishRows = `
 2025-10-02|Official miComet new outfit merchandise goes on sale
 2025-09-29|MiComet start teasing something
 2025-09-28|FubuMiComet Minecraft Manager
+2025-09-28|FubuMiComet take part in Minecraft Kimodameshi 2025
 2025-09-26|Miko became more outgoing due to Suisei’s influence
 2025-09-26|Subaru talks about miComet playing the Switch together
 2025-09-24|Suisei helps MikoSuba defuse a bomb
@@ -320,7 +321,7 @@ const englishRows = `
 2025-06-17|Miko Posts a 'Caramel Pain' Short
 2025-04-29|Miko Shows FubuMiComet VRChat Photos and Fubuki Teases Another VRChat Stream in May
 2025-04-09|Fubuki and Suisei Appear in Miko's Short
-2025-09-27|miComet Interact in Their New Outfits
+2025-09-27|MiComet Make Surprise Calls and Announce Their Upcoming New Outfit Project
 2025-08-19|Suisei Comes Up with a Strange Game Idea Involving Filming a Bed and a Dog
 2025-08-09|Kanata Talks About Giving Miko and Suisei Matching Rings
 2025-07-29|Marine Praises miComet
@@ -397,6 +398,38 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
   'c2-2025-055': {
     link: 'https://www.youtube.com/watch?v=mh9w_R_2TaI https://www.youtube.com/watch?v=Jz2SeJDfml8',
     source: 'Suisei official YouTube original stream / Miko official Lollipop MV',
+  },
+  'c2-2025-302': {
+    link: 'https://www.youtube.com/watch?v=HnVda5y3yN0',
+    source: 'Miko official YouTube',
+  },
+  'c2-2025-159': {
+    link: 'https://www.youtube.com/watch?v=R5Lk7lxXkB4',
+    source: 'Miko official YouTube',
+  },
+  'c2-2025-125': {
+    link: 'https://www.youtube.com/watch?v=hCBnmwS85JQ https://www.youtube.com/watch?v=67bX0QLtHho',
+    source: 'Miko and Suisei official YouTube',
+  },
+  'c2-2025-103': {
+    link: 'https://www.youtube.com/watch?v=ZL9WK6WjvQs',
+    source: 'Miko official YouTube',
+  },
+  'c2-2025-096': {
+    link: 'https://www.youtube.com/watch?v=EQ0O_laF7i8 https://www.youtube.com/watch?v=97vYOZfHWCg',
+    source: 'Miko and Suisei official YouTube',
+  },
+  'c2-2025-059': {
+    link: 'https://www.youtube.com/watch?v=unn-ToRVk0k',
+    source: 'Miko official YouTube',
+  },
+  'c2-2025-321': {
+    link: 'https://www.youtube.com/watch?v=juUyoCw_RSU https://www.youtube.com/watch?v=jD_pU61Xub4 https://www.youtube.com/watch?v=6vWDW8Vgi-I',
+    source: 'Miko, Suisei and Fubuki official YouTube',
+  },
+  'c2-2025-054': {
+    link: 'https://www.youtube.com/watch?v=hzLWva-Igt0',
+    source: 'Miko official YouTube',
   },
   'c2-2025-318': {
     link: 'https://kai-you.net/article/93532',
