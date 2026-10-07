@@ -395,6 +395,14 @@ function nextEnglishTitle(date: string, fallback: string) {
 }
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-146': {
+    link: 'https://shop.hololivepro.com/products/hololive_situationhololive_cafeteriaseries_vol1',
+    source: 'hololive production official shop',
+  },
+  'c2-2025-151': {
+    link: 'https://shop.hololivepro.com/products/hololivemagazine_spotlight_vol5',
+    source: 'hololive production official shop',
+  },
   'c2-2025-142': {
     link: 'https://www.youtube.com/watch?v=f_zmsF15Fkk',
     source: 'Miko official YouTube Short',
