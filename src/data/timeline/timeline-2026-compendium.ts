@@ -147,7 +147,7 @@ const additions = [
   },
     {
     id: 'c2-2026-112',
-    displayId: '26-C2-29',
+    displayId: '26-C2-28',
     date: '2026-08-06',
     phase: 6,
     side: 'others' as const,
@@ -164,7 +164,7 @@ const additions = [
   },
     {
     id: 'c2-2026-113',
-    displayId: '26-C2-26',
+    displayId: '26-C2-29',
     date: '2026-08-06',
     phase: 6,
     side: 'shared' as const,
@@ -266,7 +266,7 @@ const additions = [
   },
     {
     id: 'c2-2026-120',
-    displayId: '26-C2-27',
+    displayId: '26-C2-26',
     date: '2026-08-07',
     phase: 6,
     side: 'miko' as const,
@@ -283,7 +283,7 @@ const additions = [
   },
     {
     id: 'c2-2026-121',
-    displayId: '26-C2-28',
+    displayId: '26-C2-27',
     date: '2026-08-07',
     phase: 6,
     side: 'others' as const,
@@ -674,7 +674,7 @@ const additions = [
   },
     {
     id: 'c2-2026-148',
-    displayId: '26-C2-84',
+    displayId: '26-C2-78',
     date: '2026-05-05',
     phase: 6,
     side: 'shared' as const,
@@ -691,7 +691,7 @@ const additions = [
   },
     {
     id: 'c2-2026-149',
-    displayId: '26-C2-54',
+    displayId: '26-C2-51',
     date: '2026-06-29',
     phase: 6,
     side: 'miko' as const,
@@ -708,7 +708,7 @@ const additions = [
   },
     {
     id: 'c2-2026-150',
-    displayId: '26-C2-53',
+    displayId: '26-C2-50',
     date: '2026-07-01',
     phase: 6,
     side: 'miko' as const,
@@ -725,7 +725,7 @@ const additions = [
   },
     {
     id: 'c2-2026-151',
-    displayId: '26-C2-49',
+    displayId: '26-C2-47',
     date: '2026-07-05',
     phase: 6,
     side: 'miko' as const,
@@ -776,7 +776,7 @@ const additions = [
   },
     {
     id: 'c2-2026-154',
-    displayId: '26-C2-86',
+    displayId: '26-C2-80',
     date: '2026-04-26',
     phase: 6,
     side: 'miko' as const,
@@ -793,7 +793,7 @@ const additions = [
   },
     {
     id: 'c2-2026-155',
-    displayId: '26-C2-47',
+    displayId: '26-C2-45',
     date: '2026-07-07',
     phase: 6,
     side: 'others' as const,
@@ -844,7 +844,7 @@ const additions = [
   },
     {
     id: 'c2-2026-158',
-    displayId: '26-C2-41',
+    displayId: '26-C2-40',
     date: '2026-07-23',
     phase: 6,
     side: 'miko' as const,
