@@ -280,6 +280,22 @@
     "source": "hololive official event announcement / lineup cross-check"
   },
   {
+    "id": "official-2023-0322-ws15-ambassadors",
+    "displayId": "23-03-OFFICIAL-1",
+    "date": "2023-03-22",
+    "phase": 4,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "Miko與星街就任Weiß Schwarz 15周年官方大使",
+    "titleZh": "Miko與星街就任Weiß Schwarz 15周年官方大使",
+    "ctx": "hololive官方宣布Miko、星街、Moona與Kiara四人就任《ヴァイスシュヴァルツ》15周年官方大使，之後參與日本國內外的宣傳活動；Miko與星街也以miComet身分延伸至周年Live。",
+    "ctxZh": "hololive官方宣布Miko、星街、Moona與Kiara四人就任《ヴァイスシュヴァルツ》15周年官方大使，之後參與日本國內外的宣傳活動；Miko與星街也以miComet身分延伸至周年Live。",
+    "type": "News",
+    "link": "https://hololivepro.com/news/20230322-01-4/ https://ws-tcg.com/15th-anniv/",
+    "source": "hololive official news / Weiß Schwarz official"
+  },
+  {
     "id": "mcarchive-2023-0330-oekaki",
     "date": "2023-03-30",
     "phase": 5,
@@ -732,6 +748,36 @@
     "source": "Bushiroad Music / hololive official"
   },
   {
+    "id": "official-2023-1102-ws15-live",
+    "displayId": "23-11-OFFICIAL-1",
+    "date": "2023-11-02",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet出演Weiß Schwarz 15周年紀念Live並首唱《シュガーラッシュ》",
+    "titleZh": "miComet出演Weiß Schwarz 15周年紀念Live並首唱《シュガーラッシュ》",
+    "ctx": "miComet在東京Garden Theater舉行的《ヴァイスシュヴァルツ15周年記念ライブ》登台，連續演唱《アニマル》《アイドル》《シュガーラッシュ》三曲，其中《シュガーラッシュ》在正式數位發行前一天率先公開演唱。",
+    "ctxZh": "miComet在東京Garden Theater舉行的《ヴァイスシュヴァルツ15周年記念ライブ》登台，連續演唱《アニマル》《アイドル》《シュガーラッシュ》三曲，其中《シュガーラッシュ》在正式數位發行前一天率先公開演唱。",
+    "type": "Event",
+    "link": "https://prtimes.jp/main/html/rd/p/000007261.000014827.html https://bushiroad-music.com/1226/",
+    "source": "Bushiroad official live report / Bushiroad Music"
+  },
+  {
+    "id": "official-2023-1103-sugar-rush",
+    "displayId": "23-11-OFFICIAL-2",
+    "date": "2023-11-03",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet首支原創曲《シュガーラッシュ》正式發行",
+    "titleZh": "miComet首支原創曲《シュガーラッシュ》正式發行",
+    "ctx": "miComet原創曲《シュガーラッシュ》於2023年11月3日數位發行，由DECO*27作詞、TAKU INOUE與DECO*27作曲、TAKU INOUE編曲，是兩人首支以miComet名義推出的原創歌曲。",
+    "ctxZh": "miComet原創曲《シュガーラッシュ》於2023年11月3日數位發行，由DECO*27作詞、TAKU INOUE與DECO*27作曲、TAKU INOUE編曲，是兩人首支以miComet名義推出的原創歌曲。",
+    "type": "Music",
+    "link": "https://hololive.hololivepro.com/music/347/",
+    "source": "hololive official music page"
+  },
+  {
     "id": "s230036",
     "displayId": "23-11-CLEAN-1",
     "date": "2023-11-06",
@@ -870,5 +916,21 @@
     "ctxZh": "星街列車咻咻咻的相關短版在聖誕夜附近再次發布，作為同主題手繪補充。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=WHG5XxJz75k"
+  },
+  {
+    "id": "official-2023-1231-yukuholo-micomet-pranks",
+    "displayId": "23-12-OFFICIAL-1",
+    "date": "2023-12-31",
+    "phase": 4,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "miComet擔任《ゆくホロくるホロ2023》「必殺仕掛人」主持兩段大型整人企劃",
+    "titleZh": "miComet擔任《ゆくホロくるホロ2023》「必殺仕掛人」主持兩段大型整人企劃",
+    "ctx": "hololive官方年末五小時特番中，Miko與星街以miComet身分擔任《年末ジャンボドッキリ2023〜必殺仕掛人miComet〜》核心仕掛人，節目分Part1與Part2兩段，對多名Hololive成員設下整人企劃。",
+    "ctxZh": "hololive官方年末五小時特番中，Miko與星街以miComet身分擔任《年末ジャンボドッキリ2023〜必殺仕掛人miComet〜》核心仕掛人，節目分Part1與Part2兩段，對多名Hololive成員設下整人企劃。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=p2jx9H5Ck74 https://hololive.hololivepro.com/news/20231214-02-56/",
+    "source": "hololive official YouTube / hololive official news"
   }
 ]
