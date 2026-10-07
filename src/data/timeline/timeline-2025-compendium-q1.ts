@@ -17,7 +17,6 @@ c2-2025-224|25-C2-226|2025-03-11|6|miko|🌸|Stream|Miko談到miComet都忘記�
 c2-2025-225|25-C2-227|2025-03-10|6|miko|🌸|Stream|Miko說星街睡臉其實不稀有
 c2-2025-226|25-C2-228|2025-03-10|6|suisei|☄️|Stream|星街談HoloFes與為Miko打牌
 c2-2025-227|25-C2-229|2025-03-10|6|miko|🌸|Text|Miko轉推miComet cosplay圖
-c2-2025-228|25-C2-230|2025-03-10|6|others|⭐|Text|白上吹雪發推談miComet
 c2-2025-229|25-C2-231|2025-03-10|6|others|⭐|Stream|多名Hololive成員談miComet待機室打牌事件
 c2-2025-230|25-C2-232|2025-03-10|6|others|⭐|Stream|風真伊呂波不想介入miComet之間
 c2-2025-231|25-C2-233|2025-03-09|6|shared|💛|News|Gen 0在HoloFes創作者舞台演出《ビビデバ》
@@ -64,7 +63,6 @@ c2-2025-273|25-C2-273|2025-02-11|6|others|⭐|Stream|轟一抽到Miko運勢要�
 c2-2025-274|25-C2-274|2025-02-10|6|shared|💛|Stream|Miko與星街參與Ao的麥塊連動
 c2-2025-275|25-C2-275|2025-02-10|6|others|⭐|Stream|天音彼方與戌神沁音開miComet玩笑
 c2-2025-276|25-C2-276|2025-02-09|6|shared|💛|Stream|Miko麥塊縮圖使用miComet圖，妹妹也聽星街歌曲
-c2-2025-277|25-C2-277|2025-02-09|6|others|⭐|Stream|音乃瀨奏發推談miComet
 c2-2025-279|25-C2-278|2025-02-08|6|others|⭐|Audio|Daoko作為35P出演NHK廣播
 c2-2025-280|25-C2-279|2025-02-07|6|shared|💛|Stream|miComet麥塊連動
 c2-2025-281|25-C2-280|2025-02-06|6|miko|🌸|Text|Miko轉推miComet圖
