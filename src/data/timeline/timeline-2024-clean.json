@@ -534,6 +534,21 @@
     "link": "https://www.youtube.com/watch?v=eTk-43LVL18"
   },
   {
+    "id": "official-2024-0828-aqua-graduation",
+    "displayId": "24-08-OFFICIAL-1",
+    "date": "2024-08-28",
+    "phase": 5,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "湊阿庫婭卒業Live中Miko與星街共同出演",
+    "titleZh": "湊阿庫婭卒業Live中Miko與星街共同出演",
+    "ctx": "湊阿庫婭卒業Live《あくあ色に染まれ！》中，星街與常闇永遠演唱《サマータイムレコード》，最後的hololive JP全員曲《キズナトキセキ》則同時有Miko與星街參與。",
+    "ctxZh": "湊阿庫婭卒業Live《あくあ色に染まれ！》中，星街與常闇永遠演唱《サマータイムレコード》，最後的hololive JP全員曲《キズナトキセキ》則同時有Miko與星街參與。",
+    "type": "Event",
+    "link": "https://www.youtube.com/watch?v=fDtUy1PTor0 https://files.microcms-assets.io/assets/6368857617454c2591b02acff18e76bb/63b185dc4dee42588d7295e6d1bde953/240806_J_%E3%83%9B%E3%83%AD%E3%83%A9%E3%82%A4%E3%83%96.pdf",
+    "source": "Aqua official YouTube original stream / hololive official graduation notice"
+  },
+  {
     "id": "c2024-039",
     "displayId": "24-09-CLEAN-1",
     "date": "2024-09-06",
