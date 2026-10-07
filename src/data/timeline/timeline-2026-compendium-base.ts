@@ -56,10 +56,10 @@ c2-2026-054|26-C2-54|2026-04-19|6|shared|💛|Stream|miComet USJ連動影片|MiC
 c2-2026-055|26-C2-55|2026-04-19|6|miko|🌸|Text|Miko為星街家做燉菜|Miko makes stew for the Hosimachis
 c2-2026-056|26-C2-56|2026-04-17|6|others|⭐|Stream|白上吹雪想知道Miko是不是想星街了|Fubuki wonders if Miko is missing Suisei
 c2-2026-057|26-C2-57|2026-04-15|6|shared|💛|Clip|Hololive Dreams裡miComet同框|MiComet are together in Hololive Dreams
-c2-2026-058|26-C2-58|2026-04-12|6|miko|🌸|Clip|Miko製作關於生日、鷹嶺琉依與星街事件的短片|Miko makes a short about her birthday incident with Lui and Suisei
+c2-2026-058|26-C2-58|2026-04-13|6|miko|🌸|Clip|Miko製作關於生日、鷹嶺琉依與星街事件的短片|Miko makes a short about her birthday incident with Lui and Suisei
 c2-2026-059|26-C2-59|2026-04-12|6|miko|🌸|Text|Miko發推談露營|Miko tweets about camping
 c2-2026-060|26-C2-60|2026-04-11|6|others|⭐|Stream|大神澪談到與miComet、姊街和狗狗親露營|Mio talks about camping with miComet, Anemachi, and Inuchi
-c2-2026-061|26-C2-61|2026-04-10|6|miko|🌸|Clip|Miko製作與星街相關的短片|Miko makes a short clip with Suisei
+c2-2026-061|26-C2-61|2026-04-11|6|miko|🌸|Clip|Miko製作與星街相關的短片|Miko makes a short clip with Suisei
 c2-2026-062|26-C2-62|2026-04-08|6|suisei|☄️|Stream|星街要求星詠注意言行，Miko說聞狗狗親味道會冷靜|Suisei speaks out against misbehaving Hoshiyomis; Miko comments that she’ll calm down after sniffing Inuchi
 c2-2026-063|26-C2-63|2026-04-08|6|miko|🌸|Text|Miko與姊街、鷹嶺琉依看電影，星街幫Miko日記上色|Miko watches a movie with Anemachi and Lui; Suisei colors Miko’s diary entry for her
 c2-2026-064|26-C2-64|2026-04-05|6|suisei|☄️|Text|星街在Twitter Space中因狗狗親叫聲暴露人在Miko家|Suisei is caught at Miko’s place thanks to Inuchi’s bark during her Twitter space
