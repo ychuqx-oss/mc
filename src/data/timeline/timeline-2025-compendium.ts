@@ -395,6 +395,18 @@ function nextEnglishTitle(date: string, fallback: string) {
 }
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-251': {
+    link: 'https://www.youtube.com/watch?v=Vzaqp2_drL4',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-283': {
+    link: 'https://www.youtube.com/watch?v=Ccgrkvk5W7o',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-267': {
+    link: 'https://www.youtube.com/watch?v=qSF5Js1IZnU',
+    source: 'Suisei official YouTube original stream',
+  },
   'c2-2025-292': {
     link: 'https://www.youtube.com/watch?v=ADDLk04SWiM',
     source: 'Miko official YouTube original stream',
