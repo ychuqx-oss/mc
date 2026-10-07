@@ -386,7 +386,7 @@ const additions = [
     {
     id: 'c2-2026-128',
     displayId: '26-C2-17',
-    date: '2026-09-05',
+    date: '2026-09-06',
     phase: 6,
     side: 'others' as const,
     emoji: '⭐',
@@ -403,7 +403,7 @@ const additions = [
     {
     id: 'c2-2026-129',
     displayId: '26-C2-16',
-    date: '2026-09-06',
+    date: '2026-09-07',
     phase: 6,
     side: 'miko' as const,
     emoji: '🌸',
@@ -911,7 +911,6 @@ const verifiedSourceLinks2026: Record<string, string> = {
   'c2-2026-078': 'https://www.youtube.com/watch?v=sUindapbZck',
   'c2-2026-050': 'https://www.youtube.com/watch?v=zvS8qPTejeY',
   'c2-2026-051': 'https://www.youtube.com/watch?v=nP3LDiWGfWA',
-  'c2-2026-005': 'https://x.com/sakuramiko35/status/2079462500618428769',
   'c2-2026-007': 'https://www.youtube.com/watch?v=MKjXgiJSB_o',
   'c2-2026-010': 'https://www.youtube.com/watch?v=XltXbZfQIvs',
   'c2-2026-011': 'https://www.youtube.com/watch?v=aUlbTsnMGNE',
@@ -990,6 +989,7 @@ const withVerifiedSources = [...patched, ...additions].map((story) => {
   const classification = classificationOverrides2026[story.id] || {};
   const classifiedStory = {
     ...story,
+    ...(story.id === 'c2-2026-005' ? { sourceStatus: 'missing' as const } : {}),
     ...(classification.side ? { side: classification.side } : {}),
     ...(classification.emoji ? { emoji: classification.emoji } : {}),
     ...(classification.sharedCategory ? { sharedCategory: classification.sharedCategory } : {}),
