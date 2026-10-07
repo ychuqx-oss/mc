@@ -873,6 +873,7 @@ const additions = [
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
+  'c2-2026-064': 'https://x.com/suisei_hosimati/status/2040805976845230157',
   'c2-2026-069': 'https://x.com/sakuramiko35/status/2035733225310744799 https://x.com/suisei_hosimati/status/2035733665003807135',
   'c2-2026-113': 'https://x.com/suisei_submati/status/2085757819522080882',
   'c2-2026-052': 'https://www.youtube.com/watch?v=8RlaAqLgpuk',
