@@ -471,10 +471,6 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=x0Fnq6YzCoY',
     source: 'Miko official YouTube Short',
   },
-  'c2-2025-220': {
-    link: 'https://hololivepro.com/news/20250317-01-223/',
-    source: 'hololive production official Osaka-Kansai Expo announcement',
-  },
   'c2-2025-237': {
     link: 'https://www.youtube.com/watch?v=W9AZc33ybIw https://www.youtube.com/watch?v=IKKar5SS29E',
     source: 'Miko and Suisei official YouTube MVs; both credit mokoppe for video',
@@ -657,19 +653,39 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
   },
 };
 
+const classificationOverrides2025: Record<string, {
+  side?: Side;
+  sharedCategory?: 'gen0' | 'shiraken' | 'oneOnOne' | 'group';
+  reciprocal?: boolean;
+  supportCategory?: 'fubuki';
+  emoji?: string;
+}> = {
+  'c2-2025-159': { side: 'shared', sharedCategory: 'group', emoji: '💛' },
+  'c2-2025-041': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
+  'c2-2025-047': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
+  'c2-2025-319': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
+  'c2-2025-320': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
+  'c2-2025-059': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
+  'c2-2025-125': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
+  'c2-2025-214': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
+  'c2-2025-069': { side: 'miko', emoji: '🌸' },
+  'c2-2025-116': { side: 'shared', sharedCategory: 'gen0', emoji: '💛' },
+};
+
 const data = rows.split('\n').map((row) => {
   const [id, displayId, date, phase, side, emoji, type, rawTitle] = row.split('|');
   const titleZh = cleanTitle(rawTitle).trim();
   const titleEn = nextEnglishTitle(date, titleZh);
   const ctxZh = `${titleZh}。`;
   const ctxEn = `${date.replace(/-/g, '/')}, ${titleEn}.`;
+  const classification = classificationOverrides2025[id] || {};
   return {
     id,
     displayId,
     date,
     phase: Number(phase),
-    side: side as Side,
-    emoji,
+    side: classification.side ?? (side as Side),
+    emoji: classification.emoji ?? emoji,
     title: titleEn,
     titleZh,
     titleEn,
@@ -679,6 +695,9 @@ const data = rows.split('\n').map((row) => {
     type,
     link: verifiedSourceLinks2025[id]?.link ?? '',
     source: verifiedSourceLinks2025[id]?.source ?? 'MiComet Compendium II',
+    ...(classification.sharedCategory ? { sharedCategory: classification.sharedCategory } : {}),
+    ...(classification.reciprocal ? { reciprocal: true } : {}),
+    ...(classification.supportCategory ? { supportCategory: classification.supportCategory } : {}),
   };
 });
 
