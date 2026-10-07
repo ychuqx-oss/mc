@@ -1,13 +1,13 @@
 const rows = `
 c2-2026-001|26-C2-39|2026-07-26|6|miko|🌸|Text|Miko轉推舊miComet粉絲圖|Miko retweets old miComet fanart
 c2-2026-002|26-C2-40|2026-07-23|6|others|⭐|Text|白上吹雪在Hololive Dreams偷看miComet|Fubuki spies on miComet in Hololive Dreams
-c2-2026-003|26-C2-42|2026-07-21|6|miko|🌸|Text|miComet六周年會議紀錄|MiComet 6th anniversary meeting minutes
+c2-2026-003|26-C2-42|2026-07-21|6|miko|🌸|Text|Miko發布miComet六周年「會議紀錄」紀念結成六周年|Miko posts MiComet 6th anniversary meeting notes
 c2-2026-004|26-C2-43|2026-07-21|6|shared|💛|Stream|miComet六周年逆凸請白上吹雪、尾丸波爾卡與しぐれうい提出新衣裝方案|MiComet asks Fubuki, Polka, and Ui for new matching outfit ideas on their 6th anniversary
 c2-2026-005|26-C2-44|2026-07-19|6|miko|🌸|Text|Miko宣布miComet六周年直播將於7月21日舉行|Miko announces miComet’s 6th anniversary stream will be on July 21
 c2-2026-006|26-C2-45|2026-07-13|6|miko|🌸|Text|Miko轉推睡著的miComet圖|Miko retweets sleepy miComet
 c2-2026-007|26-C2-46|2026-07-07|6|miko|🌸|Stream|Miko等待她的彥星星街|Miko waits for Suisei, her Hikoboshi
 c2-2026-008|26-C2-48|2026-07-05|6|miko|🌸|Stream|Miko哄星街吃紅蘿蔔|Miko coaxes Suisei into eating carrots
-c2-2026-010|26-C2-50|2026-07-03|6|miko|🌸|Stream|Miko滿腦子都是miComet|Miko has miComet brainrot
+c2-2026-010|26-C2-50|2026-07-03|6|miko|🌸|Stream|Miko在《節奏天國》用一頭身造型玩出miComet|Miko recreates MiComet with one-head-tall avatars in Rhythm Heaven
 c2-2026-011|26-C2-51|2026-07-02|6|suisei|☄️|Stream|星街抱怨Miko來家裡吃咖哩遲到|Suisei complains that Miko was late coming over for curry
 c2-2026-012|26-C2-52|2026-07-01|6|miko|🌸|Text|Miko轉推miComet圖|Miko retweets miComet art
 c2-2026-013|26-C2-55|2026-06-25|6|shared|💛|Stream|miComet商業連動中Miko請星街再帶她去海外旅行|MiComet business collab; Miko asks Suisei to take her on another international trip
@@ -16,11 +16,11 @@ c2-2026-015|26-C2-57|2026-06-21|6|miko|🌸|Text|Miko轉推貼貼miComet圖|Miko
 c2-2026-016|26-C2-58|2026-06-13|6|suisei|☄️|Stream|星街因姊街做太多壽喜燒而叫Miko過來，並想冬天和Miko去露營|Suisei calls over Miko when Anemachi makes too much sukiyaki; also, she wants to go camping with Miko in the winter to help her get over her previous bad experiences
 c2-2026-017|26-C2-59|2026-06-13|6|miko|🌸|Text|Miko冬天會和星街去露營|Miko will go camping with Suisei in the winter
 c2-2026-018|26-C2-60|2026-06-12|6|shared|💛|Stream|miComet加入輪堂千速直播，夏色祭說Miko想和星街約會|MiComet join Chihaya’s stream; Matsuri says that Miko wants to go on a date with Suisei, and Suisei responds cooly
-c2-2026-020|26-C2-61|2026-06-07|6|suisei|☄️|Stream|星街打電話給Miko|Suisei calls Miko
+c2-2026-020|26-C2-61|2026-06-07|6|suisei|☄️|Stream|星街活動3000日雜談中打電話給Miko|Suisei calls Miko during her 3000-day activity anniversary chat
 c2-2026-021|26-C2-62|2026-06-07|6|miko|🌸|Stream|Miko拿走星街手機並用它發文|Miko takes Suisei’s phone and posts on it
 c2-2026-022|26-C2-63|2026-06-07|6|miko|🌸|Text|Miko的幸運Hololive成員是星街|Miko’s lucky holomem is Suisei
-c2-2026-026|26-C2-64|2026-06-03|6|others|⭐|Stream|白上吹雪在Hololive通話中對miComet貼貼發狂|Fubuki goes crazy over miComet teetee in a hololive call
-c2-2026-027|26-C2-65|2026-05-31|6|miko|🌸|Stream|Miko談到Biji Camp|Miko talks about Biji Camp
+c2-2026-026|26-C2-64|2026-06-03|6|others|⭐|Stream|白上吹雪在Hololive通話中看到miComet互動後連續大聲反應|Fubuki repeatedly reacts loudly after seeing MiComet interact during a Hololive call
+c2-2026-027|26-C2-65|2026-05-31|6|miko|🌸|Stream|Miko回顧Biji Camp露營，提到姊街被嚇到尖叫|Miko looks back on Biji Camp and recalls Anemachi screaming after being startled
 c2-2026-028|26-C2-66|2026-05-29|6|miko|🌸|Text|miComet去露營|MiComet go camping
 c2-2026-029|26-C2-67|2026-05-26|6|miko|🌸|Stream|Miko談上次露營、星街的行動力，以及即將再和姊街、星街去露營|Miko talks about the previous camping trip, Suisei’s adventurous side, and going camping with Anemachi and Suisei again in a few days
 c2-2026-031|26-C2-68|2026-05-24|6|others|⭐|Stream|白上吹雪談旅行回程時星街因寂寞改坐FubuMio車，Miko和狗狗親坐在後座|Fubuki talks about the trip with Anemachi, Mio, and miComet; on the way back, Suisei rode in FubuMio’s car with Miko and Inuchi in the back instead of with Anemachi because she was lonely
@@ -70,14 +70,14 @@ c2-2026-089|26-C2-113|2026-02-17|6|suisei|☄️|Text|星街拍下Miko屁股照|
 c2-2026-090|26-C2-114|2026-02-17|6|miko|🌸|Text|Miko轉推miComet圖|Miko retweets miComet art
 c2-2026-091|26-C2-115|2026-02-17|6|others|⭐|Stream|蘿蔔子見到miComet|Robocco meets with miComet
 c2-2026-093|26-C2-116|2026-02-14|6|shared|💛|Stream|miComet公開第二套成對新衣裝並進行VR凸待|MiComet reveal their second matching outfits and hold a VR call-in
-c2-2026-096|26-C2-117|2026-02-09|6|miko|🌸|Stream|Miko在與常闇永遠的直播中一直提到星街|Miko keeps mentioning Suisei in her stream with Towa
+c2-2026-096|26-C2-117|2026-02-09|6|miko|🌸|Stream|Miko與常闇永遠聊年齡時提到星街也說過相同內容|Miko mentions that Suisei had said the same thing while talking about age with Towa
 c2-2026-097|26-C2-118|2026-01-30|6|miko|🌸|Stream|Miko和Biji派對一起看很多《Orb》|Miko watches a lot of the anime Orb with her bijipa
 c2-2026-098|26-C2-119|2026-01-29|6|miko|🌸|Stream|Miko驚訝星街現在能吃更多蔬菜|Miko is surprised that Suisei can eat more vegetables now
 c2-2026-099|26-C2-120|2026-01-28|6|miko|🌸|Text|Miko在星街家吃晚餐，並成為Biji派對成員|Miko has dinner at Suisei’s place; Miko is now “bijipa”
 c2-2026-100|26-C2-121|2026-01-24|6|shared|💛|Stream|Miko與星街同屬花組參加新春遊戲祭《瑪利歐賽車世界》|Miko and Suisei compete on Team Flower in the New Year Game Festival's Mario Kart World event
 c2-2026-101|26-C2-122|2026-01-23|6|miko|🌸|Text|Miko轉推miComet圖|Miko retweets miComet art
 c2-2026-103|26-C2-123|2026-01-20|6|others|⭐|Stream|Miko數位排毒期間，星街用LINE轉傳海外35P推文支持|During Miko’s digital detox, Suisei sends overseas 35P Twitter support to Miko via LINE
-c2-2026-104|26-C2-124|2026-01-17|6|suisei|☄️|Stream|星街很了解Miko|Suisei knows a lot about Miko
+c2-2026-104|26-C2-124|2026-01-17|6|suisei|☄️|Stream|星街玩《HoloGuard》時連續猜中Miko的思考方式|Suisei repeatedly predicts Miko's thinking while playing HoloGuard
 c2-2026-106|26-C2-125|2026-01-03|6|miko|🌸|Stream|Miko在新年關係圖把星街寫成「會送飯的妖精」，並寄出年賀狀|Miko labels Suisei as a food-delivering fairy on her New Year relationship chart and sends her a New Year card
 c2-2026-107|26-C2-126|2026-01-02|6|miko|🌸|Text|Miko發推miComet圖|Miko tweets miComet art
 c2-2026-108|26-C2-127|2026-01-01|6|shared|💛|Stream|新春五子棋大賽原定Miko首戰星街，但因賽程事故未能完成miComet對決|Miko was scheduled to face Suisei in the New Year Gomoku tournament, but the miComet match did not happen after event trouble
