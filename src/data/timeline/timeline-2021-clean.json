@@ -240,6 +240,20 @@
     "source": "Detailed timeline source dataset"
   },
   {
+    "id": "mcarchive-2021-0418-mhr",
+    "date": "2021-04-18",
+    "phase": 2,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko與星街參加《Monster Hunter Rise》多人連動",
+    "titleZh": "Miko與星街參加《Monster Hunter Rise》多人連動",
+    "ctx": "Miko與星街在《Monster Hunter Rise》多人連動中同場，兩人皆有原始直播視角。",
+    "ctxZh": "Miko與星街在《Monster Hunter Rise》多人連動中同場，兩人皆有原始直播視角。",
+    "type": "Stream",
+    "link": "https://youtu.be/adqANElz-CQ https://youtu.be/Y0Dtm1VKH1I",
+    "source": "miComet Archive cross-check / original Miko & Suisei YouTube"
+  },
+  {
     "id": "s1539",
     "displayId": "21-04-BBQ-6",
     "date": "2021-04-28",
@@ -328,6 +342,20 @@
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=MwgdtjYI-7w",
     "source": "Detailed timeline source dataset"
+  },
+  {
+    "id": "mcarchive-2021-0521-gen0",
+    "date": "2021-05-21",
+    "phase": 2,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "0期生Minecraft連動中Miko與星街同場",
+    "titleZh": "0期生Minecraft連動中Miko與星街同場",
+    "ctx": "0期生Minecraft連動中，Miko與星街同場參加。",
+    "ctxZh": "0期生Minecraft連動中，Miko與星街同場參加。",
+    "type": "Stream",
+    "link": "https://youtu.be/MwgdtjYI-7w",
+    "source": "miComet Archive cross-check / original Miko YouTube"
   },
   {
     "id": "s1545",
@@ -435,6 +463,48 @@
     "source": "Detailed timeline source dataset"
   },
   {
+    "id": "mcarchive-2021-0614-minecraft",
+    "date": "2021-06-14",
+    "phase": 2,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet突發Minecraft雙視點連動",
+    "titleZh": "miComet突發Minecraft雙視點連動",
+    "ctx": "Miko與星街進行突發Minecraft連動，兩人皆留下原始直播視角。",
+    "ctxZh": "Miko與星街進行突發Minecraft連動，兩人皆留下原始直播視角。",
+    "type": "Stream",
+    "link": "https://youtu.be/Fuq9__yqZxw https://youtu.be/_qyauKqzGcI",
+    "source": "miComet Archive cross-check / original Miko & Suisei YouTube"
+  },
+  {
+    "id": "mcarchive-2021-0618-shiraken",
+    "date": "2021-06-18",
+    "phase": 2,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "不知火建設Minecraft連動，miComet雙視點同場",
+    "titleZh": "不知火建設Minecraft連動，miComet雙視點同場",
+    "ctx": "不知火建設Minecraft連動中，Miko與星街同場並各有原始直播視角。",
+    "ctxZh": "不知火建設Minecraft連動中，Miko與星街同場並各有原始直播視角。",
+    "type": "Stream",
+    "link": "https://youtu.be/MoQhfVUkLPo https://youtu.be/VY48235fziU",
+    "source": "miComet Archive cross-check / original Miko & Suisei YouTube"
+  },
+  {
+    "id": "mcarchive-2021-0622-shiraken",
+    "date": "2021-06-22",
+    "phase": 2,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "不知火建設Minecraft連動，Miko與星街同場",
+    "titleZh": "不知火建設Minecraft連動，Miko與星街同場",
+    "ctx": "不知火建設Minecraft連動中，Miko與星街再次同場互動。",
+    "ctxZh": "不知火建設Minecraft連動中，Miko與星街再次同場互動。",
+    "type": "Stream",
+    "link": "https://youtu.be/1IjV4XciNw4",
+    "source": "miComet Archive cross-check / original Miko YouTube"
+  },
+  {
     "id": "s1552",
     "displayId": "21-06-BBQ-6",
     "date": "2021-06-25",
@@ -463,6 +533,20 @@
     "type": "Stream",
     "link": "https://www.youtube.com/live/GcRZmj1OnjY?si=4CfO202EfSozVrG2",
     "source": "Detailed timeline source dataset"
+  },
+  {
+    "id": "mcarchive-2021-0627-minecraft",
+    "date": "2021-06-27",
+    "phase": 2,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko與星街在Minecraft多人企劃中同場",
+    "titleZh": "Miko與星街在Minecraft多人企劃中同場",
+    "ctx": "Minecraft多人企劃中，Miko與星街同場並有直接互動。",
+    "ctxZh": "Minecraft多人企劃中，Miko與星街同場並有直接互動。",
+    "type": "Stream",
+    "link": "https://youtu.be/GcRZmj1OnjY",
+    "source": "miComet Archive cross-check / original Miko YouTube"
   },
   {
     "id": "s1554",
@@ -1155,6 +1239,20 @@
     "source": "Detailed timeline source dataset"
   },
   {
+    "id": "mcarchive-2021-1107-minecraft",
+    "date": "2021-11-07",
+    "phase": 2,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko的Minecraft直播中星街突發加入",
+    "titleZh": "Miko的Minecraft直播中星街突發加入",
+    "ctx": "Miko的Minecraft直播中，星街以突發來賓形式加入，形成miComet互動。",
+    "ctxZh": "Miko的Minecraft直播中，星街以突發來賓形式加入，形成miComet互動。",
+    "type": "Stream",
+    "link": "https://youtu.be/6xS3u53q26g",
+    "source": "miComet Archive cross-check / original Miko YouTube"
+  },
+  {
     "id": "s1600",
     "displayId": "21-11-BBQ-4",
     "date": "2021-11-07",
@@ -1438,5 +1536,19 @@
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=HWE_gk2Xu6A",
     "source": "Detailed timeline source dataset"
+  },
+  {
+    "id": "mcarchive-2021-1229-amongus",
+    "date": "2021-12-29",
+    "phase": 2,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "Miko與星街參加Among Us多人連動",
+    "titleZh": "Miko與星街參加Among Us多人連動",
+    "ctx": "Among Us多人連動中，Miko與星街同場，兩人皆有原始直播視角。",
+    "ctxZh": "Among Us多人連動中，Miko與星街同場，兩人皆有原始直播視角。",
+    "type": "Stream",
+    "link": "https://youtu.be/1CTWE6UsRJQ https://youtu.be/O20u5WGwoBY",
+    "source": "miComet Archive cross-check / original Miko & Suisei YouTube"
   }
 ]
