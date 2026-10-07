@@ -898,6 +898,14 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=kh_UEsCJ4oM',
     source: 'Hajime official YouTube original stream',
   },
+  'c2-2025-221': {
+    link: 'https://www.youtube.com/watch?v=aASVW-khiXw',
+    source: 'AZKi official YouTube original stream',
+  },
+  'c2-2025-236': {
+    link: 'https://www.youtube.com/watch?v=044_F3TIwbE',
+    source: 'Okayu official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
