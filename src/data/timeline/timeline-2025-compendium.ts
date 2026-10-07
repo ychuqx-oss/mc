@@ -858,6 +858,18 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=yu_xI7OeCkM https://www.youtube.com/watch?v=nhpUFMUa9V4',
     source: 'Miko official YouTube original streams',
   },
+  'c2-2025-095': {
+    link: 'https://www.youtube.com/watch?v=hgXz_J9q9lg',
+    source: 'Lui official YouTube original stream',
+  },
+  'c2-2025-104': {
+    link: 'https://www.youtube.com/watch?v=3jRfYyHxvws',
+    source: 'Subaru official YouTube original stream',
+  },
+  'c2-2025-033': {
+    link: 'https://www.youtube.com/watch?v=Pzqzy2ZIcLI',
+    source: 'Iroha official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
