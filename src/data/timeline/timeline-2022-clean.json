@@ -1335,33 +1335,19 @@
     "source": "hololive official news"
   },
   {
-    "id": "official-2022-1202-molly-stream",
-    "displayId": "22-12-OFFICIAL-1",
-    "date": "2022-12-02",
-    "phase": 4,
-    "side": "shared",
-    "emoji": "💛",
-    "title": "miComet進行MOLLY.ONLINE官方合作直播",
-    "titleZh": "miComet進行MOLLY.ONLINE官方合作直播",
-    "ctx": "Miko與星街以miComet名義進行MOLLY.ONLINE合作直播，親自挑戰夾取兩人的合作景品。",
-    "ctxZh": "Miko與星街以miComet名義進行MOLLY.ONLINE合作直播，親自挑戰夾取兩人的合作景品。",
-    "type": "Stream",
-    "link": "https://www.youtube.com/watch?v=4fopQGWsjFM",
-    "source": "Miko official YouTube / sponsored miComet stream"
-  },
-  {
     "id": "s2022c063",
     "displayId": "22-12-CLEAN-1",
     "date": "2022-12-02",
     "phase": 4,
     "side": "shared",
     "emoji": "💛",
-    "title": "Miko與星街挑戰MollyOnline工商抓物機",
-    "titleZh": "Miko與星街挑戰MollyOnline工商抓物機",
-    "ctx": "Miko與星街進行MollyOnline工商，挑戰抓物機並介紹合作商品。兩人抓取技巧與運氣都很慘，還有商品設計草案與一直拍桌大笑等段落。",
-    "ctxZh": "Miko與星街進行MollyOnline工商，挑戰抓物機並介紹合作商品。兩人抓取技巧與運氣都很慘，還有商品設計草案與一直拍桌大笑等段落。",
+    "title": "miComet進行MOLLY.ONLINE官方合作直播",
+    "titleZh": "miComet進行MOLLY.ONLINE官方合作直播",
+    "ctx": "Miko與星街以miComet名義進行MOLLY.ONLINE限定合作直播，親自挑戰兩人的合作景品。",
+    "ctxZh": "Miko與星街以miComet名義進行MOLLY.ONLINE限定合作直播，親自挑戰兩人的合作景品。",
     "type": "Stream",
-    "link": "https://holodex.net/watch/4fopQGWsjFM"
+    "link": "https://www.youtube.com/watch?v=4fopQGWsjFM https://hololive.hololivepro.com/news/20221201-01-109/",
+    "source": "Miko official YouTube / hololive official news"
   },
   {
     "id": "mcarchive-2022-1212-partypanic",
