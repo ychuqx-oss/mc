@@ -395,6 +395,14 @@ function nextEnglishTitle(date: string, fallback: string) {
 }
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-182': {
+    link: 'https://www.youtube.com/watch?v=D2Ki2BjqedU',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-184': {
+    link: 'https://www.youtube.com/shorts/a8culUA_WVQ',
+    source: 'Miko official YouTube Short',
+  },
   'c2-2025-148': {
     link: 'https://www.youtube.com/watch?v=-zro9f2kqiM https://www.youtube.com/watch?v=85B3oh9EGaY https://www.youtube.com/watch?v=vGLst2Sj0gc',
     source: 'Fubuki, Miko and Suisei official YouTube original streams',
