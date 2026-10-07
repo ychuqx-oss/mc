@@ -10,7 +10,7 @@ c2-2026-008|26-C2-48|2026-07-05|6|miko|🌸|Stream|Miko哄星街吃紅蘿蔔|Mik
 c2-2026-010|26-C2-50|2026-07-03|6|miko|🌸|Stream|Miko在《節奏天國》用一頭身造型玩出miComet|Miko recreates MiComet with one-head-tall avatars in Rhythm Heaven
 c2-2026-011|26-C2-51|2026-07-02|6|suisei|☄️|Stream|星街抱怨Miko來家裡吃咖哩遲到|Suisei complains that Miko was late coming over for curry
 c2-2026-012|26-C2-52|2026-07-01|6|miko|🌸|Text|Miko轉推miComet圖|Miko retweets miComet art
-c2-2026-013|26-C2-55|2026-06-25|6|shared|💛|Stream|miComet商業連動中Miko請星街再帶她去海外旅行|MiComet business collab; Miko asks Suisei to take her on another international trip
+c2-2026-013|26-C2-55|2026-06-25|6|shared|💛|Stream|Miko請星街下次再帶她去海外旅行|Miko asks Suisei to take her on another international trip
 c2-2026-014|26-C2-56|2026-06-21|6|miko|🌸|Stream|Miko邀星街去鷹嶺琉依家吃飯，結果星街已經在場|Miko invites Suisei to Lui’s house for dinner, but Suisei already ate; but when Miko arrives at Lui’s place, Suisei is already there
 c2-2026-015|26-C2-57|2026-06-21|6|miko|🌸|Text|Miko轉推貼貼miComet圖|Miko retweets gay miComet art
 c2-2026-016|26-C2-58|2026-06-13|6|suisei|☄️|Stream|星街因姊街做太多壽喜燒而叫Miko過來，並想冬天和Miko去露營|Suisei calls over Miko when Anemachi makes too much sukiyaki; also, she wants to go camping with Miko in the winter to help her get over her previous bad experiences
