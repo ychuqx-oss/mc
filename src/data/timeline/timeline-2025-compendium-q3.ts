@@ -2,7 +2,7 @@ export default `
 c2-2025-057|25-C2-60|2025-09-29|6|miko|🌸|Text|Miko轉推miComet圖
 c2-2025-058|25-C2-61|2025-09-28|6|others|⭐|Stream|白上吹雪在麥塊Manager直播談FubuMiComet
 c2-2025-059|25-C2-63|2025-09-27|6|shared|💛|Stream|miComet突擊逆凸並公告後續新衣裝企劃
-c2-2025-060|25-C2-64|2025-09-26|6|miko|🌸|Stream|Miko直播中談到與星街的私下互動
+c2-2025-060|25-C2-64|2025-09-26|6|miko|🌸|Stream|Miko說自己因星街影響變得更常出門、更願意社交
 c2-2025-061|25-C2-65|2025-09-26|6|others|⭐|Stream|大空昴談到Miko又把她叫成星街
 c2-2025-062|25-C2-66|2025-09-24|6|suisei|☄️|Text|星街發布miComet相關推文
 c2-2025-063|25-C2-67|2025-09-22|6|miko|🌸|Text|Miko轉推貼貼miComet圖
@@ -15,7 +15,6 @@ c2-2025-070|25-C2-73|2025-09-08|6|miko|🌸|Text|Miko連續轉推miComet圖
 c2-2025-071|25-C2-74|2025-09-07|6|miko|🌸|Stream|Miko把自己與星街比作公主和王子
 c2-2025-072|25-C2-75|2025-09-06|6|shared|💛|Stream|miComet參加Hololive八周年0期生煙火活動
 c2-2025-073|25-C2-76|2025-09-05|6|shared|💛|Stream|miComet參加0期生性格測驗連動
-c2-2025-074|25-C2-77|2025-08-31|6|miko|🌸|Stream|Miko直播中談星街
 c2-2025-075|25-C2-78|2025-08-31|6|miko|🌸|Stream|Miko在直播中被觀眾用星街話題調侃
 c2-2025-076|25-C2-79|2025-08-30|6|suisei|☄️|Stream|星街想用簽名來捉弄Miko
 c2-2025-077|25-C2-80|2025-08-29|6|shared|💛|Stream|miComet參加白上吹雪主辦的VRChat鬼屋連動
@@ -53,7 +52,6 @@ c2-2025-108|25-C2-111|2025-07-29|6|others|⭐|Stream|寶鐘瑪琳稱讚miComet
 c2-2025-109|25-C2-112|2025-07-28|6|suisei|☄️|Stream|星街靠想像犬山叫聲讓自己冷靜
 c2-2025-110|25-C2-113|2025-07-28|6|miko|🌸|Stream|風真伊呂波在花札連動中很想要miComet
 c2-2025-111|25-C2-114|2025-07-25|6|others|⭐|Stream|風真伊呂波喜歡miComet
-c2-2025-112|25-C2-115|2025-07-24|6|suisei|☄️|Stream|星街缺席的不知火建設連動中提到miComet話題
 c2-2025-113|25-C2-116|2025-07-20|6|others|⭐|Stream|Hololive成員一起投票選miComet
 c2-2025-114|25-C2-117|2025-07-20|6|miko|🌸|Text|Miko大量轉推miComet圖
 c2-2025-115|25-C2-118|2025-07-19|6|miko|🌸|Text|miComet為周年出商業差旅，Miko預告Twitter Space
