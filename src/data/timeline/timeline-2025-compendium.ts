@@ -894,6 +894,10 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/shorts/Bpsi9wTFZJY',
     source: 'Suisei official YouTube Short',
   },
+  'c2-2025-273': {
+    link: 'https://www.youtube.com/watch?v=kh_UEsCJ4oM',
+    source: 'Hajime official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
