@@ -1,5 +1,20 @@
 [
   {
+    "id": "mcarchive-2021-0107-gta-casino",
+    "displayId": "21-01-ADD-1",
+    "date": "2021-01-07",
+    "phase": 2,
+    "side": "suisei",
+    "emoji": "☄️",
+    "title": "星街玩GTA想去賭場，說之後要問Miko",
+    "titleZh": "星街玩GTA想去賭場，說之後要問Miko",
+    "ctx": "星街在GTA直播中表示想去賭場，並說之後要向Miko詢問玩法，成為1月25日miComet GTA連動前的延伸互動。",
+    "ctxZh": "星街在GTA直播中表示想去賭場，並說之後要向Miko詢問玩法，成為1月25日miComet GTA連動前的延伸互動。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=khsu0jfazPk",
+    "source": "Suisei official YouTube / miComet chronology cross-check"
+  },
+  {
     "id": "s1523",
     "displayId": "21-01-BBQ-1",
     "date": "2021-01-25",
@@ -13,6 +28,21 @@
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=Qi1H7xL-xVo",
     "source": "Detailed timeline source dataset"
+  },
+  {
+    "id": "mcarchive-2021-0127-gta-casino",
+    "displayId": "21-01-ADD-2",
+    "date": "2021-01-27",
+    "phase": 2,
+    "side": "suisei",
+    "emoji": "☄️",
+    "title": "星街表示在Miko指導下學會GTA賭場玩法",
+    "titleZh": "星街表示在Miko指導下學會GTA賭場玩法",
+    "ctx": "星街再次玩GTA賭場時表示，自己是在Miko的指導下知道怎麼玩賭場，並打算靠此發大財。",
+    "ctxZh": "星街再次玩GTA賭場時表示，自己是在Miko的指導下知道怎麼玩賭場，並打算靠此發大財。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=a8Jot8QDIFI",
+    "source": "Suisei official YouTube / miComet chronology cross-check"
   },
   {
     "id": "s1524",
@@ -73,6 +103,67 @@
     "type": "Music",
     "link": "https://www.youtube.com/watch?v=HHa-mcEjBk4",
     "source": "Detailed timeline source dataset"
+  },
+  {
+    "id": "mcarchive-2021-0212-voice-proxy",
+    "displayId": "21-02-ADD-1",
+    "date": "2021-02-12",
+    "phase": 2,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "星街喉嚨休養期間請Miko等人代聲玩瑪利歐賽車",
+    "titleZh": "星街喉嚨休養期間請Miko等人代聲玩瑪利歐賽車",
+    "ctx": "因醫生交代不能太大聲，星街在瑪利歐賽車直播中請多名成員幫忙代為發聲，其中包含Miko。",
+    "ctxZh": "因醫生交代不能太大聲，星街在瑪利歐賽車直播中請多名成員幫忙代為發聲，其中包含Miko。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=t22zt7kgva0",
+    "source": "Suisei official YouTube / miComet chronology cross-check"
+  },
+  {
+    "id": "mcarchive-2021-0221-marine-profile",
+    "displayId": "21-02-ADD-2",
+    "date": "2021-02-21",
+    "phase": 2,
+    "side": "suisei",
+    "emoji": "☄️",
+    "title": "星街在船長檔案企劃把Miko寫成合得來的成員與寵物",
+    "titleZh": "星街在船長檔案企劃把Miko寫成合得來的成員與寵物",
+    "ctx": "寶鐘瑪琳的成員檔案企劃中，星街把Miko列在「合得來的成員」，並在家族關係圖把Miko放在寵物位置；此事之後多次被Miko提起。",
+    "ctxZh": "寶鐘瑪琳的成員檔案企劃中，星街把Miko列在「合得來的成員」，並在家族關係圖把Miko放在寵物位置；此事之後多次被Miko提起。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=jaaWr4RlKCo",
+    "source": "Marine official YouTube / miComet chronology cross-check"
+  },
+  {
+    "id": "mcarchive-2021-0225-baby-level",
+    "displayId": "21-02-ADD-3",
+    "date": "2021-02-25",
+    "phase": 2,
+    "side": "suisei",
+    "emoji": "☄️",
+    "title": "星街不習慣Pro手把，自嘲遊戲力變成Miko般的嬰兒水準",
+    "titleZh": "星街不習慣Pro手把，自嘲遊戲力變成Miko般的嬰兒水準",
+    "ctx": "星街直播中表示自己不習慣Pro手把，並拿Miko作比較，自嘲遊戲實力已變成Miko那樣的「嬰兒水準」。",
+    "ctxZh": "星街直播中表示自己不習慣Pro手把，並拿Miko作比較，自嘲遊戲實力已變成Miko那樣的「嬰兒水準」。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=oEheHXoKgpI",
+    "source": "Suisei official YouTube / miComet chronology cross-check"
+  },
+  {
+    "id": "mcarchive-2021-0226-monetization",
+    "displayId": "21-02-ADD-4",
+    "date": "2021-02-26",
+    "phase": 2,
+    "side": "miko",
+    "emoji": "🌸",
+    "title": "Miko在星街收益化復活歌回聊天室恭喜，星街回應感謝",
+    "titleZh": "Miko在星街收益化復活歌回聊天室恭喜，星街回應感謝",
+    "ctx": "星街收益化恢復後開歌回慶祝，Miko在聊天室現身恭喜，星街看到後直接向Miko道謝；星街當天也在X上公告收益化恢復。",
+    "ctxZh": "星街收益化恢復後開歌回慶祝，Miko在聊天室現身恭喜，星街看到後直接向Miko道謝；星街當天也在X上公告收益化恢復。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=HHa-mcEjBk4 https://x.com/suisei_hosimati/status/1365182099012026369",
+    "source": "Suisei official YouTube and X / miComet chronology cross-check"
   },
   {
     "id": "s1528",
@@ -312,6 +403,22 @@
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=Cq10mbb7w54",
     "source": "Detailed timeline source dataset"
+  },
+  {
+    "id": "mcarchive-2021-0516-shiraken",
+    "displayId": "21-05-ADD-1",
+    "date": "2021-05-16",
+    "phase": 2,
+    "side": "shared",
+    "sharedCategory": "shiraken",
+    "emoji": "💛",
+    "title": "不知火建設第一次全員招集中Miko與星街同場",
+    "titleZh": "不知火建設第一次全員招集中Miko與星街同場",
+    "ctx": "不知火芙蕾雅突然召集不知火建設社員與實習生，Miko、星街、尾丸波爾卡全員到齊；這也是星街加入後早期的重要火建集合。",
+    "ctxZh": "不知火芙蕾雅突然召集不知火建設社員與實習生，Miko、星街、尾丸波爾卡全員到齊；這也是星街加入後早期的重要火建集合。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=_tBPkFRDlY4 https://www.youtube.com/watch?v=Cq10mbb7w54",
+    "source": "Flare and Suisei official YouTube"
   },
   {
     "id": "s1543",
@@ -939,6 +1046,21 @@
     "source": "VARK official press release / PR TIMES"
   },
   {
+    "id": "mcarchive-2021-0829-vark-announce",
+    "displayId": "21-08-ADD-1",
+    "date": "2021-08-29",
+    "phase": 2,
+    "side": "suisei",
+    "emoji": "☄️",
+    "title": "星街告知將再次與Miko在VARK共演",
+    "titleZh": "星街告知將再次與Miko在VARK共演",
+    "ctx": "星街在VARK活動前告知將再次與Miko共同出演；正式公演為9月25日《Cinderella switch -new act-》vol.3。",
+    "ctxZh": "星街在VARK活動前告知將再次與Miko共同出演；正式公演為9月25日《Cinderella switch -new act-》vol.3。",
+    "type": "Text",
+    "link": "https://i.meee.com.tw/M8BcoFB.png https://prtimes.jp/main/html/rd/p/000000071.000032796.html",
+    "source": "Archived Suisei announcement image / VARK press release"
+  },
+  {
     "id": "s1580",
     "displayId": "21-09-BBQ-1",
     "date": "2021-09-05",
@@ -1132,6 +1254,21 @@
     "type": "Audio",
     "link": "https://www.youtube.com/watch?v=KtP6xSVUyvQ",
     "source": "Detailed timeline source dataset"
+  },
+  {
+    "id": "mcarchive-2021-1019-mariokart",
+    "displayId": "21-10-ADD-1",
+    "date": "2021-10-19",
+    "phase": 2,
+    "side": "miko",
+    "emoji": "🌸",
+    "title": "Miko在星街新衣裝前挑戰瑪利歐賽車，將第一名獻給星街",
+    "titleZh": "Miko在星街新衣裝前挑戰瑪利歐賽車，將第一名獻給星街",
+    "ctx": "Miko在星街新衣裝公開前進行瑪利歐賽車挑戰，播放星街歌曲並表示要把第一名獻給星街，作為miComet羈絆。",
+    "ctxZh": "Miko在星街新衣裝公開前進行瑪利歐賽車挑戰，播放星街歌曲並表示要把第一名獻給星街，作為miComet羈絆。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=sqdelg5ZyGE",
+    "source": "Miko official YouTube / miComet chronology cross-check"
   },
   {
     "id": "s1593",
@@ -1565,5 +1702,20 @@
     "type": "Stream",
     "link": "https://youtu.be/1CTWE6UsRJQ https://youtu.be/O20u5WGwoBY",
     "source": "miComet Archive cross-check / original Miko & Suisei YouTube"
+  },
+  {
+    "id": "mcarchive-2021-1231-space",
+    "displayId": "21-12-ADD-1",
+    "date": "2021-12-31",
+    "phase": 2,
+    "side": "miko",
+    "emoji": "🌸",
+    "title": "Miko跨年Twitter Space同時視聽時聽到星街聲音並稱讚",
+    "titleZh": "Miko跨年Twitter Space同時視聽時聽到星街聲音並稱讚",
+    "ctx": "Miko在Twitter Space同步觀看Hololive跨年節目時，聽到星街出聲便直接稱讚星街的聲音。",
+    "ctxZh": "Miko在Twitter Space同步觀看Hololive跨年節目時，聽到星街出聲便直接稱讚星街的聲音。",
+    "type": "Audio",
+    "link": "https://x.com/sakuramiko35/status/1476862115990634498",
+    "source": "Miko official X Space announcement / miComet chronology cross-check"
   }
 ]
