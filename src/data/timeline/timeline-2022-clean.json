@@ -501,7 +501,8 @@
     "ctxZh": "《hololive 3rd fes. Link Your Wish》DAY1於3月19日舉行，官方出演名單同時包含櫻巫女與星街彗星。",
     "type": "Event",
     "link": "https://hololive.hololivepro.com/events/hololive3rdfes/",
-    "source": "hololive official event report"
+    "source": "hololive official event report",
+    "sharedCategory": "group"
   },
   {
     "id": "s2022c020",
@@ -1156,14 +1157,15 @@
     "displayId": "22-09-CLEAN-4",
     "date": "2022-09-09",
     "phase": 4,
-    "side": "others",
-    "emoji": "🤝",
+    "side": "shared",
+    "emoji": "💛",
     "title": "星街加入不知火建設後接下第一個任務",
     "titleZh": "星街加入不知火建設後接下第一個任務",
     "ctx": "星街加入不知火建設後，首個任務被整理成精華，連到Miko與不知火建設相關脈絡。",
     "ctxZh": "星街加入不知火建設後，首個任務被整理成精華，連到Miko與不知火建設相關脈絡。",
     "type": "Clip",
-    "link": "https://youtu.be/haLgIfn9d-Q"
+    "link": "https://youtu.be/haLgIfn9d-Q",
+    "sharedCategory": "shiraken"
   },
   {
     "id": "s2022c053",
