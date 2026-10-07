@@ -395,6 +395,14 @@ function nextEnglishTitle(date: string, fallback: string) {
 }
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-116': {
+    link: 'https://www.youtube.com/watch?v=5HzLKcJPV14',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-119': {
+    link: 'https://www.youtube.com/watch?v=txDPAtNPixE https://www.youtube.com/watch?v=oi1WYMPQuKE',
+    source: 'Suisei and Miko official YouTube original streams',
+  },
   'c2-2025-131': {
     link: 'https://www.youtube.com/watch?v=sNhmjGRjpT0',
     source: 'Miko official YouTube original stream',
