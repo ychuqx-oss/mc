@@ -47,7 +47,6 @@ c2-2026-056|26-C2-90|2026-04-17|6|others|⭐|Stream|白上吹雪想知道Miko是
 c2-2026-059|26-C2-91|2026-04-12|6|miko|🌸|Text|Miko發推談露營|Miko tweets about camping
 c2-2026-060|26-C2-92|2026-04-11|6|others|⭐|Stream|大神澪談到與miComet、姊街和狗狗親露營|Mio talks about camping with miComet, Anemachi, and Inuchi
 c2-2026-062|26-C2-93|2026-04-08|6|suisei|☄️|Stream|星街要求星詠注意言行，Miko說聞狗狗親味道會冷靜|Suisei speaks out against misbehaving Hoshiyomis; Miko comments that she’ll calm down after sniffing Inuchi
-c2-2026-063|26-C2-94|2026-04-08|6|miko|🌸|Text|Miko與姊街、鷹嶺琉依看電影，星街幫Miko日記上色|Miko watches a movie with Anemachi and Lui; Suisei colors Miko’s diary entry for her
 c2-2026-064|26-C2-95|2026-04-05|6|suisei|☄️|Text|星街在Twitter Space中因狗狗親叫聲暴露人在Miko家|Suisei is caught at Miko’s place thanks to Inuchi’s bark during her Twitter space
 c2-2026-067|26-C2-96|2026-03-26|6|shared|💛|Stream|博衣小夜璃發現miComet互相在家裡擺對方娃娃|MiComet display each other’s plushies in their houses; Koyori thinks this is teetee
 c2-2026-068|26-C2-97|2026-03-24|6|shared|💛|Stream|miComet開台商量星街新公司相關問題|MiComet consultation stream about Suisei’s new agency
