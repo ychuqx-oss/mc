@@ -671,6 +671,21 @@
     "source": "Detailed timeline source dataset"
   },
   {
+    "id": "official-2021-0628-minecraft-afterparty",
+    "displayId": "21-06-OFFICIAL-1",
+    "date": "2021-06-28",
+    "phase": 2,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet在Hololive夏祭後夜祭一起營運鬼屋",
+    "titleZh": "miComet在Hololive夏祭後夜祭一起營運鬼屋",
+    "ctx": "Hololive夏祭後夜祭期間，星街開Minecraft直播並與Miko一起繼續營運鬼屋，形成miComet雙人互動。",
+    "ctxZh": "Hololive夏祭後夜祭期間，星街開Minecraft直播並與Miko一起繼續營運鬼屋，形成miComet雙人互動。",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=ZEyLVFw3z1Y",
+    "source": "Suisei official YouTube"
+  },
+  {
     "id": "s1555",
     "displayId": "21-06-BBQ-9",
     "date": "2021-06-30",
