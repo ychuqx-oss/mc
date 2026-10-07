@@ -308,6 +308,21 @@
     "link": "https://youtu.be/kKtZ6jDuO5Q&t=1h43m40s"
   },
   {
+    "id": "official-2022-0319-3rdfes",
+    "displayId": "22-03-OFFICIAL-1",
+    "date": "2022-03-19",
+    "phase": 4,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "hololive 3rd fes. DAY1中Miko與星街同場出演",
+    "titleZh": "hololive 3rd fes. DAY1中Miko與星街同場出演",
+    "ctx": "《hololive 3rd fes. Link Your Wish》DAY1於3月19日舉行，官方出演名單同時包含櫻巫女與星街彗星。",
+    "ctxZh": "《hololive 3rd fes. Link Your Wish》DAY1於3月19日舉行，官方出演名單同時包含櫻巫女與星街彗星。",
+    "type": "Event",
+    "link": "https://hololive.hololivepro.com/events/hololive3rdfes/",
+    "source": "hololive official event report"
+  },
+  {
     "id": "s2022c020",
     "displayId": "22-03-CLEAN-4",
     "date": "2022-03-19",
