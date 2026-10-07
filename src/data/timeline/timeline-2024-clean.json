@@ -11,7 +11,8 @@
     "ctx": "miComet在特別節目中對ReGLOSS設下整人企劃，相關片段整理成2024年初的miComet互動紀錄。",
     "ctxZh": "miComet在特別節目中對ReGLOSS設下整人企劃，相關片段整理成2024年初的miComet互動紀錄。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=pfDd_whXL48"
+    "link": "https://www.youtube.com/watch?v=pfDd_whXL48",
+    "sharedCategory": "group"
   },
   {
     "id": "official-2024-0116-fubumicomet-palworld",
@@ -34,30 +35,31 @@
     "displayId": "24-01-OFFICIAL-1",
     "date": "2024-01-16",
     "phase": 5,
-    "side": "shared",
-    "sharedCategory": "group",
-    "emoji": "💛",
+    "side": "others",
+    "emoji": "⭐",
     "title": "Miko與星街在《ホロ小学力テスト対決》正面對決",
     "titleZh": "Miko與星街在《ホロ小学力テスト対決》正面對決",
     "ctx": "Miko與星街在白上吹雪主持的Hololive小學學力測驗企劃中正面對決，成為2024年初代表性的miComet大型企劃。",
     "ctxZh": "Miko與星街在白上吹雪主持的Hololive小學學力測驗企劃中正面對決，成為2024年初代表性的miComet大型企劃。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=j82vVRh3nMU",
-    "source": "Miko official YouTube"
+    "source": "Miko official YouTube",
+    "supportCategory": "fubuki"
   },
   {
     "id": "c2024-002",
     "displayId": "24-01-CLEAN-2",
     "date": "2024-01-17",
     "phase": 5,
-    "side": "shared",
-    "emoji": "💛",
+    "side": "others",
+    "emoji": "⭐",
     "title": "miComet參加Hololive小學學力測驗",
     "titleZh": "miComet參加Hololive小學學力測驗",
     "ctx": "Miko主持Hololive小學學力測驗，星街也在相關整理中登場。當天多支剪輯把miComet與其他成員的爆笑答案、前後篇測驗內容合併整理成一組事件。",
     "ctxZh": "Miko主持Hololive小學學力測驗，星街也在相關整理中登場。當天多支剪輯把miComet與其他成員的爆笑答案、前後篇測驗內容合併整理成一組事件。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=PvTzU3LZFyE"
+    "link": "https://www.youtube.com/watch?v=PvTzU3LZFyE",
+    "supportCategory": "fubuki"
   },
   {
     "id": "official-2024-0117-curry-stew",
@@ -171,7 +173,9 @@
     "ctxZh": "Miko與星街公開miComet Singapore海外出差的實拍外景VTR，補完2023海外活動期間的現地行程與互動。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=PTQBbKU4kmU",
-    "source": "Miko official YouTube"
+    "source": "Miko official YouTube",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "official-2024-0317-5thfes",
@@ -186,7 +190,8 @@
     "ctxZh": "《hololive 5th fes. Capture the Moment》DAY2中，櫻巫女與星街彗星同時列入HoneyWorks stage與hololive stage3官方出演名單。",
     "type": "Event",
     "link": "https://hololivesuperexpo2024.hololivepro.com/fes/cast",
-    "source": "hololive 5th fes. official cast lineup"
+    "source": "hololive 5th fes. official cast lineup",
+    "sharedCategory": "group"
   },
   {
     "id": "c2024-009",
@@ -215,7 +220,9 @@
     "ctxZh": "miComet首支原創曲《シュガーラッシュ》的官方MV於星街官方頻道公開，歌曲由DECO*27與TAKU INOUE製作。",
     "type": "Music",
     "link": "https://www.youtube.com/watch?v=gtgME6MJpk4 https://hololive.hololivepro.com/music/347/",
-    "source": "Suisei official YouTube / hololive official music page"
+    "source": "Suisei official YouTube / hololive official music page",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "c2024-010",
@@ -313,7 +320,9 @@
     "ctx": "Miko與星街以商業關係為前提做戀愛診斷，結果意外讓兩人之間的氣氛變得微妙。",
     "ctxZh": "Miko與星街以商業關係為前提做戀愛診斷，結果意外讓兩人之間的氣氛變得微妙。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=vTfMdLEbkJ8"
+    "link": "https://www.youtube.com/watch?v=vTfMdLEbkJ8",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "c2024-017",
@@ -484,7 +493,8 @@
     "ctx": "Hololive高學力成員總集編回收小學學力測驗相關脈絡，作為Miko與星街學力測驗故事的第三方補充。",
     "ctxZh": "Hololive高學力成員總集編回收小學學力測驗相關脈絡，作為Miko與星街學力測驗故事的第三方補充。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=DwH8XHV-Cp4"
+    "link": "https://www.youtube.com/watch?v=DwH8XHV-Cp4",
+    "supportCategory": "fubuki"
   },
   {
     "id": "c2024-029",
@@ -540,7 +550,9 @@
     "ctx": "Miko與星街一起回看過去的miComet直播，兩人因早期貼貼與青澀互動而尷尬到受不了。多支同日剪輯合併為四周年回顧前篇。",
     "ctxZh": "Miko與星街一起回看過去的miComet直播，兩人因早期貼貼與青澀互動而尷尬到受不了。多支同日剪輯合併為四周年回顧前篇。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=7zNJZgKCgGM"
+    "link": "https://www.youtube.com/watch?v=7zNJZgKCgGM",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "c2024-033",
@@ -671,7 +683,9 @@
     "ctx": "手繪短片把Miko與星街觀看過去貼貼片段的地獄鑑賞會重新整理，呈現過去互動如何侵蝕兩人的精神。",
     "ctxZh": "手繪短片把Miko與星街觀看過去貼貼片段的地獄鑑賞會重新整理，呈現過去互動如何侵蝕兩人的精神。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=eTk-43LVL18"
+    "link": "https://www.youtube.com/watch?v=eTk-43LVL18",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "official-2024-0828-aqua-graduation",
@@ -817,7 +831,9 @@
     "ctxZh": "Miko與星街以miComet主辦者身分主持holoGTA伺服器說明會，正式說明大型企劃規則與玩法。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=UJXn_kfNfWk",
-    "source": "Miko official YouTube"
+    "source": "Miko official YouTube",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "c2024-045",
@@ -860,7 +876,9 @@
     "ctxZh": "holoGTA活動期間，Miko與星街以主辦者／新聞主持身分整理9月19日伺服器事件與最新消息。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=ReQTTzjxWBo",
-    "source": "Suisei official YouTube"
+    "source": "Suisei official YouTube",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "official-2024-0920-hologta-news",
@@ -875,7 +893,9 @@
     "ctxZh": "holoGTA活動期間，Miko與星街繼續以新聞主持身分整理9月20日的伺服器事件。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=k-ByFI3gZus",
-    "source": "Miko official YouTube"
+    "source": "Miko official YouTube",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "c2024-047",
@@ -918,7 +938,9 @@
     "ctxZh": "holoGTA活動期間，Miko與星街繼續整理9月21日的重大事件與伺服器新聞。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=F6TzjH6Qtac",
-    "source": "Suisei official YouTube"
+    "source": "Suisei official YouTube",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "official-2024-0922-hologta-news",
@@ -933,7 +955,9 @@
     "ctxZh": "holoGTA活動期間，Miko與星街以主辦者身分整理9月22日的伺服器新聞與事件。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=BiPM81HhTCk",
-    "source": "Suisei official YouTube"
+    "source": "Suisei official YouTube",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "official-2024-0923-hologta-news",
@@ -948,7 +972,9 @@
     "ctxZh": "holoGTA最終日，Miko與星街共同主持最後一回NEWS，回顧活動結尾與伺服器事件。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=wJoLLc1Rd94",
-    "source": "Miko official YouTube"
+    "source": "Miko official YouTube",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "news-2024-1004-fubuki-micomet-dynamics",
@@ -1143,14 +1169,15 @@
     "displayId": "24-11-CLEAN-2",
     "date": "2024-11-04",
     "phase": 5,
-    "side": "shared",
-    "emoji": "💛",
+    "side": "others",
+    "emoji": "⭐",
     "title": "miComet就算變成粉絲身體也趁機貼貼",
     "titleZh": "miComet就算變成粉絲身體也趁機貼貼",
     "ctx": "FBKINGDOM相關片段中，Miko與星街就算變成白上吹雪粉絲的身體，仍然趁機互動貼貼。日英多支剪輯合併為同一筆共同故事。",
     "ctxZh": "FBKINGDOM相關片段中，Miko與星街就算變成白上吹雪粉絲的身體，仍然趁機互動貼貼。日英多支剪輯合併為同一筆共同故事。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=rdGlAmZEr0Q"
+    "link": "https://www.youtube.com/watch?v=rdGlAmZEr0Q",
+    "supportCategory": "fubuki"
   },
   {
     "id": "official-2024-1104-fbkingdom",
@@ -1243,14 +1270,15 @@
     "displayId": "24-11-CLEAN-7",
     "date": "2024-11-09",
     "phase": 5,
-    "side": "shared",
-    "emoji": "💛",
+    "side": "others",
+    "emoji": "⭐",
     "title": "白上吹雪Live中miComet可愛地商業貼貼",
     "titleZh": "白上吹雪Live中miComet可愛地商業貼貼",
     "ctx": "白上吹雪Live相關剪輯中，Miko與星街在舞台或演出脈絡中可愛地商業貼貼，成為FBKINGDOM後續片段。",
     "ctxZh": "白上吹雪Live相關剪輯中，Miko與星街在舞台或演出脈絡中可愛地商業貼貼，成為FBKINGDOM後續片段。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=Q9HmGepNklM"
+    "link": "https://www.youtube.com/watch?v=Q9HmGepNklM",
+    "supportCategory": "fubuki"
   },
   {
     "id": "official-2024-1109-flowglow-watchalong",
@@ -1321,7 +1349,9 @@
     "ctx": "短片以越吵感情越好為題整理Miko與星街的互動，延續miComet鬥嘴但親近的關係性。",
     "ctxZh": "短片以越吵感情越好為題整理Miko與星街的互動，延續miComet鬥嘴但親近的關係性。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=yTUMlxy3KsM"
+    "link": "https://www.youtube.com/watch?v=yTUMlxy3KsM",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "c2024-068",
