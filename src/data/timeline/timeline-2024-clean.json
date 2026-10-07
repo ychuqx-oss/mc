@@ -16,7 +16,7 @@
   },
   {
     "id": "official-2024-0116-fubumicomet-palworld",
-    "displayId": "24-01-OFFICIAL-2",
+    "displayId": "24-01-OFFICIAL-1",
     "date": "2024-01-16",
     "phase": 5,
     "side": "shared",
@@ -32,7 +32,7 @@
   },
   {
     "id": "official-2024-0116-school-test",
-    "displayId": "24-01-OFFICIAL-1",
+    "displayId": "24-01-OFFICIAL-2",
     "date": "2024-01-16",
     "phase": 5,
     "side": "others",
@@ -179,7 +179,7 @@
   },
   {
     "id": "official-2024-0317-5thfes",
-    "displayId": "24-03-OFFICIAL-1",
+    "displayId": "24-03-OFFICIAL-2",
     "date": "2024-03-17",
     "phase": 5,
     "side": "shared",
@@ -209,7 +209,7 @@
   },
   {
     "id": "official-2024-0329-sugar-rush-mv",
-    "displayId": "24-03-OFFICIAL-2",
+    "displayId": "24-03-OFFICIAL-3",
     "date": "2024-03-29",
     "phase": 5,
     "side": "shared",
@@ -383,7 +383,7 @@
   },
   {
     "id": "c2024-022",
-    "displayId": "24-05-CLEAN-7",
+    "displayId": "24-05-CLEAN-6",
     "date": "2024-05-18",
     "phase": 5,
     "side": "miko",
@@ -397,7 +397,7 @@
   },
   {
     "id": "c2024-023",
-    "displayId": "24-05-CLEAN-8",
+    "displayId": "24-05-CLEAN-7",
     "date": "2024-05-20",
     "phase": 5,
     "side": "shared",
@@ -411,7 +411,7 @@
   },
   {
     "id": "c2024-024",
-    "displayId": "24-05-CLEAN-9",
+    "displayId": "24-05-CLEAN-8",
     "date": "2024-05-20",
     "phase": 5,
     "side": "others",
@@ -425,7 +425,7 @@
   },
   {
     "id": "c2024-025",
-    "displayId": "24-05-CLEAN-10",
+    "displayId": "24-05-CLEAN-9",
     "date": "2024-05-30",
     "phase": 5,
     "side": "shared",
@@ -1054,14 +1054,15 @@
     "displayId": "24-10-CLEAN-4",
     "date": "2024-10-13",
     "phase": 5,
-    "side": "shared",
-    "emoji": "💛",
+    "side": "others",
+    "emoji": "⭐",
     "title": "miComet因解不出小學題目而大暴叫",
     "titleZh": "miComet因解不出小學題目而大暴叫",
     "ctx": "Hololive小學學力測驗再剪中，Miko與星街因解不出題目而激烈崩潰，成為學力測驗相關的miComet補充故事。",
     "ctxZh": "Hololive小學學力測驗再剪中，Miko與星街因解不出題目而激烈崩潰，成為學力測驗相關的miComet補充故事。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=LfmViq96l1Y"
+    "link": "https://www.youtube.com/watch?v=LfmViq96l1Y",
+    "supportCategory": "fubuki"
   },
   {
     "id": "c2024-053",
@@ -1093,7 +1094,7 @@
   },
   {
     "id": "official-2024-1026-flower-fantasista",
-    "displayId": "24-10-OFFICIAL-1",
+    "displayId": "24-10-OFFICIAL-2",
     "date": "2024-10-26",
     "phase": 5,
     "side": "shared",
@@ -1109,7 +1110,7 @@
   },
   {
     "id": "miko-2024-1027-solo-live-micomet-backstage",
-    "displayId": "24-10-ADD-2",
+    "displayId": "24-10-ADD-1",
     "date": "2024-10-27",
     "phase": 5,
     "side": "miko",
@@ -1127,8 +1128,8 @@
     "displayId": "24-10-CLEAN-7",
     "date": "2024-10-29",
     "phase": 5,
-    "side": "others",
-    "emoji": "⭐",
+    "side": "miko",
+    "emoji": "🌸",
     "title": "Miko得知SoloLive中有知名35P偷偷參戰而震驚",
     "titleZh": "Miko得知SoloLive中有知名35P偷偷參戰而震驚",
     "ctx": "Miko得知自己成功舉辦的Solo Live中有知名35P偷偷參戰而震驚。此筆不是純miComet主題，但來源標題含星街相關脈絡，列為助攻補充。",
@@ -1282,7 +1283,7 @@
   },
   {
     "id": "official-2024-1109-flowglow-watchalong",
-    "displayId": "24-11-OFFICIAL-1",
+    "displayId": "24-11-OFFICIAL-2",
     "date": "2024-11-09",
     "phase": 5,
     "side": "shared",
