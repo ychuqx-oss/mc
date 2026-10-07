@@ -1478,6 +1478,21 @@
     "source": "Detailed timeline source dataset"
   },
   {
+    "id": "official-2021-1219-vills3",
+    "displayId": "21-12-OFFICIAL-1",
+    "date": "2021-12-19",
+    "phase": 2,
+    "side": "shared",
+    "emoji": "💛",
+    "title": "miComet出演Virtual Unit Fes.《VILLS vol.3》DAY2",
+    "titleZh": "miComet出演Virtual Unit Fes.《VILLS vol.3》DAY2",
+    "ctx": "VILLS vol.3 DAY2中，櫻巫女與星街彗星以miComet名義參加綜藝舞台與音樂舞台，為兩人連續第三次出演VILLS。",
+    "ctxZh": "VILLS vol.3 DAY2中，櫻巫女與星街彗星以miComet名義參加綜藝舞台與音樂舞台，為兩人連續第三次出演VILLS。",
+    "type": "Event",
+    "link": "https://prtimes.jp/main/html/rd/p/000000113.000039863.html",
+    "source": "VILLS organizer official press release / PR TIMES"
+  },
+  {
     "id": "s1615",
     "displayId": "21-12-BBQ-5",
     "date": "2021-12-20",
