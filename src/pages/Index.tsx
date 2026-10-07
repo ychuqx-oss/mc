@@ -6,7 +6,7 @@ type Side = 'miko' | 'suisei' | 'shared' | 'others';
 type SharedCategory = NonNullable<MiCometStory['sharedCategory']>;
 type StoryCategory = 'all' | 'miko' | 'suisei' | 'gen0' | 'shiraken' | 'oneOnOne' | 'group' | 'fubuki' | 'others';
 type ChartMode = 'year' | 'month';
-type UiLang = 'en' | 'zh';
+type UiLang = 'en' | 'ja' | 'zh';
 type LocalStory = MiCometStory;
 type ViewMode = 'cards' | 'timeline';
 type SortOrder = 'desc' | 'asc';
@@ -42,6 +42,7 @@ function useIsMobile() {
 
 const TYPE_LABELS: Record<UiLang, Record<string, string>> = {
   en: { Clip: 'Clip', Stream: 'Stream', News: 'News', Text: 'Text', Audio: 'Audio', Music: 'Music', Event: 'Event' },
+  ja: { Clip: '切り抜き', Stream: '配信', News: 'ニュース', Text: 'テキスト', Audio: '音声', Music: '音楽', Event: 'イベント' },
   zh: { Clip: '剪輯', Stream: '直播', News: '綜合', Text: '文字', Audio: '音訊', Music: '音樂', Event: '活動' },
 };
 
@@ -52,6 +53,13 @@ const UI_LABELS = {
     year: 'Year', month: 'Month', all: 'All', search: 'Search stories, keywords, dates...', found: 'stories found', empty: 'No matching stories',
     mikoTotal: 'Miko Total', suiseiTotal: 'Suisei Total', supportTotal: 'Support Total',
     miko: 'Miko', suisei: 'Suisei', gen0: 'Gen 0', shiraken: 'Shiraken', oneOnOne: '1v1', group: 'Group', fubuki: 'Fubuki', support: 'Support', category: 'Category', source: 'Source', filters: 'Filters', showChart: 'Show chart', hideChart: 'Hide chart', clearFilters: 'Clear filters', backTop: 'Back to top', type: 'Type', sourceTrust: 'Source trust', verified: 'Verified', indexed: 'Indexed', pending: 'Needs source', completeness: 'Source completeness', cards: 'Cards', timeline: 'Timeline', newest: 'Newest', oldest: 'Oldest', sameEvent: 'Same stream/event', statistics: 'Statistics & charts', verifiedSource: 'Official/original', indexedSource: 'Cross-checked', needsSource: 'Fallback / missing',
+  },
+  ja: {
+    totalCard: '件のストーリーを収録', start: '開始', latest: '最新', overview: '統計概要', totalStories: '総ストーリー数', timelineRange: '収録期間',
+    yearMonth: '年 / 月', firstEntry: '最初の記録', latestEntry: '最新の記録', cumulativeChart: 'miComet 累計ストーリー推移', countChart: 'ストーリー件数推移',
+    year: '年', month: '月', all: 'すべて', search: 'ストーリー・キーワード・日付を検索...', found: '件のストーリー', empty: '条件に一致するストーリーはありません',
+    mikoTotal: 'Miko 累計', suiseiTotal: 'すいせい累計', supportTotal: 'サポート累計',
+    miko: 'Miko', suisei: 'すいせい', gen0: '0期生', shiraken: 'しら建', oneOnOne: '1対1', group: 'グループ', fubuki: '白上フブキ', support: 'サポート', category: '分類', source: '出典', filters: '絞り込み', showChart: 'グラフを表示', hideChart: 'グラフを閉じる', clearFilters: '絞り込みを解除', backTop: 'ページ上部へ', type: '種類', sourceTrust: '出典の信頼度', verified: '確認済み', indexed: '照合済み', pending: '要出典', completeness: '年度別出典状況', cards: 'カード', timeline: 'タイムライン', newest: '新しい順', oldest: '古い順', sameEvent: '同じ配信／イベント', statistics: '統計・グラフ', verifiedSource: '公式／一次情報', indexedSource: '索引／メディア照合', needsSource: '代替／要出典',
   },
   zh: {
     totalCard: '個故事已收錄', start: '起', latest: '迄', overview: '統計總覽', totalStories: '總故事數', timelineRange: '故事區間',
@@ -112,15 +120,27 @@ function cleanEnText(value = '') {
     .trim();
 }
 
+function cleanJaText(value = '') {
+  return value.replace(/\s+/g, ' ').trim();
+}
+
 function storyTitle(story: LocalStory, lang: UiLang) {
-  const raw = lang === 'en' ? story.titleEn || story.title : story.titleZh || story.title;
-  const title = lang === 'en' ? cleanEnText(raw) : cleanZhText(raw);
+  const raw = lang === 'en'
+    ? story.titleEn || story.title
+    : lang === 'ja'
+      ? story.titleJa || story.titleEn || story.title
+      : story.titleZh || story.title;
+  const title = lang === 'zh' ? cleanZhText(raw) : lang === 'ja' ? cleanJaText(raw) : cleanEnText(raw);
   return title || 'miComet Story';
 }
 
 function storyContext(story: LocalStory, lang: UiLang) {
-  const raw = lang === 'en' ? story.ctxEn || story.ctx : story.ctxZh || story.ctx;
-  const ctx = lang === 'en' ? cleanEnText(raw) : cleanZhText(raw);
+  const raw = lang === 'en'
+    ? story.ctxEn || story.ctx
+    : lang === 'ja'
+      ? story.ctxJa || story.ctxEn || story.ctx
+      : story.ctxZh || story.ctx;
+  const ctx = lang === 'zh' ? cleanZhText(raw) : lang === 'ja' ? cleanJaText(raw) : cleanEnText(raw);
   if (ctx) return /[。.!?]$/.test(ctx) ? ctx : lang === 'en' ? `${ctx}.` : `${ctx}。`;
   const title = storyTitle(story, lang);
   return lang === 'en' ? `${title}.` : `${title}。`;
@@ -298,8 +318,12 @@ function sourceIcon(source: StorySource) {
 }
 
 function sourceLabel(source: StorySource, lang: UiLang) {
-  if (source.official) return lang === 'zh' ? `${source.label || '來源'}・官方` : `${source.label || 'Source'} · official`;
-  return source.label || (lang === 'zh' ? '來源' : 'Source');
+  if (source.official) {
+    if (lang === 'zh') return `${source.label || '來源'}・官方`;
+    if (lang === 'ja') return `${source.label || '出典'}・公式`;
+    return `${source.label || 'Source'} · official`;
+  }
+  return source.label || (lang === 'zh' ? '來源' : lang === 'ja' ? '出典' : 'Source');
 }
 
 function youtubeIdFromUrl(url: string) {
@@ -452,7 +476,8 @@ function CompactStatRow({ items }: { items: Array<{ label: string; value: number
 }
 
 function LangToggle({ lang, onChange }: { lang: UiLang; onChange: (lang: UiLang) => void }) {
-  return <div style={{ display: 'flex', gap: 8, background: '#0d0f15', borderRadius: 14, padding: 6, border: '1px solid rgba(255,255,255,0.08)' }}>{(['en', 'zh'] as UiLang[]).map((item) => <button key={item} onClick={() => onChange(item)} style={{ background: lang === item ? '#1f2432' : 'transparent', color: '#fff', border: 'none', borderRadius: 10, padding: '10px 14px', fontSize: 15, fontWeight: 800, cursor: 'pointer' }}>{item === 'en' ? 'English' : '繁中'}</button>)}</div>;
+  const languageNames: Record<UiLang, string> = { en: 'English', ja: '日本語', zh: '繁中' };
+  return <div style={{ display: 'flex', gap: 8, background: '#0d0f15', borderRadius: 14, padding: 6, border: '1px solid rgba(255,255,255,0.08)' }}>{(['en', 'ja', 'zh'] as UiLang[]).map((item) => <button key={item} onClick={() => onChange(item)} style={{ background: lang === item ? '#1f2432' : 'transparent', color: '#fff', border: 'none', borderRadius: 10, padding: '10px 14px', fontSize: 15, fontWeight: 800, cursor: 'pointer' }}>{languageNames[item]}</button>)}</div>;
 }
 
 export default function Index() {
@@ -503,7 +528,7 @@ export default function Index() {
       if (sourceFilter === 'indexed' && status !== 'indexed') return false;
       if (sourceFilter === 'pending' && status !== 'fallback' && status !== 'missing') return false;
       if (!q) return true;
-      return [item.date, item.title, item.titleZh ?? '', item.titleEn ?? '', item.ctx, item.ctxZh ?? '', item.ctxEn ?? '', storyTitle(item, uiLang), storyContext(item, uiLang), ...storySources(item).map((source) => `${source.label ?? ''} ${source.url}`)].join(' ').toLowerCase().includes(q);
+      return [item.date, item.title, item.titleZh ?? '', item.titleEn ?? '', item.titleJa ?? '', item.ctx, item.ctxZh ?? '', item.ctxEn ?? '', item.ctxJa ?? '', storyTitle(item, uiLang), storyContext(item, uiLang), ...storySources(item).map((source) => `${source.label ?? ''} ${source.url}`)].join(' ').toLowerCase().includes(q);
     });
     return [...list].sort((a, b) => sortOrder === 'asc' ? storySort(a, b) : storySort(b, a)) as LocalStory[];
   }, [search, summary.timeline, yearFilter, monthFilter, categoryFilter, typeFilter, sourceFilter, sortOrder, uiLang]);
@@ -521,6 +546,10 @@ export default function Index() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = uiLang === 'zh' ? 'zh-Hant' : uiLang;
+  }, [uiLang]);
 
   const sideStats = [
     { label: ui.miko, value: summary.counts.miko, color: COLORS.miko },
@@ -580,7 +609,7 @@ export default function Index() {
       </details>
     </div>
 
-    {isMobile && mobileFiltersOpen ? <div onClick={() => setMobileFiltersOpen(false)} style={{ position: 'fixed', inset: 0, zIndex: 80, background: 'rgba(0,0,0,0.65)', display: 'flex', alignItems: 'flex-end' }}><div onClick={(e) => e.stopPropagation()} style={{ width: '100%', maxHeight: '82vh', overflowY: 'auto', borderRadius: '24px 24px 0 0', background: '#11141c', border: '1px solid rgba(255,255,255,0.08)', padding: '18px 16px 24px' }}><div style={{ width: 42, height: 4, borderRadius: 99, background: '#4d5362', margin: '0 auto 18px' }} /><div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}><strong style={{ fontSize: 20 }}>{ui.filters}</strong><button onClick={clearFilters} style={filterButtonStyle(false)}>{ui.clearFilters}</button></div><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.month}</div><select value={monthFilter} onChange={(e) => setMonthFilter(Number(e.target.value))} style={{ marginTop: 8, width: '100%', borderRadius: 12, border: '1px solid rgba(255,255,255,0.12)', background: '#0d0f15', color: '#fff', padding: '12px 14px', fontSize: 16 }}><option value={0}>{ui.all}</option>{MONTHS.map((month) => <option key={month} value={month}>{uiLang === 'zh' ? `${month}月` : month}</option>)}</select><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.category}</div><div style={{ marginTop: 8, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 8 }}>{([['all', ui.all], ['miko', ui.miko], ['suisei', ui.suisei], ['gen0', ui.gen0], ['shiraken', ui.shiraken], ['oneOnOne', ui.oneOnOne], ['group', ui.group], ['fubuki', ui.fubuki], ['others', ui.support]] as Array<[StoryCategory, string]>).map(([key, label]) => <button key={key} onClick={() => setCategoryFilter(key)} style={filterButtonStyle(categoryFilter === key)}>{label}</button>)}</div><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.type}</div><div style={{ marginTop: 8, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 8 }}><button onClick={() => setTypeFilter('all')} style={filterButtonStyle(typeFilter === 'all')}>{ui.all}</button>{STORY_TYPES.map((type) => <button key={type} onClick={() => setTypeFilter(type)} style={filterButtonStyle(typeFilter === type)}>{TYPE_LABELS[uiLang][type] ?? type}</button>)}</div><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.sourceTrust}</div><div style={{ marginTop: 8, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 8 }}>{([['all', ui.all], ['verified', ui.verified], ['indexed', ui.indexed], ['pending', ui.pending]] as Array<[SourceFilter, string]>).map(([key, label]) => <button key={key} onClick={() => setSourceFilter(key)} style={filterButtonStyle(sourceFilter === key)}>{label}</button>)}</div><button onClick={() => setMobileFiltersOpen(false)} style={{ marginTop: 18, width: '100%', border: 'none', borderRadius: 14, background: '#f0f2f7', color: '#11131a', padding: '13px 16px', fontSize: 16, fontWeight: 900, cursor: 'pointer' }}>{uiLang === 'zh' ? '完成' : 'Done'}</button></div></div> : null}
+    {isMobile && mobileFiltersOpen ? <div onClick={() => setMobileFiltersOpen(false)} style={{ position: 'fixed', inset: 0, zIndex: 80, background: 'rgba(0,0,0,0.65)', display: 'flex', alignItems: 'flex-end' }}><div onClick={(e) => e.stopPropagation()} style={{ width: '100%', maxHeight: '82vh', overflowY: 'auto', borderRadius: '24px 24px 0 0', background: '#11141c', border: '1px solid rgba(255,255,255,0.08)', padding: '18px 16px 24px' }}><div style={{ width: 42, height: 4, borderRadius: 99, background: '#4d5362', margin: '0 auto 18px' }} /><div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}><strong style={{ fontSize: 20 }}>{ui.filters}</strong><button onClick={clearFilters} style={filterButtonStyle(false)}>{ui.clearFilters}</button></div><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.month}</div><select value={monthFilter} onChange={(e) => setMonthFilter(Number(e.target.value))} style={{ marginTop: 8, width: '100%', borderRadius: 12, border: '1px solid rgba(255,255,255,0.12)', background: '#0d0f15', color: '#fff', padding: '12px 14px', fontSize: 16 }}><option value={0}>{ui.all}</option>{MONTHS.map((month) => <option key={month} value={month}>{uiLang === 'zh' || uiLang === 'ja' ? `${month}月` : month}</option>)}</select><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.category}</div><div style={{ marginTop: 8, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 8 }}>{([['all', ui.all], ['miko', ui.miko], ['suisei', ui.suisei], ['gen0', ui.gen0], ['shiraken', ui.shiraken], ['oneOnOne', ui.oneOnOne], ['group', ui.group], ['fubuki', ui.fubuki], ['others', ui.support]] as Array<[StoryCategory, string]>).map(([key, label]) => <button key={key} onClick={() => setCategoryFilter(key)} style={filterButtonStyle(categoryFilter === key)}>{label}</button>)}</div><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.type}</div><div style={{ marginTop: 8, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 8 }}><button onClick={() => setTypeFilter('all')} style={filterButtonStyle(typeFilter === 'all')}>{ui.all}</button>{STORY_TYPES.map((type) => <button key={type} onClick={() => setTypeFilter(type)} style={filterButtonStyle(typeFilter === type)}>{TYPE_LABELS[uiLang][type] ?? type}</button>)}</div><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.sourceTrust}</div><div style={{ marginTop: 8, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 8 }}>{([['all', ui.all], ['verified', ui.verified], ['indexed', ui.indexed], ['pending', ui.pending]] as Array<[SourceFilter, string]>).map(([key, label]) => <button key={key} onClick={() => setSourceFilter(key)} style={filterButtonStyle(sourceFilter === key)}>{label}</button>)}</div><button onClick={() => setMobileFiltersOpen(false)} style={{ marginTop: 18, width: '100%', border: 'none', borderRadius: 14, background: '#f0f2f7', color: '#11131a', padding: '13px 16px', fontSize: 16, fontWeight: 900, cursor: 'pointer' }}>{uiLang === 'zh' ? '完成' : uiLang === 'ja' ? '完了' : 'Done'}</button></div></div> : null}
 
     {isMobile && showBackTop ? <button aria-label={ui.backTop} title={ui.backTop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'fixed', right: 16, bottom: 18, zIndex: 45, width: 46, height: 46, borderRadius: 999, border: '1px solid rgba(255,255,255,0.14)', background: 'rgba(22,26,37,0.92)', color: '#fff', fontSize: 20, fontWeight: 900, boxShadow: '0 12px 32px rgba(0,0,0,0.4)', backdropFilter: 'blur(10px)', cursor: 'pointer' }}>↑</button> : null}
     {openItem ? <Modal item={openItem} lang={uiLang} labels={ui} relatedItems={relatedFor(openItem)} onOpenRelated={setOpenItem} onClose={() => setOpenItem(null)} /> : null}
