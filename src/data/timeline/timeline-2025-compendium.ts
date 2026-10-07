@@ -878,6 +878,14 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=K307EPq4MBE',
     source: 'Kanata official YouTube original stream',
   },
+  'c2-2025-001': {
+    link: 'https://www.youtube.com/watch?v=jtU-KcAoRZw',
+    source: 'Fubuki official YouTube original stream',
+  },
+  'c2-2025-117': {
+    link: 'https://x.com/suisei_hosimati/status/1945488161486102632',
+    source: 'Suisei official X post',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
