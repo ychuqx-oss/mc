@@ -1,7 +1,7 @@
 export default `
 c2-2025-057|25-C2-57|2025-09-29|6|miko|🌸|Text|Miko轉推miComet圖
 c2-2025-058|25-C2-58|2025-09-28|6|others|⭐|Stream|白上吹雪在麥塊Manager直播談FubuMiComet
-c2-2025-059|25-C2-59|2025-09-27|6|shared|💛|Stream|miComet新衣裝同場互動
+c2-2025-059|25-C2-59|2025-09-27|6|shared|💛|Stream|miComet突擊逆凸並公告後續新衣裝企劃
 c2-2025-060|25-C2-60|2025-09-26|6|miko|🌸|Stream|Miko直播中談到與星街的私下互動
 c2-2025-061|25-C2-61|2025-09-26|6|others|⭐|Stream|大空昴談到Miko又把她叫成星街
 c2-2025-062|25-C2-62|2025-09-24|6|suisei|☄️|Text|星街發布miComet相關推文
@@ -71,4 +71,5 @@ c2-2025-125|25-C2-125|2025-07-04|6|shared|💛|Stream|miComet麥塊企劃
 c2-2025-126|25-C2-126|2025-07-03|6|shared|💛|Stream|miComet不知火建設連動
 c2-2025-127|25-C2-127|2025-07-02|6|miko|🌸|Text|Miko發布miComet相關推文
 c2-2025-128|25-C2-128|2025-07-02|6|miko|🌸|Text|Miko發布不知火建設miComet推文
+c2-2025-321|25-C2-321|2025-09-28|6|shared|💛|Stream|FubuMiComet參加《マイクラ肝試し2025》
 `.trim();
