@@ -169,6 +169,19 @@ Before adding a story:
 - Do not add archive images or thumbnails to timeline records.
 - Global reference documents may be placed in the site footer when explicitly requested.
 
+## Mobile UI behavior
+
+The primary timeline page uses a mobile-specific presentation for screens at 720px or below while preserving the desktop layout.
+
+- Search/filter controls stay sticky near the top on mobile.
+- Year buttons use a horizontal scroll row, newest year first.
+- Month selection and category filters move into a bottom-sheet filter panel.
+- Timeline charts are collapsed by default on mobile and can be expanded individually.
+- Story-card context is line-clamped on mobile; the full text remains available in the story modal.
+- Year markers are sticky while scrolling the timeline.
+- A mobile back-to-top button appears after substantial scrolling.
+- These behaviors are presentation-only and must not change timeline data, category logic, or source records.
+
 ## GitHub workflow
 
 For repository updates requested in chat:
