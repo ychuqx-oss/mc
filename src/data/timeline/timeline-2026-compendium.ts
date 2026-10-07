@@ -715,6 +715,24 @@ const additions = [
     link: '',
     source: 'Fubuki official YouTube original stream',
   },
+
+  {
+    id: 'c2-2026-148',
+    displayId: '26-C2-148',
+    date: '2026-05-05',
+    phase: 6,
+    side: 'shared' as const,
+    emoji: '💛',
+    type: 'Stream',
+    title: 'Miko and Subaru Phone Suisei for Help in the Puzzle Lock-In',
+    titleZh: 'みこスバ謎解き監禁部屋中打電話向星街求救',
+    titleEn: 'Miko and Subaru Phone Suisei for Help in the Puzzle Lock-In',
+    ctx: 'During the GW MikoSuba puzzle lock-in stream, Miko and Subaru used their telephone lifeline to call Suisei for help with a difficult question.',
+    ctxZh: 'Miko與大空昴進行GW謎解き監禁部屋企劃時，使用電話求救機會打給星街，請她協助解答難題。',
+    ctxEn: 'During the GW MikoSuba puzzle lock-in stream, Miko and Subaru used their telephone lifeline to call Suisei for help with a difficult question.',
+    link: '',
+    source: 'Miko official YouTube original stream',
+  },
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
@@ -737,6 +755,9 @@ const verifiedSourceLinks2026: Record<string, string> = {
   'c2-2026-143': 'https://www.youtube.com/watch?v=gS1mS4aUMa0',
   'c2-2026-144': 'https://www.youtube.com/watch?v=9bDHBikrQI8',  'c2-2026-146': 'https://www.youtube.com/watch?v=pLe4ALliPj0',
   'c2-2026-147': 'https://www.youtube.com/watch?v=zGpnj2PRp1E',
+  'c2-2026-058': 'https://www.youtube.com/watch?v=HxIckoft79U',
+  'c2-2026-061': 'https://www.youtube.com/watch?v=An5QdLGnXHk',
+  'c2-2026-148': 'https://www.youtube.com/watch?v=MR_gVtWfB-Y',
 
 };
 
