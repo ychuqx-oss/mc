@@ -406,6 +406,21 @@
     "link": "https://www.youtube.com/watch?v=BPjDLZDgS3s"
   },
   {
+    "id": "news-2023-0602-kaiyou-miko-interview",
+    "displayId": "23-06-NEWS-1",
+    "date": "2023-06-02",
+    "phase": 4,
+    "side": "miko",
+    "emoji": "🌸",
+    "title": "KAI-YOU櫻巫女長篇專訪談「為何持續稱miComet為商業」",
+    "titleZh": "KAI-YOU櫻巫女長篇專訪談「為何持續稱miComet為商業」",
+    "ctx": "KAI-YOU Premium刊出櫻巫女長篇專訪後篇，其中設有獨立章節「『miCometはビジネス』と言い続ける理由」，由Miko親自談她與星街的關係與「商業」稱呼。",
+    "ctxZh": "KAI-YOU Premium刊出櫻巫女長篇專訪後篇，其中設有獨立章節「『miCometはビジネス』と言い続ける理由」，由Miko親自談她與星街的關係與「商業」稱呼。",
+    "type": "News",
+    "link": "https://premium.kai-you.net/article/669",
+    "source": "KAI-YOU Premium interview"
+  },
+  {
     "id": "s230020",
     "displayId": "23-06-CLEAN-1",
     "date": "2023-06-03",
