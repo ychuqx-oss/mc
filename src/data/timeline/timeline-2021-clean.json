@@ -253,7 +253,8 @@
     "ctxZh": "Miko、星街與阿火三人一起玩《俠盜獵車手》，延續星街先前約成的連動。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=R9YYtpl8gmc",
-    "source": "Detailed timeline source dataset"
+    "source": "Detailed timeline source dataset",
+    "sharedCategory": "group"
   },
   {
     "id": "s1534",
@@ -683,7 +684,9 @@
     "ctxZh": "Hololive夏祭後夜祭期間，星街開Minecraft直播並與Miko一起繼續營運鬼屋，形成miComet雙人互動。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=ZEyLVFw3z1Y",
-    "source": "Suisei official YouTube"
+    "source": "Suisei official YouTube",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "s1555",
@@ -743,7 +746,8 @@
     "ctxZh": "大空警察企劃中，Miko與星街同時到案，成為企劃內的miComet同場紀錄。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=N16A2XNu0L4",
-    "source": "Detailed timeline source dataset"
+    "source": "Detailed timeline source dataset",
+    "sharedCategory": "group"
   },
   {
     "id": "s1559",
@@ -1172,10 +1176,10 @@
     "phase": 2,
     "side": "shared",
     "emoji": "💛",
-    "title": "伊卡洛斯miComet瑪利歐派對連動",
-    "titleZh": "伊卡洛斯miComet瑪利歐派對連動",
-    "ctx": "Miko與星街進行瑪利歐派對連動，相關內容被整理為伊卡洛斯miComet回。",
-    "ctxZh": "Miko與星街進行瑪利歐派對連動，相關內容被整理為伊卡洛斯miComet回。",
+    "title": "miComet瑪利歐派對連動",
+    "titleZh": "miComet瑪利歐派對連動",
+    "ctx": "Miko與星街進行《瑪利歐派對》連動。",
+    "ctxZh": "Miko與星街進行《瑪利歐派對》連動。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=8pC1JKgKjMw",
     "source": "Detailed timeline source dataset"
@@ -1223,7 +1227,8 @@
     "ctxZh": "Miko與星街參與EN伺服器觀光，並出現Miko留言板相關事件，成為10月初的miComet麥塊紀錄。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=G83PYhIykmY",
-    "source": "Detailed timeline source dataset"
+    "source": "Detailed timeline source dataset",
+    "sharedCategory": "group"
   },
   {
     "id": "s1590",
