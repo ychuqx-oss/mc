@@ -870,6 +870,14 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=Pzqzy2ZIcLI',
     source: 'Iroha official YouTube original stream',
   },
+  'c2-2025-176': {
+    link: 'https://www.youtube.com/watch?v=WBWtCSQiK34',
+    source: 'Lui official YouTube original stream',
+  },
+  'c2-2025-097': {
+    link: 'https://www.youtube.com/watch?v=K307EPq4MBE',
+    source: 'Kanata official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
