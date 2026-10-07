@@ -950,6 +950,14 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=jS3BvDn2gV0',
     source: 'Fubuki official YouTube original stream',
   },
+  'c2-2025-215': {
+    link: 'https://www.nhk.jp/p/venue101/ts/WX1N9WR8GY/blog/bl/p7x4Gzaqg7/bp/p9la2gYjDK/',
+    source: 'NHK official Venue101 VTuber Special page',
+  },
+  'c2-2025-175': {
+    link: 'https://radiko.jp/mobile/events/12420209',
+    source: 'radiko official NHK 第89回 program listing',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
