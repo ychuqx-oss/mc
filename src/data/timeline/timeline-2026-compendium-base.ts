@@ -68,7 +68,7 @@ c2-2026-083|26-C2-111|2026-03-05|6|miko|🌸|Stream|Miko生日前夕打給星街
 c2-2026-088|26-C2-112|2026-02-21|6|miko|🌸|Text|Miko送花籃給星街演唱會|Miko sends a flower stand to Suisei’s concert
 c2-2026-089|26-C2-113|2026-02-17|6|suisei|☄️|Text|星街拍下Miko屁股照|Suisei takes butt shots of Miko
 c2-2026-090|26-C2-114|2026-02-17|6|miko|🌸|Text|Miko轉推miComet圖|Miko retweets miComet art
-c2-2026-091|26-C2-115|2026-02-17|6|others|⭐|Stream|蘿蔔子見到miComet|Robocco meets with miComet
+c2-2026-091|26-C2-115|2026-02-17|6|others|⭐|Stream|蘿蔔子把姊街誤認成星街，事後才發現搞錯人|Roboco mistakes Anemachi for Suisei and realizes the mix-up
 c2-2026-093|26-C2-116|2026-02-14|6|shared|💛|Stream|miComet公開第二套成對新衣裝並進行VR凸待|MiComet reveal their second matching outfits and hold a VR call-in
 c2-2026-096|26-C2-117|2026-02-09|6|miko|🌸|Stream|Miko與常闇永遠聊年齡時提到星街也說過相同內容|Miko mentions that Suisei had said the same thing while talking about age with Towa
 c2-2026-097|26-C2-118|2026-01-30|6|miko|🌸|Stream|Miko和Biji派對一起看很多《Orb》|Miko watches a lot of the anime Orb with her bijipa
