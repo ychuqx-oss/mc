@@ -26,12 +26,12 @@ const patched = baseData.map((story) => {
   if (story.id === 'c2-2026-003') {
     return {
       ...story,
-      title: 'MiComet 6th Anniversary Meeting Minutes',
-      titleZh: 'miComet六周年會議紀錄',
-      titleEn: 'MiComet 6th Anniversary Meeting Minutes',
-      ctx: 'Miko posted humorous meeting minutes commemorating miComet’s sixth anniversary.',
-      ctxZh: 'Miko發布了一組幽默的「會議紀錄」，紀念miComet結成六周年。',
-      ctxEn: 'Miko posted humorous meeting minutes commemorating miComet’s sixth anniversary.',
+      title: 'Miko Posts MiComet 6th Anniversary Meeting Notes',
+      titleZh: 'Miko發布miComet六周年「會議紀錄」紀念結成六周年',
+      titleEn: 'Miko Posts MiComet 6th Anniversary Meeting Notes',
+      ctx: 'Miko posted a set of miComet sixth-anniversary meeting notes to mark six years since the duo was formed.',
+      ctxZh: 'Miko發布「miComet六周年會議紀錄」，紀念兩人結成六周年。'
+      ctxEn: 'Miko posted a set of miComet sixth-anniversary meeting notes to mark six years since the duo was formed.'
     };
   }
   if (story.id === 'c2-2026-004') {
@@ -122,9 +122,9 @@ const additions = [
     title: 'Okayu Traps Koyori Using the Game Mechanics in Machine Party',
     titleZh: '《Machine Party》小粥利用機制困住小夜璃，Miko與星街驚訝',
     titleEn: 'Okayu Traps and Eliminates Koyori in Machine Party as MiComet Look On',
-    ctx: 'Okayu, Koyori, Miko, and Suisei played Machine Party. During a sudden-death round, Okayu exploited the game mechanics to trap and eliminate Koyori, leaving Miko and Suisei stunned by how ruthless the play was.',
+    ctx: 'Okayu, Koyori, Miko, and Suisei played Machine Party. During a sudden-death round, Okayu used the game mechanics to trap and eliminate Koyori; Miko and Suisei reacted with surprise.'
     ctxZh: '小粥、博衣小夜璃、Miko與星街一起遊玩《Machine Party》。在輸掉就會立刻死亡的環節，小粥利用遊戲機制把小夜璃困住並淘汰；Miko與星街看到後作出驚訝反應。之後四人繼續互相陷害、狙擊。',
-    ctxEn: 'Okayu, Koyori, Miko, and Suisei played Machine Party. During a sudden-death round, Okayu exploited the game mechanics to trap and eliminate Koyori, leaving Miko and Suisei stunned by how ruthless the play was.',
+    ctxEn: 'Okayu, Koyori, Miko, and Suisei played Machine Party. During a sudden-death round, Okayu used the game mechanics to trap and eliminate Koyori; Miko and Suisei reacted with surprise.'
     link: '',
     source: '2026 compendium update',
   },
@@ -222,11 +222,11 @@ const additions = [
     emoji: '⭐',
     type: 'Stream',
     title: 'Ririka Tells a MiComet Story About Miko Wanting to Become a Baby',
-    titleZh: '一條莉莉華分享Miko想變成嬰兒的miComet趣事',
+    titleZh: '一條莉莉華分享Miko說想變成嬰兒的miComet故事',
     titleEn: 'Ririka Tells a MiComet Story About Miko Wanting to Become a Baby',
-    ctx: 'Ririka told a humorous miComet story in which Miko wanted to become a baby.',
-    ctxZh: '一條莉莉華分享了一段miComet趣事，其中Miko表示想變成嬰兒。',
-    ctxEn: 'Ririka told a humorous miComet story in which Miko wanted to become a baby.',
+    ctx: 'Ririka told a miComet story in which Miko said she wanted to become a baby.'
+    ctxZh: '一條莉莉華分享一段miComet故事，其中Miko表示想變成嬰兒。'
+    ctxEn: 'Ririka told a miComet story in which Miko said she wanted to become a baby.'
     link: '',
     source: 'MiComet Compendium II (user-provided list)',
   },
@@ -697,12 +697,12 @@ const additions = [
     side: 'miko' as const,
     emoji: '🌸',
     type: 'Stream',
-    title: 'Miko Misnames Suisei’s New Song and Gets a “Heavy Ball” Joke from Hoshitani',
-    titleZh: 'Miko把星街新曲歌名講錯，向「星谷」道歉後拿到「重い球」',
-    titleEn: 'Miko Misnames Suisei’s New Song and Gets a “Heavy Ball” Joke from Hoshitani',
-    ctx: 'During PowerPro 2026, Miko mixed up the title of Suisei’s new song and immediately corrected herself and apologized; soon afterward the Suisei-inspired player “Hoshitani” gained the “Heavy Ball” ability, creating an accidental miComet joke.',
-    ctxZh: 'Miko在《パワプロ2026》直播中把星街的新曲歌名講錯，隨即更正並道歉；之後以星街為原型的「星谷」剛好取得「重い球」能力，形成意外的miComet笑點。',
-    ctxEn: 'During PowerPro 2026, Miko mixed up the title of Suisei’s new song and immediately corrected herself and apologized; soon afterward the Suisei-inspired player “Hoshitani” gained the “Heavy Ball” ability, creating an accidental miComet joke.',
+    title: 'Miko Misnames Suisei’s New Song; Hoshitani Then Gains “Heavy Ball”',
+    titleZh: 'Miko把星街新曲歌名講錯，之後「星谷」取得「重い球」'
+    titleEn: 'Miko Misnames Suisei’s New Song; Hoshitani Then Gains “Heavy Ball”'
+    ctx: 'During PowerPro 2026, Miko mixed up the title of Suisei’s new song, corrected herself and apologized; later, the Suisei-inspired player “Hoshitani” gained the “Heavy Ball” ability.'
+    ctxZh: 'Miko在《パワプロ2026》直播中把星街的新曲歌名講錯，隨即更正並道歉；之後以星街為原型的「星谷」取得「重い球」能力。'
+    ctxEn: 'During PowerPro 2026, Miko mixed up the title of Suisei’s new song, corrected herself and apologized; later, the Suisei-inspired player “Hoshitani” gained the “Heavy Ball” ability.'
     link: '',
     source: 'Miko official YouTube original stream',
   },
@@ -838,7 +838,7 @@ const additions = [
     titleEn: 'Suisei Remembers Miko’s Rap Instead of Her “Shin wo Kuu” Roasting',
     ctx: 'In a VTR for Miko’s eighth anniversary, Suisei answered that Miko’s rap was the most memorable thing; Miko immediately reacted to the answer.',
     ctxZh: 'Miko八周年紀念配信的VTR中，星街回答自己對Miko最有印象的是「Miko的Rap」；Miko聽完後當場吐槽。',
-    ctxEn: 'In a VTR for Miko’s eighth anniversary, Suisei answered that Miko’s rap was the most memorable thing, humorously reframing the intended memory of Miko’s pointed “shin wo kuu” roasting.',
+    ctxEn: 'In a VTR for Miko’s eighth anniversary, Suisei answered that Miko’s rap was the most memorable thing; Miko reacted immediately to the answer.'
     link: '',
     source: 'Miko official YouTube original stream',
   },
@@ -855,7 +855,7 @@ const additions = [
     titleEn: 'Miko Pulls Suisei While Roboco Is Watching Her Hololive Dreams Gacha',
     ctx: 'During Miko’s Hololive Dreams five-star collection stream, Roboco appeared in chat, but the rainbow pull produced an off-banner Suisei instead.',
     ctxZh: 'Miko在《Hololive Dreams》收集五星卡時，蘿蔔子正在聊天室觀看；虹光演出後沒有抽到蘿蔔子，而是抽到星街。',
-    ctxEn: 'During Miko’s Hololive Dreams five-star collection stream, Roboco appeared in chat, but the rainbow pull produced an off-banner Suisei instead, immediately turning the moment into a miComet joke.',
+    ctxEn: 'During Miko’s Hololive Dreams five-star collection stream, Roboco appeared in chat, but the rainbow pull produced an off-banner Suisei instead.'
     link: '',
     source: 'Miko official YouTube original stream',
   },
