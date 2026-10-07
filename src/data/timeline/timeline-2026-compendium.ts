@@ -871,7 +871,7 @@ const verifiedSourceLinks2026: Record<string, string> = {
   'c2-2026-113': 'https://x.com/suisei_submati/status/2085757819522080882',
   'c2-2026-052': 'https://www.youtube.com/watch?v=8RlaAqLgpuk',
   'c2-2026-017': 'https://www.youtube.com/watch?v=GQMY5Vl9Dfk',
-  'c2-2026-055': 'https://t.co/MVGrEdX7Pf',
+  'c2-2026-055': 'https://x.com/mikochisub/status/2045875985929969732',
   'c2-2026-088': 'https://t.co/mIU6hvRpbP',
   'c2-2026-128': 'https://x.com/suisei_submati/status/2096269951556559215',
   'c2-2026-003': 'https://x.com/sakuramiko35/status/2079565152886935884',
