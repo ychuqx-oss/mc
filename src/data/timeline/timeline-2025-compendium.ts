@@ -72,7 +72,6 @@ const englishRows = `
 2025-09-24|Suisei helps MikoSuba defuse a bomb
 2025-09-22|Miko retweets gay miComet art
 2025-09-22|Miko asks Kanata and Lamy who they’d rather date between miComet
-2025-09-22|MiComet figurines
 2025-09-16|Suisei hiding her belly only makes Miko want to see it more
 2025-09-12|Miko bought the pair rings
 2025-09-11|Suisei on Miko’s baseball team
@@ -219,7 +218,6 @@ const englishRows = `
 2025-03-21|Miko recommends Suisei in hair buns
 2025-03-20|Suisei asks for the chiisai jokes to stop
 2025-03-16|Miko retweets miComet art
-2025-03-16|MiComet participate in the Osaka Kansai Expo
 2025-03-16|AZKi asks Suisei for a miComet collab with Iroha, and Suisei gushes about Miko’s boat to her
 2025-03-15|Miko retweets miComet art
 2025-03-14|Miko builds a boat for Suisei on White Day
@@ -234,7 +232,6 @@ const englishRows = `
 2025-03-09|Miko talks about miComet opening and closing holofes
 2025-03-09|Kanade loves miComet
 2025-03-07|Miko reacts to miComet art
-2025-03-07|MiComet figures announced
 2025-03-06|Okayu asks if Suisei is prone to Miko’s insults
 2025-03-05|Miko’s Re:flection MV has the same director as Suisei’s GHOST MV
 2025-03-05|Kanade and Niko observe miComet teetee
@@ -248,7 +245,6 @@ const englishRows = `
 2025-02-27|Miko flirts with Subaru and Subaru asks Suisei for help
 2025-02-27|Suisei gives a piece of Miko to Koyori
 2025-02-27|Miko uses kyou mo kawaii as the example for her tweet
-2025-02-27|MiComet figures
 2025-02-26|Miko appears in a shootout in Suisei’s short
 2025-02-25|Suisei plays Poppy Playtime and refers to Kissy Missy as Miko
 2025-02-24|Miko retweets MaguTako for their anniversary
@@ -274,7 +270,6 @@ const englishRows = `
 2025-02-10|Minecraft
 2025-02-09|Minecraft
 2025-02-09|Kanade tweets about miComet
-2025-02-08|Shiraken collab
 2025-02-08|Daoko, a hardcore 35P, appears on NHK Radio
 2025-02-07|Minecraft
 2025-02-06|Miko retweets miComet art
@@ -291,7 +286,6 @@ const englishRows = `
 2025-01-22|Miko talks about going to the fortune teller with Anemachi and Suisei
 2025-01-22|Hajime and Kanade make cheese fondue with miComet
 2025-01-21|Suisei imagines Miko singing her song Deadpool
-2025-01-20|MiComet card in Holo Hanafuda
 2025-01-14|Suisei talks with Tuki about romance
 2025-01-13|Hololive New Year Game Festival
 2025-01-11|Flower Rhapsody is played on NHK radio
