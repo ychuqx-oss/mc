@@ -395,6 +395,30 @@ function nextEnglishTitle(date: string, fallback: string) {
 }
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-131': {
+    link: 'https://www.youtube.com/watch?v=sNhmjGRjpT0',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-136': {
+    link: 'https://www.youtube.com/watch?v=SFgbZD3fcSA https://www.youtube.com/watch?v=6nT1uh2UCPg',
+    source: 'Miko official YouTube original streams',
+  },
+  'c2-2025-137': {
+    link: 'https://www.youtube.com/watch?v=gc1WDFZX2rc',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-139': {
+    link: 'https://www.youtube.com/watch?v=u8HQOTddXeE',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-140': {
+    link: 'https://www.youtube.com/watch?v=u8HQOTddXeE',
+    source: 'Suisei official YouTube original stream',
+  },
+  'c2-2025-141': {
+    link: 'https://www.youtube.com/watch?v=nSs9E_Zqpps',
+    source: 'Miko official YouTube original stream',
+  },
   'c2-2025-157': {
     link: 'https://www.youtube.com/watch?v=7VMY4xcxeHM',
     source: 'Miko official YouTube original stream',
