@@ -51,7 +51,7 @@ const patched = baseData.map((story) => {
 const additions = [
   {
     id: 'c2-2026-109',
-    displayId: '26-C2-109',
+    displayId: '26-C2-43',
     date: '2026-07-28',
     phase: 6,
     side: 'miko' as const,
@@ -68,24 +68,24 @@ const additions = [
   },
   {
     id: 'c2-2026-110',
-    displayId: '26-C2-110',
+    displayId: '26-C2-42',
     date: '2026-07-31',
     phase: 6,
     side: 'shared' as const,
     emoji: '💛',
     type: 'Stream',
-    title: 'Okayu Collaborates with Koyori and MiComet',
-    titleZh: '貓又小粥與博衣小夜璃及miComet連動',
-    titleEn: 'Okayu Collaborates with Koyori and MiComet',
-    ctx: 'Okayu joined Koyori, Miko, and Suisei for a group collaboration.',
-    ctxZh: '貓又小粥與博衣小夜璃、Miko及星街進行多人連動。',
-    ctxEn: 'Okayu joined Koyori, Miko, and Suisei for a group collaboration.',
+    title: 'Okayu Traps and Eliminates Koyori in Machine Party as MiComet Look On',
+    titleZh: '《Machine Party》小粥用狠招坑殺小夜璃，miComet當場看傻',
+    titleEn: 'Okayu Traps and Eliminates Koyori in Machine Party as MiComet Look On',
+    ctx: 'Okayu, Koyori, Miko, and Suisei played Machine Party. During a sudden-death round, Okayu exploited the game mechanics to trap and eliminate Koyori, leaving Miko and Suisei stunned by how ruthless the play was.',
+    ctxZh: '小粥、博衣小夜璃、Miko與星街一起遊玩《Machine Party》。在輸掉就會立刻死亡的環節，小粥利用遊戲機制把小夜璃困住並淘汰，狠到讓Miko與星街當場看傻；四人之後也持續互相陷害、狙擊。',
+    ctxEn: 'Okayu, Koyori, Miko, and Suisei played Machine Party. During a sudden-death round, Okayu exploited the game mechanics to trap and eliminate Koyori, leaving Miko and Suisei stunned by how ruthless the play was.',
     link: '',
     source: '2026 compendium update',
   },
   {
     id: 'c2-2026-111',
-    displayId: '26-C2-111',
+    displayId: '26-C2-40',
     date: '2026-08-01',
     phase: 6,
     side: 'shared' as const,
@@ -102,7 +102,7 @@ const additions = [
   },
   {
     id: 'c2-2026-112',
-    displayId: '26-C2-112',
+    displayId: '26-C2-34',
     date: '2026-08-06',
     phase: 6,
     side: 'others' as const,
@@ -119,7 +119,7 @@ const additions = [
   },
   {
     id: 'c2-2026-113',
-    displayId: '26-C2-113',
+    displayId: '26-C2-31',
     date: '2026-08-07',
     phase: 6,
     side: 'suisei' as const,
@@ -136,7 +136,7 @@ const additions = [
   },
   {
     id: 'c2-2026-114',
-    displayId: '26-C2-114',
+    displayId: '26-C2-28',
     date: '2026-08-17',
     phase: 6,
     side: 'shared' as const,
@@ -153,7 +153,7 @@ const additions = [
   },
   {
     id: 'c2-2026-115',
-    displayId: '26-C2-115',
+    displayId: '26-C2-39',
     date: '2026-08-02',
     phase: 6,
     side: 'miko' as const,
@@ -170,7 +170,7 @@ const additions = [
   },
   {
     id: 'c2-2026-116',
-    displayId: '26-C2-116',
+    displayId: '26-C2-38',
     date: '2026-08-03',
     phase: 6,
     side: 'others' as const,
@@ -187,7 +187,7 @@ const additions = [
   },
   {
     id: 'c2-2026-117',
-    displayId: '26-C2-117',
+    displayId: '26-C2-37',
     date: '2026-08-04',
     phase: 6,
     side: 'miko' as const,
@@ -204,7 +204,7 @@ const additions = [
   },
   {
     id: 'c2-2026-118',
-    displayId: '26-C2-118',
+    displayId: '26-C2-35',
     date: '2026-08-06',
     phase: 6,
     side: 'miko' as const,
@@ -221,7 +221,7 @@ const additions = [
   },
   {
     id: 'c2-2026-119',
-    displayId: '26-C2-119',
+    displayId: '26-C2-36',
     date: '2026-08-06',
     phase: 6,
     side: 'others' as const,
@@ -238,7 +238,7 @@ const additions = [
   },
   {
     id: 'c2-2026-120',
-    displayId: '26-C2-120',
+    displayId: '26-C2-32',
     date: '2026-08-07',
     phase: 6,
     side: 'miko' as const,
@@ -255,7 +255,7 @@ const additions = [
   },
   {
     id: 'c2-2026-121',
-    displayId: '26-C2-121',
+    displayId: '26-C2-33',
     date: '2026-08-07',
     phase: 6,
     side: 'others' as const,
@@ -272,7 +272,7 @@ const additions = [
   },
   {
     id: 'c2-2026-122',
-    displayId: '26-C2-122',
+    displayId: '26-C2-30',
     date: '2026-08-09',
     phase: 6,
     side: 'suisei' as const,
@@ -289,7 +289,7 @@ const additions = [
   },
   {
     id: 'c2-2026-123',
-    displayId: '26-C2-123',
+    displayId: '26-C2-27',
     date: '2026-08-18',
     phase: 6,
     side: 'miko' as const,
@@ -306,7 +306,7 @@ const additions = [
   },
   {
     id: 'c2-2026-124',
-    displayId: '26-C2-124',
+    displayId: '26-C2-26',
     date: '2026-08-22',
     phase: 6,
     side: 'miko' as const,
@@ -323,7 +323,7 @@ const additions = [
   },
   {
     id: 'c2-2026-125',
-    displayId: '26-C2-125',
+    displayId: '26-C2-25',
     date: '2026-08-24',
     phase: 6,
     side: 'shared' as const,
@@ -340,7 +340,7 @@ const additions = [
   },
   {
     id: 'c2-2026-126',
-    displayId: '26-C2-126',
+    displayId: '26-C2-22',
     date: '2026-08-27',
     phase: 6,
     side: 'miko' as const,
@@ -357,7 +357,7 @@ const additions = [
   },
   {
     id: 'c2-2026-127',
-    displayId: '26-C2-127',
+    displayId: '26-C2-23',
     date: '2026-08-27',
     phase: 6,
     side: 'suisei' as const,
@@ -374,7 +374,7 @@ const additions = [
   },
   {
     id: 'c2-2026-128',
-    displayId: '26-C2-128',
+    displayId: '26-C2-20',
     date: '2026-09-05',
     phase: 6,
     side: 'others' as const,
@@ -391,7 +391,7 @@ const additions = [
   },
   {
     id: 'c2-2026-129',
-    displayId: '26-C2-129',
+    displayId: '26-C2-19',
     date: '2026-09-06',
     phase: 6,
     side: 'miko' as const,
@@ -408,7 +408,7 @@ const additions = [
   },
   {
     id: 'c2-2026-130',
-    displayId: '26-C2-130',
+    displayId: '26-C2-17',
     date: '2026-09-09',
     phase: 6,
     side: 'miko' as const,
@@ -425,7 +425,7 @@ const additions = [
   },
   {
     id: 'c2-2026-131',
-    displayId: '26-C2-131',
+    displayId: '26-C2-15',
     date: '2026-09-13',
     phase: 6,
     side: 'miko' as const,
@@ -442,7 +442,7 @@ const additions = [
   },
   {
     id: 'c2-2026-132',
-    displayId: '26-C2-132',
+    displayId: '26-C2-14',
     date: '2026-09-14',
     phase: 6,
     side: 'suisei' as const,
@@ -459,7 +459,7 @@ const additions = [
   },
   {
     id: 'c2-2026-133',
-    displayId: '26-C2-133',
+    displayId: '26-C2-10',
     date: '2026-09-23',
     phase: 6,
     side: 'shared' as const,
@@ -476,7 +476,7 @@ const additions = [
   },
   {
     id: 'c2-2026-134',
-    displayId: '26-C2-134',
+    displayId: '26-C2-9',
     date: '2026-09-24',
     phase: 6,
     side: 'shared' as const,
@@ -494,7 +494,7 @@ const additions = [
 
   {
     id: 'c2-2026-135',
-    displayId: '26-C2-135',
+    displayId: '26-C2-12',
     date: '2026-09-15',
     phase: 6,
     side: 'miko' as const,
@@ -511,7 +511,7 @@ const additions = [
   },
   {
     id: 'c2-2026-136',
-    displayId: '26-C2-136',
+    displayId: '26-C2-24',
     date: '2026-08-27',
     phase: 6,
     side: 'others' as const,
@@ -528,7 +528,7 @@ const additions = [
   },
   {
     id: 'c2-2026-137',
-    displayId: '26-C2-137',
+    displayId: '26-C2-7',
     date: '2026-09-25',
     phase: 6,
     side: 'shared' as const,
@@ -545,7 +545,7 @@ const additions = [
   },
   {
     id: 'c2-2026-161',
-    displayId: '26-C2-161',
+    displayId: '26-C2-8',
     date: '2026-09-25',
     phase: 6,
     side: 'shared' as const,
@@ -562,7 +562,7 @@ const additions = [
   },
   {
     id: 'c2-2026-138',
-    displayId: '26-C2-138',
+    displayId: '26-C2-4',
     date: '2026-09-29',
     phase: 6,
     side: 'suisei' as const,
@@ -579,7 +579,7 @@ const additions = [
   },
   {
     id: 'c2-2026-139',
-    displayId: '26-C2-139',
+    displayId: '26-C2-3',
     date: '2026-10-01',
     phase: 6,
     side: 'shared' as const,
@@ -597,7 +597,7 @@ const additions = [
 
   {
     id: 'c2-2026-140',
-    displayId: '26-C2-140',
+    displayId: '26-C2-18',
     date: '2026-09-08',
     phase: 6,
     side: 'miko' as const,
@@ -614,7 +614,7 @@ const additions = [
   },
   {
     id: 'c2-2026-141',
-    displayId: '26-C2-141',
+    displayId: '26-C2-13',
     date: '2026-09-15',
     phase: 6,
     side: 'others' as const,
@@ -631,7 +631,7 @@ const additions = [
   },
   {
     id: 'c2-2026-142',
-    displayId: '26-C2-142',
+    displayId: '26-C2-5',
     date: '2026-09-26',
     phase: 6,
     side: 'miko' as const,
@@ -648,7 +648,7 @@ const additions = [
   },
   {
     id: 'c2-2026-143',
-    displayId: '26-C2-143',
+    displayId: '26-C2-6',
     date: '2026-09-26',
     phase: 6,
     side: 'miko' as const,
@@ -665,7 +665,7 @@ const additions = [
   },
   {
     id: 'c2-2026-144',
-    displayId: '26-C2-144',
+    displayId: '26-C2-2',
     date: '2026-10-02',
     phase: 6,
     side: 'miko' as const,
@@ -682,7 +682,7 @@ const additions = [
   },
   {
     id: 'c2-2026-145',
-    displayId: '26-C2-145',
+    displayId: '26-C2-1',
     date: '2026-10-03',
     phase: 6,
     side: 'miko' as const,
@@ -700,7 +700,7 @@ const additions = [
 
   {
     id: 'c2-2026-146',
-    displayId: '26-C2-146',
+    displayId: '26-C2-21',
     date: '2026-09-03',
     phase: 6,
     side: 'shared' as const,
@@ -717,7 +717,7 @@ const additions = [
   },
   {
     id: 'c2-2026-147',
-    displayId: '26-C2-147',
+    displayId: '26-C2-16',
     date: '2026-09-10',
     phase: 6,
     side: 'shared' as const,
@@ -735,7 +735,7 @@ const additions = [
 
   {
     id: 'c2-2026-148',
-    displayId: '26-C2-148',
+    displayId: '26-C2-98',
     date: '2026-05-05',
     phase: 6,
     side: 'shared' as const,
@@ -753,7 +753,7 @@ const additions = [
 
   {
     id: 'c2-2026-149',
-    displayId: '26-C2-149',
+    displayId: '26-C2-62',
     date: '2026-06-29',
     phase: 6,
     side: 'miko' as const,
@@ -770,7 +770,7 @@ const additions = [
   },
   {
     id: 'c2-2026-150',
-    displayId: '26-C2-150',
+    displayId: '26-C2-61',
     date: '2026-07-01',
     phase: 6,
     side: 'miko' as const,
@@ -787,7 +787,7 @@ const additions = [
   },
   {
     id: 'c2-2026-151',
-    displayId: '26-C2-151',
+    displayId: '26-C2-56',
     date: '2026-07-05',
     phase: 6,
     side: 'miko' as const,
@@ -804,7 +804,7 @@ const additions = [
   },
   {
     id: 'c2-2026-152',
-    displayId: '26-C2-152',
+    displayId: '26-C2-29',
     date: '2026-08-17',
     phase: 6,
     side: 'miko' as const,
@@ -821,7 +821,7 @@ const additions = [
   },
   {
     id: 'c2-2026-153',
-    displayId: '26-C2-153',
+    displayId: '26-C2-11',
     date: '2026-09-23',
     phase: 6,
     side: 'suisei' as const,
@@ -839,7 +839,7 @@ const additions = [
 
   {
     id: 'c2-2026-154',
-    displayId: '26-C2-154',
+    displayId: '26-C2-101',
     date: '2026-04-26',
     phase: 6,
     side: 'miko' as const,
@@ -856,7 +856,7 @@ const additions = [
   },
   {
     id: 'c2-2026-155',
-    displayId: '26-C2-155',
+    displayId: '26-C2-54',
     date: '2026-07-07',
     phase: 6,
     side: 'others' as const,
@@ -873,7 +873,7 @@ const additions = [
   },
   {
     id: 'c2-2026-156',
-    displayId: '26-C2-156',
+    displayId: '26-C2-44',
     date: '2026-07-28',
     phase: 6,
     side: 'miko' as const,
@@ -890,7 +890,7 @@ const additions = [
   },
   {
     id: 'c2-2026-157',
-    displayId: '26-C2-157',
+    displayId: '26-C2-41',
     date: '2026-08-01',
     phase: 6,
     side: 'suisei' as const,
@@ -908,7 +908,7 @@ const additions = [
 
   {
     id: 'c2-2026-158',
-    displayId: '26-C2-158',
+    displayId: '26-C2-47',
     date: '2026-07-23',
     phase: 6,
     side: 'miko' as const,
@@ -925,7 +925,7 @@ const additions = [
   },
   {
     id: 'c2-2026-159',
-    displayId: '26-C2-159',
+    displayId: '26-C2-48',
     date: '2026-07-23',
     phase: 6,
     side: 'shared' as const,
@@ -986,8 +986,6 @@ const verifiedSourceLinks2026: Record<string, string> = {
   'c2-2026-098': 'https://www.youtube.com/watch?v=HE322pp9O74',
   'c2-2026-099': 'https://www.youtube.com/watch?v=HE322pp9O74',
   'c2-2026-103': 'https://www.youtube.com/watch?v=-vfiGfZ--ZE',
-  'c2-2026-092': 'https://www.youtube.com/watch?v=WnHifQJcsSg',
-  'c2-2026-086': 'https://www.youtube.com/watch?v=uWyzU5Z-XMQ',
   'c2-2026-094': 'https://www.youtube.com/watch?v=zUH_op63j54',
   'c2-2026-104': 'https://www.youtube.com/watch?v=Rop3hoatYis',
   'c2-2026-072': 'https://www.youtube.com/watch?v=jVogB33eEEA',
@@ -1048,12 +1046,36 @@ const verifiedSourceLinks2026: Record<string, string> = {
 
 };
 
+const classificationOverrides2026: Record<string, {
+  side?: 'miko' | 'suisei' | 'shared' | 'others';
+  sharedCategory?: 'gen0' | 'shiraken' | 'oneOnOne' | 'group';
+  reciprocal?: boolean;
+  supportCategory?: 'fubuki';
+  emoji?: string;
+}> = {
+  'c2-2026-141': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
+  'c2-2026-128': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
+  'c2-2026-068': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
+  'c2-2026-093': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
+  'c2-2026-035': { side: 'miko', emoji: '🌸' },
+  'c2-2026-103': { side: 'suisei', emoji: '☄️' },
+};
+
 const withVerifiedSources = [...patched, ...additions].map((story) => {
+  const classification = classificationOverrides2026[story.id] || {};
+  const classifiedStory = {
+    ...story,
+    ...(classification.side ? { side: classification.side } : {}),
+    ...(classification.emoji ? { emoji: classification.emoji } : {}),
+    ...(classification.sharedCategory ? { sharedCategory: classification.sharedCategory } : {}),
+    ...(classification.reciprocal ? { reciprocal: true } : {}),
+    ...(classification.supportCategory ? { supportCategory: classification.supportCategory } : {}),
+  };
   const verified = verifiedSourceLinks2026[story.id];
-  if (!verified) return story;
+  if (!verified) return classifiedStory;
   const links = Array.from(new Set([...(story.link || '').split(/\s+/).filter(Boolean), ...verified.split(/\s+/)]));
   return {
-    ...story,
+    ...classifiedStory,
     link: links.join(' '),
     source: [story.source, verified.includes('holostats.com') ? 'HoloStats cross-check / official YouTube' : /(?:twitter\.com|x\.com)/i.test(verified) ? 'official X' : /(?:youtube\.com|youtu\.be)/i.test(verified) ? 'official YouTube' : 'verified official/web source'].filter(Boolean).join('; '),
   };
