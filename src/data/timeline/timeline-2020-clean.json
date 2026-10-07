@@ -12,7 +12,8 @@
     "ctxZh": "hololive首次全體Live中，Miko與星街同為出演成員，並與時乃空、蘿蔔子、AZKi共同演出《Dream☆Story》。",
     "type": "Event",
     "link": "https://nonstop.hololive.tv/info https://bushiroad-music.com/musics/hoxb-10001/",
-    "source": "hololive 1st fes. official site / Bushiroad Music official discography"
+    "source": "hololive 1st fes. official site / Bushiroad Music official discography",
+    "sharedCategory": "group"
   },
   {
     "id": "s1486",
@@ -147,14 +148,15 @@
     "displayId": "20-06-CLEAN-6",
     "date": "2020-06-27",
     "phase": 2,
-    "side": "others",
-    "emoji": "⭐",
+    "side": "shared",
+    "emoji": "💛",
     "title": "大空昴的Hololiver主張企劃中星街把精靈列成大空昴、Miko與大神澪",
     "titleZh": "大空昴的Hololiver主張企劃中星街把精靈列成大空昴、Miko與大神澪",
     "ctx": "星街參加大空昴的Hololiver主張企劃時，將精靈列成大空昴、Miko與大神澪，成為Miko與星街相關成員印象的一筆助攻紀錄。來源：編年史。",
     "ctxZh": "星街參加大空昴的Hololiver主張企劃時，將精靈列成大空昴、Miko與大神澪，成為Miko與星街相關成員印象的一筆助攻紀錄。來源：編年史。",
     "type": "Stream",
-    "link": "https://www.youtube.com/live/n5gjfie8sQY?si=sDegSdLw03vmITM8&t=2861"
+    "link": "https://www.youtube.com/live/n5gjfie8sQY?si=sDegSdLw03vmITM8&t=2861",
+    "sharedCategory": "group"
   },
   {
     "id": "s1495",
@@ -273,14 +275,15 @@
     "displayId": "20-11-CLEAN-4",
     "date": "2020-11-20",
     "phase": 2,
-    "side": "others",
-    "emoji": "⭐",
+    "side": "shared",
+    "emoji": "💛",
     "title": "湊阿庫婭、大空昴、Miko、星街與白銀諾艾爾進行礦石爭奪PvP",
     "titleZh": "湊阿庫婭、大空昴、Miko、星街與白銀諾艾爾進行礦石爭奪PvP",
     "ctx": "2020年11月20日的星街麥塊直播衍生出礦石爭奪PvP剪輯，湊阿庫婭、大空昴、Miko、星街與白銀諾艾爾等成員同場互動。",
     "ctxZh": "2020年11月20日的星街麥塊直播衍生出礦石爭奪PvP剪輯，湊阿庫婭、大空昴、Miko、星街與白銀諾艾爾等成員同場互動。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=PXsCKJ-u2cw"
+    "link": "https://www.youtube.com/watch?v=PXsCKJ-u2cw",
+    "sharedCategory": "group"
   },
   {
     "id": "official-2020-1221-2ndfes",
