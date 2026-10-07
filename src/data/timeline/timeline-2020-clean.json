@@ -266,5 +266,21 @@
     "ctxZh": "2020年11月20日的星街麥塊直播衍生出礦石爭奪PvP剪輯，湊阿庫婭、大空昴、Miko、星街與白銀諾艾爾等成員同場互動。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=PXsCKJ-u2cw"
+  },
+  {
+    "id": "official-2020-1221-2ndfes",
+    "displayId": "20-12-OFFICIAL-1",
+    "date": "2020-12-21",
+    "phase": 1,
+    "side": "shared",
+    "sharedCategory": "group",
+    "emoji": "💛",
+    "title": "hololive 2nd fes.《Beyond the Stage》中Miko與星街分別出演STAGE1／STAGE2",
+    "titleZh": "hololive 2nd fes.《Beyond the Stage》中Miko與星街分別出演STAGE1／STAGE2",
+    "ctx": "同一場兩日制全體Live中，Miko於12月21日STAGE1出演，星街於12月22日STAGE2出演；兩人並非同一舞台的miComet共演。",
+    "ctxZh": "同一場兩日制全體Live中，Miko於12月21日STAGE1出演，星街於12月22日STAGE2出演；兩人並非同一舞台的miComet共演。",
+    "type": "Event",
+    "link": "https://bushiroad-music.com/musics/hoxb-10002/",
+    "source": "Bushiroad Music official discography / stage setlists"
   }
 ]
