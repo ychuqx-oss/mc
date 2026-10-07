@@ -2,7 +2,7 @@ const rows = `
 c2-2026-001|26-C2-39|2026-07-26|6|miko|🌸|Text|Miko轉推舊miComet粉絲圖|Miko retweets old miComet fanart
 c2-2026-002|26-C2-40|2026-07-23|6|others|⭐|Text|白上吹雪在Hololive Dreams偷看miComet|Fubuki spies on miComet in Hololive Dreams
 c2-2026-003|26-C2-42|2026-07-21|6|miko|🌸|Text|miComet六周年會議紀錄|MiComet 6th anniversary meeting minutes
-c2-2026-004|26-C2-43|2026-07-21|6|shared|💛|Stream|miComet六周年直播|MiComet 6th anniversary
+c2-2026-004|26-C2-43|2026-07-21|6|shared|💛|Stream|miComet六周年逆凸請白上吹雪、尾丸波爾卡與しぐれうい提出新衣裝方案|MiComet asks Fubuki, Polka, and Ui for new matching outfit ideas on their 6th anniversary
 c2-2026-005|26-C2-44|2026-07-19|6|miko|🌸|Text|Miko宣布miComet六周年直播將於7月21日舉行|Miko announces miComet’s 6th anniversary stream will be on July 21
 c2-2026-006|26-C2-45|2026-07-13|6|miko|🌸|Text|Miko轉推睡著的miComet圖|Miko retweets sleepy miComet
 c2-2026-007|26-C2-46|2026-07-07|6|miko|🌸|Stream|Miko等待她的彥星星街|Miko waits for Suisei, her Hikoboshi
@@ -64,31 +64,31 @@ c2-2026-079|26-C2-107|2026-03-11|6|others|⭐|Text|夏色祭轉推星街2019年�
 c2-2026-080|26-C2-108|2026-03-10|6|miko|🌸|Text|Miko轉推被星街娃娃包圍的Miko娃娃圖|Miko retweets a post of a Miko plushie surrounded by Sui plushies
 c2-2026-081|26-C2-109|2026-03-09|6|suisei|☄️|Stream|星街祝賀Miko生日|Suisei celebrates Miko’s birthday
 c2-2026-082|26-C2-110|2026-03-08|6|suisei|☄️|Stream|星街談HoloFes沒有miComet|Suisei talks about no miComet at HoloFes
-c2-2026-083|26-C2-111|2026-03-05|6|miko|🌸|Stream|Miko逆凸待|Miko reverse totsumachi
+c2-2026-083|26-C2-111|2026-03-05|6|miko|🌸|Stream|Miko生日前夕打給星街，兩人談第一次認識彼此與想吃的手料理|On the eve of Miko's birthday, Miko calls Suisei and they talk about when Suisei first noticed her and what home-cooked food she wants
 c2-2026-088|26-C2-112|2026-02-21|6|miko|🌸|Text|Miko送花籃給星街演唱會|Miko sends a flower stand to Suisei’s concert
 c2-2026-089|26-C2-113|2026-02-17|6|suisei|☄️|Text|星街拍下Miko屁股照|Suisei takes butt shots of Miko
 c2-2026-090|26-C2-114|2026-02-17|6|miko|🌸|Text|Miko轉推miComet圖|Miko retweets miComet art
 c2-2026-091|26-C2-115|2026-02-17|6|others|⭐|Stream|蘿蔔子見到miComet|Robocco meets with miComet
-c2-2026-093|26-C2-116|2026-02-14|6|shared|💛|Stream|miComet情人節直播|MiComet Valentine’s Day stream
+c2-2026-093|26-C2-116|2026-02-14|6|shared|💛|Stream|miComet公開第二套成對新衣裝並進行VR凸待|MiComet reveal their second matching outfits and hold a VR call-in
 c2-2026-096|26-C2-117|2026-02-09|6|miko|🌸|Stream|Miko在與常闇永遠的直播中一直提到星街|Miko keeps mentioning Suisei in her stream with Towa
 c2-2026-097|26-C2-118|2026-01-30|6|miko|🌸|Stream|Miko和Biji派對一起看很多《Orb》|Miko watches a lot of the anime Orb with her bijipa
 c2-2026-098|26-C2-119|2026-01-29|6|miko|🌸|Stream|Miko驚訝星街現在能吃更多蔬菜|Miko is surprised that Suisei can eat more vegetables now
 c2-2026-099|26-C2-120|2026-01-28|6|miko|🌸|Text|Miko在星街家吃晚餐，並成為Biji派對成員|Miko has dinner at Suisei’s place; Miko is now “bijipa”
-c2-2026-100|26-C2-121|2026-01-24|6|shared|💛|Stream|Hololive新春遊戲祭|Holo New Year Game Festival
+c2-2026-100|26-C2-121|2026-01-24|6|shared|💛|Stream|Miko與星街同屬花組參加新春遊戲祭《瑪利歐賽車世界》|Miko and Suisei compete on Team Flower in the New Year Game Festival's Mario Kart World event
 c2-2026-101|26-C2-122|2026-01-23|6|miko|🌸|Text|Miko轉推miComet圖|Miko retweets miComet art
 c2-2026-103|26-C2-123|2026-01-20|6|others|⭐|Stream|Miko數位排毒期間，星街用LINE轉傳海外35P推文支持|During Miko’s digital detox, Suisei sends overseas 35P Twitter support to Miko via LINE
 c2-2026-104|26-C2-124|2026-01-17|6|suisei|☄️|Stream|星街很了解Miko|Suisei knows a lot about Miko
 c2-2026-106|26-C2-125|2026-01-03|6|miko|🌸|Stream|Miko在新年關係圖把星街寫成「會送飯的妖精」，並寄出年賀狀|Miko labels Suisei as a food-delivering fairy on her New Year relationship chart and sends her a New Year card
 c2-2026-107|26-C2-126|2026-01-02|6|miko|🌸|Text|Miko發推miComet圖|Miko tweets miComet art
-c2-2026-108|26-C2-127|2026-01-01|6|shared|💛|Stream|miComet五子棋對決|MiComet gomoku battle
+c2-2026-108|26-C2-127|2026-01-01|6|shared|💛|Stream|新春五子棋大賽原定Miko首戰星街，但因賽程事故未能完成miComet對決|Miko was scheduled to face Suisei in the New Year Gomoku tournament, but the miComet match did not happen after event trouble
 `.trim();
 
-function zhBodyFor(title: string, date: string) {
-  return `${date.replace(/-/g, '/')}，${title}。`;
+function zhBodyFor(title: string, _date: string) {
+  return `${title}。`;
 }
 
-function enBodyFor(title: string, date: string) {
-  return `${date.replace(/-/g, '/')}, ${title}.`;
+function enBodyFor(title: string, _date: string) {
+  return `${title}.`;
 }
 
 const data = rows.split('\n').map((row) => {
