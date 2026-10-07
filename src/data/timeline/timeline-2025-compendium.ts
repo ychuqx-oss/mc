@@ -395,6 +395,30 @@ function nextEnglishTitle(date: string, fallback: string) {
 }
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-142': {
+    link: 'https://www.youtube.com/watch?v=f_zmsF15Fkk',
+    source: 'Miko official YouTube Short',
+  },
+  'c2-2025-195': {
+    link: 'https://www.youtube.com/watch?v=kFOd-9Z1j2w',
+    source: 'Miko official YouTube Short',
+  },
+  'c2-2025-200': {
+    link: 'https://www.youtube.com/watch?v=x0Fnq6YzCoY',
+    source: 'Miko official YouTube Short',
+  },
+  'c2-2025-220': {
+    link: 'https://hololivepro.com/news/20250317-01-223/',
+    source: 'hololive production official Osaka-Kansai Expo announcement',
+  },
+  'c2-2025-237': {
+    link: 'https://www.youtube.com/watch?v=W9AZc33ybIw https://www.youtube.com/watch?v=IKKar5SS29E',
+    source: 'Miko and Suisei official YouTube MVs; both credit mokoppe for video',
+  },
+  'c2-2025-247': {
+    link: 'https://www.youtube.com/watch?v=KXejezs5vQY',
+    source: 'Koyori official YouTube original stream',
+  },
   'c2-2025-232': {
     link: 'https://www.youtube.com/watch?v=VzGNuQHy5rk',
     source: 'Miko official YouTube original stream',
