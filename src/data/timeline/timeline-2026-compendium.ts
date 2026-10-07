@@ -882,7 +882,7 @@ const verifiedSourceLinks2026: Record<string, string> = {
   'c2-2026-056': 'https://www.youtube.com/watch?v=6iFmSqzmCR4',
   'c2-2026-018': 'https://www.youtube.com/watch?v=fvVFdWOHOdU',
   'c2-2026-067': 'https://www.youtube.com/watch?v=z4wxlkccQZs',
-  'c2-2026-073': 'https://x.com/nhk_vtuberradio/status/2035280560646668296',
+  'c2-2026-073': 'https://radiko.jp/mobile/events/13090329 https://x.com/nhk_vtuberradio/status/2035280560646668296',
   'c2-2026-106': 'https://www.youtube.com/watch?v=ldr3Do5Ucy0',
   'c2-2026-091': 'https://www.youtube.com/watch?v=McRfuxd3JUQ',
   'c2-2026-097': 'https://www.youtube.com/watch?v=HE322pp9O74',
@@ -990,6 +990,7 @@ const withVerifiedSources = [...patched, ...additions].map((story) => {
   const classifiedStory = {
     ...story,
     ...(story.id === 'c2-2026-005' ? { sourceStatus: 'missing' as const } : {}),
+    ...(['c2-2026-073', 'c2-2026-088'].includes(story.id) ? { sourceStatus: 'indexed' as const } : {}),
     ...(classification.side ? { side: classification.side } : {}),
     ...(classification.emoji ? { emoji: classification.emoji } : {}),
     ...(classification.sharedCategory ? { sharedCategory: classification.sharedCategory } : {}),
@@ -1002,7 +1003,7 @@ const withVerifiedSources = [...patched, ...additions].map((story) => {
   return {
     ...classifiedStory,
     link: links.join(' '),
-    source: [story.source, /(?:twitter\.com|x\.com|t\.co)/i.test(verified) ? 'official X' : /(?:youtube\.com|youtu\.be)/i.test(verified) ? 'official YouTube original source' : 'verified official source'].filter(Boolean).join('; '),
+    source: [story.source, verified.includes('radiko.jp') ? 'NHK/radiko original programme listing' : /(?:twitter\.com|x\.com)/i.test(verified) ? 'official X' : /t\.co\//i.test(verified) ? 'unresolved X shortlink' : /(?:youtube\.com|youtu\.be)/i.test(verified) ? 'official YouTube original source' : 'verified official source'].filter(Boolean).join('; '),
   };
 });
 
