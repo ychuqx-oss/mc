@@ -886,6 +886,14 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://x.com/suisei_hosimati/status/1945488161486102632',
     source: 'Suisei official X post',
   },
+  'c2-2025-250': {
+    link: 'https://www.youtube.com/shorts/fugWorfBYF0',
+    source: 'Suisei official YouTube Short',
+  },
+  'c2-2025-166': {
+    link: 'https://www.youtube.com/shorts/Bpsi9wTFZJY',
+    source: 'Suisei official YouTube Short',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
