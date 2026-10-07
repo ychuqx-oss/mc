@@ -63,9 +63,46 @@ Timeline stories may contain:
 - `ctxZh`
 - `ctxEn`
 - `link`
-- `source`
+- `source` — legacy free-text source note; keep only for backward compatibility
+- `sources` — structured source objects: `url`, `kind`, optional `label`, optional `official`
+- `sourceStatus` — `verified`, `indexed`, `fallback`, or `missing`
+- `eventId` — optional shared event/stream identifier used to link distinct stories from the same stream or event
+- `reciprocal` — optional explicit boolean for whether a Miko/Suisei interaction is genuinely two-way
+- `classificationSource` — `explicit` or `legacy-auto`; generated legacy fallback metadata
 
 Timeline stories do not use image fields. Do not add `image`, `imageUrl`, `thumbnail`, or `thumbnailUrl` to story records or rendering logic.
+
+### Structured source behavior
+
+New or manually edited records should use `sources[]` instead of placing multiple URLs into one whitespace-separated `link` string.
+
+Legacy `link` remains readable for older records and is converted into structured sources during normalization. Do not mass-delete legacy links solely for migration.
+
+Source kinds currently include:
+
+- `youtube`
+- `x`
+- `official`
+- `news`
+- `index`
+- `archive`
+- `reference`
+- `other`
+
+Source-status meaning:
+
+- `verified` — an official/original source is present.
+- `indexed` — a story-specific source or trustworthy index/media corroboration exists, but it is not marked official/original.
+- `fallback` — only the global reference document is available.
+- `missing` — no usable source is known.
+
+The fallback reference document must never be presented as equivalent to a story-specific verified source.
+
+### Shared-event behavior
+
+Different miComet moments from the same stream may remain separate stories when their substance differs. Use the same `eventId` for those records.
+
+The UI may also infer a legacy event group from a shared original YouTube video ID when `eventId` is absent. Explicit `eventId` is preferred because multi-POV events may use different YouTube URLs.
 
 ### Shared-category behavior
 
@@ -83,6 +120,14 @@ For automatic 1v1 vs Group classification, use the story headline/title as the p
 **1v1 requires reciprocal interaction.** A one-sided mention, praise, reply, watch, retweet, announcement, support message, or other action where the other party does not respond/interact must not be classified as 1v1. In particular, **one person replying once is still not 1v1 if the other person does not reply back**. The record should instead be attributed to the acting side (Miko or Suisei); if the actor cannot be identified safely, classify it as Support/Others. Reciprocal evidence includes mutual replies, direct conversation, playing together, a two-person collab, dual POV, a call, a date, a watchalong, joint travel/meal, direct back-and-forth, or another clearly two-way interaction. Generic wording such as "interaction" by itself is not sufficient evidence of reciprocity.
 
 If a story has an explicit `sharedCategory`, that manual value takes priority over automatic classification, but manually assigning `oneOnOne` still requires evidence that both Miko and Suisei actually interacted.
+
+For new records, classification should be data-driven rather than regex-driven:
+- set `side` explicitly;
+- for `side: 'shared'`, set `sharedCategory` explicitly;
+- when `sharedCategory: 'oneOnOne'`, set `reciprocal: true` only when the source clearly shows two-way interaction;
+- use runtime regex classification only as a legacy fallback for old records without explicit metadata.
+
+Normalized records expose `classificationSource` so legacy auto-classified data can be identified and gradually migrated.
 
 Original `side: 'shared'` records may be reassigned to Miko/Suisei/Support when they are one-sided; only genuinely mutual or multi-person shared events remain `shared`.
 
@@ -150,6 +195,7 @@ Before adding a story:
 
 ## Source handling
 
+- New timeline work should write structured `sources[]`; `link` is legacy compatibility only.
 - Preserve user-provided URLs when available.
 - Do not fabricate URLs.
 - Do not expand truncated sources by guessing.
@@ -162,7 +208,7 @@ Before adding a story:
   5. The public miComet Archive at https://micomet.neocities.org/ for 2020–2023 collab/event source recovery; store the original stream/event URL listed by the archive rather than an image.
   6. Other verified story-specific sources.
   7. If no usable story-specific URL exists, use the fallback reference document below.
-- If a story has no usable source URL, use this reference document as its fallback `link`: https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub
+- If a story has no usable story-specific source, expose the reference document as a structured `reference` source and mark the story `fallback`; do not treat that document as verified evidence: https://docs.google.com/document/d/e/2PACX-1vRcUa0y4lpqboc3v6Q-8qNu5a8v8TX9EkSqbQfjSdUhLcbhANp7XBYfFc2jdZTkzgwMN1P18kNjuP-U/pub
 - A real story-specific source always takes priority over the fallback reference document.
 - For active `shared + Stream` stories from 2019–2026, append the HoloStats miComet pair page and HoloIndex Miko×Suisei collab page as secondary cross-check references. These secondary index pages supplement, never replace, a known story-specific official/source URL.
 - When HoloStats exposes a definite stream/video ID for an exact story, store the official YouTube URL first and the matching HoloStats stream page as a secondary reference.
@@ -215,3 +261,18 @@ If their instructions conflict with this file, update this file first or follow 
 ## Maintenance rule
 
 Whenever the site's architecture, data flow, naming, update placement, or restoration workflow changes, update `docs/site-logic.md` in the same change so future work continues from the correct rules.
+
+
+## Homepage database UI
+
+The homepage is a searchable chronology/database first and a statistics dashboard second.
+
+Required homepage behavior:
+- Search and primary filters appear immediately after the hero.
+- Filters include year, month, category, story type, and source trust.
+- The source-completeness table shows totals by year and separates verified, indexed, and pending/fallback records.
+- Clicking a completeness count may filter the story list to that year/source state.
+- Story browsing supports Card and Timeline modes.
+- Story browsing supports newest-first and oldest-first sorting.
+- Stories sharing an `eventId` or legacy inferred original YouTube event key expose related same-stream/event stories.
+- Statistics/charts are secondary content and may be collapsed below the searchable story list.
