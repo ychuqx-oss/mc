@@ -523,7 +523,9 @@
     "ctxZh": "Miko與星街突發麥塊互動中，星街安慰Miko，兩人也約好一起蓋鬼屋。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=Fuq9__yqZxw",
-    "source": "Detailed timeline source dataset"
+    "source": "Detailed timeline source dataset",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "s1549",
@@ -1333,21 +1335,6 @@
     "ctxZh": "星街在RADIO中提到Miko教殭屍飛與比較梗，留下廣播中的Miko話題。",
     "type": "Audio",
     "link": "https://www.youtube.com/watch?v=sgmJGFrmRmI&t=4667s",
-    "source": "Detailed timeline source dataset"
-  },
-  {
-    "id": "s1596",
-    "displayId": "21-10-BBQ-9",
-    "date": "2021-10-31",
-    "phase": 2,
-    "side": "shared",
-    "emoji": "💛",
-    "title": "萬聖節miComet相關直播紀錄",
-    "titleZh": "萬聖節miComet相關直播紀錄",
-    "ctx": "萬聖節期間的直播中出現miComet相關互動，被整理為10月底的共同紀錄。",
-    "ctxZh": "萬聖節期間的直播中出現miComet相關互動，被整理為10月底的共同紀錄。",
-    "type": "Stream",
-    "link": "https://www.youtube.com/watch?v=IUY1esA47oQ",
     "source": "Detailed timeline source dataset"
   },
   {
