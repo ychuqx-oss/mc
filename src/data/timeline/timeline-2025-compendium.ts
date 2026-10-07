@@ -59,6 +59,7 @@ const englishRows = `
 2025-10-12|Miko retweets miComet art
 2025-10-08|Miko comments on fanart
 2025-10-03|FubuMio MiComet
+2025-10-03|KAI-YOU reports on miComet’s new song Lollipop and its creators
 2025-10-02|MiComet have an amusement park date with matching outfits and reveal a new original song
 2025-10-02|Miko backseats Suisei in TCG Card Shop Simulator
 2025-09-29|MiComet start teasing something
@@ -391,6 +392,14 @@ function nextEnglishTitle(date: string, fallback: string) {
 }
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-055': {
+    link: 'https://www.youtube.com/watch?v=mh9w_R_2TaI https://www.youtube.com/watch?v=Jz2SeJDfml8',
+    source: 'Suisei official YouTube original stream / Miko official Lollipop MV',
+  },
+  'c2-2025-269': {
+    link: 'https://kai-you.net/article/93532',
+    source: 'KAI-YOU news report',
+  },
   'c2-2025-231': {
     link: 'https://hololive.hololivepro.com/news/20250313-02-72/',
     source: 'hololive 6th fes. official DAY2 report',
