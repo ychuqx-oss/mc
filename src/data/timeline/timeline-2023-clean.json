@@ -221,7 +221,9 @@
     "ctx": "Miko與星街使用mocopi遊玩《Nintendo Switch Sports》，這場直播也成為3月大量miComet剪輯的來源。",
     "ctxZh": "Miko與星街使用mocopi遊玩《Nintendo Switch Sports》，這場直播也成為3月大量miComet剪輯的來源。",
     "type": "Stream",
-    "link": "https://www.youtube.com/watch?v=lQojdq6KdsE"
+    "link": "https://www.youtube.com/watch?v=lQojdq6KdsE",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "s230015",
@@ -277,7 +279,8 @@
     "ctxZh": "hololive 4th fes. Our Bright Parade DAY1中，Miko與星街和不知火建設成員共同演出《群青讃歌》。",
     "type": "Event",
     "link": "https://hololive.hololivepro.com/news/20221202-03-8/",
-    "source": "hololive official event announcement / lineup cross-check"
+    "source": "hololive official event announcement / lineup cross-check",
+    "sharedCategory": "group"
   },
   {
     "id": "official-2023-0322-ws15-ambassadors",
@@ -478,7 +481,9 @@
     "ctx": "Miko與星街進行一格空島miComet第二天，兩人靠商業之力繼續生存。",
     "ctxZh": "Miko與星街進行一格空島miComet第二天，兩人靠商業之力繼續生存。",
     "type": "Stream",
-    "link": "https://www.youtube.com/watch?v=K5XLFq8XTX4"
+    "link": "https://www.youtube.com/watch?v=K5XLFq8XTX4",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "s230021",
@@ -683,8 +688,8 @@
     "displayId": "23-08-OFFICIAL-2",
     "date": "2023-08-18",
     "phase": 4,
-    "side": "shared",
-    "emoji": "💛",
+    "side": "miko",
+    "emoji": "🌸",
     "title": "miComet發布《アイドル》雙人舞蹈Short",
     "titleZh": "miComet發布《アイドル》雙人舞蹈Short",
     "ctx": "Miko官方頻道公開miComet兩人演出《アイドル》副歌段落的Short，作為5周年Live共演的官方延伸內容。",
@@ -722,7 +727,8 @@
     "ctxZh": "《hololive Summer 2023 3DLIVE Splash Party!》Day1「Sunshine」於8月26日舉行，官方出演名單同時包含櫻巫女與星街彗星。",
     "type": "Event",
     "link": "https://hololive.hololivepro.com/news/20230703-01-181/",
-    "source": "hololive official news"
+    "source": "hololive official news",
+    "sharedCategory": "group"
   },
   {
     "id": "s230029",
@@ -757,8 +763,8 @@
     "displayId": "23-08-OFFICIAL-4",
     "date": "2023-08-31",
     "phase": 4,
-    "side": "shared",
-    "emoji": "💛",
+    "side": "miko",
+    "emoji": "🌸",
     "title": "miComet正式公開《アイドル》Cover",
     "titleZh": "miComet正式公開《アイドル》Cover",
     "ctx": "Miko官方頻道公開miComet翻唱YOASOBI《アイドル》的完整Cover，延續8月1日Miko 5周年Live中的雙人演出。",
@@ -838,7 +844,9 @@
     "ctxZh": "Miko與星街以miComet名義回顧Singapore海外出差，分享旅途中未公開的故事，並展示替Hololive成員挑選的伴手禮。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=7MK-wNrL8C4",
-    "source": "Miko official YouTube"
+    "source": "Miko official YouTube",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "s230034",
@@ -868,7 +876,9 @@
     "ctxZh": "miComet進入《Sugar Rush》與Weiß Schwarz 15週年紀念Live前的準備期，此筆作為幕後背景紀錄。來源待補。",
     "type": "News",
     "link": "https://bushiroad-music.com/1226/ https://hololive.hololivepro.com/music/347/",
-    "source": "Bushiroad Music / hololive official"
+    "source": "Bushiroad Music / hololive official",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "official-2023-1102-ws15-live",
@@ -883,7 +893,8 @@
     "ctxZh": "miComet在東京Garden Theater舉行的《ヴァイスシュヴァルツ15周年記念ライブ》登台，連續演唱《アニマル》《アイドル》《シュガーラッシュ》三曲，其中《シュガーラッシュ》在正式數位發行前一天率先公開演唱。",
     "type": "Event",
     "link": "https://prtimes.jp/main/html/rd/p/000007261.000014827.html https://bushiroad-music.com/1226/",
-    "source": "Bushiroad official live report / Bushiroad Music"
+    "source": "Bushiroad official live report / Bushiroad Music",
+    "sharedCategory": "group"
   },
   {
     "id": "official-2023-1103-sugar-rush",
@@ -898,7 +909,9 @@
     "ctxZh": "miComet原創曲《シュガーラッシュ》於2023年11月3日數位發行，由DECO*27作詞、TAKU INOUE與DECO*27作曲、TAKU INOUE編曲，是兩人首支以miComet名義推出的原創歌曲。",
     "type": "Music",
     "link": "https://hololive.hololivepro.com/music/347/",
-    "source": "hololive official music page"
+    "source": "hololive official music page",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "s230036",
@@ -940,7 +953,9 @@
     "ctx": "Miko與星街用mocopi挑戰《超級舞動瓦利歐製造》，這場直播成為11月大量miComet 3D爆笑剪輯的來源。",
     "ctxZh": "Miko與星街用mocopi挑戰《超級舞動瓦利歐製造》，這場直播成為11月大量miComet 3D爆笑剪輯的來源。",
     "type": "Stream",
-    "link": "https://www.youtube.com/watch?v=QVjy6dkw4HE"
+    "link": "https://www.youtube.com/watch?v=QVjy6dkw4HE",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "s230039",
@@ -954,7 +969,9 @@
     "ctx": "Miko與星街用mocopi玩《超級舞動瓦利歐製造》時，跳Ado〈唱〉、居家3D動作、各種像事故一樣的姿勢與互動被多支剪輯整理成爆笑總集。",
     "ctxZh": "Miko與星街用mocopi玩《超級舞動瓦利歐製造》時，跳Ado〈唱〉、居家3D動作、各種像事故一樣的姿勢與互動被多支剪輯整理成爆笑總集。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=NUAKC74CCRM"
+    "link": "https://www.youtube.com/watch?v=NUAKC74CCRM",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "s230040",
@@ -968,7 +985,9 @@
     "ctx": "11月14日的整理延續《超級舞動瓦利歐製造》熱度，包含運動神經不好的人跳舞與miComet神回相關片段。",
     "ctxZh": "11月14日的整理延續《超級舞動瓦利歐製造》熱度，包含運動神經不好的人跳舞與miComet神回相關片段。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=ytiYjpmdah4"
+    "link": "https://www.youtube.com/watch?v=ytiYjpmdah4",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "s230041",
@@ -1013,7 +1032,9 @@
     "ctxZh": "Anime Festival Asia Singapore 2023的「AFA x hololive Meet」於11月25日舉行，miComet以海外嘉賓身分參與現地Talk Show，是兩人的海外共同活動之一。",
     "type": "Event",
     "link": "https://animefestival.asia/afa23/concert/",
-    "source": "Anime Festival Asia official event page"
+    "source": "Anime Festival Asia official event page",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "official-2023-1125-aopol-micomet",
@@ -1043,7 +1064,9 @@
     "ctx": "11月底仍有《超級舞動瓦利歐製造》相關總整理，集中收錄miComet與mocopi帶來的爆笑場面。",
     "ctxZh": "11月底仍有《超級舞動瓦利歐製造》相關總整理，集中收錄miComet與mocopi帶來的爆笑場面。",
     "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=qBpOop6-hsA"
+    "link": "https://www.youtube.com/watch?v=qBpOop6-hsA",
+    "sharedCategory": "oneOnOne",
+    "reciprocal": true
   },
   {
     "id": "s230043",
