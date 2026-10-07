@@ -55,5 +55,7 @@ c2-2025-053|25-C2-53|2025-10-08|6|miko|🌸|Text|Miko在粉絲圖留言
 c2-2025-054|25-C2-54|2025-10-03|6|shared|💛|Stream|FubuMio與miComet連動
 c2-2025-055|25-C2-55|2025-10-02|6|shared|💛|Stream|miComet穿成對服裝在遊樂園約會並公開新原創曲
 c2-2025-056|25-C2-56|2025-10-02|6|miko|🌸|Stream|Miko在TCG Card Shop Simulator中指示星街
-c2-2025-269|25-C2-269|2025-10-03|6|others|⭐|News|KAI-YOU報導miComet新曲《Lollipop》與製作陣容
+c2-2025-318|25-C2-318|2025-10-03|6|others|⭐|News|KAI-YOU報導miComet新曲《Lollipop》與製作陣容
+c2-2025-319|25-C2-319|2025-10-03|6|shared|💛|Music|miComet第二首原創曲《Lollipop》正式發行
+c2-2025-320|25-C2-320|2025-10-02|6|others|⭐|News|miComet新衣裝紀念官方周邊開始受注
 `.trim();
