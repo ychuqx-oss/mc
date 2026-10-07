@@ -395,6 +395,10 @@ function nextEnglishTitle(date: string, fallback: string) {
 }
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-164': {
+    link: 'https://www.youtube.com/watch?v=J3OlVvfvarQ',
+    source: 'Kanade official YouTube original stream',
+  },
   'c2-2025-182': {
     link: 'https://www.youtube.com/watch?v=D2Ki2BjqedU',
     source: 'Miko official YouTube original stream',
