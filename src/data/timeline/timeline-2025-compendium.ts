@@ -934,6 +934,18 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=Lsivt1Wll8U',
     source: 'Kanade official YouTube original stream',
   },
+  'c2-2025-150': {
+    link: 'https://www.youtube.com/watch?v=u050lW9xyiU',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-155': {
+    link: 'https://www.youtube.com/watch?v=FV2Z3bCqx9o',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-185': {
+    link: 'https://www.youtube.com/watch?v=D2Ki2BjqedU',
+    source: 'Miko official YouTube original stream',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
