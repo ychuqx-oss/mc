@@ -178,6 +178,9 @@ function summarizeTimeline(stories: MiCometStory[]) {
   const timeline = normalizeStories(stories);
   const counts = timeline.reduce<Record<Side, number>>((acc, story) => {
     acc[story.side] += 1;
+    // Anemachi belongs to Suisei's archive count even when Miko or another
+    // member is recounting an event involving her.
+    if (story.anemachiAsSuisei && story.side !== 'suisei' && story.side !== 'shared') acc.suisei += 1;
     return acc;
   }, { miko: 0, suisei: 0, shared: 0, others: 0 });
   const sharedCounts = timeline.reduce<Record<SharedCategory, number>>((acc, story) => {
@@ -212,7 +215,7 @@ function buildMonthlyCounts(stories: MiCometStory[]) {
     const key = monthKey(story.date);
     const current = monthly.get(key) ?? emptyCountPoint();
     if (story.side === 'miko') current.miko += 1;
-    if (story.side === 'suisei') current.suisei += 1;
+    if (story.side === 'suisei' || (story.anemachiAsSuisei && story.side !== 'shared')) current.suisei += 1;
     if (story.side === 'shared') {
       current[story.sharedCategory ?? 'group'] += 1;
       current.miko += 1;
@@ -374,7 +377,8 @@ function storyCategoryColor(story: LocalStory) {
 
 function matchesCategory(story: LocalStory, category: StoryCategory) {
   if (category === 'all') return true;
-  if (category === 'miko' || category === 'suisei') return story.side === category;
+  if (category === 'miko') return story.side === 'miko';
+  if (category === 'suisei') return story.side === 'suisei' || story.anemachiAsSuisei === true;
   if (category === 'fubuki') return story.supportCategory === 'fubuki';
   if (category === 'others') return story.side === 'others' && story.holomenSupport === true && story.supportCategory !== 'fubuki';
   return story.side === 'shared' && (story.sharedCategory ?? 'group') === category;
@@ -439,7 +443,7 @@ function StoryCard({ item, lang, relatedCount, onOpen }: { item: LocalStory; lan
   const isMobile = useIsMobile();
   return (
     <article onClick={() => onOpen(item)} style={{ borderRadius: 16, padding: 16, background: 'linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02))', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 10px 28px rgba(0,0,0,0.28)', cursor: 'pointer' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}><div style={{ color: '#c4c9d6', fontSize: 14 }}>{formatDate(item.date)}</div><div style={{ display: 'flex', gap: 7, alignItems: 'center', flexWrap: 'wrap' }}><SourceTrustBadge item={item} lang={lang} /><div style={{ color: storyCategoryColor(item), fontSize: 14, fontWeight: 700 }}>{storyCategoryLabel(item, lang)}</div>{item.supportCategory === 'fubuki' && item.side !== 'others' ? <span style={{ color: COLORS.fubuki, fontSize: 12, fontWeight: 900 }}>＋{UI_LABELS[lang].fubuki}</span> : null}</div></div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}><div style={{ color: '#c4c9d6', fontSize: 14 }}>{formatDate(item.date)}</div><div style={{ display: 'flex', gap: 7, alignItems: 'center', flexWrap: 'wrap' }}><SourceTrustBadge item={item} lang={lang} /><div style={{ color: storyCategoryColor(item), fontSize: 14, fontWeight: 700 }}>{storyCategoryLabel(item, lang)}</div>{item.supportCategory === 'fubuki' && item.side !== 'others' ? <span style={{ color: COLORS.fubuki, fontSize: 12, fontWeight: 900 }}>＋{UI_LABELS[lang].fubuki}</span> : null}{item.anemachiAsSuisei && item.side !== 'suisei' && item.side !== 'shared' ? <span style={{ color: COLORS.suisei, fontSize: 12, fontWeight: 900 }}>＋{UI_LABELS[lang].suisei}</span> : null}</div></div>
       <div style={{ marginTop: 10, fontSize: 18, fontWeight: 800, lineHeight: 1.45, color: '#f6f7fb' }}>{storyTitle(item, lang)}</div>
       {storyContext(item, lang) ? <div style={{ marginTop: 8, color: '#a7adbb', fontSize: 15, lineHeight: 1.65, ...(isMobile ? { display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' as const, overflow: 'hidden' } : {}) }}>{storyContext(item, lang)}</div> : null}
       <div style={{ marginTop: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
@@ -453,7 +457,7 @@ function StoryCard({ item, lang, relatedCount, onOpen }: { item: LocalStory; lan
 function TimelineRow({ item, lang, relatedCount, onOpen }: { item: LocalStory; lang: UiLang; relatedCount: number; onOpen: (item: LocalStory) => void }) {
   return <div onClick={() => onOpen(item)} style={{ display: 'grid', gridTemplateColumns: '96px minmax(0, 1fr)', gap: 14, padding: '12px 4px', borderBottom: '1px solid rgba(255,255,255,0.07)', cursor: 'pointer' }}>
     <div style={{ color: '#8f96a8', fontSize: 13, fontWeight: 800 }}>{formatDate(item.date).slice(5)}</div>
-    <div style={{ minWidth: 0 }}><div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: storyCategoryColor(item), fontSize: 12, fontWeight: 900 }}>{storyCategoryLabel(item, lang)}</span>{item.supportCategory === 'fubuki' && item.side !== 'others' ? <span style={{ color: COLORS.fubuki, fontSize: 12, fontWeight: 900 }}>＋{UI_LABELS[lang].fubuki}</span> : null}<span style={{ color: '#8d93a3', fontSize: 12 }}>{TYPE_LABELS[lang][item.type] ?? item.type}</span><SourceTrustBadge item={item} lang={lang} />{relatedCount > 0 && <span style={{ color: '#d9a7ff', fontSize: 12 }}>↔ {relatedCount + 1}</span>}</div><div style={{ marginTop: 5, color: '#f2f4f8', fontSize: 16, fontWeight: 800, lineHeight: 1.45 }}>{storyTitle(item, lang)}</div></div>
+    <div style={{ minWidth: 0 }}><div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: storyCategoryColor(item), fontSize: 12, fontWeight: 900 }}>{storyCategoryLabel(item, lang)}</span>{item.supportCategory === 'fubuki' && item.side !== 'others' ? <span style={{ color: COLORS.fubuki, fontSize: 12, fontWeight: 900 }}>＋{UI_LABELS[lang].fubuki}</span> : null}{item.anemachiAsSuisei && item.side !== 'suisei' && item.side !== 'shared' ? <span style={{ color: COLORS.suisei, fontSize: 12, fontWeight: 900 }}>＋{UI_LABELS[lang].suisei}</span> : null}<span style={{ color: '#8d93a3', fontSize: 12 }}>{TYPE_LABELS[lang][item.type] ?? item.type}</span><SourceTrustBadge item={item} lang={lang} />{relatedCount > 0 && <span style={{ color: '#d9a7ff', fontSize: 12 }}>↔ {relatedCount + 1}</span>}</div><div style={{ marginTop: 5, color: '#f2f4f8', fontSize: 16, fontWeight: 800, lineHeight: 1.45 }}>{storyTitle(item, lang)}</div></div>
   </div>;
 }
 
