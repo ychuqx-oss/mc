@@ -31,6 +31,8 @@ export interface MiCometStory {
   supportCategory?: SupportCategory;
   // Only genuine hololive talents may be counted in the Support bucket.
   holomenSupport?: boolean;
+  // Anemachi is counted under Suisei's side, never as a holomen supporter.
+  anemachiAsSuisei?: boolean;
   emoji: string;
   title: string;
   titleZh?: string;
@@ -397,7 +399,16 @@ function hasReciprocalMiCometInteraction(story: MiCometStory) {
   return explicitMutualTitle || explicitMutualContext;
 }
 
+const ANEMACHI_PATTERN = /(?:姊街|姐街|姉街|あねまち|アネマチ|Anemachi)/i;
+
+function isAnemachiStory(story: Pick<MiCometStory, 'title' | 'titleZh'>): boolean {
+  return ANEMACHI_PATTERN.test([story.titleZh, story.title].filter(Boolean).join(' '));
+}
+
 function resolveSharedSide(story: MiCometStory): Side {
+  const title = (story.titleZh || story.title || '').trim();
+  // When Anemachi herself is the subject, file the story directly under Suisei.
+  if (/^(?:姊街|姐街|姉街|あねまち|アネマチ|Anemachi)/i.test(title)) return 'suisei';
   if (story.side !== 'shared') return story.side;
   if (story.sharedCategory && story.sharedCategory !== 'oneOnOne') return 'shared';
 
@@ -583,9 +594,10 @@ function classifySupportCategory(story: MiCometStory, holomenSupport: boolean): 
 function normalizeStory(story: MiCometStory): MiCometStory {
   const correctedDate = verifiedDateForStory(story);
   const side = resolveSharedSide(story);
+  const anemachiAsSuisei = isAnemachiStory(story);
   const holomenSupport = isHolomenSupportStory({ ...story, side });
   const supportCategory = classifySupportCategory(story, holomenSupport);
-  const storyWithSide = { ...story, date: correctedDate, side, supportCategory, holomenSupport };
+  const storyWithSide = { ...story, date: correctedDate, side, supportCategory, holomenSupport, anemachiAsSuisei };
   const sharedCategory = classifySharedCategory(storyWithSide, side);
   const classificationSource: ClassificationSource = story.sharedCategory || story.side !== 'shared' ? 'explicit' : 'legacy-auto';
   const enStory = enStoryMap.get(story.id);
@@ -605,6 +617,7 @@ function normalizeStory(story: MiCometStory): MiCometStory {
     sharedCategory,
     supportCategory,
     holomenSupport,
+    anemachiAsSuisei,
     classificationSource,
     emoji: emojiForSide(side),
     title: titleEn || titleZh,
@@ -651,6 +664,7 @@ function mergeStory(base: MiCometStory, extra: MiCometStory): MiCometStory {
     eventId: base.eventId || extra.eventId,
     reciprocal: base.reciprocal ?? extra.reciprocal,
     holomenSupport: base.holomenSupport || extra.holomenSupport,
+    anemachiAsSuisei: base.anemachiAsSuisei || extra.anemachiAsSuisei,
     supportCategory: base.supportCategory || extra.supportCategory,
     titleEn: base.titleEn || extra.titleEn,
     ctx: mergedCtxEn || mergedCtx,
