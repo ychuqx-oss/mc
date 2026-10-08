@@ -48,7 +48,7 @@ const englishRows = `
 2025-10-13|MiComet blame each other for not having a miComet live concert, and FubuMiComet take a hamster personality quiz
 2025-10-12|Suisei enters a Chiikawa lottery for Miko’s sake
 2025-10-08|Miko comments on fanart
-2025-10-03|FubuMio MiComet
+2025-10-03|MiComet versus FubuMio in Clubhouse Games 51 wearing matching new outfits
 2025-10-03|KAI-YOU reports on miComet’s new song Lollipop and its creators
 2025-10-03|MiComet's second original song Lollipop is officially released
 2025-10-02|MiComet have an amusement park date with matching outfits and reveal a new original song
@@ -96,7 +96,7 @@ const englishRows = `
 2025-07-07|MiComet have suspiciously matching clothes in promo
 2025-07-07|Matsuri insists that miComet are not business
 2025-07-06|Suisei talks about Miko’s streaming frequency, and playing Minecraft with her on the day the world was prophesied to end
-2025-07-04|MiComet Minecraft project
+2025-07-04|MiComet searches for Happy Ghasts and tries leaf litter in Minecraft
 2025-07-02|Shiraken REPO
 2025-06-28|FubuMiComet + Mio + Ririka electric chair game
 2025-06-27|Suisei scares Miko by sending her miComet fanart after Miko wins the Switch 2 lottery
@@ -111,8 +111,7 @@ const englishRows = `
 2025-06-15|Miko mentions that miComet have matching ribbons
 2025-06-12|Flirting on sub accounts
 2025-06-12|MiComet featured in hololive situation
-2025-06-08|FubuMiComet VRChat
-2025-06-08|Fubuki appreciates miComet teetee
+2025-06-08|FubuMiComet visits PokoPeaLand in VRChat
 2025-06-06|The hololive magazine features miComet
 2025-06-03|Miko sends an invitation to Suisei for Mario Kart
 2025-05-31|Miko mentions Suisei spamming stickers in their LINE chats, and that Suisei is the reason why she goes out more often now
