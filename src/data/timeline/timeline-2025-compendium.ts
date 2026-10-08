@@ -913,6 +913,10 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://x.com/sakuramiko35/status/1929886633685594131 https://x.com/suisei_hosimati/status/1929891181875298761',
     source: 'Miko original X event announcement; Suisei original X reply',
   },
+  'c2-2025-183': {
+    link: 'https://www.goodsmile.com/ja/event/6200 https://hobby.watch.impress.co.jp/docs/news/2011431.html',
+    source: 'Good Smile Company official exhibition page; HOBBY Watch original May 2 event report',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
