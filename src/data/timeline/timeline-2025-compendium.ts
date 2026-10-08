@@ -45,7 +45,7 @@ const englishRows = `
 2025-10-22|Miko talks about Anemachi, Fubuki, Subaru, Suisei, and Ui visiting her house; having sukiyaki with Suisei; and confusing Suisei with Hoshitani
 2025-10-19|Suisei names Miko as the closest holomem to her
 2025-10-16|Iroha finds it cute that Suisei is tsundere around Miko
-2025-10-13|MiComet blame each other for not having a miComet live concert, and FubuMiComet take a hamster personality quiz
+2025-10-13|Suisei talks about taking a hamster personality quiz with Miko and Fubuki
 2025-10-12|Suisei enters a Chiikawa lottery for Miko’s sake
 2025-10-08|Miko comments on fanart
 2025-10-03|MiComet versus FubuMio in Clubhouse Games 51 wearing matching new outfits
@@ -925,6 +925,12 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'official'; label: string; official: true }>> = {
+  'c2-2025-023': [
+    { url: 'https://hololivepro.com/news/20251208-01-262/', kind: 'official', label: 'hololive東京站快閃店官方公告（2025/12/08）', official: true },
+  ],
+  'c2-2025-050': [
+    { url: 'https://www.youtube.com/watch?v=eDUFvX2cU9g', kind: 'youtube', label: '星街彗星2025/10/13近況報告原始直播', official: true },
+  ],
   'c2-2025-020': [
     { url: 'https://www.youtube.com/watch?v=O8pqqbzd_hQ', kind: 'youtube', label: '櫻巫女2025/12/11官方原始直播', official: true },
   ],
