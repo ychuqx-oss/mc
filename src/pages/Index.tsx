@@ -25,7 +25,6 @@ const COLORS = {
   total: '#7ee2a8',
 };
 const MONTHS = Array.from({ length: 12 }, (_, index) => index + 1);
-const STORY_TYPES = ['Stream', 'Text', 'Clip', 'Audio', 'News', 'Music', 'Event'];
 
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' && window.matchMedia('(max-width: 720px)').matches);
@@ -52,21 +51,21 @@ const UI_LABELS = {
     yearMonth: 'Year / Month', firstEntry: 'First Entry', latestEntry: 'Latest Entry', cumulativeChart: 'Cumulative Story Growth', countChart: 'Story Count Trend',
     year: 'Year', month: 'Month', all: 'All', search: 'Search stories, keywords, dates...', found: 'stories found', empty: 'No matching stories',
     mikoTotal: 'Miko Total', suiseiTotal: 'Suisei Total', supportTotal: 'Support Total',
-    miko: 'Miko', suisei: 'Suisei', gen0: 'Gen 0', shiraken: 'Shiraken', oneOnOne: '1v1', group: 'Group', fubuki: 'Fubuki', support: 'Support', category: 'Category', source: 'Source', filters: 'Filters', showChart: 'Show chart', hideChart: 'Hide chart', clearFilters: 'Clear filters', backTop: 'Back to top', type: 'Type', sourceTrust: 'Source trust', verified: 'Verified', indexed: 'Indexed', pending: 'Needs source', completeness: 'Source completeness', cards: 'Cards', timeline: 'Timeline', newest: 'Newest', oldest: 'Oldest', sameEvent: 'Same stream/event', statistics: 'Statistics & charts', verifiedSource: 'Official/original', indexedSource: 'Cross-checked', needsSource: 'Fallback / missing',
+    miko: 'Miko', suisei: 'Suisei', gen0: 'Gen 0', shiraken: 'Shiraken', oneOnOne: '1v1', group: 'Group', fubuki: 'Fubuki', support: 'Support', category: 'Category', source: 'Source', filters: 'Filters', showChart: 'Show chart', hideChart: 'Hide chart', clearFilters: 'Clear filters', backTop: 'Back to top', sourceTrust: 'Source trust', verified: 'Verified', indexed: 'Indexed', pending: 'Needs source', completeness: 'Source completeness', cards: 'Cards', timeline: 'Timeline', newest: 'Newest', oldest: 'Oldest', sameEvent: 'Same stream/event', statistics: 'Statistics & charts', verifiedSource: 'Official/original', indexedSource: 'Cross-checked', needsSource: 'Fallback / missing',
   },
   ja: {
     totalCard: '件のストーリーを収録', start: '開始', latest: '最新', overview: '統計概要', totalStories: '総ストーリー数', timelineRange: '収録期間',
     yearMonth: '年 / 月', firstEntry: '最初の記録', latestEntry: '最新の記録', cumulativeChart: 'miComet 累計ストーリー推移', countChart: 'ストーリー件数推移',
     year: '年', month: '月', all: 'すべて', search: 'ストーリー・キーワード・日付を検索...', found: '件のストーリー', empty: '条件に一致するストーリーはありません',
     mikoTotal: 'みこ累計', suiseiTotal: 'すいせい累計', supportTotal: 'サポート累計',
-    miko: 'みこ', suisei: 'すいせい', gen0: '0期生', shiraken: 'しら建', oneOnOne: '1対1', group: 'グループ', fubuki: '白上フブキ', support: 'サポート', category: '分類', source: '出典', filters: '絞り込み', showChart: 'グラフを表示', hideChart: 'グラフを閉じる', clearFilters: '絞り込みを解除', backTop: 'ページ上部へ', type: '種類', sourceTrust: '出典の信頼度', verified: '確認済み', indexed: '照合済み', pending: '要出典', completeness: '年度別出典状況', cards: 'カード', timeline: 'タイムライン', newest: '新しい順', oldest: '古い順', sameEvent: '同じ配信／イベント', statistics: '統計・グラフ', verifiedSource: '公式／一次情報', indexedSource: '索引／メディア照合', needsSource: '代替／要出典',
+    miko: 'みこ', suisei: 'すいせい', gen0: '0期生', shiraken: 'しら建', oneOnOne: '1対1', group: 'グループ', fubuki: '白上フブキ', support: 'サポート', category: '分類', source: '出典', filters: '絞り込み', showChart: 'グラフを表示', hideChart: 'グラフを閉じる', clearFilters: '絞り込みを解除', backTop: 'ページ上部へ', sourceTrust: '出典の信頼度', verified: '確認済み', indexed: '照合済み', pending: '要出典', completeness: '年度別出典状況', cards: 'カード', timeline: 'タイムライン', newest: '新しい順', oldest: '古い順', sameEvent: '同じ配信／イベント', statistics: '統計・グラフ', verifiedSource: '公式／一次情報', indexedSource: '索引／メディア照合', needsSource: '代替／要出典',
   },
   zh: {
     totalCard: '個故事已收錄', start: '起', latest: '迄', overview: '統計總覽', totalStories: '總故事數', timelineRange: '故事區間',
     yearMonth: '年 / 月', firstEntry: '最早紀錄', latestEntry: '最新紀錄', cumulativeChart: 'miComet累計故事成長圖', countChart: '故事數量折線圖',
     year: '年份', month: '月份', all: '全部', search: '搜尋故事、關鍵字、日期...', found: '個故事', empty: '沒有符合條件的故事',
     mikoTotal: 'Miko累計', suiseiTotal: '星街累計', supportTotal: '助攻累計',
-    miko: 'Miko', suisei: '星街', gen0: '0期', shiraken: '火建', oneOnOne: '1v1', group: '團體', fubuki: '白上吹雪', support: '助攻', category: '分類', source: '來源', filters: '篩選', showChart: '顯示圖表', hideChart: '收合圖表', clearFilters: '清除篩選', backTop: '回到頂端', type: '類型', sourceTrust: '來源可信度', verified: '已驗證', indexed: '已交叉驗證', pending: '待補來源', completeness: '年度來源完整度', cards: '卡片', timeline: '時間軸', newest: '新 → 舊', oldest: '舊 → 新', sameEvent: '同場直播／事件', statistics: '統計與圖表', verifiedSource: '官方／原始來源', indexedSource: '索引／媒體佐證', needsSource: 'Fallback／待補',
+    miko: 'Miko', suisei: '星街', gen0: '0期', shiraken: '火建', oneOnOne: '1v1', group: '團體', fubuki: '白上吹雪', support: '助攻', category: '分類', source: '來源', filters: '篩選', showChart: '顯示圖表', hideChart: '收合圖表', clearFilters: '清除篩選', backTop: '回到頂端', sourceTrust: '來源可信度', verified: '已驗證', indexed: '已交叉驗證', pending: '待補來源', completeness: '年度來源完整度', cards: '卡片', timeline: '時間軸', newest: '新 → 舊', oldest: '舊 → 新', sameEvent: '同場直播／事件', statistics: '統計與圖表', verifiedSource: '官方／原始來源', indexedSource: '索引／媒體佐證', needsSource: 'Fallback／待補',
   },
 } as const;
 
@@ -486,7 +485,6 @@ export default function Index() {
   const [yearFilter, setYearFilter] = useState(0);
   const [monthFilter, setMonthFilter] = useState(0);
   const [categoryFilter, setCategoryFilter] = useState<StoryCategory>('all');
-  const [typeFilter, setTypeFilter] = useState('all');
   const [sourceFilter, setSourceFilter] = useState<SourceFilter>('all');
   const [viewMode, setViewMode] = useState<ViewMode>('cards');
   const [sortOrder, setSortOrder] = useState<SortOrder>('desc');
@@ -523,7 +521,6 @@ export default function Index() {
       if (yearFilter !== 0 && Number(item.date.slice(0, 4)) !== yearFilter) return false;
       if (monthFilter !== 0 && Number(item.date.slice(5, 7)) !== monthFilter) return false;
       if (!matchesCategory(item, categoryFilter)) return false;
-      if (typeFilter !== 'all' && item.type !== typeFilter) return false;
       const status = sourceStatus(item);
       if (sourceFilter === 'verified' && status !== 'verified') return false;
       if (sourceFilter === 'indexed' && status !== 'indexed') return false;
@@ -532,7 +529,7 @@ export default function Index() {
       return [item.date, item.title, item.titleZh ?? '', item.titleEn ?? '', item.titleJa ?? '', item.ctx, item.ctxZh ?? '', item.ctxEn ?? '', item.ctxJa ?? '', storyTitle(item, uiLang), storyContext(item, uiLang), ...storySources(item).map((source) => `${source.label ?? ''} ${source.url}`)].join(' ').toLowerCase().includes(q);
     });
     return [...list].sort((a, b) => sortOrder === 'asc' ? storySort(a, b) : storySort(b, a)) as LocalStory[];
-  }, [search, summary.timeline, yearFilter, monthFilter, categoryFilter, typeFilter, sourceFilter, sortOrder, uiLang]);
+  }, [search, summary.timeline, yearFilter, monthFilter, categoryFilter, sourceFilter, sortOrder, uiLang]);
 
   const groups = useMemo(() => filtered.reduce<Array<{ date: string; items: LocalStory[] }>>((acc, story) => {
     const last = acc[acc.length - 1];
@@ -564,9 +561,9 @@ export default function Index() {
   ];
 
   const filterButtonStyle = (active: boolean): React.CSSProperties => ({ padding: '10px 13px', fontSize: 14, borderRadius: 12, border: '1px solid rgba(255,255,255,0.08)', background: active ? '#232838' : '#0d0f15', color: '#fff', cursor: 'pointer' });
-  const clearFilters = () => { setYearFilter(0); setMonthFilter(0); setCategoryFilter('all'); setTypeFilter('all'); setSourceFilter('all'); };
+  const clearFilters = () => { setYearFilter(0); setMonthFilter(0); setCategoryFilter('all'); setSourceFilter('all'); };
   const selectCompleteness = (year: number, source: SourceFilter) => { setYearFilter(year); setMonthFilter(0); setSourceFilter(source); window.scrollTo({ top: 280, behavior: 'smooth' }); };
-  const activeFilters = yearFilter !== 0 || monthFilter !== 0 || categoryFilter !== 'all' || typeFilter !== 'all' || sourceFilter !== 'all';
+  const activeFilters = yearFilter !== 0 || monthFilter !== 0 || categoryFilter !== 'all' || sourceFilter !== 'all';
 
   return <div style={{ minHeight: '100vh', color: '#fff', padding: '16px 12px 40px', background: 'radial-gradient(1200px 600px at 18% -8%, rgba(255,125,183,0.12), transparent 60%), radial-gradient(900px 500px at 84% 6%, rgba(102,169,255,0.10), transparent 55%), #000' }}>
     <div style={{ maxWidth: 1160, margin: '0 auto' }}>
@@ -588,7 +585,6 @@ export default function Index() {
 
         {!isMobile ? <>
           <div style={{ marginTop: 10, display: 'flex', gap: 7, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: '#8f96a8', fontSize: 13, fontWeight: 800 }}>{ui.category}</span>{([['all', ui.all], ['miko', ui.miko], ['suisei', ui.suisei], ['gen0', ui.gen0], ['shiraken', ui.shiraken], ['oneOnOne', ui.oneOnOne], ['group', ui.group], ['fubuki', ui.fubuki], ['others', ui.support]] as Array<[StoryCategory, string]>).map(([key, label]) => <button key={key} onClick={() => setCategoryFilter(key)} style={filterButtonStyle(categoryFilter === key)}>{label}</button>)}</div>
-          <div style={{ marginTop: 10, display: 'flex', gap: 7, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: '#8f96a8', fontSize: 13, fontWeight: 800 }}>{ui.type}</span><button onClick={() => setTypeFilter('all')} style={filterButtonStyle(typeFilter === 'all')}>{ui.all}</button>{STORY_TYPES.map((type) => <button key={type} onClick={() => setTypeFilter(type)} style={filterButtonStyle(typeFilter === type)}>{TYPE_LABELS[uiLang][type] ?? type}</button>)}</div>
           <div style={{ marginTop: 10, display: 'flex', gap: 7, flexWrap: 'wrap', alignItems: 'center' }}><span style={{ color: '#8f96a8', fontSize: 13, fontWeight: 800 }}>{ui.sourceTrust}</span>{([['all', ui.all], ['verified', ui.verified], ['indexed', ui.indexed], ['pending', ui.pending]] as Array<[SourceFilter, string]>).map(([key, label]) => <button key={key} onClick={() => setSourceFilter(key)} style={filterButtonStyle(sourceFilter === key)}>{label}</button>)}</div>
         </> : null}
       </section>
@@ -610,7 +606,7 @@ export default function Index() {
       </details>
     </div>
 
-    {isMobile && mobileFiltersOpen ? <div onClick={() => setMobileFiltersOpen(false)} style={{ position: 'fixed', inset: 0, zIndex: 80, background: 'rgba(0,0,0,0.65)', display: 'flex', alignItems: 'flex-end' }}><div onClick={(e) => e.stopPropagation()} style={{ width: '100%', maxHeight: '82vh', overflowY: 'auto', borderRadius: '24px 24px 0 0', background: '#11141c', border: '1px solid rgba(255,255,255,0.08)', padding: '18px 16px 24px' }}><div style={{ width: 42, height: 4, borderRadius: 99, background: '#4d5362', margin: '0 auto 18px' }} /><div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}><strong style={{ fontSize: 20 }}>{ui.filters}</strong><button onClick={clearFilters} style={filterButtonStyle(false)}>{ui.clearFilters}</button></div><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.month}</div><select value={monthFilter} onChange={(e) => setMonthFilter(Number(e.target.value))} style={{ marginTop: 8, width: '100%', borderRadius: 12, border: '1px solid rgba(255,255,255,0.12)', background: '#0d0f15', color: '#fff', padding: '12px 14px', fontSize: 16 }}><option value={0}>{ui.all}</option>{MONTHS.map((month) => <option key={month} value={month}>{uiLang === 'zh' || uiLang === 'ja' ? `${month}月` : month}</option>)}</select><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.category}</div><div style={{ marginTop: 8, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 8 }}>{([['all', ui.all], ['miko', ui.miko], ['suisei', ui.suisei], ['gen0', ui.gen0], ['shiraken', ui.shiraken], ['oneOnOne', ui.oneOnOne], ['group', ui.group], ['fubuki', ui.fubuki], ['others', ui.support]] as Array<[StoryCategory, string]>).map(([key, label]) => <button key={key} onClick={() => setCategoryFilter(key)} style={filterButtonStyle(categoryFilter === key)}>{label}</button>)}</div><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.type}</div><div style={{ marginTop: 8, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 8 }}><button onClick={() => setTypeFilter('all')} style={filterButtonStyle(typeFilter === 'all')}>{ui.all}</button>{STORY_TYPES.map((type) => <button key={type} onClick={() => setTypeFilter(type)} style={filterButtonStyle(typeFilter === type)}>{TYPE_LABELS[uiLang][type] ?? type}</button>)}</div><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.sourceTrust}</div><div style={{ marginTop: 8, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 8 }}>{([['all', ui.all], ['verified', ui.verified], ['indexed', ui.indexed], ['pending', ui.pending]] as Array<[SourceFilter, string]>).map(([key, label]) => <button key={key} onClick={() => setSourceFilter(key)} style={filterButtonStyle(sourceFilter === key)}>{label}</button>)}</div><button onClick={() => setMobileFiltersOpen(false)} style={{ marginTop: 18, width: '100%', border: 'none', borderRadius: 14, background: '#f0f2f7', color: '#11131a', padding: '13px 16px', fontSize: 16, fontWeight: 900, cursor: 'pointer' }}>{uiLang === 'zh' ? '完成' : uiLang === 'ja' ? '完了' : 'Done'}</button></div></div> : null}
+    {isMobile && mobileFiltersOpen ? <div onClick={() => setMobileFiltersOpen(false)} style={{ position: 'fixed', inset: 0, zIndex: 80, background: 'rgba(0,0,0,0.65)', display: 'flex', alignItems: 'flex-end' }}><div onClick={(e) => e.stopPropagation()} style={{ width: '100%', maxHeight: '82vh', overflowY: 'auto', borderRadius: '24px 24px 0 0', background: '#11141c', border: '1px solid rgba(255,255,255,0.08)', padding: '18px 16px 24px' }}><div style={{ width: 42, height: 4, borderRadius: 99, background: '#4d5362', margin: '0 auto 18px' }} /><div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}><strong style={{ fontSize: 20 }}>{ui.filters}</strong><button onClick={clearFilters} style={filterButtonStyle(false)}>{ui.clearFilters}</button></div><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.month}</div><select value={monthFilter} onChange={(e) => setMonthFilter(Number(e.target.value))} style={{ marginTop: 8, width: '100%', borderRadius: 12, border: '1px solid rgba(255,255,255,0.12)', background: '#0d0f15', color: '#fff', padding: '12px 14px', fontSize: 16 }}><option value={0}>{ui.all}</option>{MONTHS.map((month) => <option key={month} value={month}>{uiLang === 'zh' || uiLang === 'ja' ? `${month}月` : month}</option>)}</select><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.category}</div><div style={{ marginTop: 8, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 8 }}>{([['all', ui.all], ['miko', ui.miko], ['suisei', ui.suisei], ['gen0', ui.gen0], ['shiraken', ui.shiraken], ['oneOnOne', ui.oneOnOne], ['group', ui.group], ['fubuki', ui.fubuki], ['others', ui.support]] as Array<[StoryCategory, string]>).map(([key, label]) => <button key={key} onClick={() => setCategoryFilter(key)} style={filterButtonStyle(categoryFilter === key)}>{label}</button>)}</div><div style={{ marginTop: 18, color: '#9aa2b2', fontSize: 14, fontWeight: 800 }}>{ui.sourceTrust}</div><div style={{ marginTop: 8, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 8 }}>{([['all', ui.all], ['verified', ui.verified], ['indexed', ui.indexed], ['pending', ui.pending]] as Array<[SourceFilter, string]>).map(([key, label]) => <button key={key} onClick={() => setSourceFilter(key)} style={filterButtonStyle(sourceFilter === key)}>{label}</button>)}</div><button onClick={() => setMobileFiltersOpen(false)} style={{ marginTop: 18, width: '100%', border: 'none', borderRadius: 14, background: '#f0f2f7', color: '#11131a', padding: '13px 16px', fontSize: 16, fontWeight: 900, cursor: 'pointer' }}>{uiLang === 'zh' ? '完成' : uiLang === 'ja' ? '完了' : 'Done'}</button></div></div> : null}
 
     {isMobile && showBackTop ? <button aria-label={ui.backTop} title={ui.backTop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'fixed', right: 16, bottom: 18, zIndex: 45, width: 46, height: 46, borderRadius: 999, border: '1px solid rgba(255,255,255,0.14)', background: 'rgba(22,26,37,0.92)', color: '#fff', fontSize: 20, fontWeight: 900, boxShadow: '0 12px 32px rgba(0,0,0,0.4)', backdropFilter: 'blur(10px)', cursor: 'pointer' }}>↑</button> : null}
     {openItem ? <Modal item={openItem} lang={uiLang} labels={ui} relatedItems={relatedFor(openItem)} onOpenRelated={setOpenItem} onClose={() => setOpenItem(null)} /> : null}
