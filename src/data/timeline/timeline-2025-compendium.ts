@@ -925,6 +925,15 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'official'; label: string; official: true }>> = {
+  'c2-2025-020': [
+    { url: 'https://www.youtube.com/watch?v=O8pqqbzd_hQ', kind: 'youtube', label: '櫻巫女2025/12/11官方原始直播', official: true },
+  ],
+  'c2-2025-044': [
+    { url: 'https://www.youtube.com/watch?v=D6F3CeJhS4k', kind: 'youtube', label: '櫻巫女2025/10/22官方原始直播', official: true },
+  ],
+  'c2-2025-079': [
+    { url: 'https://www.youtube.com/watch?v=R3XMduAQ0Aw', kind: 'youtube', label: '櫻巫女2025/08/28官方原始直播', official: true },
+  ],
   'c2-2025-002': [
     { url: 'https://www.youtube.com/watch?v=jtU-KcAoRZw', kind: 'youtube', label: '白上吹雪原始直播', official: true },
   ],
