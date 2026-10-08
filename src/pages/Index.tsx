@@ -51,21 +51,21 @@ const UI_LABELS = {
     yearMonth: 'Year / Month', firstEntry: 'First Entry', latestEntry: 'Latest Entry', cumulativeChart: 'Cumulative Story Growth', countChart: 'Story Count Trend',
     year: 'Year', month: 'Month', all: 'All', search: 'Search stories, keywords, dates...', found: 'stories found', empty: 'No matching stories',
     mikoTotal: 'Miko Total', suiseiTotal: 'Suisei Total', supportTotal: 'Support Total',
-    miko: 'Miko', suisei: 'Suisei', gen0: 'Gen 0', shiraken: 'Shiraken', oneOnOne: '1v1', group: 'Group', fubuki: 'Fubuki', support: 'Support', category: 'Category', source: 'Source', filters: 'Filters', showChart: 'Show chart', hideChart: 'Hide chart', clearFilters: 'Clear filters', backTop: 'Back to top', sourceTrust: 'Source trust', verified: 'Verified', indexed: 'Indexed', pending: 'Needs source', completeness: 'Source completeness', cards: 'Cards', timeline: 'Timeline', newest: 'Newest', oldest: 'Oldest', sameEvent: 'Same stream/event', statistics: 'Statistics & charts', verifiedSource: 'Official/original', indexedSource: 'Cross-checked', needsSource: 'Fallback / missing',
+    miko: 'Miko', suisei: 'Suisei', gen0: 'Gen 0', shiraken: 'Shiraken', oneOnOne: '1v1', group: 'Group', fubuki: 'Fubuki', support: 'Support', otherRecord: 'Related record', category: 'Category', source: 'Source', filters: 'Filters', showChart: 'Show chart', hideChart: 'Hide chart', clearFilters: 'Clear filters', backTop: 'Back to top', sourceTrust: 'Source trust', verified: 'Verified', indexed: 'Indexed', pending: 'Needs source', completeness: 'Source completeness', cards: 'Cards', timeline: 'Timeline', newest: 'Newest', oldest: 'Oldest', sameEvent: 'Same stream/event', statistics: 'Statistics & charts', verifiedSource: 'Official/original', indexedSource: 'Cross-checked', needsSource: 'Fallback / missing',
   },
   ja: {
     totalCard: '件のストーリーを収録', start: '開始', latest: '最新', overview: '統計概要', totalStories: '総ストーリー数', timelineRange: '収録期間',
     yearMonth: '年 / 月', firstEntry: '最初の記録', latestEntry: '最新の記録', cumulativeChart: 'miComet 累計ストーリー推移', countChart: 'ストーリー件数推移',
     year: '年', month: '月', all: 'すべて', search: 'ストーリー・キーワード・日付を検索...', found: '件のストーリー', empty: '条件に一致するストーリーはありません',
     mikoTotal: 'みこ累計', suiseiTotal: 'すいせい累計', supportTotal: 'サポート累計',
-    miko: 'みこ', suisei: 'すいせい', gen0: '0期生', shiraken: 'しら建', oneOnOne: '1対1', group: 'グループ', fubuki: '白上フブキ', support: 'サポート', category: '分類', source: '出典', filters: '絞り込み', showChart: 'グラフを表示', hideChart: 'グラフを閉じる', clearFilters: '絞り込みを解除', backTop: 'ページ上部へ', sourceTrust: '出典の信頼度', verified: '確認済み', indexed: '照合済み', pending: '要出典', completeness: '年度別出典状況', cards: 'カード', timeline: 'タイムライン', newest: '新しい順', oldest: '古い順', sameEvent: '同じ配信／イベント', statistics: '統計・グラフ', verifiedSource: '公式／一次情報', indexedSource: '索引／メディア照合', needsSource: '代替／要出典',
+    miko: 'みこ', suisei: 'すいせい', gen0: '0期生', shiraken: 'しら建', oneOnOne: '1対1', group: 'グループ', fubuki: '白上フブキ', support: 'サポート', otherRecord: '関連記録', category: '分類', source: '出典', filters: '絞り込み', showChart: 'グラフを表示', hideChart: 'グラフを閉じる', clearFilters: '絞り込みを解除', backTop: 'ページ上部へ', sourceTrust: '出典の信頼度', verified: '確認済み', indexed: '照合済み', pending: '要出典', completeness: '年度別出典状況', cards: 'カード', timeline: 'タイムライン', newest: '新しい順', oldest: '古い順', sameEvent: '同じ配信／イベント', statistics: '統計・グラフ', verifiedSource: '公式／一次情報', indexedSource: '索引／メディア照合', needsSource: '代替／要出典',
   },
   zh: {
     totalCard: '個故事已收錄', start: '起', latest: '迄', overview: '統計總覽', totalStories: '總故事數', timelineRange: '故事區間',
     yearMonth: '年 / 月', firstEntry: '最早紀錄', latestEntry: '最新紀錄', cumulativeChart: 'miComet累計故事成長圖', countChart: '故事數量折線圖',
     year: '年份', month: '月份', all: '全部', search: '搜尋故事、關鍵字、日期...', found: '個故事', empty: '沒有符合條件的故事',
     mikoTotal: 'Miko累計', suiseiTotal: '星街累計', supportTotal: '助攻累計',
-    miko: 'Miko', suisei: '星街', gen0: '0期', shiraken: '火建', oneOnOne: '1v1', group: '團體', fubuki: '白上吹雪', support: '助攻', category: '分類', source: '來源', filters: '篩選', showChart: '顯示圖表', hideChart: '收合圖表', clearFilters: '清除篩選', backTop: '回到頂端', sourceTrust: '來源可信度', verified: '已驗證', indexed: '已交叉驗證', pending: '待補來源', completeness: '年度來源完整度', cards: '卡片', timeline: '時間軸', newest: '新 → 舊', oldest: '舊 → 新', sameEvent: '同場直播／事件', statistics: '統計與圖表', verifiedSource: '官方／原始來源', indexedSource: '索引／媒體佐證', needsSource: 'Fallback／待補',
+    miko: 'Miko', suisei: '星街', gen0: '0期', shiraken: '火建', oneOnOne: '1v1', group: '團體', fubuki: '白上吹雪', support: '助攻', otherRecord: '其他紀錄', category: '分類', source: '來源', filters: '篩選', showChart: '顯示圖表', hideChart: '收合圖表', clearFilters: '清除篩選', backTop: '回到頂端', sourceTrust: '來源可信度', verified: '已驗證', indexed: '已交叉驗證', pending: '待補來源', completeness: '年度來源完整度', cards: '卡片', timeline: '時間軸', newest: '新 → 舊', oldest: '舊 → 新', sameEvent: '同場直播／事件', statistics: '統計與圖表', verifiedSource: '官方／原始來源', indexedSource: '索引／媒體佐證', needsSource: 'Fallback／待補',
   },
 } as const;
 
@@ -186,7 +186,7 @@ function summarizeTimeline(stories: MiCometStory[]) {
   }, { gen0: 0, shiraken: 0, oneOnOne: 0, group: 0 });
   const supportCounts = timeline.reduce((acc, story) => {
     if (story.supportCategory === 'fubuki') acc.fubuki += 1;
-    else if (story.side === 'others') acc.others += 1;
+    else if (story.side === 'others' && story.holomenSupport) acc.others += 1;
     return acc;
   }, { fubuki: 0, others: 0 });
   const years = yearRange(timelineYearStart(timeline), timelineYearEnd(timeline));
@@ -219,7 +219,7 @@ function buildMonthlyCounts(stories: MiCometStory[]) {
       current.suisei += 1;
     }
     if (story.supportCategory === 'fubuki') current.fubuki += 1;
-    else if (story.side === 'others') current.others += 1;
+    else if (story.side === 'others' && story.holomenSupport) current.others += 1;
     monthly.set(key, current);
   });
   return monthly;
@@ -361,7 +361,7 @@ function storyCategoryLabel(story: LocalStory, lang: UiLang) {
   if (story.side === 'suisei') return ui.suisei;
   if (story.side === 'shared') return ui[story.sharedCategory ?? 'group'];
   if (story.supportCategory === 'fubuki') return ui.fubuki;
-  return ui.support;
+  return story.holomenSupport ? ui.support : ui.otherRecord;
 }
 
 function storyCategoryColor(story: LocalStory) {
@@ -369,14 +369,14 @@ function storyCategoryColor(story: LocalStory) {
   if (story.side === 'suisei') return COLORS.suisei;
   if (story.side === 'shared') return COLORS[story.sharedCategory ?? 'group'];
   if (story.supportCategory === 'fubuki') return COLORS.fubuki;
-  return '#ffffff';
+  return story.holomenSupport ? '#ffffff' : '#8f96a8';
 }
 
 function matchesCategory(story: LocalStory, category: StoryCategory) {
   if (category === 'all') return true;
   if (category === 'miko' || category === 'suisei') return story.side === category;
   if (category === 'fubuki') return story.supportCategory === 'fubuki';
-  if (category === 'others') return story.side === 'others' && story.supportCategory !== 'fubuki';
+  if (category === 'others') return story.side === 'others' && story.holomenSupport === true && story.supportCategory !== 'fubuki';
   return story.side === 'shared' && (story.sharedCategory ?? 'group') === category;
 }
 
