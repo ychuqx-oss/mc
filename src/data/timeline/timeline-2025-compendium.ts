@@ -9,7 +9,7 @@ const englishRows = `
 2025-12-30|Suisei bakes cookies for Miko
 2025-12-30|MiComet and Lui join Fubuki for a call; Fubuki obsesses over miComet teetee cookies, and miComet share thoughts on each other’s sleeping habits
 2025-12-29|MiComet make an appearance in Watame’s MV
-2025-12-27|Suisei shows up for Miko’s 25-hour stream, Miko asks her to sleep with her
+2025-12-28|Suisei shows up for Miko’s 25-hour stream, Miko asks her to sleep with her
 2025-12-26|Miko talks about Suisei giving her a strawberry after Botan forgets to give her hers
 2025-12-24|Miko talks about having dinner with Fubuki, Lui, and Suisei, and setting up the tree at Suisei’s place
 2025-12-24|MiComet at Bae’s Christmas party
@@ -923,6 +923,42 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
   },
 };
 
+// Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
+const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'official'; label: string; official: true }>> = {
+  'c2-2025-002': [
+    { url: 'https://www.youtube.com/watch?v=jtU-KcAoRZw', kind: 'youtube', label: '白上吹雪原始直播', official: true },
+  ],
+  'c2-2025-003': [
+    { url: 'https://www.youtube.com/watch?v=2wClKY6mmyU', kind: 'youtube', label: '角卷綿芽官方MV', official: true },
+  ],
+  'c2-2025-004': [
+    { url: 'https://www.youtube.com/watch?v=2j_UEalq-Hc', kind: 'youtube', label: '櫻巫女25小時直播第一場', official: true },
+  ],
+  'c2-2025-009': [
+    { url: 'https://www.youtube.com/watch?v=dVe9H3OCPcQ', kind: 'youtube', label: '櫻巫女《ホロライブランド》原始直播', official: true },
+  ],
+  'c2-2025-010': [
+    { url: 'https://www.youtube.com/watch?v=0Etx410rQZo', kind: 'youtube', label: '櫻巫女《MIMESIS》原始直播', official: true },
+    { url: 'https://www.youtube.com/watch?v=UhN5f0lz5bE', kind: 'youtube', label: '百鬼綾目《MIMESIS》原始直播', official: true },
+    { url: 'https://www.youtube.com/watch?v=VKMeFf5uSb8', kind: 'youtube', label: '星街彗星《MIMESIS》原始直播', official: true },
+  ],
+  'c2-2025-028': [
+    { url: 'https://www.youtube.com/watch?v=A96w5PJl4V0', kind: 'youtube', label: '水宮樞《エアライダー》原始直播', official: true },
+    { url: 'https://www.youtube.com/watch?v=ngh1AgxU8gg', kind: 'youtube', label: '星街彗星《エアライダー》原始直播', official: true },
+  ],
+  'c2-2025-046': [
+    { url: 'https://www.youtube.com/watch?v=QDLZ2l45LAM', kind: 'youtube', label: '劍持刀也×星街彗星原始直播', official: true },
+  ],
+  'c2-2025-072': [
+    { url: 'https://www.youtube.com/watch?v=9yAUyrBddbQ', kind: 'youtube', label: 'hololive官方8週年煙火直播', official: true },
+    { url: 'https://holohanabi.com/info/', kind: 'official', label: 'hololive八週年煙火官方活動資訊', official: true },
+  ],
+  'c2-2025-090': [
+    { url: 'https://www.youtube.com/watch?v=GaVdCFI98P4', kind: 'youtube', label: '櫻巫女夏日樂園原始直播', official: true },
+    { url: 'https://www.youtube.com/watch?v=oU8z__X4pYg', kind: 'youtube', label: '星街彗星夏日樂園原始直播', official: true },
+  ],
+};
+
 const classificationOverrides2025: Record<string, {
   side?: Side;
   sharedCategory?: 'gen0' | 'shiraken' | 'oneOnOne' | 'group';
@@ -966,6 +1002,7 @@ const data = rows.split('\n').map((row) => {
     type,
     link: verifiedSourceLinks2025[id]?.link ?? '',
     source: verifiedSourceLinks2025[id]?.source ?? 'MiComet Compendium II',
+    ...(recoveredSources2025[id] ? { sources: recoveredSources2025[id], sourceStatus: 'verified' as const } : {}),
     ...(classification.sharedCategory ? { sharedCategory: classification.sharedCategory } : {}),
     ...(classification.reciprocal ? { reciprocal: true } : {}),
     ...(classification.supportCategory ? { supportCategory: classification.supportCategory } : {}),
