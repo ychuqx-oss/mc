@@ -555,8 +555,8 @@ const HOLOMEM_SUPPORT_ACTORS = [
   "フブみこメット"
 ] as const;
 
-const FUBUMICOMET_PATTERN = /(?:FubuMiComet|Fubu\\s*MiComet|フブみこめっと|フブミコメット|フブみこメット)/i;
-const FUBUKI_ACTOR_PATTERN = /^(?:白上吹雪|白上フブキ|Shirakami Fubuki|Fubuki)\\b?/i;
+const FUBUMICOMET_PATTERN = /(?:FubuMiComet|Fubu\s*MiComet|フブみこめっと|フブミコメット|フブみこメット)/i;
+const FUBUKI_ACTOR_PATTERN = /^(?:白上吹雪|白上フブキ|Shirakami Fubuki|Fubuki)/i;
 
 export function isHolomenSupportStory(story: Pick<MiCometStory, 'side' | 'title' | 'titleZh'>): boolean {
   if (story.side !== 'others') return false;
