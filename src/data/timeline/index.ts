@@ -573,7 +573,7 @@ export function isHolomenSupportStory(story: Pick<MiCometStory, 'side' | 'title'
 function classifySupportCategory(story: MiCometStory, holomenSupport: boolean): SupportCategory | undefined {
   const title = (story.titleZh || story.title || '').trim();
   // FubuMiComet is a real holomem trio; it remains in Fubuki's dedicated count.
-  if (FUBUMICOMET_PATTERN.test(title)) return 'fubuki';
+  if (FUBUMICOMET_PATTERN.test(title) && (story.side === 'shared' || holomenSupport)) return 'fubuki';
   // The separate Fubuki Support bucket requires Fubuki herself to be the actor,
   // not merely a mention inside a news article, a game or another member's story.
   if (holomenSupport && FUBUKI_ACTOR_PATTERN.test(title)) return 'fubuki';
