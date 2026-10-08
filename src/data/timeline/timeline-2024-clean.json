@@ -147,20 +147,6 @@
     "link": "https://www.youtube.com/watch?v=rZQPGM2oWBk"
   },
   {
-    "id": "c2024-008",
-    "displayId": "24-02-CLEAN-5",
-    "date": "2024-02-26",
-    "phase": 5,
-    "side": "shared",
-    "emoji": "💛",
-    "title": "Hololive線下聯動中的miComet貼貼總整理",
-    "titleZh": "Hololive線下聯動中的miComet貼貼總整理",
-    "ctx": "Hololive線下聯動總集編整理出多組成員自然貼貼的場面，其中包含Miko與星街相關段落。",
-    "ctxZh": "Hololive線下聯動總集編整理出多組成員自然貼貼的場面，其中包含Miko與星街相關段落。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=QkINY-M34JU"
-  },
-  {
     "id": "official-2024-0302-singapore-vtr",
     "displayId": "24-03-OFFICIAL-1",
     "date": "2024-03-02",
@@ -362,8 +348,8 @@
     "emoji": "☄️",
     "title": "星街說想和Miko聊天是為了直播商業效果",
     "titleZh": "星街說想和Miko聊天是為了直播商業效果",
-    "ctx": "手繪短片中，星街表示想和Miko說話，但又補上是為了配信用的商業理由，延續miComet的商業貼貼梗。",
-    "ctxZh": "手繪短片中，星街表示想和Miko說話，但又補上是為了配信用的商業理由，延續miComet的商業貼貼梗。",
+    "ctx": "手繪短片中，星街表示想和Miko說話，但又補上是為了配信用的商業理由。",
+    "ctxZh": "手繪短片中，星街表示想和Miko說話，但又補上是為了配信用的商業理由。",
     "type": "Clip",
     "link": "https://www.youtube.com/shorts/aC7tju4YrjU"
   },
@@ -483,20 +469,6 @@
     "supportCategory": "fubuki"
   },
   {
-    "id": "c2024-029",
-    "displayId": "24-06-CLEAN-4",
-    "date": "2024-06-26",
-    "phase": 5,
-    "side": "shared",
-    "emoji": "💛",
-    "title": "Miko與星街過去留下伏線般的片段被再次整理",
-    "titleZh": "Miko與星街過去留下伏線般的片段被再次整理",
-    "ctx": "短片以伏線感很重的舊片段為題，回收Miko與星街過去互動中的細節。",
-    "ctxZh": "短片以伏線感很重的舊片段為題，回收Miko與星街過去互動中的細節。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=In3v-Sfl6gw"
-  },
-  {
     "id": "c2024-030",
     "displayId": "24-06-CLEAN-5",
     "date": "2024-06-29",
@@ -531,8 +503,8 @@
     "phase": 5,
     "side": "shared",
     "emoji": "💛",
-    "title": "miComet回看初期直播受到巨大精神傷害",
-    "titleZh": "miComet回看初期直播受到巨大精神傷害",
+    "title": "Miko與星街回看早期直播，因過往貼貼片段尷尬不已",
+    "titleZh": "Miko與星街回看早期直播，因過往貼貼片段尷尬不已",
     "ctx": "Miko與星街一起回看過去的miComet直播，兩人因早期貼貼與青澀互動而尷尬到受不了。多支同日剪輯合併為四周年回顧前篇。",
     "ctxZh": "Miko與星街一起回看過去的miComet直播，兩人因早期貼貼與青澀互動而尷尬到受不了。多支同日剪輯合併為四周年回顧前篇。",
     "type": "Clip",
@@ -549,8 +521,8 @@
     "emoji": "☄️",
     "title": "星街在miComet回顧中展現最像實況主的一面",
     "titleZh": "星街在miComet回顧中展現最像實況主的一面",
-    "ctx": "星街在miComet回顧直播中快速接話與製造效果，被整理成她最像實況主的瞬間。",
-    "ctxZh": "星街在miComet回顧直播中快速接話與製造效果，被整理成她最像實況主的瞬間。",
+    "ctx": "星街在miComet回顧直播中快速接話與製造效果。",
+    "ctxZh": "星街在miComet回顧直播中快速接話與製造效果。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=vpyp7JpBLT8"
   },
@@ -592,8 +564,8 @@
     "emoji": "🌸",
     "title": "Miko終於在五子棋中戰勝星街",
     "titleZh": "Miko終於在五子棋中戰勝星街",
-    "ctx": "miComet遊戲對決中，Miko終於在五子棋戰勝星街，被剪輯整理成歷史性瞬間。",
-    "ctxZh": "miComet遊戲對決中，Miko終於在五子棋戰勝星街，被剪輯整理成歷史性瞬間。",
+    "ctx": "miComet遊戲對決中，Miko終於在五子棋戰勝星街。",
+    "ctxZh": "miComet遊戲對決中，Miko終於在五子棋戰勝星街。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=G-cNmtTqeY8"
   },
@@ -606,8 +578,8 @@
     "emoji": "🌸",
     "title": "Miko玩了十小時瑪利歐仍被星街打爆",
     "titleZh": "Miko玩了十小時瑪利歐仍被星街打爆",
-    "ctx": "Miko即使已經玩了十小時以上瑪利歐，仍在對決中被星街打得很慘，延續miComet遊戲實力差距梗。",
-    "ctxZh": "Miko即使已經玩了十小時以上瑪利歐，仍在對決中被星街打得很慘，延續miComet遊戲實力差距梗。",
+    "ctx": "Miko即使已經玩了十小時以上瑪利歐，仍在對決中被星街打得很慘。",
+    "ctxZh": "Miko即使已經玩了十小時以上瑪利歐，仍在對決中被星街打得很慘。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=5pkjpx08Qb4"
   },
@@ -1008,20 +980,6 @@
     "link": "https://www.youtube.com/watch?v=001F_HcLxI8"
   },
   {
-    "id": "c2024-051",
-    "displayId": "24-10-CLEAN-3",
-    "date": "2024-10-09",
-    "phase": 5,
-    "side": "others",
-    "emoji": "⭐",
-    "title": "白上吹雪在學力測驗中的直笛答案被整理",
-    "titleZh": "白上吹雪在學力測驗中的直笛答案被整理",
-    "ctx": "Hololive小學學力測驗相關剪輯回收白上吹雪、Miko與星街等成員的題目與爆笑答案，列為第三方助攻脈絡。",
-    "ctxZh": "Hololive小學學力測驗相關剪輯回收白上吹雪、Miko與星街等成員的題目與爆笑答案，列為第三方助攻脈絡。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=kgwYhO_hJMU"
-  },
-  {
     "id": "c2024-052",
     "displayId": "24-10-CLEAN-4",
     "date": "2024-10-13",
@@ -1035,20 +993,6 @@
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=LfmViq96l1Y",
     "supportCategory": "fubuki"
-  },
-  {
-    "id": "c2024-053",
-    "displayId": "24-10-CLEAN-5",
-    "date": "2024-10-13",
-    "phase": 5,
-    "side": "miko",
-    "emoji": "🌸",
-    "title": "Miko九月精選收錄holoGTA與miComet相關片段",
-    "titleZh": "Miko九月精選收錄holoGTA與miComet相關片段",
-    "ctx": "Miko九月精選總集編回顧Hololive成員連動、holoGTA與miComet相關片段。",
-    "ctxZh": "Miko九月精選總集編回顧Hololive成員連動、holoGTA與miComet相關片段。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=zcHiS_suDuI"
   },
   {
     "id": "c2024-054",
@@ -1223,20 +1167,6 @@
     "ctxZh": "短片回顧FubuMiComet自2024年初以來的變化，也包含3D版Miko與星街融合等miComet片段。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=rZy0Pp8J8iY"
-  },
-  {
-    "id": "c2024-062",
-    "displayId": "24-11-CLEAN-6",
-    "date": "2024-11-07",
-    "phase": 5,
-    "side": "suisei",
-    "emoji": "☄️",
-    "title": "星街在FBKINGDOM相關片段中展現可愛動作",
-    "titleZh": "星街在FBKINGDOM相關片段中展現可愛動作",
-    "ctx": "英文剪輯整理星街的可愛動作，人物標題包含Miko與miComet相關脈絡，列為星街側補充。",
-    "ctxZh": "英文剪輯整理星街的可愛動作，人物標題包含Miko與miComet相關脈絡，列為星街側補充。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=IGJow6ef1gI"
   },
   {
     "id": "c2024-063",
