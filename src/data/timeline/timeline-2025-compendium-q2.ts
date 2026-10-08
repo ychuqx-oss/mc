@@ -13,8 +13,7 @@ c2-2025-142|25-C2-145|2025-06-17|6|miko|🌸|Clip|Miko發布Caramel Pain短片
 c2-2025-144|25-C2-147|2025-06-15|6|miko|🌸|Stream|Miko提到miComet有成對緞帶
 c2-2025-145|25-C2-148|2025-06-12|6|miko|🌸|Text|Miko發布miComet副帳打情罵俏推文
 c2-2025-146|25-C2-149|2025-06-12|6|others|⭐|News|miComet登上Hololive Situation企劃
-c2-2025-148|25-C2-151|2025-06-08|6|others|⭐|Stream|FubuMiComet參加VRChat
-c2-2025-149|25-C2-152|2025-06-08|6|others|⭐|Stream|白上吹雪稱讚miComet貼貼
+c2-2025-148|25-C2-151|2025-06-08|6|others|⭐|Stream|FubuMiComet前往VRChat的ぽこピーランド遊玩
 c2-2025-151|25-C2-154|2025-06-06|6|others|⭐|News|Hololive雜誌刊登miComet內容
 c2-2025-154|25-C2-157|2025-06-03|6|miko|🌸|Text|Miko邀星街參加瑪利歐賽車
 c2-2025-157|25-C2-160|2025-05-31|6|miko|🌸|Stream|Miko說星街在LINE洗貼圖，也讓她更常出門
