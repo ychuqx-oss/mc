@@ -917,6 +917,10 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.goodsmile.com/ja/event/6200 https://hobby.watch.impress.co.jp/docs/news/2011431.html',
     source: 'Good Smile Company official exhibition page; HOBBY Watch original May 2 event report',
   },
+  'c2-2025-205': {
+    link: 'https://www.youtube.com/watch?v=BpEHruDK4yk',
+    source: 'Miko official YouTube original Pokémon Ruby livestream (2025-04-05)',
+  },
 };
 
 const classificationOverrides2025: Record<string, {
