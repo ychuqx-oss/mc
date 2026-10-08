@@ -11,7 +11,6 @@ const englishRows = `
 2025-12-29|MiComet make an appearance in Watame’s MV
 2025-12-27|Suisei shows up for Miko’s 25-hour stream, Miko asks her to sleep with her
 2025-12-26|Miko talks about Suisei giving her a strawberry after Botan forgets to give her hers
-2025-12-26|Miko retweets Christmas miComet art
 2025-12-24|Miko talks about having dinner with Fubuki, Lui, and Suisei, and setting up the tree at Suisei’s place
 2025-12-24|MiComet at Bae’s Christmas party
 2025-12-23|MiComet Minecraft date
@@ -25,14 +24,11 @@ const englishRows = `
 2025-12-13|Suisei has larger hands than Miko?
 2025-12-12|Miko uses part of miComet artwork for her karaoke stream and sings Kireigoto
 2025-12-11|Miko talks about Suisei
-2025-12-11|Miko retweets miComet art
 2025-12-09|Miko refers to herself as Anemachi’s little sister
 2025-12-08|MiComet designs
 2025-12-06|Miko’s top Discord friends are Lui, Subaru, and Suisei
-2025-12-05|Miko talks about the fortune teller incident again
 2025-12-01|Suisei says getting married is impossible for her and talks about her ideal partner
 2025-11-30|MiComet + Suu join a voice channel together, Suisei claims Suu as her daughter
-2025-11-29|Minecraft Collab
 2025-11-28|Lui tells a story about miComet yakiniku, and Suisei placing Miko’s grilled meat between the grill and the plate
 2025-11-28|Subaru shares a story of Miko reacting to Suisei with a donut cushion on her head
 2025-11-24|Iroha reacts to Miko’s sign
@@ -47,13 +43,10 @@ const englishRows = `
 2025-10-24|Miko has more sukiyaki with Suisei
 2025-10-24|Suisei gives a shoutout
 2025-10-22|Miko talks about Anemachi, Fubuki, Subaru, Suisei, and Ui visiting her house; having sukiyaki with Suisei; and confusing Suisei with Hoshitani
-2025-10-20|Miko retweets gay miComet art
 2025-10-19|Suisei names Miko as the closest holomem to her
 2025-10-16|Iroha finds it cute that Suisei is tsundere around Miko
-2025-10-15|Miko retweets miComet art
 2025-10-13|MiComet blame each other for not having a miComet live concert, and FubuMiComet take a hamster personality quiz
 2025-10-12|Suisei enters a Chiikawa lottery for Miko’s sake
-2025-10-12|Miko retweets miComet art
 2025-10-08|Miko comments on fanart
 2025-10-03|FubuMio MiComet
 2025-10-03|KAI-YOU reports on miComet’s new song Lollipop and its creators
@@ -61,47 +54,32 @@ const englishRows = `
 2025-10-02|MiComet have an amusement park date with matching outfits and reveal a new original song
 2025-10-02|Miko backseats Suisei in TCG Card Shop Simulator
 2025-10-02|Official miComet new outfit merchandise goes on sale
-2025-09-29|MiComet start teasing something
 2025-09-28|FubuMiComet Minecraft Manager
 2025-09-28|FubuMiComet take part in Minecraft Kimodameshi 2025
 2025-09-26|Miko became more outgoing due to Suisei’s influence
 2025-09-26|Subaru talks about miComet playing the Switch together
-2025-09-24|Suisei helps MikoSuba defuse a bomb
-2025-09-22|Miko retweets gay miComet art
 2025-09-22|Miko asks Kanata and Lamy who they’d rather date between miComet
 2025-09-16|Suisei hiding her belly only makes Miko want to see it more
 2025-09-12|Miko bought the pair rings
 2025-09-11|Suisei on Miko’s baseball team
 2025-09-09|Miko calls Subaru “Suisei” again
-2025-09-08|Miko retweets miComet art
 2025-09-07|Miko refers to herself and Suisei as princess and prince
 2025-09-06|Hololive 8th anniversary 0th gen fireworks
-2025-09-05|Gen 0 personality test collab
 2025-08-31|Miko gets teased about Suisei
 2025-08-30|Suisei wants to tease Miko with the autograph
-2025-08-29|VRC haunted house collab organized by Fubuki
 2025-08-29|Suisei gets Miko an autograph from the Sambomaster live
 2025-08-28|Suisei suggests that Miko gets hair buns; Miko calls Suisei an M and talks about her strange habits
 2025-08-26|Miko shares a story about Iroha/Suisei
-2025-08-26|Miko retweets miComet art
-2025-08-24|MiComet in Koyori’s Minecraft Werewolf collab
-2025-08-23|Suisei likes miComet art
 2025-08-23|Miko explains the Tamagotchi incident and talks about the bento that Anemachi made for her
 2025-08-22|Suisei complains to Lui that Miko didn’t give her the Tamagotchi
 2025-08-19|Suisei has a mysterious idea for a game involving monitoring the recording of a bed, seeing a dog on it, and reporting to the owner
 2025-08-18|Miko shares a story of off-mode Kanahei Suisei and talks about the 94-year-old 35P
 2025-08-17|NHK Radio finds a 94-year-old 35P; Suisei talks about not getting married
 2025-08-16|Hololive Summer Park, amusement park date
-2025-08-14|Hololive Summer Park
-2025-08-13|Miko retweets miComet art
-2025-08-12|Hololive Summer Park
 2025-08-12|Miko plays a rhythm game with BIBBIDIBA
 2025-08-12|Lui wants to build an airship for miComet
 2025-08-09|Kanata talks about the pair rings she gave to Miko
-2025-08-08|Miko retweets miComet
 2025-08-08|Lui talks about playing a murder mystery game with Ayame, Fubuki, Miko, Mio, Subaru, and Suisei
-2025-08-06|Suisei joins Miko’s collab with Subaru
-2025-08-04|Miko retweets miComet art
 2025-08-03|Kanata picks pair rings for Miko to wear with Suisei
 2025-08-02|Miko’s 7th anniversary; Suisei wins the Miko Expert Championship
 2025-08-02|Subaru talks about the cotton candy party with miComet + others
@@ -110,49 +88,35 @@ const englishRows = `
 2025-07-31|Miko declares that Suisei’s home is Miko’s second home
 2025-07-28|Suisei calms herself down by thinking about Inuchi
 2025-07-28|Hololive Hanafuda collab
-2025-07-25|Iroha likes miComet
 2025-07-20|MiComet vote together
-2025-07-20|Miko retweets a lot of miComet art
 2025-07-19|MiComet go on a business trip for their anniversary, Miko teases a Twitter Space
 2025-07-18|Gen 0 collab: managers comment on their talents
 2025-07-16|Suisei realizes that she forgot to remove the filter from her SHARP purifier
-2025-07-15|Miko retweets miComet art
 2025-07-14|Fubuki
 2025-07-07|MiComet have suspiciously matching clothes in promo
 2025-07-07|Matsuri insists that miComet are not business
-2025-07-06|Miko denies the allegations
 2025-07-06|Suisei talks about Miko’s streaming frequency, and playing Minecraft with her on the day the world was prophesied to end
 2025-07-04|MiComet Minecraft project
-2025-07-03|Shiraken REPO
-2025-07-02|MiComet have matching members’ wallpapers this month
 2025-07-02|Shiraken REPO
 2025-06-28|FubuMiComet + Mio + Ririka electric chair game
 2025-06-27|Suisei scares Miko by sending her miComet fanart after Miko wins the Switch 2 lottery
 2025-06-26|Suisei pressures Miko to watch Gundam immediately
 2025-06-25|Korone, Lamy, Marine, and Noel discuss who should take the lead in miComet fanfiction
-2025-06-24|Miko retweets a miComet animation
 2025-06-24|Suisei tells Marine to hang out with Fubuki and Miko in order to gain motivation
-2025-06-22|Suisei retweets miComet art
 2025-06-22|Miko brags about winning the Switch 2 lottery
 2025-06-20|Suisei calls into Miko’s stream and they talk about the Minecraft castle project, Gundam, Raft, and their upcoming anniversary
 2025-06-20|MiComet plan to build Minecraft castles
 2025-06-18|Suisei’s chat tells her to watch the final Gundam episode on Miko’s TV
 2025-06-17|Miko checks the fourth Switch 2 lottery results and talks about Suisei and Subaru’s results
-2025-06-16|Miko retweets art of maid miComet making a heart with their hands
 2025-06-15|Miko mentions that miComet have matching ribbons
 2025-06-12|Flirting on sub accounts
 2025-06-12|MiComet featured in hololive situation
-2025-06-11|Miko retweets miComet art
 2025-06-08|FubuMiComet VRChat
 2025-06-08|Fubuki appreciates miComet teetee
 2025-06-06|The hololive magazine features miComet
-2025-06-05|Mario Kart collab
 2025-06-03|Miko sends an invitation to Suisei for Mario Kart
-2025-06-01|Fubuki teases FubuMiComet in June
 2025-05-31|Miko mentions Suisei spamming stickers in their LINE chats, and that Suisei is the reason why she goes out more often now
-2025-05-31|Miko retweets miComet art
 2025-05-29|SubaMiComet R.E.P.O. collab
-2025-05-28|Miko talks about Suisei and her dog
 2025-05-27|Miko wants to play a co-op game with Suisei, but is scared that Suisei will get mad at her
 2025-05-26|Miko has a dream about her business partner
 2025-05-25|Miko draws her dog with a Suisei plushie
@@ -163,22 +127,16 @@ const englishRows = `
 2025-05-19|Suisei returns and talks about her business partner brainwashing her
 2025-05-15|Suisei calls into Miko’s stream and teases miComet content
 2025-05-12|Suisei mentions in Miko’s mengen
-2025-05-12|Miko retweets miComet (+ Kanade/Suu) art
-2025-05-11|Suisei caves in and looks for a smartphone cover
-2025-05-11|Iroha refers to the Minecraft ship as “miComet’s bond”
 2025-05-10|Miko talks about Suisei, shoulder massages, and her Sambomaster collab
 2025-05-10|On NHK Radio, Marine wonders why Miko wasn’t called to fill for Suisei’s absence instead
 2025-05-08|Lui recalls having shabu-shabu at Suisei’s house and playing a Conan-style mystery game with Miko and others
 2025-05-06|Suisei opens and miComet went to a fortune teller
-2025-05-06|Miko retweets miComet art
 2025-05-02|In the Minecraft fishing contest, Suisei builds a boat for Miko and rushes over when she sees the boat on fire
-2025-05-02|Miko retweets miComet art
 2025-05-02|Suisei tweets and hosts a Twitter Space about having dinner alone while Miko is with friends
 2025-05-02|Miko messages Suisei late at night and recalls a Conan-style mystery game with Lui and others
 2025-05-02|Good Smile Company posts miComet teetee
 2025-05-02|Miko and Suisei dance to BIBBIDIBA in a Short
 2025-05-01|Miko streams a gal game off-stream to holomems (including Suisei) and talks about not replying to Suisei on LINE
-2025-04-30|Miko retweets more FubuMiComet art
 2025-04-27|Suisei’s radio guest is a big fan of Miko and gushes about DDD Transcription
 2025-04-24|Miko reflects on MikoShuba being less teetee than miComet
 2025-04-23|Miko prefers a good voice and a good singer for her partner
@@ -188,11 +146,9 @@ const englishRows = `
 2025-04-14|Miko goes on a trip to the hot springs with Anemachi and Suisei
 2025-04-14|Miko dances to Soiree in her short
 2025-04-11|Miko asks if Suichan wants to be eaten
-2025-04-11|Miko retweets miComet art
 2025-04-09|Fubuki and Suisei appear in Miko’s short
 2025-04-08|Miko refers to Suisei’s house as Miko’s garden
 2025-04-06|Miko admits to bringing a Suisei plushie on trips
-2025-04-06|Miko retweets FubuMiComet
 2025-04-05|Miko thinks it will be fun to put Suisei in a haunted mansion
 2025-04-04|Kanade tries to bring Miko and Suisei together
 2025-04-03|Watame sees Miko and Suisei interacting and calls it a business violation
@@ -206,14 +162,11 @@ const englishRows = `
 2025-03-22|For Suisei’s birthday/anniversary, miComet give a present to a newborn baby named Miko
 2025-03-21|Miko recommends Suisei in hair buns
 2025-03-20|Suisei asks for the chiisai jokes to stop
-2025-03-16|Miko retweets miComet art
 2025-03-16|AZKi asks Suisei for a miComet collab with Iroha, and Suisei gushes about Miko’s boat to her
-2025-03-15|Miko retweets miComet art
 2025-03-14|Miko builds a boat for Suisei on White Day
 2025-03-11|Miko talks about miComet both forgetting to bring their plushies
 2025-03-10|Miko says that Suisei’s sleeping face is not that rare
 2025-03-10|Suisei talks about holofes and playing cards for Miko
-2025-03-10|Miko retweets miComet cosplay
 2025-03-10|Ao, Lui, Marine, Noel, and Subaru talk about the miComet waiting room card game incident
 2025-03-10|Iroha doesn’t want to get between miComet
 2025-03-09|Gen 0 perform BIBBIDIBA at holofes in the Creators’ Stage
@@ -223,11 +176,9 @@ const englishRows = `
 2025-03-06|Okayu asks if Suisei is prone to Miko’s insults
 2025-03-05|Miko’s Re:flection MV has the same director as Suisei’s GHOST MV
 2025-03-05|Kanade and Niko observe miComet teetee
-2025-03-04|Minecraft
 2025-03-03|Suisei complains about Miko not telling her about playing Minecraft
 2025-03-03|Miko’s stream thumbnail is miComet art
 2025-03-03|Niko avoids interrupting miComet teetee
-2025-03-02|Miko retweets miComet
 2025-03-01|Suisei joins Miko’s tournament as a last minute co-host in case Miko has a stomach issue
 2025-02-28|Miko hosts a tournament
 2025-02-27|Miko flirts with Subaru and Subaru asks Suisei for help
@@ -235,7 +186,6 @@ const englishRows = `
 2025-02-27|Miko uses kyou mo kawaii as the example for her tweet
 2025-02-26|Miko appears in a shootout in Suisei’s short
 2025-02-25|Suisei plays Poppy Playtime and refers to Kissy Missy as Miko
-2025-02-24|Miko retweets MaguTako for their anniversary
 2025-02-24|AZKi also wonders if Sora’s nyumu is about miComet
 2025-02-23|Suisei runs after Miko in the background of Towa’s short
 2025-02-21|Minecraft
@@ -252,33 +202,26 @@ const englishRows = `
 2025-02-14|Suisei’s stream thumbnail on Valentine’s Day is from miComet art
 2025-02-13|MiComet appear as guests in Fubuki’s solo live FBKINGDOM ANTHEM
 2025-02-13|MiComet appear in Fubuki’s MV
-2025-02-13|Miko retweets FubuMiComet art
 2025-02-11|MiComet teetee on Fubuki’s stream
 2025-02-11|Hajime pulls Miko’s fortune in Minecraft telling her to ask the next person she encounters (Suisei) for her leg hair; Miko declares that Suisei is indeed growing leg hair
 2025-02-10|Minecraft
 2025-02-09|Minecraft
 2025-02-08|Daoko, a hardcore 35P, appears on NHK Radio
-2025-02-07|Minecraft
-2025-02-06|Miko retweets miComet art
 2025-02-05|Minecraft
 2025-02-04|Miko plays Poppy Playtime
 2025-02-04|Suisei works on Miko’s Minecraft project
 2025-02-03|MiComet play on the new Minecraft server
 2025-02-01|Miko tweets about Suisei’s Budokan live
-2025-01-28|Miko retweets miComet
 2025-01-28|Suisei’s solo Fast Food Simulator stream
 2025-01-27|Suisei does not have time to join the Holonalds collab, so she plays silently alone and sends a video to Miko
 2025-01-25|Miko talks about going to Suisei’s house for oysters and compares Cinderella after midnight to Suisei
-2025-01-24|Miko retweets a mention of her on NHK VTuber
 2025-01-22|Miko talks about going to the fortune teller with Anemachi and Suisei
 2025-01-22|Hajime and Kanade make cheese fondue with miComet
 2025-01-21|Suisei imagines Miko singing her song Deadpool
-2025-01-14|Suisei talks with Tuki about romance
 2025-01-13|Hololive New Year Game Festival
 2025-01-11|Flower Rhapsody is played on NHK radio
 2025-01-11|Miko accidentally left Suisei’s cup in her stream
 2025-01-10|MiComet game practice
-2025-01-09|Miko retweets gay art again from over a year ago
 2025-01-09|Fubuki retweets a clip of herself watching miComet from afar
 2025-01-08|Miko wins GOD twice, Suisei checks her stream while failing her own luck-based game with the same 1/8192 odds
 2025-01-08|FubuMiComet featured by Holo Card
@@ -292,7 +235,6 @@ const englishRows = `
 2025-01-02|Suisei appears in the MikKorone MV
 2025-01-01|Miko reviews some miComet content
 2025-03-18|Miko Remembers Suisei Asking Her to Tell a Funny Story
-2025-02-22|Miko Retweets miComet Art
 2025-02-12|A miComet Reference Appears in a Tweet About Fubuki's Solo Live
 2025-02-10|Kanata and Korone Make a miComet Joke
 2025-01-19|Miko Knows Suisei's Greeting by Heart
@@ -305,8 +247,6 @@ const englishRows = `
 2025-09-27|MiComet Make Surprise Calls and Announce Their Upcoming New Outfit Project
 2025-08-19|Suisei Comes Up with a Strange Game Idea Involving Filming a Bed and a Dog
 2025-08-09|Kanata Talks About Giving Miko and Suisei Matching Rings
-2025-07-29|Marine Praises miComet
-2025-07-14|Fubuki Supports miComet
 2025-10-16|Iroha Thinks Suisei Being Tsundere Around Miko Is Cute
 `.trim();
 
@@ -693,10 +633,6 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
     link: 'https://www.youtube.com/watch?v=W7hCj5B7ACQ',
     source: 'Miko official YouTube original stream',
   },
-  'c2-2025-160': {
-    link: 'https://www.youtube.com/watch?v=7xyrj2D6Xfk',
-    source: 'Miko official YouTube original stream',
-  },
   'c2-2025-168': {
     link: 'https://www.youtube.com/watch?v=K-O4Xi6ipnk',
     source: 'Suisei official YouTube original stream',
@@ -1002,8 +938,9 @@ const data = rows.split('\n').map((row) => {
   const [id, displayId, date, phase, side, emoji, type, rawTitle] = row.split('|');
   const titleZh = cleanTitle(rawTitle).trim();
   const titleEn = nextEnglishTitle(date, titleZh);
-  const ctxZh = `${titleZh}。`;
-  const ctxEn = `${date.replace(/-/g, '/')}, ${titleEn}.`;
+  // No synthetic description: if a source provides no additional facts, show title only.
+  const ctxZh = '';
+  const ctxEn = '';
   const classification = classificationOverrides2025[id] || {};
   return {
     id,
