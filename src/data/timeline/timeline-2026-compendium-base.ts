@@ -68,18 +68,11 @@ c2-2026-106|26-C2-111|2026-01-03|6|miko|🌸|Stream|Miko在新年關係圖把星
 c2-2026-108|26-C2-112|2026-01-01|6|shared|💛|Stream|新春五子棋大賽原定Miko首戰星街，但因賽程事故未能完成miComet對決|Miko was scheduled to face Suisei in the New Year Gomoku tournament, but the miComet match did not happen after event trouble
 `.trim();
 
-function zhBodyFor(title: string, _date: string) {
-  return `${title}。`;
-}
-
-function enBodyFor(title: string, _date: string) {
-  return `${title}.`;
-}
-
 const data = rows.split('\n').map((row) => {
   const [id, displayId, date, phase, side, emoji, type, titleZh, titleEn] = row.split('|');
-  const ctxZh = zhBodyFor(titleZh, date);
-  const ctxEn = enBodyFor(titleEn || titleZh, date);
+  // The title already states the event; do not fabricate a second paragraph.
+  const ctxZh = '';
+  const ctxEn = '';
   return {
     id,
     displayId,
