@@ -149,6 +149,7 @@ const englishRows = `
 2025-04-08|Miko refers to Suisei’s house as Miko’s garden
 2025-04-06|Miko admits to bringing a Suisei plushie on trips
 2025-04-05|Miko thinks it will be fun to put Suisei in a haunted mansion
+2025-04-05|Miko says Kanade wants to bring MiComet together during a Pokémon stream
 2025-04-04|Kanade tries to bring Miko and Suisei together
 2025-04-03|Watame sees Miko and Suisei interacting and calls it a business violation
 2025-04-01|On April Fools’ Day, Miko unveils her Live2D and Suisei joins her
