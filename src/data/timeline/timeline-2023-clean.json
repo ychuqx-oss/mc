@@ -616,6 +616,58 @@
     "source": "Miko official YouTube"
   },
   {
+    "id": "c2-2025-086",
+    "displayId": "23-08-RECOVERED-86",
+    "date": "2023-08-13",
+    "phase": 4,
+    "side": "suisei",
+    "emoji": "☄️",
+    "title": "Suisei and Azusa Tadokoro discuss miComet singing Idol on Heikousen Scramble",
+    "titleZh": "星街與田所梓在《平行線すくらんぶる》談miComet合唱〈アイドル〉",
+    "titleEn": "Suisei and Azusa Tadokoro discuss miComet singing Idol on Heikousen Scramble",
+    "ctx": "",
+    "ctxZh": "",
+    "ctxEn": "",
+    "type": "Audio",
+    "link": "https://www.youtube.com/watch?v=Fcm6f3TIcb8",
+    "source": "文化放送第124回官方廣播存檔（2023/08/13播出）",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=Fcm6f3TIcb8",
+        "kind": "youtube",
+        "label": "文化放送第124回官方廣播存檔（2023/08/13播出）",
+        "official": true
+      }
+    ],
+    "sourceStatus": "verified"
+  },
+  {
+    "id": "c2-2025-089",
+    "displayId": "23-08-RECOVERED-89",
+    "date": "2023-08-17",
+    "phase": 4,
+    "side": "miko",
+    "emoji": "🌸",
+    "title": "Miko dreams of an impromptu concert where Suisei appears and reassures her",
+    "titleZh": "Miko夢到突發演唱會，星街登台讓她安心",
+    "titleEn": "Miko dreams of an impromptu concert where Suisei appears and reassures her",
+    "ctx": "",
+    "ctxZh": "",
+    "ctxEn": "",
+    "type": "Stream",
+    "link": "https://www.youtube.com/watch?v=YXLXjLDmE0s",
+    "source": "櫻巫女2023/08/17《HoloCure》原始直播",
+    "sources": [
+      {
+        "url": "https://www.youtube.com/watch?v=YXLXjLDmE0s",
+        "kind": "youtube",
+        "label": "櫻巫女2023/08/17《HoloCure》原始直播",
+        "official": true
+      }
+    ],
+    "sourceStatus": "verified"
+  },
+  {
     "id": "official-2023-0818-idol-short",
     "displayId": "23-08-OFFICIAL-2",
     "date": "2023-08-18",

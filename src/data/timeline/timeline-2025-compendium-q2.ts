@@ -1,17 +1,17 @@
 export default `
 c2-2025-129|25-C2-132|2025-06-28|6|others|⭐|Stream|白上吹雪回顧FubuMiComet、大神澪與一條莉莉華的電椅遊戲
-c2-2025-130|25-C2-133|2025-06-27|6|suisei|☄️|Stream|星街用miComet粉絲圖嚇Miko
+c2-2025-130|25-C2-133|2025-06-27|6|miko|🌸|Stream|Miko抽中Switch 2後，星街傳miComet粉絲圖嚇她
 c2-2025-131|25-C2-134|2025-06-26|6|suisei|☄️|Stream|星街催Miko立刻看鋼彈最終話
 c2-2025-132|25-C2-135|2025-06-25|6|others|⭐|Stream|戌神沁音、雪花菈米、寶鐘瑪琳與白銀諾艾爾討論miComet同人文誰當攻
-c2-2025-134|25-C2-137|2025-06-24|6|suisei|☄️|Stream|星街建議寶鐘瑪琳找白上吹雪和Miko玩
+c2-2025-134|25-C2-137|2025-06-24|6|others|⭐|Stream|寶鐘瑪琳說星街建議她找白上吹雪和Miko玩
 c2-2025-136|25-C2-139|2025-06-22|6|miko|🌸|Stream|Miko炫耀抽中Switch 2
 c2-2025-137|25-C2-140|2025-06-20|6|suisei|☄️|Stream|星街在Miko直播中談麥塊城堡、鋼彈、Raft與周年
-c2-2025-138|25-C2-141|2025-06-20|6|miko|🌸|Text|miComet計畫在麥塊蓋城堡
+c2-2025-138|25-C2-141|2025-06-20|6|suisei|☄️|Text|星街募集Minecraft城堡設計圖，將尺寸更正為80×80
 c2-2025-140|25-C2-143|2025-06-18|6|suisei|☄️|Stream|星街觀眾要她去Miko家看鋼彈最終話
 c2-2025-141|25-C2-144|2025-06-17|6|miko|🌸|Stream|Miko查看Switch 2四次抽選時聊星街與大空昴的抽選結果
 c2-2025-142|25-C2-145|2025-06-17|6|miko|🌸|Clip|Miko發布Caramel Pain短片
 c2-2025-144|25-C2-147|2025-06-15|6|miko|🌸|Stream|Miko提到miComet有成對緞帶
-c2-2025-145|25-C2-148|2025-06-12|6|miko|🌸|Text|Miko發布miComet副帳打情罵俏推文
+c2-2025-145|25-C2-148|2025-06-13|6|miko|🌸|Text|Miko在副帳引用星街貼文並祝賀她
 c2-2025-146|25-C2-149|2025-06-12|6|others|⭐|News|miComet登上Hololive Situation企劃
 c2-2025-148|25-C2-151|2025-06-08|6|others|⭐|Stream|FubuMiComet前往VRChat的ぽこピーランド遊玩
 c2-2025-151|25-C2-154|2025-06-06|6|others|⭐|News|Hololive雜誌刊登miComet內容

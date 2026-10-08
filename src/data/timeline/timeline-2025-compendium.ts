@@ -315,6 +315,43 @@ function nextEnglishTitle(date: string, fallback: string) {
   return cleanEnglish(title || fallback);
 }
 
+// Keep corrected records tied to IDs when dates or same-day row counts change.
+const recoveredEnglishTitles2025: Record<string, string> = {
+  'c2-2025-146': 'MiComet featured in hololive situation',
+  'c2-2025-145': 'Miko quotes Suisei\'s sub-account post to congratulate her',
+  'c2-2025-144': 'Miko mentions that miComet have matching ribbons',
+  'c2-2025-138': 'Suisei asks for Minecraft castle designs and corrects the size to 80 by 80',
+  'c2-2025-134': 'Marine says Suisei suggested spending time with Fubuki and Miko',
+  'c2-2025-130': 'Miko says Suisei scared her with miComet fanart after she won the Switch 2 lottery',
+  'c2-2025-128': 'Flare announces a Shiraken R.E.P.O. stream for the next day',
+  'c2-2025-121': 'MiComet appear in the HoloNatsu Paradise teaser',
+  'c2-2025-122': 'Matsuri insists that miComet are not just business partners',
+  'c2-2025-115': 'MiComet go on an anniversary business trip and Miko announces a Space',
+  'c2-2025-113': 'Miko talks about going to vote with Suisei',
+  'c2-2025-106': 'Calliope posts the miComet keychains she pulled',
+  'c2-2025-099': 'Lui talks about playing a murder mystery game with Ayame, Fubuki, Miko, Mio, Subaru and Suisei',
+  'c2-2025-087': 'Suisei imagines a surveillance game where a dog appears belly-up on a bed',
+  'c2-2025-085': 'Lui says Suisei complained that Miko had not given her the Tamagotchi',
+  'c2-2025-080': 'Miko shares a story about Iroha and Suisei',
+  'c2-2025-078': 'Miko says Suisei got her an autograph from Sambomaster',
+  'c2-2025-071': 'Miko refers to herself and Suisei as princess and prince',
+  'c2-2025-069': 'Miko calls Subaru Suisei during Mario Kart',
+  'c2-2025-068': 'Suisei appears on Miko\'s baseball team in Holo Koshien 2025',
+  'c2-2025-066': 'Miko comments on Suisei\'s Juri outfit covering her belly',
+  'c2-2025-061': 'Subaru says Miko challenged Suisei to a game and lost within five minutes',
+  'c2-2025-053': 'Miko quotes miComet fanart and says she was unhappy about the strawberry',
+  'c2-2025-051': 'Miko talks about Suisei entering a Chiikawa lottery for her',
+  'c2-2025-047': 'Miko quotes Suisei\'s post about being out of breath after filming Shorts',
+  'c2-2025-048': 'Iroha finds Suisei being tsundere around Miko cute',
+  'c2-2025-041': 'Ririka says Miko gave her fluffy socks at Suisei\'s house',
+  'c2-2025-036': 'Miko gives Suisei a doll and Suisei puts its magical-girl clothes on her Suifriend plushie',
+  'c2-2025-024': 'Miko\'s Discord recap shows Subaru, Lui and Suisei as the friends she spent the most time with',
+  'c2-2025-017': 'Miko forgets her bag at Lui\'s and gets it back at Suisei\'s; Suisei wants to take Miko to a party',
+  'c2-2025-014': 'Miko refers to Suisei as the fairy again',
+  'c2-2025-008': 'MiComet join Bae\'s Christmas party',
+  'c2-2025-321': 'FubuMiComet take part in Minecraft Kimodameshi 2025',
+};
+
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
   'c2-2025-031': {
     link: 'https://www.youtube.com/watch?v=tyWUIwwh3r8',
@@ -924,7 +961,108 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 };
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
-const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'official'; label: string; official: true }>> = {
+const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'x' | 'official'; label: string; official: true }>> = {
+  'c2-2025-145': [
+    { url: 'https://x.com/mikochisub/status/1933214151943577953', kind: 'x', label: '櫻巫女副帳原始祝賀貼文', official: true },
+  ],
+  'c2-2025-144': [
+    { url: 'https://www.youtube.com/watch?v=dhyyb7aQQXA', kind: 'youtube', label: '櫻巫女2025/06/15《ソウルキャリバーⅥ》原始直播', official: true },
+  ],
+  'c2-2025-138': [
+    { url: 'https://x.com/suisei_hosimati/status/1936034362522579200', kind: 'x', label: '星街彗星募集城堡設計圖原始貼文', official: true },
+    { url: 'https://x.com/suisei_hosimati/status/1936048189616144729', kind: 'x', label: '星街彗星更正城堡尺寸原始貼文', official: true },
+  ],
+  'c2-2025-134': [
+    { url: 'https://www.youtube.com/watch?v=KIZVanTTmus', kind: 'youtube', label: '寶鐘瑪琳2025/06/24原始雜談直播', official: true },
+  ],
+  'c2-2025-130': [
+    { url: 'https://www.youtube.com/watch?v=p92mDGdQqT8', kind: 'youtube', label: '櫻巫女2025/06/27寶可夢色違耐久原始直播', official: true },
+  ],
+  'c2-2025-128': [
+    { url: 'https://x.com/shiranuiflare/status/1940345313119944895', kind: 'x', label: '不知火芙蕾雅原始R.E.P.O.預告貼文', official: true },
+  ],
+  'c2-2025-121': [
+    { url: 'https://www.youtube.com/watch?v=zHZPrj_bhb8', kind: 'youtube', label: 'hololive《ホロナツパラダイス》官方前導PV', official: true },
+    { url: 'https://x.com/hololivetv/status/1942146574307455244', kind: 'x', label: 'hololive官方夏日活動公告', official: true },
+  ],
+  'c2-2025-122': [
+    { url: 'https://www.youtube.com/watch?v=oUqDXUI-vYc', kind: 'youtube', label: '夏色祭2025/07/07原始直播', official: true },
+  ],
+  'c2-2025-115': [
+    { url: 'https://x.com/sakuramiko35/status/1946447277855478192', kind: 'x', label: '櫻巫女miComet五週年出差原始貼文', official: true },
+    { url: 'https://x.com/sakuramiko35/status/1946550202095071272', kind: 'x', label: '櫻巫女miComet Space時間公告', official: true },
+  ],
+  'c2-2025-113': [
+    { url: 'https://www.youtube.com/watch?v=w3hhm8Q6YQQ', kind: 'youtube', label: '櫻巫女2025/07/20原始直播', official: true },
+  ],
+  'c2-2025-106': [
+    { url: 'https://x.com/moricalliope/status/1951271464826708077', kind: 'x', label: '森美聲抽到miComet鑰匙圈的本人貼文', official: true },
+  ],
+  'c2-2025-099': [
+    { url: 'https://www.youtube.com/watch?v=1jPZvhJoCRo', kind: 'youtube', label: '鷹嶺琉依2025/08/08原始雜談直播', official: true },
+  ],
+  'c2-2025-087': [
+    { url: 'https://x.com/suisei_submati/status/1957863535394042363', kind: 'x', label: '星街彗星副帳原始遊戲構想貼文', official: true },
+  ],
+  'c2-2025-085': [
+    { url: 'https://www.youtube.com/watch?v=DbarYmIVi_g', kind: 'youtube', label: '鷹嶺琉依2025/08/22原始雜談直播', official: true },
+  ],
+  'c2-2025-080': [
+    { url: 'https://www.youtube.com/watch?v=dTYp4ygpdB4', kind: 'youtube', label: '櫻巫女2025/08/26《TCG Card Shop Simulator》原始直播', official: true },
+  ],
+  'c2-2025-078': [
+    { url: 'https://www.youtube.com/watch?v=b0rxXn1s3ec', kind: 'youtube', label: '櫻巫女2025/08/29《7 Days to Die》原始直播', official: true },
+    { url: 'https://x.com/sakuramiko35/status/1961461024701464891', kind: 'x', label: '櫻巫女感謝星街取得Sambomaster簽名的本人貼文', official: true },
+  ],
+  'c2-2025-071': [
+    { url: 'https://www.youtube.com/watch?v=o8IIOfjLMCA', kind: 'youtube', label: '櫻巫女2025/09/07《8番出口》原始直播', official: true },
+  ],
+  'c2-2025-069': [
+    { url: 'https://www.youtube.com/watch?v=GmWiqsUEOUE', kind: 'youtube', label: '櫻巫女2025/09/09瑪利歐賽車原始直播', official: true },
+  ],
+  'c2-2025-068': [
+    { url: 'https://www.youtube.com/watch?v=tPwEyBuFp6Q', kind: 'youtube', label: '櫻巫女2025/09/11《ホロライブ甲子園2025》原始直播', official: true },
+  ],
+  'c2-2025-066': [
+    { url: 'https://www.youtube.com/watch?v=Se4paq4IPSQ', kind: 'youtube', label: '櫻巫女2025/09/16《ソウルキャリバーⅥ》原始直播', official: true },
+  ],
+  'c2-2025-061': [
+    { url: 'https://www.youtube.com/watch?v=L9lH7K2kYG8', kind: 'youtube', label: '大空昴2025/09/27《おはすば》原始直播', official: true },
+  ],
+  'c2-2025-053': [
+    { url: 'https://x.com/sakuramiko35/status/1975815695729676616', kind: 'x', label: '櫻巫女引用miComet粉絲圖的本人貼文', official: true },
+  ],
+  'c2-2025-051': [
+    { url: 'https://www.youtube.com/watch?v=o802wYT-o8I', kind: 'youtube', label: '櫻巫女2025/10/12《FCマリオ》原始直播', official: true },
+  ],
+  'c2-2025-047': [
+    { url: 'https://x.com/sakuramiko35/status/1978727601548951932', kind: 'x', label: '櫻巫女引用星街拍攝Shorts貼文', official: true },
+    { url: 'https://x.com/suisei_hosimati/status/1978726488263348432', kind: 'x', label: '星街彗星拍攝Shorts原始貼文', official: true },
+  ],
+  'c2-2025-048': [
+    { url: 'https://www.youtube.com/watch?v=8MZgGLB0KD8', kind: 'youtube', label: '大空昴×風真伊呂波2025/10/16原始直播', official: true },
+  ],
+  'c2-2025-041': [
+    { url: 'https://www.youtube.com/watch?v=FLMYYkE6A58', kind: 'youtube', label: '一條莉莉華2025/10/27原始雜談直播', official: true },
+  ],
+  'c2-2025-036': [
+    { url: 'https://www.youtube.com/watch?v=tFoVwPjggr4', kind: 'youtube', label: '櫻巫女2025/11/17手繪切片鑑賞原始直播', official: true },
+  ],
+  'c2-2025-024': [
+    { url: 'https://x.com/mikochisub/status/1997306726555795598', kind: 'x', label: '櫻巫女副帳Discord年度回顧原始貼文', official: true },
+  ],
+  'c2-2025-017': [
+    { url: 'https://www.youtube.com/watch?v=-kHwDPJvGyg&t=7260s', kind: 'youtube', label: '櫻巫女2025/12/13原始直播（2:01:00）', official: true },
+  ],
+  'c2-2025-014': [
+    { url: 'https://www.youtube.com/watch?v=RC6kNj8__Mw', kind: 'youtube', label: '櫻巫女2025/12/18《日本事故物件監視協会2》原始直播', official: true },
+  ],
+  'c2-2025-008': [
+    { url: 'https://www.youtube.com/watch?v=nXYV1ZTsfm8', kind: 'youtube', label: 'Hakos Baelz 2025/12/25聖誕派對原始直播', official: true },
+  ],
+  'c2-2025-321': [
+    { url: 'https://www.youtube.com/watch?v=BCe4-8OX6C0', kind: 'youtube', label: '《マイクラ肝試し2025》主辦方原始直播（FubuMiComet場）', official: true },
+  ],
   'c2-2025-023': [
     { url: 'https://hololivepro.com/news/20251208-01-262/', kind: 'official', label: 'hololive東京站快閃店官方公告（2025/12/08）', official: true },
   ],
@@ -982,8 +1120,6 @@ const classificationOverrides2025: Record<string, {
   emoji?: string;
 }> = {
   'c2-2025-159': { side: 'shared', sharedCategory: 'group', emoji: '💛' },
-  'c2-2025-041': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
-  'c2-2025-047': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
   'c2-2025-319': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
   'c2-2025-320': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
   'c2-2025-059': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
@@ -996,7 +1132,8 @@ const classificationOverrides2025: Record<string, {
 const data = rows.split('\n').map((row) => {
   const [id, displayId, date, phase, side, emoji, type, rawTitle] = row.split('|');
   const titleZh = cleanTitle(rawTitle).trim();
-  const titleEn = nextEnglishTitle(date, titleZh);
+  const queuedTitleEn = nextEnglishTitle(date, titleZh);
+  const titleEn = recoveredEnglishTitles2025[id] ?? queuedTitleEn;
   // No synthetic description: if a source provides no additional facts, show title only.
   const ctxZh = '';
   const ctxEn = '';
