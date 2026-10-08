@@ -398,8 +398,8 @@
     "emoji": "☄️",
     "title": "星街直播中模仿Miko的「捏／にぇ」語尾",
     "titleZh": "星街直播中模仿Miko的「捏／にぇ」語尾",
-    "ctx": "星街在《Vampire Survivors》直播中模仿Miko特有的「にぇ」語尾，成為miComet相關口頭禪互動之一。",
-    "ctxZh": "星街在《Vampire Survivors》直播中模仿Miko特有的「にぇ」語尾，成為miComet相關口頭禪互動之一。",
+    "ctx": "星街在《Vampire Survivors》直播中模仿Miko特有的「にぇ」語尾。",
+    "ctxZh": "星街在《Vampire Survivors》直播中模仿Miko特有的「にぇ」語尾。",
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=E2D6DQVPkSY",
     "source": "Suisei official YouTube / miComet chronology cross-check"
@@ -827,8 +827,8 @@
     "emoji": "💛",
     "title": "Miko整人企劃挑上星街後變成miComet商業打情罵俏",
     "titleZh": "Miko整人企劃挑上星街後變成miComet商業打情罵俏",
-    "ctx": "Miko的整人企劃挑到星街，引出星街熟練的35虐與miComet商業打情罵俏；同日來源也連到hololiveERROR相關內容。",
-    "ctxZh": "Miko的整人企劃挑到星街，引出星街熟練的35虐與miComet商業打情罵俏；同日來源也連到hololiveERROR相關內容。",
+    "ctx": "Miko的整人企劃挑到星街，引出星街熟練的35虐與miComet商業打情罵俏。",
+    "ctxZh": "Miko的整人企劃挑到星街，引出星街熟練的35虐與miComet商業打情罵俏。",
     "type": "Clip",
     "link": "https://youtu.be/U8dZF4DsCIQ"
   },
@@ -981,8 +981,8 @@
     "emoji": "💛",
     "title": "星街在麥塊唱海賊王主題曲再次戳中Miko笑點",
     "titleZh": "星街在麥塊唱海賊王主題曲再次戳中Miko笑點",
-    "ctx": "星街在麥塊中唱起海賊王主題曲，再次戳到Miko笑點；同日來源還整理多支麥塊相關miComet片段。",
-    "ctxZh": "星街在麥塊中唱起海賊王主題曲，再次戳到Miko笑點；同日來源還整理多支麥塊相關miComet片段。",
+    "ctx": "星街在麥塊中唱起海賊王主題曲，再次戳到Miko笑點。",
+    "ctxZh": "星街在麥塊中唱起海賊王主題曲，再次戳到Miko笑點。",
     "type": "Stream",
     "link": "https://youtu.be/B84myzlJH8w"
   },
@@ -995,8 +995,8 @@
     "emoji": "💛",
     "title": "Miko與星街參加hololiveSummer3D企劃",
     "titleZh": "Miko與星街參加hololiveSummer3D企劃",
-    "ctx": "hololive Summer 3D企劃中，Miko與星街和其他成員同場，相關內容整理出搶椅子遊戲與多名成員互動。",
-    "ctxZh": "hololive Summer 3D企劃中，Miko與星街和其他成員同場，相關內容整理出搶椅子遊戲與多名成員互動。",
+    "ctx": "Hololive Summer 3D企劃中，Miko與星街一起參加搶椅子遊戲。",
+    "ctxZh": "Hololive Summer 3D企劃中，Miko與星街一起參加搶椅子遊戲。",
     "type": "Stream",
     "link": "https://youtu.be/4bDwk9fWDcE"
   },
@@ -1027,20 +1027,6 @@
     "type": "Stream",
     "link": "https://youtu.be/sqbApr3SkD4 https://youtu.be/HAU1Dncs6Rw",
     "source": "miComet Archive cross-check / original Miko & Suisei YouTube"
-  },
-  {
-    "id": "s2022c049",
-    "displayId": "22-09-CLEAN-1",
-    "date": "2022-09-03",
-    "phase": 4,
-    "side": "miko",
-    "emoji": "🌸",
-    "title": "Miko第二次上廣播時被觀眾爆料轟炸博衣小夜璃",
-    "titleZh": "Miko第二次上廣播時被觀眾爆料轟炸博衣小夜璃",
-    "ctx": "Miko第二次上廣播時，被觀眾爆料會從後面轟炸博衣小夜璃。此筆列入9月miComet廣播脈絡。",
-    "ctxZh": "Miko第二次上廣播時，被觀眾爆料會從後面轟炸博衣小夜璃。此筆列入9月miComet廣播脈絡。",
-    "type": "Audio",
-    "link": "https://youtu.be/Av30sMVFPhE"
   },
   {
     "id": "mcarchive-2022-0904-amongus",
@@ -1093,8 +1079,8 @@
     "emoji": "💛",
     "title": "Miko與星街公開RUST第三季同居新家",
     "titleZh": "Miko與星街公開RUST第三季同居新家",
-    "ctx": "RUST第三季中，Miko與星街公開同居新家，並以和平路線展開新季；相關整理也提到Miko帶Ame回miComet豪宅與寵物增加等片段。",
-    "ctxZh": "RUST第三季中，Miko與星街公開同居新家，並以和平路線展開新季；相關整理也提到Miko帶Ame回miComet豪宅與寵物增加等片段。",
+    "ctx": "RUST第三季中，Miko與星街公開同居新家，Miko還帶Ame參觀miComet豪宅。",
+    "ctxZh": "RUST第三季中，Miko與星街公開同居新家，Miko還帶Ame參觀miComet豪宅。",
     "type": "Stream",
     "link": "https://youtu.be/IBbh7sWA15Y"
   },
@@ -1111,21 +1097,6 @@
     "ctxZh": "星街談到最近誤會miComet商業關係的人變多，也表示如果要跟Miko走百合營業，寧可結束兩人的商業關係。",
     "type": "Clip",
     "link": "https://youtu.be/Wn9wswmqvQE"
-  },
-  {
-    "id": "s2022c052",
-    "displayId": "22-09-CLEAN-4",
-    "date": "2022-09-09",
-    "phase": 4,
-    "side": "shared",
-    "emoji": "💛",
-    "title": "星街加入不知火建設後接下第一個任務",
-    "titleZh": "星街加入不知火建設後接下第一個任務",
-    "ctx": "星街加入不知火建設後，首個任務被整理成精華，連到Miko與不知火建設相關脈絡。",
-    "ctxZh": "星街加入不知火建設後，首個任務被整理成精華，連到Miko與不知火建設相關脈絡。",
-    "type": "Clip",
-    "link": "https://youtu.be/haLgIfn9d-Q",
-    "sharedCategory": "shiraken"
   },
   {
     "id": "s2022c053",
@@ -1207,8 +1178,8 @@
     "emoji": "☄️",
     "title": "星街缺席平行線廣播，Miko再次代打",
     "titleZh": "星街缺席平行線廣播，Miko再次代打",
-    "ctx": "田所梓生日回時星街不在，Miko再次代打《平行線すくらんぶる》，相關內容整理出Miko緊張與代班脈絡。",
-    "ctxZh": "田所梓生日回時星街不在，Miko再次代打《平行線すくらんぶる》，相關內容整理出Miko緊張與代班脈絡。",
+    "ctx": "田所梓生日回時星街不在，Miko再次代打《平行線すくらんぶる》。",
+    "ctxZh": "田所梓生日回時星街不在，Miko再次代打《平行線すくらんぶる》。",
     "type": "Audio",
     "link": "https://youtu.be/ghTlz9tLjqs"
   },
@@ -1221,25 +1192,11 @@
     "emoji": "☄️",
     "title": "萬聖節隔空互動：星街回覆Miko的討糖貼文",
     "titleZh": "萬聖節隔空互動：星街回覆Miko的討糖貼文",
-    "ctx": "萬聖節當天，星街在X上回覆Miko的「不給糖就搗蛋」相關貼文，留下miComet的公開文字互動。",
-    "ctxZh": "萬聖節當天，星街在X上回覆Miko的「不給糖就搗蛋」相關貼文，留下miComet的公開文字互動。",
+    "ctx": "萬聖節當天，星街在X上回覆Miko的「不給糖就搗蛋」相關貼文。",
+    "ctxZh": "萬聖節當天，星街在X上回覆Miko的「不給糖就搗蛋」相關貼文。",
     "type": "Text",
     "link": "https://x.com/suisei_hosimati/status/1586981442004455424",
     "source": "Suisei official X"
-  },
-  {
-    "id": "s2022c060",
-    "displayId": "22-10-CLEAN-5",
-    "date": "2022-10-31",
-    "phase": 4,
-    "side": "miko",
-    "emoji": "🌸",
-    "title": "Miko玩GTA後忘記關台持續約三分鐘",
-    "titleZh": "Miko玩GTA後忘記關台持續約三分鐘",
-    "ctx": "Miko在GTA後續內容中，被整理出忘記關台還繼續播放約三分鐘的片段。",
-    "ctxZh": "Miko在GTA後續內容中，被整理出忘記關台還繼續播放約三分鐘的片段。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=bwEFuwJ8M1w"
   },
   {
     "id": "s2022c061",
@@ -1250,8 +1207,8 @@
     "emoji": "💛",
     "title": "星街在大運動會用TNT拆除黑盒子嚇到其他成員",
     "titleZh": "星街在大運動會用TNT拆除黑盒子嚇到其他成員",
-    "ctx": "2022Hololive大運動會準備與收尾中，Miko與星街相關片段被整理；內容包含代表54名成員的粉絲符號、星街幫忙拆除黑盒子時用TNT差點嚇死人，以及運動會最後合照與精彩回放。",
-    "ctxZh": "2022Hololive大運動會準備與收尾中，Miko與星街相關片段被整理；內容包含代表54名成員的粉絲符號、星街幫忙拆除黑盒子時用TNT差點嚇死人，以及運動會最後合照與精彩回放。",
+    "ctx": "2022 Hololive大運動會後，星街幫忙用TNT拆除黑盒子，嚇到其他成員。",
+    "ctxZh": "2022 Hololive大運動會後，星街幫忙用TNT拆除黑盒子，嚇到其他成員。",
     "type": "Stream",
     "link": "https://youtu.be/UYZdPaW1UiQ"
   },
