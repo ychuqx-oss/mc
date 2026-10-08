@@ -8,8 +8,8 @@
     "emoji": "💛",
     "title": "miComet對ReGLOSS的特番整人企劃",
     "titleZh": "miComet對ReGLOSS的特番整人企劃",
-    "ctx": "miComet在特別節目中對ReGLOSS設下整人企劃，相關片段整理成2024年初的miComet互動紀錄。",
-    "ctxZh": "miComet在特別節目中對ReGLOSS設下整人企劃，相關片段整理成2024年初的miComet互動紀錄。",
+    "ctx": "miComet在特別節目中對ReGLOSS設下整人企劃。",
+    "ctxZh": "miComet在特別節目中對ReGLOSS設下整人企劃。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=pfDd_whXL48",
     "sharedCategory": "group"
@@ -55,8 +55,8 @@
     "emoji": "⭐",
     "title": "miComet參加Hololive小學學力測驗",
     "titleZh": "miComet參加Hololive小學學力測驗",
-    "ctx": "Miko主持Hololive小學學力測驗，星街也在相關整理中登場。當天多支剪輯把miComet與其他成員的爆笑答案、前後篇測驗內容合併整理成一組事件。",
-    "ctxZh": "Miko主持Hololive小學學力測驗，星街也在相關整理中登場。當天多支剪輯把miComet與其他成員的爆笑答案、前後篇測驗內容合併整理成一組事件。",
+    "ctx": "Miko與星街參加Hololive小學學力測驗，與其他成員一起作答。",
+    "ctxZh": "Miko與星街參加Hololive小學學力測驗，與其他成員一起作答。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=PvTzU3LZFyE",
     "supportCategory": "fubuki"
@@ -75,20 +75,6 @@
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=yeL4_BDSkb4",
     "source": "Suisei official YouTube"
-  },
-  {
-    "id": "c2024-003",
-    "displayId": "24-01-CLEAN-3",
-    "date": "2024-01-26",
-    "phase": 5,
-    "side": "others",
-    "emoji": "⭐",
-    "title": "白上吹雪感謝miComet與AZKi",
-    "titleZh": "白上吹雪感謝miComet與AZKi",
-    "ctx": "白上吹雪在相關片段中提到並感謝miComet與AZKi。",
-    "ctxZh": "白上吹雪在相關片段中提到並感謝miComet與AZKi。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=bYzxk4HlE7M"
   },
   {
     "id": "c2024-004",
@@ -247,24 +233,10 @@
     "emoji": "🌸",
     "title": "Miko無論如何都想贏星街",
     "titleZh": "Miko無論如何都想贏星街",
-    "ctx": "Miko在遊戲對決脈絡中展現出無論如何都想贏星街的執念，成為3月底遊戲大全後續的單人剪輯。",
-    "ctxZh": "Miko在遊戲對決脈絡中展現出無論如何都想贏星街的執念，成為3月底遊戲大全後續的單人剪輯。",
+    "ctx": "Miko在遊戲對決脈絡中展現出無論如何都想贏星街的執念。",
+    "ctxZh": "Miko在遊戲對決脈絡中展現出無論如何都想贏星街的執念。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=YrRxTtU3ijA"
-  },
-  {
-    "id": "c2024-014",
-    "displayId": "24-04-CLEAN-3",
-    "date": "2024-04-07",
-    "phase": 5,
-    "side": "miko",
-    "emoji": "🌸",
-    "title": "週刊Miko四月號收錄miComet與魔物獵人內容",
-    "titleZh": "週刊Miko四月號收錄miComet與魔物獵人內容",
-    "ctx": "週刊Miko四月號回顧3月底至4月初內容，包含miComet連動與《魔物獵人世界》相關片段。",
-    "ctxZh": "週刊Miko四月號回顧3月底至4月初內容，包含miComet連動與《魔物獵人世界》相關片段。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=wXUnG6y0qSI"
   },
   {
     "id": "c2024-015",
@@ -305,8 +277,8 @@
     "emoji": "☄️",
     "title": "星街演唱Miko原創曲展開逆襲",
     "titleZh": "星街演唱Miko原創曲展開逆襲",
-    "ctx": "星街演唱Miko的原創曲，形成以歌回或短片回收Miko歌曲梗的星街側故事。",
-    "ctxZh": "星街演唱Miko的原創曲，形成以歌回或短片回收Miko歌曲梗的星街側故事。",
+    "ctx": "星街演唱Miko的原創曲。",
+    "ctxZh": "星街演唱Miko的原創曲。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=WSbfEsK2wXU"
   },
@@ -454,21 +426,6 @@
     "source": "hololive talent official YouTube"
   },
   {
-    "id": "c2024-028",
-    "displayId": "24-06-CLEAN-3",
-    "date": "2024-06-16",
-    "phase": 5,
-    "side": "others",
-    "emoji": "⭐",
-    "title": "Hololive高學力成員總集編回收學力測驗脈絡",
-    "titleZh": "Hololive高學力成員總集編回收學力測驗脈絡",
-    "ctx": "Hololive高學力成員總集編回收小學學力測驗相關脈絡。",
-    "ctxZh": "Hololive高學力成員總集編回收小學學力測驗相關脈絡。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=DwH8XHV-Cp4",
-    "supportCategory": "fubuki"
-  },
-  {
     "id": "c2024-030",
     "displayId": "24-06-CLEAN-5",
     "date": "2024-06-29",
@@ -477,8 +434,8 @@
     "emoji": "☄️",
     "title": "星街第一次看到Miko的新表情笑到不行",
     "titleZh": "星街第一次看到Miko的新表情笑到不行",
-    "ctx": "星街看到Miko本人也不熟悉的新表情後笑到不行。這是2023片段在2024年再次被整理的補充紀錄。",
-    "ctxZh": "星街看到Miko本人也不熟悉的新表情後笑到不行。這是2023片段在2024年再次被整理的補充紀錄。",
+    "ctx": "星街第一次看到Miko的新表情，笑到停不下來。",
+    "ctxZh": "星街第一次看到Miko的新表情，笑到停不下來。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=BEBtl6Y_o_I"
   },
@@ -491,8 +448,8 @@
     "emoji": "🌸",
     "title": "Miko感動自己今年記得miComet紀念日",
     "titleZh": "Miko感動自己今年記得miComet紀念日",
-    "ctx": "Miko回顧去年完全忘記miComet紀念日，今年終於記得這件事而感動，成為四周年前的Miko側故事。",
-    "ctxZh": "Miko回顧去年完全忘記miComet紀念日，今年終於記得這件事而感動，成為四周年前的Miko側故事。",
+    "ctx": "Miko回顧去年完全忘記miComet紀念日，今年終於記得這件事而感動。",
+    "ctxZh": "Miko回顧去年完全忘記miComet紀念日，今年終於記得這件事而感動。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=Px2EaKPU2UE"
   },
@@ -638,8 +595,8 @@
     "emoji": "💛",
     "title": "miComet地獄鑑賞會手繪整理",
     "titleZh": "miComet地獄鑑賞會手繪整理",
-    "ctx": "手繪短片把Miko與星街觀看過去貼貼片段的地獄鑑賞會重新整理，呈現過去互動如何侵蝕兩人的精神。",
-    "ctxZh": "手繪短片把Miko與星街觀看過去貼貼片段的地獄鑑賞會重新整理，呈現過去互動如何侵蝕兩人的精神。",
+    "ctx": "手繪短片把Miko與星街觀看過去貼貼片段的地獄鑑賞會重新整理。",
+    "ctxZh": "手繪短片把Miko與星街觀看過去貼貼片段的地獄鑑賞會重新整理。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=eTk-43LVL18",
     "sharedCategory": "oneOnOne",
@@ -659,20 +616,6 @@
     "type": "Event",
     "link": "https://www.youtube.com/watch?v=fDtUy1PTor0 https://files.microcms-assets.io/assets/6368857617454c2591b02acff18e76bb/63b185dc4dee42588d7295e6d1bde953/240806_J_%E3%83%9B%E3%83%AD%E3%83%A9%E3%82%A4%E3%83%96.pdf",
     "source": "Aqua official YouTube original stream / hololive official graduation notice"
-  },
-  {
-    "id": "c2024-039",
-    "displayId": "24-09-CLEAN-1",
-    "date": "2024-09-06",
-    "phase": 5,
-    "side": "miko",
-    "emoji": "🌸",
-    "title": "Miko太依賴星街",
-    "titleZh": "Miko太依賴星街",
-    "ctx": "Miko與大空昴、星街相關的剪輯中，Miko被整理成過度依賴星街的互動片段。",
-    "ctxZh": "Miko與大空昴、星街相關的剪輯中，Miko被整理成過度依賴星街的互動片段。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=ReUWeJmRwe0"
   },
   {
     "id": "c2024-040",
@@ -713,8 +656,8 @@
     "emoji": "🌸",
     "title": "Miko看到星街和鷹嶺琉依待在一起而吃醋",
     "titleZh": "Miko看到星街和鷹嶺琉依待在一起而吃醋",
-    "ctx": "Miko看到星街與鷹嶺琉依一起行動時出現吃醋反應，成為Miko側的miComet互動故事。",
-    "ctxZh": "Miko看到星街與鷹嶺琉依一起行動時出現吃醋反應，成為Miko側的miComet互動故事。",
+    "ctx": "Miko看到星街與鷹嶺琉依一起行動時出現吃醋反應。",
+    "ctxZh": "Miko看到星街與鷹嶺琉依一起行動時出現吃醋反應。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=faWtfn9hIMY"
   },
@@ -727,8 +670,8 @@
     "emoji": "💛",
     "title": "星街被Miko的吃法嚇到傻眼",
     "titleZh": "星街被Miko的吃法嚇到傻眼",
-    "ctx": "MariMikoMet相關手繪片段中，星街看到Miko的吃法後忍不住傻眼，形成三人連動中的miComet互動。",
-    "ctxZh": "MariMikoMet相關手繪片段中，星街看到Miko的吃法後忍不住傻眼，形成三人連動中的miComet互動。",
+    "ctx": "MariMikoMet相關手繪片段中，星街看到Miko的吃法後忍不住傻眼。",
+    "ctxZh": "MariMikoMet相關手繪片段中，星街看到Miko的吃法後忍不住傻眼。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=q7yldQF_QAU"
   },
@@ -763,20 +706,6 @@
     "link": "https://www.youtube.com/watch?v=83R5Dj28l6c"
   },
   {
-    "id": "c2024-044",
-    "displayId": "24-09-CLEAN-6",
-    "date": "2024-09-15",
-    "phase": 5,
-    "side": "suisei",
-    "emoji": "☄️",
-    "title": "星街的人設受到Miko影響",
-    "titleZh": "星街的人設受到Miko影響",
-    "ctx": "MariMikoMet素材中，星街被整理成受到Miko影響而改變角色性格或反應方式的片段。",
-    "ctxZh": "MariMikoMet素材中，星街被整理成受到Miko影響而改變角色性格或反應方式的片段。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=PqIO5NzaNn8"
-  },
-  {
     "id": "official-2024-0915-hologta-announce",
     "displayId": "24-09-OFFICIAL-3",
     "date": "2024-09-15",
@@ -802,8 +731,8 @@
     "emoji": "💛",
     "title": "Miko回顧holoGTA時非商業模式的星街出現",
     "titleZh": "Miko回顧holoGTA時非商業模式的星街出現",
-    "ctx": "Miko回顧holoGTA初日內容時，平常不常公開表露的星街以非商業模式出現，讓miComet的距離感再次成為話題。",
-    "ctxZh": "Miko回顧holoGTA初日內容時，平常不常公開表露的星街以非商業模式出現，讓miComet的距離感再次成為話題。",
+    "ctx": "Miko回顧holoGTA初日內容時，平常不常公開表露的星街以非商業模式出現。",
+    "ctxZh": "Miko回顧holoGTA初日內容時，平常不常公開表露的星街以非商業模式出現。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=rt-qFNFjxj4"
   },
@@ -816,8 +745,8 @@
     "emoji": "☄️",
     "title": "星街下播後馬上用完全私下模式聯絡Miko",
     "titleZh": "星街下播後馬上用完全私下模式聯絡Miko",
-    "ctx": "星街在直播結束後立刻聯絡Miko，相關剪輯以完全Off模式的星街為主題整理兩人私下距離感。",
-    "ctxZh": "星街在直播結束後立刻聯絡Miko，相關剪輯以完全Off模式的星街為主題整理兩人私下距離感。",
+    "ctx": "星街在直播結束後立刻聯絡Miko。",
+    "ctxZh": "星街在直播結束後立刻聯絡Miko。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=RjNJbjIPmxo"
   },
@@ -960,8 +889,8 @@
     "emoji": "💛",
     "title": "FubuMiComet參加麥塊肝試並爆出爆米花事故",
     "titleZh": "FubuMiComet參加麥塊肝試並爆出爆米花事故",
-    "ctx": "Miko、星街與白上吹雪參加麥塊肝試2024。Miko自爆大量誤訂爆米花，星街與白上吹雪在做爆米花時開起廣播；同日多支剪輯也整理三人在肝試中的混亂場面。",
-    "ctxZh": "Miko、星街與白上吹雪參加麥塊肝試2024。Miko自爆大量誤訂爆米花，星街與白上吹雪在做爆米花時開起廣播；同日多支剪輯也整理三人在肝試中的混亂場面。",
+    "ctx": "Miko、星街與白上吹雪參加麥塊肝試2024。Miko自爆大量誤訂爆米花，星街與白上吹雪在做爆米花時開起廣播。",
+    "ctxZh": "Miko、星街與白上吹雪參加麥塊肝試2024。Miko自爆大量誤訂爆米花，星街與白上吹雪在做爆米花時開起廣播。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=n8qUNUEqpVY"
   },
@@ -1038,20 +967,6 @@
     "type": "Stream",
     "link": "https://www.youtube.com/watch?v=96MMOXYNWJ4 https://hololive-tsuushin.com/holonews/miko-13/",
     "source": "Miko official YouTube original stream / Japanese report"
-  },
-  {
-    "id": "c2024-055",
-    "displayId": "24-10-CLEAN-7",
-    "date": "2024-10-29",
-    "phase": 5,
-    "side": "miko",
-    "emoji": "🌸",
-    "title": "Miko得知SoloLive中有知名35P偷偷參戰而震驚",
-    "titleZh": "Miko得知SoloLive中有知名35P偷偷參戰而震驚",
-    "ctx": "Miko得知自己成功舉辦的Solo Live中有知名35P偷偷參戰而震驚。此筆不是純miComet主題，但來源標題含星街相關脈絡，列為助攻補充。",
-    "ctxZh": "Miko得知自己成功舉辦的Solo Live中有知名35P偷偷參戰而震驚。此筆不是純miComet主題，但來源標題含星街相關脈絡，列為助攻補充。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=kj3PgkEjzFA"
   },
   {
     "id": "c2024-056",
@@ -1169,21 +1084,6 @@
     "link": "https://www.youtube.com/watch?v=rZy0Pp8J8iY"
   },
   {
-    "id": "c2024-063",
-    "displayId": "24-11-CLEAN-7",
-    "date": "2024-11-09",
-    "phase": 5,
-    "side": "others",
-    "emoji": "⭐",
-    "title": "白上吹雪Live中miComet可愛地商業貼貼",
-    "titleZh": "白上吹雪Live中miComet可愛地商業貼貼",
-    "ctx": "白上吹雪Live相關剪輯中，Miko與星街在舞台或演出脈絡中可愛地商業貼貼，成為FBKINGDOM後續片段。",
-    "ctxZh": "白上吹雪Live相關剪輯中，Miko與星街在舞台或演出脈絡中可愛地商業貼貼，成為FBKINGDOM後續片段。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=Q9HmGepNklM",
-    "supportCategory": "fubuki"
-  },
-  {
     "id": "official-2024-1109-flowglow-watchalong",
     "displayId": "24-11-OFFICIAL-2",
     "date": "2024-11-09",
@@ -1225,22 +1125,6 @@
     "ctxZh": "FBKINGDOM相關剪輯延續Miko與星街變成白上吹雪粉絲後仍保持商業貼貼的互動。",
     "type": "Clip",
     "link": "https://www.youtube.com/watch?v=yKl4Wvk8Hxo"
-  },
-  {
-    "id": "c2024-067",
-    "displayId": "24-11-CLEAN-11",
-    "date": "2024-11-15",
-    "phase": 5,
-    "side": "shared",
-    "emoji": "💛",
-    "title": "越吵感情越好的miComet",
-    "titleZh": "越吵感情越好的miComet",
-    "ctx": "短片以越吵感情越好為題整理Miko與星街的互動，延續miComet鬥嘴但親近的關係性。",
-    "ctxZh": "短片以越吵感情越好為題整理Miko與星街的互動，延續miComet鬥嘴但親近的關係性。",
-    "type": "Clip",
-    "link": "https://www.youtube.com/watch?v=yTUMlxy3KsM",
-    "sharedCategory": "oneOnOne",
-    "reciprocal": true
   },
   {
     "id": "c2024-068",
