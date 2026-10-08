@@ -828,7 +828,7 @@ const additions = [
     emoji: '⭐',
     type: 'Stream',
     title: 'Lui Appears as a Fake Suisei During Miko’s Tanabata Suisei-Only Call-In',
-    titleZh: 'Miko七夕「星街限定凸待ち」被假星街鷹嶺琉依突擊',
+    titleZh: '鷹嶺琉依假扮星街，突擊Miko的七夕「星街限定凸待」',
     titleEn: 'Lui Appears as a Fake Suisei During Miko’s Tanabata Suisei-Only Call-In',
     ctx: 'During Miko’s Tanabata stream that was waiting specifically for Suisei, Lui called in while impersonating Suisei and played along with the “fake Suisei” gag.',
     ctxZh: 'Miko七夕舉辦「星街すいせい限定凸待ち」時，鷹嶺琉依冒充星街打進來。',
@@ -1005,8 +1005,8 @@ const classificationOverrides2026: Record<string, {
   supportCategory?: 'fubuki';
   emoji?: string;
 }> = {
-  'c2-2026-141': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
-  'c2-2026-128': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
+
+
   'c2-2026-068': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
   'c2-2026-093': { side: 'shared', sharedCategory: 'oneOnOne', reciprocal: true, emoji: '💛' },
   'c2-2026-035': { side: 'miko', emoji: '🌸' },
