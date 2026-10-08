@@ -42,7 +42,7 @@ c2-2025-048|25-C2-48|2025-10-16|6|others|⭐|Stream|風真伊呂波覺得星街�
 c2-2025-050|25-C2-50|2025-10-13|6|others|⭐|Stream|miComet互相怪對方沒有辦miComet Live，FubuMiComet還做了倉鼠性格測驗
 c2-2025-051|25-C2-51|2025-10-12|6|suisei|☄️|Stream|星街為了Miko抽吉伊卡哇一番賞
 c2-2025-053|25-C2-53|2025-10-08|6|miko|🌸|Text|Miko在粉絲圖留言
-c2-2025-054|25-C2-54|2025-10-03|6|shared|💛|Stream|FubuMio與miComet連動
+c2-2025-054|25-C2-54|2025-10-03|6|shared|💛|Stream|Miko與星街穿新衣裝和白上吹雪、大神澪組隊對決《世界遊戲大全51》
 c2-2025-055|25-C2-57|2025-10-02|6|shared|💛|Stream|miComet穿成對服裝在遊樂園約會並公開新原創曲
 c2-2025-056|25-C2-58|2025-10-02|6|miko|🌸|Stream|Miko在TCG Card Shop Simulator中指示星街
 c2-2025-318|25-C2-55|2025-10-03|6|others|⭐|News|KAI-YOU報導miComet新曲《Lollipop》與製作陣容
