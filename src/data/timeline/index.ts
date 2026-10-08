@@ -29,6 +29,8 @@ export interface MiCometStory {
   side: 'miko' | 'suisei' | 'shared' | 'others';
   sharedCategory?: SharedCategory;
   supportCategory?: SupportCategory;
+  // Only genuine hololive talents may be counted in the Support bucket.
+  holomenSupport?: boolean;
   emoji: string;
   title: string;
   titleZh?: string;
@@ -426,28 +428,161 @@ function classifySharedCategory(story: MiCometStory, side: Side): SharedCategory
   return category;
 }
 
-function classifySupportCategory(story: MiCometStory): SupportCategory | undefined {
-  if (story.supportCategory === 'fubuki') return 'fubuki';
+// A mere mention of a holomem in the context is not evidence that the actor
+// responsible for the event is a holomem.  Use the subject of the headline.
+const HOLOMEM_SUPPORT_ACTORS = [
+  "時乃空",
+  "ときのそら",
+  "蘿蔔子",
+  "ロボ子",
+  "AZKi",
+  "夜空梅露",
+  "夜空メル",
+  "赤井心",
+  "赤井はあと",
+  "白上吹雪",
+  "白上フブキ",
+  "夏色祭",
+  "夏色まつり",
+  "亞綺・羅森塔爾",
+  "アキ・ローゼンタール",
+  "湊阿庫婭",
+  "湊あくあ",
+  "紫咲詩音",
+  "紫咲シオン",
+  "百鬼綾目",
+  "百鬼あやめ",
+  "癒月巧可",
+  "癒月ちょこ",
+  "大空昴",
+  "大空スバル",
+  "大神澪",
+  "大神ミオ",
+  "貓又小粥",
+  "猫又おかゆ",
+  "戌神沁音",
+  "戌神ころね",
+  "兔田佩克拉",
+  "兎田ぺこら",
+  "不知火芙蕾雅",
+  "不知火フレア",
+  "阿火",
+  "白銀諾艾爾",
+  "白銀ノエル",
+  "寶鐘瑪琳",
+  "宝鐘マリン",
+  "天音彼方",
+  "天音かなた",
+  "角卷綿芽",
+  "角巻わため",
+  "常闇永遠",
+  "常闇トワ",
+  "姬森璐娜",
+  "姫森ルーナ",
+  "雪花菈米",
+  "雪花ラミィ",
+  "桃鈴音音",
+  "桃鈴ねね",
+  "獅白牡丹",
+  "獅白ぼたん",
+  "尾丸波爾卡",
+  "尾丸ポルカ",
+  "拉普拉斯",
+  "ラプラス",
+  "鷹嶺琉依",
+  "鷹嶺ルイ",
+  "博衣小夜璃",
+  "博衣こより",
+  "沙花叉克蘿耶",
+  "沙花叉クロヱ",
+  "風真伊呂波",
+  "風真いろは",
+  "火威青",
+  "音乃瀨奏",
+  "音乃瀬奏",
+  "一條莉莉華",
+  "一条莉々華",
+  "轟一",
+  "轟はじめ",
+  "儒烏風亭螺鈿",
+  "儒烏風亭らでん",
+  "響咲莉歐娜",
+  "響咲リオナ",
+  "虎金妃笑虎",
+  "水宮樞",
+  "水宮枢",
+  "輪堂千速",
+  "綺々羅々ヴィヴィ",
+  "森美聲",
+  "森カリオペ",
+  "Calliope",
+  "Kiara",
+  "Takanashi Kiara",
+  "Ina",
+  "Ninomae Ina",
+  "Gura",
+  "Amelia",
+  "Watson Amelia",
+  "IRyS",
+  "Ollie",
+  "Reine",
+  "Pavolia Reine",
+  "Moona",
+  "Iofi",
+  "Anya",
+  "Risu",
+  "Kobo",
+  "Zeta",
+  "Kaela",
+  "Fauna",
+  "Kronii",
+  "Mumei",
+  "Bae",
+  "Hakos Baelz",
+  "Sana",
+  "Shiori",
+  "Nerissa",
+  "Bijou",
+  "Fuwawa",
+  "Mococo",
+  "Elizabeth",
+  "Gigi",
+  "Cecilia",
+  "Raora",
+  "FubuMiComet",
+  "フブみこめっと",
+  "フブミコメット",
+  "フブみこメット"
+] as const;
 
-  const text = [story.title, story.titleZh, story.titleEn, story.ctx, story.ctxZh, story.ctxEn]
-    .filter(Boolean)
-    .join(' ');
+const FUBUMICOMET_PATTERN = /(?:FubuMiComet|Fubu\\s*MiComet|フブみこめっと|フブミコメット|フブみこメット)/i;
+const FUBUKI_ACTOR_PATTERN = /^(?:白上吹雪|白上フブキ|Shirakami Fubuki|Fubuki)\\b?/i;
 
-  // FubuMiComet is a cross-category rule: keep the story's shared/group identity,
-  // but also count/filter it under the dedicated Fubuki bucket.
-  const isFubuMiComet = /(?:FubuMiComet|Fubu\s*MiComet|フブみこめっと|フブミコメット|フブみこメット)/i.test(text);
-  if (isFubuMiComet) return 'fubuki';
+export function isHolomenSupportStory(story: Pick<MiCometStory, 'side' | 'title' | 'titleZh'>): boolean {
+  if (story.side !== 'others') return false;
+  const title = (story.titleZh || story.title || '').trim();
+  // A game NPC, impersonator or character isn't the actual talent acting.
+  if (/(?:NPC|模仿(?:白上吹雪|其他成員)|冒充(?:白上吹雪|其他成員))/.test(title)) return false;
+  if (/^(?:多名|數名|其他)?(?:Hololive|hololive|ホロライブ)成員/.test(title)) return true;
+  return HOLOMEM_SUPPORT_ACTORS.some((name) => title.startsWith(name));
+}
 
-  // Ordinary Fubuki support remains scoped to source records that are Support/Others.
-  if (story.side !== 'others') return undefined;
-  return /(?:白上吹雪|白上フブキ|Shirakami\s+Fubuki|\bFubuki\b)/i.test(text) ? 'fubuki' : undefined;
+function classifySupportCategory(story: MiCometStory, holomenSupport: boolean): SupportCategory | undefined {
+  const title = (story.titleZh || story.title || '').trim();
+  // FubuMiComet is a real holomem trio; it remains in Fubuki's dedicated count.
+  if (FUBUMICOMET_PATTERN.test(title)) return 'fubuki';
+  // The separate Fubuki Support bucket requires Fubuki herself to be the actor,
+  // not merely a mention inside a news article, a game or another member's story.
+  if (holomenSupport && FUBUKI_ACTOR_PATTERN.test(title)) return 'fubuki';
+  return undefined;
 }
 
 function normalizeStory(story: MiCometStory): MiCometStory {
   const correctedDate = verifiedDateForStory(story);
   const side = resolveSharedSide(story);
-  const supportCategory = classifySupportCategory(story);
-  const storyWithSide = { ...story, date: correctedDate, side, supportCategory };
+  const holomenSupport = isHolomenSupportStory({ ...story, side });
+  const supportCategory = classifySupportCategory(story, holomenSupport);
+  const storyWithSide = { ...story, date: correctedDate, side, supportCategory, holomenSupport };
   const sharedCategory = classifySharedCategory(storyWithSide, side);
   const classificationSource: ClassificationSource = story.sharedCategory || story.side !== 'shared' ? 'explicit' : 'legacy-auto';
   const enStory = enStoryMap.get(story.id);
@@ -466,6 +601,7 @@ function normalizeStory(story: MiCometStory): MiCometStory {
     side,
     sharedCategory,
     supportCategory,
+    holomenSupport,
     classificationSource,
     emoji: emojiForSide(side),
     title: titleEn || titleZh,
