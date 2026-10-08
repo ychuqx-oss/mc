@@ -561,6 +561,9 @@ const FUBUKI_ACTOR_PATTERN = /^(?:白上吹雪|白上フブキ|Shirakami Fubuki|
 export function isHolomenSupportStory(story: Pick<MiCometStory, 'side' | 'title' | 'titleZh'>): boolean {
   if (story.side !== 'others') return false;
   const title = (story.titleZh || story.title || '').trim();
+  // Support must be about miComet / one of the two members, not a wholly
+  // unrelated scene simply because it happens to feature a holomem.
+  if (!/(?:miComet|Miko|星街|みこめっと|ミコメット|みこち|すいちゃん)/i.test(title)) return false;
   // A game NPC, impersonator or character isn't the actual talent acting.
   if (/(?:NPC|模仿(?:白上吹雪|其他成員)|冒充(?:白上吹雪|其他成員))/.test(title)) return false;
   if (/^(?:多名|數名|其他)?(?:Hololive|hololive|ホロライブ)成員/.test(title)) return true;
@@ -647,6 +650,8 @@ function mergeStory(base: MiCometStory, extra: MiCometStory): MiCometStory {
     sources: structuredSources.length ? structuredSources : undefined,
     eventId: base.eventId || extra.eventId,
     reciprocal: base.reciprocal ?? extra.reciprocal,
+    holomenSupport: base.holomenSupport || extra.holomenSupport,
+    supportCategory: base.supportCategory || extra.supportCategory,
     titleEn: base.titleEn || extra.titleEn,
     ctx: mergedCtxEn || mergedCtx,
     ctxZh: mergedCtx,
