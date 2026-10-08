@@ -1,6 +1,34 @@
 import baseData from './timeline-2026-compendium-base';
 
 const patched = baseData.map((story) => {
+  if (story.id === 'c2-2026-005') {
+    return {
+      ...story,
+      title: 'Miko Announces the July 21 MiComet Sixth-Anniversary Stream',
+      titleZh: 'Miko在X祝賀miComet六周年，預告7月21日直播',
+      titleEn: 'Miko Announces the July 21 MiComet Sixth-Anniversary Stream',
+      ctx: 'On July 19, Miko posted for the sixth anniversary of miComet and stated that a miComet stream was scheduled for July 21.',
+      ctxZh: '7月19日，Miko在X祝賀miComet結成六周年，並表示7月21日預定進行miComet直播。',
+      ctxEn: 'On July 19, Miko posted for the sixth anniversary of miComet and stated that a miComet stream was scheduled for July 21.',
+      link: 'https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_hash&p=%23miComet6%E5%91%A8%E5%B9%B4&rkf=1 https://www.youtube.com/watch?v=quc_vwkSc9Y',
+      source: 'Yahoo! Japan index quoting the official Miko X post of July 19; Miko official YouTube stream of July 21 (event confirmation)',
+      sourceStatus: 'indexed' as const,
+      sources: [
+        {
+          url: 'https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_hash&p=%23miComet6%E5%91%A8%E5%B9%B4&rkf=1',
+          kind: 'archive' as const,
+          label: 'Miko 2026-07-19 original X post as quoted by Yahoo! Japan (status URL not verified)',
+          official: false,
+        },
+        {
+          url: 'https://www.youtube.com/watch?v=quc_vwkSc9Y',
+          kind: 'youtube' as const,
+          label: 'Miko original livestream on 2026-07-21 (event confirmation, not July 19 announcement)',
+          official: true,
+        },
+      ],
+    };
+  }
   if (story.id === 'c2-2026-001') {
     return {
       ...story,
@@ -989,7 +1017,7 @@ const withVerifiedSources = [...patched, ...additions].map((story) => {
   const classification = classificationOverrides2026[story.id] || {};
   const classifiedStory = {
     ...story,
-    ...(story.id === 'c2-2026-005' ? { sourceStatus: 'missing' as const } : {}),
+    ...(story.id === 'c2-2026-005' ? { sourceStatus: 'indexed' as const } : {}),
     ...(['c2-2026-073', 'c2-2026-088'].includes(story.id) ? { sourceStatus: 'indexed' as const } : {}),
     ...(classification.side ? { side: classification.side } : {}),
     ...(classification.emoji ? { emoji: classification.emoji } : {}),
