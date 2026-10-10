@@ -130,7 +130,7 @@ const englishRows = `
 2025-05-10|On NHK Radio, Marine wonders why Miko wasn’t called to fill for Suisei’s absence instead
 2025-05-08|Lui recalls having shabu-shabu at Suisei’s house and playing a Conan-style mystery game with Miko and others
 2025-05-06|Suisei opens and miComet went to a fortune teller
-2025-05-02|In the Minecraft fishing contest, Suisei builds a boat for Miko and rushes over when she sees the boat on fire
+2025-05-03|In the Minecraft fishing contest, Suisei builds a boat for Miko and rushes over when she sees the boat on fire
 2025-05-02|Suisei tweets and hosts a Twitter Space about having dinner alone while Miko is with friends
 2025-05-02|Miko messages Suisei late at night and recalls a Conan-style mystery game with Lui and others
 2025-05-02|Good Smile Company posts miComet teetee
@@ -353,6 +353,22 @@ const recoveredEnglishTitles2025: Record<string, string> = {
 };
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-207': {
+    link: 'https://www.youtube.com/watch?v=GrWPu-x5agE',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-285': {
+    link: 'https://www.youtube.com/watch?v=rVYFUKQGIYI',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-262': {
+    link: 'https://www.youtube.com/watch?v=wlxwwCn9gxE',
+    source: 'Miko official YouTube original stream',
+  },
+  'c2-2025-179': {
+    link: 'https://www.youtube.com/watch?v=AK5Ov8NOwlM',
+    source: 'Miko official YouTube original stream',
+  },
   'c2-2025-031': {
     link: 'https://www.youtube.com/watch?v=tyWUIwwh3r8',
     source: 'Subaru official YouTube original stream',
@@ -962,6 +978,18 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'x' | 'official'; label: string; official: true }>> = {
+  'c2-2025-207': [
+    { url: 'https://www.youtube.com/watch?v=GrWPu-x5agE', kind: 'youtube', label: '櫻巫女2025/04/01愚人節Live2D初配信（星街登場）', official: true },
+  ],
+  'c2-2025-285': [
+    { url: 'https://www.youtube.com/watch?v=rVYFUKQGIYI', kind: 'youtube', label: '櫻巫女2025/02/03麥塊新伺服器原始直播', official: true },
+  ],
+  'c2-2025-262': [
+    { url: 'https://www.youtube.com/watch?v=wlxwwCn9gxE', kind: 'youtube', label: '櫻巫女2025/02/18麥塊原始直播', official: true },
+  ],
+  'c2-2025-179': [
+    { url: 'https://www.youtube.com/watch?v=AK5Ov8NOwlM', kind: 'youtube', label: '櫻巫女2025/05/03麥塊釣魚大賽原始直播', official: true },
+  ],
   'c2-2025-145': [
     { url: 'https://x.com/mikochisub/status/1933214151943577953', kind: 'x', label: '櫻巫女副帳原始祝賀貼文', official: true },
   ],
