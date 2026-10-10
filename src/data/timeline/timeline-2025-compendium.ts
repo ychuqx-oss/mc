@@ -242,7 +242,7 @@ const englishRows = `
 2025-01-08|Holo Card Features FubuMiComet
 2025-01-03|Ao and Marine Plan to Egg miComet On into Flirting
 2025-06-17|Miko Posts a 'Caramel Pain' Short
-2025-04-29|Miko Shows FubuMiComet VRChat Photos and Fubuki Teases Another VRChat Stream in May
+2025-04-29|Miko Shows Photos from the FubuMiComet VRChat Stream
 2025-04-09|Fubuki and Suisei Appear in Miko's Short
 2025-09-27|MiComet Make Surprise Calls and Announce Their Upcoming New Outfit Project
 2025-08-19|Suisei Comes Up with a Strange Game Idea Involving Filming a Bed and a Dog
