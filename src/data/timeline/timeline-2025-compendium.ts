@@ -353,6 +353,18 @@ const recoveredEnglishTitles2025: Record<string, string> = {
 };
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-274': {
+    link: 'https://www.youtube.com/watch?v=xxHUCjv1L6o https://www.youtube.com/watch?v=Q0-MA3auT9I https://www.youtube.com/watch?v=kjOYHgysdn4',
+    source: 'Miko, Suisei and Hiodoshi Ao official Minecraft livestreams on 2025-02-10',
+  },
+  'c2-2025-305': {
+    link: 'https://www.youtube.com/watch?v=4xRbzyHDTrA',
+    source: 'Miko official Minecraft diamond-hunt livestream 2025-01-08',
+  },
+  'c2-2025-264': {
+    link: 'https://www.youtube.com/watch?v=87h2g_8P5wo',
+    source: 'Suisei official Minecraft original stream on 2025-02-17',
+  },
   'c2-2025-207': {
     link: 'https://www.youtube.com/watch?v=GrWPu-x5agE',
     source: 'Miko official YouTube original stream',
@@ -978,6 +990,17 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'x' | 'official'; label: string; official: true }>> = {
+  'c2-2025-274': [
+    { url: 'https://www.youtube.com/watch?v=xxHUCjv1L6o', kind: 'youtube', label: '櫻巫女2025/02/10麥塊原始直播', official: true },
+    { url: 'https://www.youtube.com/watch?v=Q0-MA3auT9I', kind: 'youtube', label: '星街彗星2025/02/10麥塊原始直播', official: true },
+    { url: 'https://www.youtube.com/watch?v=kjOYHgysdn4', kind: 'youtube', label: '火威青2025/02/10麥塊原始直播', official: true },
+  ],
+  'c2-2025-305': [
+    { url: 'https://www.youtube.com/watch?v=4xRbzyHDTrA', kind: 'youtube', label: '櫻巫女2025/01/08鑽石發掘隊原始直播（星街出現約2:35:50）', official: true },
+  ],
+  'c2-2025-264': [
+    { url: 'https://www.youtube.com/watch?v=87h2g_8P5wo', kind: 'youtube', label: '星街彗星2025/02/17麥塊原始直播', official: true },
+  ],
   'c2-2025-207': [
     { url: 'https://www.youtube.com/watch?v=GrWPu-x5agE', kind: 'youtube', label: '櫻巫女2025/04/01愚人節Live2D初配信（星街登場）', official: true },
   ],
