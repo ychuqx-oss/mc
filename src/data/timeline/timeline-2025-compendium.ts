@@ -353,6 +353,10 @@ const recoveredEnglishTitles2025: Record<string, string> = {
 };
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-187': {
+    link: 'https://www.youtube.com/watch?v=UgKmTqnzzeM',
+    source: 'Miko original YouTube stream of April 29, 2025 (Mario Kart), VRChat photo retrospective; Fubuki follow-up announcement needs separate confirmation',
+  },
   'c2-2025-162': {
     link: 'https://x.com/mikochisub/status/1926877410642837913',
     source: 'Miko subaccount original X post (2025-05-26), recovered via dated quoted repost',
@@ -1006,6 +1010,9 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'x' | 'official'; label: string; official: true }>> = {
+  'c2-2025-187': [
+    { url: 'https://www.youtube.com/watch?v=UgKmTqnzzeM', kind: 'youtube', label: '櫻巫女2025/04/29瑪利歐賽車原始直播（回顧FubuMiComet VRChat照片）', official: true },
+  ],
   'c2-2025-162': [
     { url: 'https://x.com/mikochisub/status/1926877410642837913', kind: 'x', label: '櫻巫女副帳2025/05/26原始夢境貼文（商業搭檔合作電吉他）', official: true },
   ],
