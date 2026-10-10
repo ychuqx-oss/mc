@@ -353,6 +353,10 @@ const recoveredEnglishTitles2025: Record<string, string> = {
 };
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-259': {
+    link: 'https://www.youtube.com/watch?v=nG1hS5Se3gI',
+    source: 'Miko official Minecraft original stream, February 20 doujinshi reading',
+  },
   'c2-2025-274': {
     link: 'https://www.youtube.com/watch?v=xxHUCjv1L6o https://www.youtube.com/watch?v=Q0-MA3auT9I https://www.youtube.com/watch?v=kjOYHgysdn4',
     source: 'Miko, Suisei and Hiodoshi Ao official Minecraft livestreams on 2025-02-10',
@@ -990,6 +994,9 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'x' | 'official'; label: string; official: true }>> = {
+  'c2-2025-259': [
+    { url: 'https://www.youtube.com/watch?v=nG1hS5Se3gI', kind: 'youtube', label: '櫻巫女2025/02/20麥塊同人誌即賣會與朗讀原始直播', official: true },
+  ],
   'c2-2025-274': [
     { url: 'https://www.youtube.com/watch?v=xxHUCjv1L6o', kind: 'youtube', label: '櫻巫女2025/02/10麥塊原始直播', official: true },
     { url: 'https://www.youtube.com/watch?v=Q0-MA3auT9I', kind: 'youtube', label: '星街彗星2025/02/10麥塊原始直播', official: true },
