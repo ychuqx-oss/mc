@@ -933,6 +933,28 @@ const additions = [
     sourceStatus: 'verified' as const,
     eventId: 'hololive-tier-list-2026-10-07',
   },
+  {
+    id: 'c2-2026-164',
+    displayId: '26-C2-164',
+    date: '2026-10-07',
+    phase: 6,
+    side: 'shared' as const,
+    sharedCategory: 'group' as const,
+    emoji: '💛',
+    type: 'Stream',
+    title: 'MiComet Calls for Mela to Put Out the Fire During a Tier-List Discussion',
+    titleZh: 'miComet在Tier表討論中開玩笑喊熱千めら幫忙「滅火」',
+    titleEn: 'MiComet Calls for Mela to Put Out the Fire During a Tier-List Discussion',
+    ctx: 'During a tier-list question about what they appreciate about Hololive, Suisei gave a deliberately provocative answer. Miko and Suisei joked about needing Achichi Mela to put out the resulting fire.',
+    ctxZh: '在「加入Hololive最開心的事」等Tier表話題中，星街故意給出可能引起爭議的回答，Miko與星街開玩笑喊熱千めら來幫忙「滅火」。',
+    ctxEn: 'During a tier-list question about what they appreciate about Hololive, Suisei gave a deliberately provocative answer. Miko and Suisei joked about needing Achichi Mela to put out the resulting fire.',
+    link: 'https://www.youtube.com/watch?v=ACvWie_jpi8',
+    sources: [
+      { url: 'https://www.youtube.com/watch?v=ACvWie_jpi8', kind: 'youtube' as const, label: '櫻巫女2026/10/07「みんなでティア表」原始直播', official: true },
+    ],
+    sourceStatus: 'verified' as const,
+    eventId: 'hololive-tier-list-2026-10-07',
+  },
 
 ];
 
