@@ -886,7 +886,53 @@ const additions = [
     ctxEn: 'During Miko’s Hololive Dreams five-star collection stream, Roboco appeared in chat, but the rainbow pull produced an off-banner Suisei instead.',
     link: '',
     source: 'Miko official YouTube original stream',
+  },,
+
+  {
+    id: 'c2-2026-162',
+    displayId: '26-C2-162',
+    date: '2026-04-19',
+    phase: 6,
+    side: 'shared' as const,
+    sharedCategory: 'oneOnOne' as const,
+    reciprocal: true,
+    emoji: '💛',
+    type: 'Stream',
+    title: 'MiComet Visits Universal Studios Japan for Cool Japan 2026',
+    titleZh: 'miComet公開USJ「Cool Japan 2026」雙人外景影片',
+    titleEn: 'MiComet Visits Universal Studios Japan for Cool Japan 2026',
+    ctx: 'Miko and Suisei appeared together in a USJ Cool Japan on-location video published on Suisei’s official channel.',
+    ctxZh: 'Miko與星街一同前往日本環球影城，並在星街官方頻道公開「Universal Cool Japan 2026」外景影片。',
+    ctxEn: 'Miko and Suisei appeared together in a USJ Cool Japan on-location video published on Suisei’s official channel.',
+    sources: [
+      { url: 'https://www.youtube.com/watch?v=jDcMwfEf2A0', kind: 'youtube' as const, label: '星街彗星官方USJ外景影片（2026/04/19）', official: true },
+    ],
+    sourceStatus: 'verified' as const,
+    eventId: 'miComet-USJ-2026-04-19',
   },
+  {
+    id: 'c2-2026-163',
+    displayId: '26-C2-163',
+    date: '2026-10-07',
+    phase: 6,
+    side: 'shared' as const,
+    sharedCategory: 'group' as const,
+    emoji: '💛',
+    type: 'Stream',
+    title: 'Miko and Suisei Appear in the Hololive Group Tier-List Stream',
+    titleZh: 'Miko與星街參與Hololive多人Tier表直播',
+    titleEn: 'Miko and Suisei Appear in the Hololive Group Tier-List Stream',
+    ctx: 'Miko hosted a Hololive group tier-list discussion. The Miko–Suisei collaboration index lists the stream on October 7.',
+    ctxZh: 'Miko主持Hololive多人Tier表討論直播；HoloStats的Miko×星街連動紀錄收錄了10月7日這場直播。',
+    ctxEn: 'Miko hosted a Hololive group tier-list discussion. The Miko–Suisei collaboration index lists the stream on October 7.',
+    sources: [
+      { url: 'https://www.holostats.com/collabs/pair/14/21', kind: 'index' as const, label: 'HoloStats 2026/10/07連動紀錄', official: false },
+      { url: 'https://sakuramiko.com/collab', kind: 'index' as const, label: '櫻巫女直播索引', official: false },
+    ],
+    sourceStatus: 'indexed' as const,
+    eventId: 'hololive-tier-list-2026-10-07',
+  },
+
 ];
 
 const verifiedSourceLinks2026: Record<string, string> = {
