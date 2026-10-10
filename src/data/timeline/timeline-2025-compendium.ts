@@ -994,6 +994,9 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'x' | 'official'; label: string; official: true }>> = {
+  'c2-2025-159': [
+    { url: 'https://www.youtube.com/watch?v=R5Lk7lxXkB4', kind: 'youtube', label: '櫻巫女2025/05/29 SubaMiComet《R.E.P.O.》原始直播', official: true },
+  ],
   'c2-2025-259': [
     { url: 'https://www.youtube.com/watch?v=nG1hS5Se3gI', kind: 'youtube', label: '櫻巫女2025/02/20麥塊同人誌即賣會與朗讀原始直播', official: true },
   ],
