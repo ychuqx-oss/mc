@@ -886,8 +886,7 @@ const additions = [
     ctxEn: 'During Miko’s Hololive Dreams five-star collection stream, Roboco appeared in chat, but the rainbow pull produced an off-banner Suisei instead.',
     link: '',
     source: 'Miko official YouTube original stream',
-  },,
-
+  },
   {
     id: 'c2-2026-162',
     displayId: '26-C2-162',
