@@ -38,7 +38,7 @@ c2-2025-182|25-C2-185|2025-05-02|6|miko|🌸|Stream|Miko深夜傳LINE給星街�
 c2-2025-183|25-C2-186|2025-05-02|6|others|⭐|News|秋葉原模型展公開櫻巫女與星街彗星的相關模型
 c2-2025-184|25-C2-187|2025-05-02|6|miko|🌸|Clip|Miko與星街一起跳〈ビビデバ〉Shorts
 c2-2025-185|25-C2-188|2025-05-01|6|miko|🌸|Stream|Miko線下播美少女遊戲給Hololive成員看，並談到沒有回星街LINE
-c2-2025-187|25-C2-190|2025-04-29|6|others|⭐|Stream|Miko展示FubuMiComet VRChat照片，白上吹雪預告5月還會再開VRChat
+c2-2025-187|25-C2-190|2025-04-29|6|miko|🌸|Stream|Miko展示FubuMiComet VRChat合照
 c2-2025-188|25-C2-191|2025-04-27|6|suisei|☄️|Audio|星街廣播嘉賓是Miko大粉絲並熱情談到DDD
 c2-2025-189|25-C2-192|2025-04-24|6|miko|🌸|Stream|Miko反省MikoSuba沒有miComet那麼貼貼
 c2-2025-190|25-C2-193|2025-04-23|6|miko|🌸|Stream|Miko說理想對象要聲音好聽又會唱歌
