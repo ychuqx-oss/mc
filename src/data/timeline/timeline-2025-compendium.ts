@@ -353,6 +353,18 @@ const recoveredEnglishTitles2025: Record<string, string> = {
 };
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-162': {
+    link: 'https://x.com/mikochisub/status/1926877410642837913',
+    source: 'Miko subaccount original X post (2025-05-26), recovered via dated quoted repost',
+  },
+  'c2-2025-199': {
+    link: 'https://www.youtube.com/watch?v=35p_v2E-CZE',
+    source: 'Miko original 2025-04-08 Pokemon Ruby stream, with Monster Hunter cafe discussion (JST follow-up 2025-04-09)',
+  },
+  'c2-2025-282': {
+    link: 'https://www.youtube.com/watch?v=RY2YZh_C1F4',
+    source: 'Miko original 2025-02-05 Minecraft stream, Suisei Discord message near 00:07:20',
+  },
   'c2-2025-259': {
     link: 'https://www.youtube.com/watch?v=nG1hS5Se3gI',
     source: 'Miko official Minecraft original stream, February 20 doujinshi reading',
@@ -994,6 +1006,15 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'x' | 'official'; label: string; official: true }>> = {
+  'c2-2025-162': [
+    { url: 'https://x.com/mikochisub/status/1926877410642837913', kind: 'x', label: '櫻巫女副帳2025/05/26原始夢境貼文（商業搭檔合作電吉他）', official: true },
+  ],
+  'c2-2025-199': [
+    { url: 'https://www.youtube.com/watch?v=35p_v2E-CZE', kind: 'youtube', label: '櫻巫女2025/04/08《ポケモンルビー》原始直播（談及Hololive魔物獵人咖啡廳）', official: true },
+  ],
+  'c2-2025-282': [
+    { url: 'https://www.youtube.com/watch?v=RY2YZh_C1F4', kind: 'youtube', label: '櫻巫女2025/02/05新麥塊伺服器直播（約07:20提及星街Discord訊息）', official: true },
+  ],
   'c2-2025-159': [
     { url: 'https://www.youtube.com/watch?v=R5Lk7lxXkB4', kind: 'youtube', label: '櫻巫女2025/05/29 SubaMiComet《R.E.P.O.》原始直播', official: true },
   ],
