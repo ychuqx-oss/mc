@@ -118,7 +118,7 @@ const englishRows = `
 2025-05-29|SubaMiComet R.E.P.O. collab
 2025-05-27|Miko wants to play a co-op game with Suisei, but is scared that Suisei will get mad at her
 2025-05-26|Miko has a dream about her business partner
-2025-05-25|Miko draws her dog with a Suisei plushie
+2025-05-24|Miko sketches her dog Inuchi after explaining it loves playing with a Suisei plushie
 2025-05-23|Kanade says Miko is more like the older-sister figure in miComet
 2025-05-22|Suisei complaints about Miko’s unfinished Minecraft builds
 2025-05-20|Suisei’s short features Mikolingo
@@ -353,6 +353,10 @@ const recoveredEnglishTitles2025: Record<string, string> = {
 };
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-163': {
+    link: 'https://www.youtube.com/watch?v=ZBp8EY68ZmY',
+    source: 'Miko original May 23 Pokemon Ruby stream, Inuchi announcement and dog drawing after midnight JST on May 24',
+  },
   'c2-2025-167': {
     link: 'https://www.youtube.com/watch?v=KS8QRNM21zI&t=3956s',
     source: 'Miko official 2025-05-19 Mario Kart livestream; at about 01:05:56 she recalls the gathering at Subaru home and says Suisei is good at frying food',
@@ -1022,6 +1026,9 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'x' | 'official'; label: string; official: true }>> = {
+  'c2-2025-163': [
+    { url: 'https://www.youtube.com/watch?v=ZBp8EY68ZmY', kind: 'youtube', label: '櫻巫女2025/05/23《寶可夢紅寶石》原始直播（日本時間05/24凌晨談愛犬玩星街娃娃並畫狗）', official: true },
+  ],
   'c2-2025-167': [
     { url: 'https://www.youtube.com/watch?v=KS8QRNM21zI&t=3956s', kind: 'youtube', label: '櫻巫女2025/05/19瑪利歐賽車原始直播（01:05:56稱讚星街擅長炸物料理）', official: true },
   ],
