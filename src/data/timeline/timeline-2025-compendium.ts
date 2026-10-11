@@ -129,7 +129,7 @@ const englishRows = `
 2025-05-10|Miko talks about Suisei, shoulder massages, and her Sambomaster collab
 2025-05-10|On NHK Radio, Marine wonders why Miko wasn’t called to fill for Suisei’s absence instead
 2025-05-08|Lui recalls having shabu-shabu at Suisei’s house and playing a Conan-style mystery game with Miko and others
-2025-05-06|Suisei opens and miComet went to a fortune teller
+2025-05-06|Suisei helps Miko open a bottle
 2025-05-03|In the Minecraft fishing contest, Suisei builds a boat for Miko and rushes over when she sees the boat on fire
 2025-05-02|Suisei tweets and hosts a Twitter Space about having dinner alone while Miko is with friends
 2025-05-02|Miko messages Suisei late at night and recalls a Conan-style mystery game with Lui and others
