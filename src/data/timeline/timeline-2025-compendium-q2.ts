@@ -42,7 +42,7 @@ c2-2025-187|25-C2-190|2025-04-29|6|miko|🌸|Stream|Miko展示FubuMiComet VRChat
 c2-2025-188|25-C2-191|2025-04-27|6|suisei|☄️|Audio|星街廣播嘉賓是Miko大粉絲並熱情談到DDD
 c2-2025-189|25-C2-192|2025-04-24|6|miko|🌸|Stream|Miko反省MikoSuba沒有miComet那麼貼貼
 c2-2025-190|25-C2-193|2025-04-23|6|miko|🌸|Stream|Miko說理想對象要聲音好聽又會唱歌
-c2-2025-191|25-C2-194|2025-04-21|6|suisei|☄️|Stream|星街在Space提到和Miko的商業出差
+c2-2025-191|25-C2-194|2025-04-21|6|suisei|☄️|Audio|星街在Space提到和Miko的商業出差
 c2-2025-192|25-C2-195|2025-04-18|6|others|⭐|Stream|FubuMiComet連動中miComet約會，星街嘗試餵Miko
 c2-2025-193|25-C2-196|2025-04-16|6|miko|🌸|Stream|Miko談星街為她安排私人賞花船，還給她看miComet版鋼彈動畫
 c2-2025-194|25-C2-197|2025-04-14|6|miko|🌸|Stream|Miko和姊街、星街去溫泉旅行
