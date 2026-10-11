@@ -1251,6 +1251,10 @@ const researchSourceLeads2025: Record<string, Array<{
   label: string;
   official: false;
 }>> = {
+  'c2-2025-181': [
+    { url: 'https://x.com/suisei_hosimati/status/1918283327762796847', kind: 'x', label: '星街彗星2025/05/02本人X Space臨時公告（由同期日文嵌入回溯貼文ID；尚未核實與Miko朋友用餐／獨食對話） / Original same-day Space announcement; dinner statement unverified', official: false },
+    { url: 'https://vtubernews.jp/archives/27557748.html', kind: 'index', label: '2025/05/03同期日文整理（引述5/2 21:36星街本人突發Space貼文；未收錄所述晚餐原話） / Contemporaneous Japanese X embed, dinner content not proved', official: false },
+  ],
   'c2-2025-310': [
     { url: 'https://www.youtube.com/watch?v=2aOA-Y6B1zU', kind: 'youtube', label: '2025/01/05 Miko本人主辦《ホロ五目並べ最弱王》原始直播，僅作比賽背景；尚未證明兩人在X互嘴 / Original tournament, X exchange unconfirmed', official: false },
     { url: 'https://ckworks.jp/vinforadar/video/kirinuki/TgPHvzrgND0', kind: 'index', label: '日文切片包含 Miko 對星街的五子棋片段（11:55）；不是雙方X推文證據 / Japanese tournament clip, not proof of mutual X posts', official: false },
@@ -1340,6 +1344,7 @@ const researchSourceLeads2025: Record<string, Array<{
 
 // Keep unverified leads out of the verified counter; date-mismatched leads remain missing.
 const researchSourceStatus2025: Record<string, 'verified' | 'indexed' | 'missing'> = {
+  'c2-2025-181': 'missing',
   'c2-2025-310': 'missing',
   'c2-2025-300': 'indexed',
   'c2-2025-271': 'missing',
