@@ -54,7 +54,7 @@ c2-2025-272|25-C2-272|2025-02-11|6|others|⭐|Stream|白上吹雪直播中的miC
 c2-2025-273|25-C2-273|2025-02-11|6|others|⭐|Stream|轟一抽到Miko運勢要她向下一位遇到的星街索取腿毛
 c2-2025-274|25-C2-274|2025-02-10|6|shared|💛|Stream|Miko與星街參與Ao的麥塊連動
 c2-2025-275|25-C2-275|2025-02-10|6|others|⭐|Stream|天音彼方與戌神沁音開miComet玩笑
-c2-2025-276|25-C2-276|2025-02-09|6|shared|💛|Stream|Miko麥塊縮圖使用miComet圖，妹妹也聽星街歌曲
+c2-2025-276|25-C2-276|2025-02-09|6|miko|🌸|Stream|Miko麥塊縮圖使用miComet圖，妹妹也聽星街歌曲
 c2-2025-279|25-C2-278|2025-02-08|6|others|⭐|Audio|Daoko擔任星街主持的NHK《ぶいあーる！》廣播來賓
 c2-2025-282|25-C2-281|2025-02-05|6|shared|💛|Stream|星街要求Miko回到麥塊
 c2-2025-283|25-C2-282|2025-02-04|6|miko|🌸|Stream|Miko談自己有Kissy Missy娃娃，也送星街Huggy Wuggy娃娃
@@ -73,7 +73,7 @@ c2-2025-299|25-C2-297|2025-01-13|6|shared|💛|Stream|miComet參加Hololive新�
 c2-2025-300|25-C2-298|2025-01-11|6|others|⭐|Audio|NHK廣播播放《Flower Rhapsody》
 c2-2025-301|25-C2-299|2025-01-11|6|miko|🌸|Stream|Miko直播中不小心留下星街的杯子
 c2-2025-302|25-C2-300|2025-01-10|6|shared|💛|Stream|miComet一起練習常闇永遠大賽
-c2-2025-304|25-C2-302|2025-01-09|6|others|⭐|Stream|白上吹雪轉推自己遠望miComet的剪輯
+c2-2025-304|25-C2-302|2025-01-09|6|others|⭐|Text|白上吹雪轉推自己遠望miComet的剪輯
 c2-2025-305|25-C2-303|2025-01-08|6|shared|💛|Stream|Miko在麥塊遇到星街，追問她為何不談福岡驚喜
 c2-2025-306|25-C2-304|2025-01-08|6|miko|🌸|Stream|Miko兩次抽到GOD，星街一邊抽同機率遊戲一邊看她直播
 c2-2025-307|25-C2-305|2025-01-08|6|others|⭐|News|Holo Card刊登FubuMiComet
