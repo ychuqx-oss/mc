@@ -190,7 +190,7 @@ const englishRows = `
 2025-02-23|Suisei runs after Miko in the background of Towa’s short
 2025-02-21|Minecraft
 2025-02-21|Botan and Fubuki wear miComet masks and roleplay
-2025-02-21|MiComet appear in a hololive short
+2025-02-21|Miko and Suisei appear in hololive official Tetris dance Short alongside other members
 2025-02-20|Minecraft
 2025-02-19|Miko talks about business forever
 2025-02-19|Suisei takes a screenshot from Miko’s stream
@@ -353,6 +353,10 @@ const recoveredEnglishTitles2025: Record<string, string> = {
 };
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-258': {
+    link: 'https://www.youtube.com/shorts/_ySjUkpvIEI',
+    source: 'hololive official 2025-02-21 Tetris dance Short; Sakura Miko and Hoshimachi Suisei are both credited performers among group members',
+  },
   'c2-2025-163': {
     link: 'https://www.youtube.com/watch?v=ZBp8EY68ZmY',
     source: 'Miko original May 23 Pokemon Ruby stream, Inuchi announcement and dog drawing after midnight JST on May 24',
@@ -1026,6 +1030,9 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'x' | 'official'; label: string; official: true }>> = {
+  'c2-2025-258': [
+    { url: 'https://www.youtube.com/shorts/_ySjUkpvIEI', kind: 'youtube', label: 'hololive官方2025/02/21《テトリス》短片（櫻巫女與星街彗星均列為出演者）', official: true },
+  ],
   'c2-2025-163': [
     { url: 'https://www.youtube.com/watch?v=ZBp8EY68ZmY', kind: 'youtube', label: '櫻巫女2025/05/23《寶可夢紅寶石》原始直播（日本時間05/24凌晨談愛犬玩星街娃娃並畫狗）', official: true },
   ],
