@@ -168,3 +168,18 @@
 - `c2-2025-254`（02/23 常闇永遠 Shorts 背景追逐）：同期本人 X https://x.com/tokoyamitowa/status/1893545061838729669 可確認發佈 https://www.youtube.com/shorts/iz1VgDngWa0；本輪仍未核對 Shorts 畫面中的動作與人物，不標記 verified。
 
 **本輪新增 confirmed mapping：0。Q1 19／Q2 6，合計 25 筆仍待補。** 候選片段僅為追查線索，不將中文切片、非官方頁面或不同日期直播當作 verified 故事原始證據。
+
+## 2026-10-11：25 筆缺口追加查核（NHK 集數與演唱會前夜祭）
+
+本次重新讀取 `main` 的 2025 四季資料及來源映射，針對缺口再次檢索日文原始節目、本人 YouTube、X 與同期索引。**本輪新增可完整驗證故事的來源數：0**；以下記錄精確節目資訊和無法跨越的證據差距。
+
+| 故事 ID | 本次確認的原始節目／線索 | 為何尚未補入 verified |
+|---|---|---|
+| `c2-2025-300`（01/11） | NHK《ぶいあーる！》**第 76 回**於 2025/01/11 播出，來賓為緑仙與ギルザレンIII世；節目官方 2024/12/16 X 預告曾由同期文章引用（https://vtuber-matomeruyon.blog.jp/archives/27541587.html）。非官方歌單列 M1 為櫻巫女〈flower rhapsody〉（https://www.bilibili.com/video/BV1yfcheoEfw/）。 | 官方預告能核對**集數與來賓**，不能核對該首歌曲實際播放；缺 NHK 官方本集歌單，未把非官方重傳當原始來源。 |
+| `c2-2025-188`（04/27） | NHK《ぶいあーる！》2025/04/26 **第 88 回的來賓確為 KMNZ**；廣播平台 radiko 對後來的重編版明確標註原播日期、集數、KMNZ（https://radiko.jp/mobile/events/12918448）。 | 仍沒有本集「來賓是 Miko 粉絲／熱談 DDD」的官方逐字內容；此外事件日期 04/27 與原播日 04/26 差一天，待確認是否指日本時間午夜發言。不可僅憑來賓名單冒充特定發言。 |
+| `c2-2025-271`（02/12） | 白上吹雪本人於 **2025/02/11 20:00** 舉辦個人演唱會前夜祭（https://www.youtube.com/watch?v=aOhEhm_MOzI）；hololive 官方確認 02/13 演唱會 Miko、星街為嘉賓（https://hololive.hololivepro.com/events/fbkingdom_live/）。 | 02/11 前夜祭和 02/13 正式演出，都不能取代故事宣稱的 **02/12 特定本人 X 貼文**。 |
+| `c2-2025-276`（02/09） | 找到櫻巫女 **2025/02/09 21:00**《Minecraft 新伺服器》原始直播的標題與開播紀錄（https://ckworks.jp/vinforadar/video/kirinuki/1dCRquan7H4 可追溯原直播資料）。 | 尚未找到能證明「縮圖使用 miComet 圖」及「妹妹也聽星街歌曲」的原縮圖／原片時間點；不以該日有直播直接認證兩項故事內容。 |
+| `c2-2025-254`（02/23） | 常闇永遠本人 https://www.youtube.com/shorts/iz1VgDngWa0 的作品確實於 2025/02/23 發表，並在當日 X 公告 https://x.com/tokoyamitowa/status/1893545061838729669。 | 短片發布事實已明，但「背景星街追著 Miko 跑」的畫面動作尚未核實，維持待補。 |
+| `c2-2025-310`（01/05） | 2025/01/04 櫻巫女抽籤直播的同期觀眾留言提及星街 Space 念出 Miko LINE，另有 01/05 五子棋官方賽事。線索參考 https://vtubertrend.blog.fc2.com/blog-entry-8063.html。 | 「LINE 與 Space」和原故事所述「兩人 01/05 在 X 五子棋互相嘴砲」**不是同一種紀錄**；欠雙方原始 X Status ID。 |
+
+本節只補**稽核依據**，未更動 `verifiedSourceLinks2025`、`recoveredSources2025` 或任何故事正文。待補主要來源映射仍為 **Q1 19、Q2 6、合計 25 筆**。此數字是「主要來源對照缺口」，不代表其餘所有 2025 故事已逐項核實語句。
