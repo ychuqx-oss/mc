@@ -1244,6 +1244,79 @@ const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' 
   ],
 };
 
+// Japanese clip and contemporary-report leads. These are research aids, NOT verified original evidence.
+const researchSourceLeads2025: Record<string, Array<{
+  url: string;
+  kind: 'youtube' | 'news' | 'index';
+  label: string;
+  official: false;
+}>> = {
+  'c2-2025-265': [
+    {
+      url: 'https://ckworks.jp/vinforadar/video/kirinuki/tKrURdg2rCE',
+      kind: 'index',
+      label: '日文切片查核線索（16:54 白上吹雪與Miko聽到星街開口；尚未證實提醒仍在直播） / Japanese clip, exact dialogue unconfirmed',
+      official: false,
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=mKRc85oLhhM',
+      kind: 'youtube',
+      label: 'Miko 2025/02/15本人原始Minecraft直播（同場活動；待對照該句原話） / Original stream, specific quote pending',
+      official: false,
+    },
+  ],
+  'c2-2025-284': [
+    {
+      url: 'https://www.youtube.com/watch?v=JUF7y45GnHw',
+      kind: 'youtube',
+      label: '2/4 日文第三方Minecraft切片（11:58「すいちゃんの池」；尚未證實替Miko企劃工作） / Japanese clip, project claim unconfirmed',
+      official: false,
+    },
+  ],
+  'c2-2025-238': [
+    {
+      url: 'https://www.youtube.com/watch?v=77mlqr1vm_k',
+      kind: 'youtube',
+      label: '3/5 日文切片（1:09 笑虎觀察miComet；原直播3/3，奏的參與待核實） / Japanese clip, Kanade involvement unconfirmed',
+      official: false,
+    },
+  ],
+  'c2-2025-224': [
+    {
+      url: 'https://www.appbank.net/2025/03/25/youtubernews/2762023.php',
+      kind: 'news',
+      label: '3/25 日文報導（僅提及Miko忘帶娃娃，非3/11兩人均忘帶的證據） / Related report, date and scope differ',
+      official: false,
+    },
+  ],
+  'c2-2025-202': [
+    {
+      url: 'https://ckworks.jp/vinforadar/video/kirinuki/Zu2GD7e8y-w',
+      kind: 'index',
+      label: '日期不符的日文切片（4/14旅行娃娃話題；不能證明4/6原故事） / Different-date lead only, NOT original evidence',
+      official: false,
+    },
+  ],
+  'c2-2025-194': [
+    {
+      url: 'https://www.youtube.com/watch?v=jsYy_nEfZlE',
+      kind: 'youtube',
+      label: '4/14溫泉旅行回顧日文切片（8:19娃娃話題；第三方補充） / Japanese clip, supplementary only',
+      official: false,
+    },
+  ],
+};
+
+// Keep unverified leads out of the verified counter; date-mismatched leads remain missing.
+const researchSourceStatus2025: Record<string, 'verified' | 'indexed' | 'missing'> = {
+  'c2-2025-265': 'indexed',
+  'c2-2025-284': 'indexed',
+  'c2-2025-238': 'indexed',
+  'c2-2025-224': 'missing',
+  'c2-2025-202': 'missing',
+  'c2-2025-194': 'verified', // The original stream is already separately present in verifiedSourceLinks2025.
+};
+
 const classificationOverrides2025: Record<string, {
   side?: Side;
   sharedCategory?: 'gen0' | 'shiraken' | 'oneOnOne' | 'group';
@@ -1287,6 +1360,10 @@ const data = rows.split('\n').map((row) => {
     link: verifiedSourceLinks2025[id]?.link ?? '',
     source: verifiedSourceLinks2025[id]?.source ?? 'MiComet Compendium II',
     ...(recoveredSources2025[id] ? { sources: recoveredSources2025[id], sourceStatus: 'verified' as const } : {}),
+    ...(researchSourceLeads2025[id] ? {
+      sources: [...(recoveredSources2025[id] ?? []), ...researchSourceLeads2025[id]],
+      sourceStatus: researchSourceStatus2025[id] ?? ('indexed' as const),
+    } : {}),
     ...(classification.sharedCategory ? { sharedCategory: classification.sharedCategory } : {}),
     ...(classification.reciprocal ? { reciprocal: true } : {}),
     ...(classification.supportCategory ? { supportCategory: classification.supportCategory } : {}),
