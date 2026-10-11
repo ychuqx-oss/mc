@@ -353,6 +353,10 @@ const recoveredEnglishTitles2025: Record<string, string> = {
 };
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-211': {
+    link: 'https://www.youtube.com/watch?v=2LDhfEcrq5o',
+    source: 'Miko original Pokemon Ruby livestream (2025-03-26 20:01–03:05 JST); contemporary 2025-03-27 02:47 live discussion mentions miComet morning walks',
+  },
   'c2-2025-229': {
     link: 'https://www.youtube.com/watch?v=VzGNuQHy5rk https://www.youtube.com/watch?v=BPVPYRyRBC0',
     source: 'Miko and Marine official 2025-03-09 EXPO/fes recap streams; both discuss the backstage Daifugo card game',
@@ -1014,6 +1018,9 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'x' | 'official'; label: string; official: true }>> = {
+  'c2-2025-211': [
+    { url: 'https://www.youtube.com/watch?v=2LDhfEcrq5o', kind: 'youtube', label: '櫻巫女2025/03/26《寶可夢紅寶石》原始直播（隔日凌晨談miComet早晨散步）', official: true },
+  ],
   'c2-2025-229': [
     { url: 'https://www.youtube.com/watch?v=VzGNuQHy5rk', kind: 'youtube', label: '櫻巫女2025/03/09 EXPO回顧原始直播（待機室大富豪）', official: true },
     { url: 'https://www.youtube.com/watch?v=BPVPYRyRBC0', kind: 'youtube', label: '寶鐘瑪琳2025/03/09 EXPO回顧原始直播（待機室大富豪）', official: true },
