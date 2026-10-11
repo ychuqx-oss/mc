@@ -125,7 +125,7 @@ const englishRows = `
 2025-05-19|Miko recalls a gathering at Subaru’s house and says Suisei is skilled at frying food
 2025-05-19|Suisei returns and talks about her business partner brainwashing her
 2025-05-15|Suisei calls into Miko’s stream and teases miComet content
-2025-05-12|Suisei mentions in Miko’s mengen
+2025-05-12|Miko mentions Suisei several times during her members-only stream
 2025-05-10|Miko talks about Suisei, shoulder massages, and her Sambomaster collab
 2025-05-10|On NHK Radio, Marine wonders why Miko wasn’t called to fill for Suisei’s absence instead
 2025-05-08|Lui recalls having shabu-shabu at Suisei’s house and playing a Conan-style mystery game with Miko and others
