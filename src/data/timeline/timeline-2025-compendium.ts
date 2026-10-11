@@ -1247,10 +1247,30 @@ const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' 
 // Japanese clip and contemporary-report leads. These are research aids, NOT verified original evidence.
 const researchSourceLeads2025: Record<string, Array<{
   url: string;
-  kind: 'youtube' | 'news' | 'index';
+  kind: 'youtube' | 'news' | 'index' | 'x';
   label: string;
   official: false;
 }>> = {
+  'c2-2025-304': [
+    { url: 'https://www.youtube.com/watch?v=KVC2wgjC2DI', kind: 'youtube', label: '2025/01/09日文切片：白上吹雪觀察miComet互動；尚未找到她本人轉推的X狀態ID / Japanese clip, retweet not proven', official: false },
+    { url: 'https://www.youtube.com/watch?v=Uwj-uW5UXG4', kind: 'youtube', label: '2025/01/08白上吹雪 Minecraft 本人原始直播（隔日切片所涉活動；未證實本人轉推） / Original event stream, retweet pending', official: false },
+  ],
+  'c2-2025-276': [
+    { url: 'https://www.youtube.com/watch?v=DxH3iAPeZHk', kind: 'youtube', label: '2025/02/09 櫻巫女 Minecraft 本人原始直播，僅確認當日節目；miComet縮圖及妹妹聽歌的原話待核實 / Original stream lead, story details unconfirmed', official: false },
+  ],
+  'c2-2025-254': [
+    { url: 'https://www.youtube.com/shorts/iz1VgDngWa0', kind: 'youtube', label: '2025/02/23 常闇永遠本人《MOTTAI》官方Shorts（背景人物是否星街與Miko、是否追逐尚未核實） / Official video, background action unconfirmed', official: false },
+    { url: 'https://x.com/tokoyamitowa/status/1893545061838729669', kind: 'x', label: '常闇永遠2025/02/23本人Shorts公告（能證明影片發布，不證明背景追逐） / Original post announcing Short, not chase proof', official: false },
+  ],
+  'c2-2025-210': [
+    { url: 'https://x.com/holovillage/status/1904864553030295905', kind: 'x', label: 'Holo Village 2025/03/26-27官方miComet原始貼文；仍缺櫻巫女本人回覆X Status ID / Original parent post; Miko reply unverified', official: false },
+  ],
+  'c2-2025-188': [
+    { url: 'https://radiko.jp/mobile/events/12918448', kind: 'index', label: 'NHK《ぶいあーる！》第88回（原播2025/04/26；嘉賓KMNZ）重播節目索引；「Miko粉絲／DDD」發言待核實 / Episode listing, quote unconfirmed', official: false },
+  ],
+  'c2-2025-170': [
+    { url: 'https://www.youtube.com/watch?v=2HEhZ6QrHnk', kind: 'youtube', label: '櫻巫女2025/05/12本人會員限定《みこちの気まぐれ放送局 #９》（無法公開核實星街發言） / Members-only original, mention unverified', official: false },
+  ],
   'c2-2025-265': [
     {
       url: 'https://ckworks.jp/vinforadar/video/kirinuki/tKrURdg2rCE',
@@ -1309,6 +1329,12 @@ const researchSourceLeads2025: Record<string, Array<{
 
 // Keep unverified leads out of the verified counter; date-mismatched leads remain missing.
 const researchSourceStatus2025: Record<string, 'verified' | 'indexed' | 'missing'> = {
+  'c2-2025-304': 'indexed',
+  'c2-2025-276': 'missing',
+  'c2-2025-254': 'indexed',
+  'c2-2025-210': 'indexed',
+  'c2-2025-188': 'indexed',
+  'c2-2025-170': 'missing',
   'c2-2025-265': 'indexed',
   'c2-2025-284': 'indexed',
   'c2-2025-238': 'indexed',
