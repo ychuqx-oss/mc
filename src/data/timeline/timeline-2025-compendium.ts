@@ -122,7 +122,7 @@ const englishRows = `
 2025-05-23|Kanade says Miko is more like the older-sister figure in miComet
 2025-05-22|Suisei complaints about Miko’s unfinished Minecraft builds
 2025-05-20|Suisei’s short features Mikolingo
-2025-05-19|At Mio’s party, Miko makes Suisei fry food and Suisei complies
+2025-05-19|Miko recalls a gathering at Subaru’s house and says Suisei is skilled at frying food
 2025-05-19|Suisei returns and talks about her business partner brainwashing her
 2025-05-15|Suisei calls into Miko’s stream and teases miComet content
 2025-05-12|Suisei mentions in Miko’s mengen
@@ -353,6 +353,10 @@ const recoveredEnglishTitles2025: Record<string, string> = {
 };
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-167': {
+    link: 'https://www.youtube.com/watch?v=KS8QRNM21zI&t=3956s',
+    source: 'Miko official 2025-05-19 Mario Kart livestream; at about 01:05:56 she recalls the gathering at Subaru home and says Suisei is good at frying food',
+  },
   'c2-2025-211': {
     link: 'https://www.youtube.com/watch?v=2LDhfEcrq5o',
     source: 'Miko original Pokemon Ruby livestream (2025-03-26 20:01–03:05 JST); contemporary 2025-03-27 02:47 live discussion mentions miComet morning walks',
@@ -1018,6 +1022,9 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'x' | 'official'; label: string; official: true }>> = {
+  'c2-2025-167': [
+    { url: 'https://www.youtube.com/watch?v=KS8QRNM21zI&t=3956s', kind: 'youtube', label: '櫻巫女2025/05/19瑪利歐賽車原始直播（01:05:56稱讚星街擅長炸物料理）', official: true },
+  ],
   'c2-2025-211': [
     { url: 'https://www.youtube.com/watch?v=2LDhfEcrq5o', kind: 'youtube', label: '櫻巫女2025/03/26《寶可夢紅寶石》原始直播（隔日凌晨談miComet早晨散步）', official: true },
   ],
