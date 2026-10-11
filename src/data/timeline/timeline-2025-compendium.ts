@@ -1251,6 +1251,13 @@ const researchSourceLeads2025: Record<string, Array<{
   label: string;
   official: false;
 }>> = {
+  'c2-2025-300': [
+    { url: 'https://www.bilibili.com/video/BV1yfcheoEfw/', kind: 'index', label: '2025/01/11 NHK《ぶいあーる！》第76回非官方日語廣播存檔／歌單：M1 さくらみこ「flower rhapsody」（待NHK官方曲目表；非官方轉載） / Unofficial Japanese-language episode listing, M1 confirmed in index; NHK original still needed', official: false },
+  ],
+  'c2-2025-271': [
+    { url: 'https://ckworks.jp/vinforadar/video/kirinuki/rzFH5esk20Q', kind: 'index', label: '2025/02/12日文切片（白上吹雪前夜祭、星街稱呼相關話題）；尚未證明故事聲稱2/12本人推文 / Japanese clip; event-related but X post missing', official: false },
+    { url: 'https://www.youtube.com/watch?v=aOhEhm_MOzI', kind: 'youtube', label: '白上吹雪2025/02/11本人演唱會前夜祭直播（與2/12切片相關；不等於特定推文） / Original eve-of-concert stream; tweet not verified', official: false },
+  ],
   'c2-2025-304': [
     { url: 'https://www.youtube.com/watch?v=KVC2wgjC2DI', kind: 'youtube', label: '2025/01/09日文切片：白上吹雪觀察miComet互動；尚未找到她本人轉推的X狀態ID / Japanese clip, retweet not proven', official: false },
     { url: 'https://www.youtube.com/watch?v=Uwj-uW5UXG4', kind: 'youtube', label: '2025/01/08白上吹雪 Minecraft 本人原始直播（隔日切片所涉活動；未證實本人轉推） / Original event stream, retweet pending', official: false },
@@ -1329,6 +1336,8 @@ const researchSourceLeads2025: Record<string, Array<{
 
 // Keep unverified leads out of the verified counter; date-mismatched leads remain missing.
 const researchSourceStatus2025: Record<string, 'verified' | 'indexed' | 'missing'> = {
+  'c2-2025-300': 'indexed',
+  'c2-2025-271': 'missing',
   'c2-2025-304': 'indexed',
   'c2-2025-276': 'missing',
   'c2-2025-254': 'indexed',
