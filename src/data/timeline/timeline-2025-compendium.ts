@@ -1251,6 +1251,10 @@ const researchSourceLeads2025: Record<string, Array<{
   label: string;
   official: false;
 }>> = {
+  'c2-2025-310': [
+    { url: 'https://www.youtube.com/watch?v=2aOA-Y6B1zU', kind: 'youtube', label: '2025/01/05 Miko本人主辦《ホロ五目並べ最弱王》原始直播，僅作比賽背景；尚未證明兩人在X互嘴 / Original tournament, X exchange unconfirmed', official: false },
+    { url: 'https://ckworks.jp/vinforadar/video/kirinuki/TgPHvzrgND0', kind: 'index', label: '日文切片包含 Miko 對星街的五子棋片段（11:55）；不是雙方X推文證據 / Japanese tournament clip, not proof of mutual X posts', official: false },
+  ],
   'c2-2025-300': [
     { url: 'https://www.bilibili.com/video/BV1yfcheoEfw/', kind: 'index', label: '2025/01/11 NHK《ぶいあーる！》第76回非官方日語廣播存檔／歌單：M1 さくらみこ「flower rhapsody」（待NHK官方曲目表；非官方轉載） / Unofficial Japanese-language episode listing, M1 confirmed in index; NHK original still needed', official: false },
   ],
@@ -1336,6 +1340,7 @@ const researchSourceLeads2025: Record<string, Array<{
 
 // Keep unverified leads out of the verified counter; date-mismatched leads remain missing.
 const researchSourceStatus2025: Record<string, 'verified' | 'indexed' | 'missing'> = {
+  'c2-2025-310': 'missing',
   'c2-2025-300': 'indexed',
   'c2-2025-271': 'missing',
   'c2-2025-304': 'indexed',
