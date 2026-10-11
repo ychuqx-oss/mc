@@ -353,6 +353,10 @@ const recoveredEnglishTitles2025: Record<string, string> = {
 };
 
 const verifiedSourceLinks2025: Record<string, { link: string; source: string }> = {
+  'c2-2025-191': {
+    link: 'https://x.com/i/spaces/1OyKALvRgNrxb',
+    source: 'Hoshimachi Suisei original X Space on 2025-04-21 (cherry-blossom viewing and business trip with Miko), original audio URL explicitly cited by same-day Japanese excerpt',
+  },
   'c2-2025-258': {
     link: 'https://www.youtube.com/shorts/_ySjUkpvIEI',
     source: 'hololive official 2025-02-21 Tetris dance Short; Sakura Miko and Hoshimachi Suisei are both credited performers among group members',
@@ -1030,6 +1034,9 @@ const verifiedSourceLinks2025: Record<string, { link: string; source: string }> 
 
 // Recovered 2025 original broadcasts / official announcements. No translated or third-party clip URLs.
 const recoveredSources2025: Record<string, Array<{ url: string; kind: 'youtube' | 'x' | 'official'; label: string; official: true }>> = {
+  'c2-2025-191': [
+    { url: 'https://x.com/i/spaces/1OyKALvRgNrxb', kind: 'x', label: '星街彗星2025/04/21本人X Space原始音訊（談賞櫻及與櫻巫女的商業旅行；同期日文片段列出原網址）', official: true },
+  ],
   'c2-2025-258': [
     { url: 'https://www.youtube.com/shorts/_ySjUkpvIEI', kind: 'youtube', label: 'hololive官方2025/02/21《テトリス》短片（櫻巫女與星街彗星均列為出演者）', official: true },
   ],
